@@ -74,11 +74,8 @@ Example of the implementation in My\+Main\+Function.\+cpp\+:
 
 Finaly, in main.\+cpp\+: 
 \begin{DoxyCode}
-Mdt::Application app(argc, argv);
+\hyperlink{class_q_core_application}{QCoreApplication} app(argc, argv);
 
-\textcolor{keywordflow}{if}(!app.init())\{
-  \textcolor{keywordflow}{return} 1;
-\}
 \textcolor{comment}{// This will call runMain() once the event loop started}
 MyMainFunction mainImpl;
 
@@ -86,7 +83,7 @@ MyMainFunction mainImpl;
 \end{DoxyCode}
  
 
-Definition at line 65 of file Abstract\+Console\+Application\+Main\+Function.\+h.
+Definition at line 62 of file Abstract\+Console\+Application\+Main\+Function.\+h.
 
 
 
