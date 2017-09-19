@@ -1,0 +1,317 @@
+\hypertarget{class_mdt_1_1_core_application_impl}{}\section{Mdt\+:\+:Core\+Application\+Impl Class Reference}
+\label{class_mdt_1_1_core_application_impl}\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+
+
+Implementation for \hyperlink{class_mdt_1_1_core_application}{Core\+Application} and derived classes.  
+
+
+
+
+{\ttfamily \#include $<$Core\+Application\+Impl.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221}{Log\+File\+Name\+Format} \{ \hyperlink{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221ab47da4311e174cd5978c765033f0060e}{Application\+Name}, 
+\hyperlink{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221ae817e774fbf9d95b9b720ce7da8e6604}{Application\+Name\+And\+Pid}
+ \}\begin{DoxyCompactList}\small\item\em Log file name format. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_core_application_impl_ab97b101b57a2fa8410e39b940e022c4c}{Core\+Application\+Impl} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_core_application_impl_aa17f799e5d756ca8c5a89196fcbd8e90}{$\sim$\+Core\+Application\+Impl} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bfseries Core\+Application\+Impl} (const \hyperlink{class_mdt_1_1_core_application_impl}{Core\+Application\+Impl} \&)=delete\hypertarget{class_mdt_1_1_core_application_impl_a0d5805c4960bdc06587f1a8025732210}{}\label{class_mdt_1_1_core_application_impl_a0d5805c4960bdc06587f1a8025732210}
+
+\item 
+\hyperlink{class_mdt_1_1_core_application_impl}{Core\+Application\+Impl} \& {\bfseries operator=} (const \hyperlink{class_mdt_1_1_core_application_impl}{Core\+Application\+Impl} \&)=delete\hypertarget{class_mdt_1_1_core_application_impl_aa7670b4be70a835cc50f78711f1661ae}{}\label{class_mdt_1_1_core_application_impl_aa7670b4be70a835cc50f78711f1661ae}
+
+\item 
+{\bfseries Core\+Application\+Impl} (\hyperlink{class_mdt_1_1_core_application_impl}{Core\+Application\+Impl} \&\&)=delete\hypertarget{class_mdt_1_1_core_application_impl_ad8ffe3e8f1fc148847599f421d19ba12}{}\label{class_mdt_1_1_core_application_impl_ad8ffe3e8f1fc148847599f421d19ba12}
+
+\item 
+\hyperlink{class_mdt_1_1_core_application_impl}{Core\+Application\+Impl} \& {\bfseries operator=} (\hyperlink{class_mdt_1_1_core_application_impl}{Core\+Application\+Impl} \&\&)=delete\hypertarget{class_mdt_1_1_core_application_impl_a4d8837b1128fcdbf43076150751a1ea4}{}\label{class_mdt_1_1_core_application_impl_a4d8837b1128fcdbf43076150751a1ea4}
+
+\item 
+void \hyperlink{class_mdt_1_1_core_application_impl_a3bd40afeeb08ddcba8cbfc78c177305b}{enable\+File\+Logging} (\hyperlink{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221}{Log\+File\+Name\+Format} format)
+\begin{DoxyCompactList}\small\item\em Enable file logging. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_core_application_impl_a42a42b5d134b70a6e1c0452f29c73912}{is\+File\+Logging\+Enabled} () const 
+\begin{DoxyCompactList}\small\item\em Check if file logging is enabled. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_core_application_impl_abc2b6b3ab83fdf2fd9dca1447bc82418}{log\+File\+Path} ()
+\begin{DoxyCompactList}\small\item\em Get the path to the log file. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_core_application_impl_a29a336750c7ea04a570fbd769497c98f}{debug\+Environment} (const Q\+String\+List \&entries)
+\begin{DoxyCompactList}\small\item\em Debug environment. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_core_application_impl_abbafc463e7c820e42f967813e9e7ae7a}{common\+Environment\+Entries} ()
+\begin{DoxyCompactList}\small\item\em Get common environment entries. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+String \hyperlink{class_mdt_1_1_core_application_impl_a5335fddfbe75c3944199d30d201ece04}{log\+Directory\+Path} ()
+\begin{DoxyCompactList}\small\item\em Get the path to log file directory. \end{DoxyCompactList}\item 
+static Q\+String \hyperlink{class_mdt_1_1_core_application_impl_a4d78244d773ca265a7108275f2295ca2}{cache\+Directory\+Path} ()
+\begin{DoxyCompactList}\small\item\em Get path to the cache directory. \end{DoxyCompactList}\item 
+static Q\+String \hyperlink{class_mdt_1_1_core_application_impl_a7c1f7ed8684b4d3ec8aa68a0da5d2d04}{qt\+Version} ()
+\begin{DoxyCompactList}\small\item\em Get Qt library version. \end{DoxyCompactList}\item 
+static Q\+String \hyperlink{class_mdt_1_1_core_application_impl_af8728d7751e6041d5680d99f033ae52d}{mdt\+Version} ()
+\begin{DoxyCompactList}\small\item\em Get \hyperlink{namespace_mdt}{Mdt} library version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation for \hyperlink{class_mdt_1_1_core_application}{Core\+Application} and derived classes. 
+
+Definition at line 33 of file Core\+Application\+Impl.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!Log\+File\+Name\+Format@{Log\+File\+Name\+Format}}
+\index{Log\+File\+Name\+Format@{Log\+File\+Name\+Format}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{Log\+File\+Name\+Format}{LogFileNameFormat}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mdt\+::\+Core\+Application\+Impl\+::\+Log\+File\+Name\+Format}}\hypertarget{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221}{}\label{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221}
+
+
+Log file name format. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Application\+Name@{Application\+Name}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!Application\+Name@{Application\+Name}}\item[{\em 
+Application\+Name\hypertarget{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221ab47da4311e174cd5978c765033f0060e}{}\label{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221ab47da4311e174cd5978c765033f0060e}
+}]Log file name will be application\+Name.\+log \index{Application\+Name\+And\+Pid@{Application\+Name\+And\+Pid}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!Application\+Name\+And\+Pid@{Application\+Name\+And\+Pid}}\item[{\em 
+Application\+Name\+And\+Pid\hypertarget{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221ae817e774fbf9d95b9b720ce7da8e6604}{}\label{class_mdt_1_1_core_application_impl_aa5fed8435e22870a870005ee28ff6221ae817e774fbf9d95b9b720ce7da8e6604}
+}]Log file name will be application\+Name\+\_\+pid.\+log \end{description}
+\end{Desc}
+
+
+Definition at line 41 of file Core\+Application\+Impl.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!Core\+Application\+Impl@{Core\+Application\+Impl}}
+\index{Core\+Application\+Impl@{Core\+Application\+Impl}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{Core\+Application\+Impl()}{CoreApplicationImpl()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Core\+Application\+Impl\+::\+Core\+Application\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_core_application_impl_ab97b101b57a2fa8410e39b940e022c4c}{}\label{class_mdt_1_1_core_application_impl_ab97b101b57a2fa8410e39b940e022c4c}
+
+
+Constructor. 
+
+
+
+Definition at line 38 of file Core\+Application\+Impl.\+cpp.
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!````~Core\+Application\+Impl@{$\sim$\+Core\+Application\+Impl}}
+\index{````~Core\+Application\+Impl@{$\sim$\+Core\+Application\+Impl}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{$\sim$\+Core\+Application\+Impl()}{~CoreApplicationImpl()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Core\+Application\+Impl\+::$\sim$\+Core\+Application\+Impl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_core_application_impl_aa17f799e5d756ca8c5a89196fcbd8e90}{}\label{class_mdt_1_1_core_application_impl_aa17f799e5d756ca8c5a89196fcbd8e90}
+
+
+Destructor. 
+
+
+
+Definition at line 44 of file Core\+Application\+Impl.\+cpp.
+
+
+
+References Mdt\+::\+Error\+Logger\+::\+Logger\+::cleanup().
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!cache\+Directory\+Path@{cache\+Directory\+Path}}
+\index{cache\+Directory\+Path@{cache\+Directory\+Path}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{cache\+Directory\+Path()}{cacheDirectoryPath()}}]{\setlength{\rightskip}{0pt plus 5cm}static Q\+String Mdt\+::\+Core\+Application\+Impl\+::cache\+Directory\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_mdt_1_1_core_application_impl_a4d78244d773ca265a7108275f2295ca2}{}\label{class_mdt_1_1_core_application_impl_a4d78244d773ca265a7108275f2295ca2}
+
+
+Get path to the cache directory. 
+
+Returns \hyperlink{class_mdt_1_1_standard_paths_a2ca803e5a6b9fb2a4808968becfb86de}{Standard\+Paths\+::cache\+Directory\+Path()} 
+
+Definition at line 93 of file Core\+Application\+Impl.\+h.
+
+
+
+References Mdt\+::\+Standard\+Paths\+::cache\+Directory\+Path(), common\+Environment\+Entries(), debug\+Environment(), mdt\+Version(), and qt\+Version().
+
+
+
+Referenced by Mdt\+::\+Core\+Application\+::cache\+Directory\+Path(), and common\+Environment\+Entries().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!common\+Environment\+Entries@{common\+Environment\+Entries}}
+\index{common\+Environment\+Entries@{common\+Environment\+Entries}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{common\+Environment\+Entries()}{commonEnvironmentEntries()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Core\+Application\+Impl\+::common\+Environment\+Entries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_core_application_impl_abbafc463e7c820e42f967813e9e7ae7a}{}\label{class_mdt_1_1_core_application_impl_abbafc463e7c820e42f967813e9e7ae7a}
+
+
+Get common environment entries. 
+
+
+
+Definition at line 104 of file Core\+Application\+Impl.\+cpp.
+
+
+
+References Mdt\+::\+Error\+Logger\+::\+Logger\+::add\+Backend(), cache\+Directory\+Path(), log\+Directory\+Path(), log\+File\+Path(), mdt\+Version(), and qt\+Version().
+
+
+
+Referenced by cache\+Directory\+Path().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!debug\+Environment@{debug\+Environment}}
+\index{debug\+Environment@{debug\+Environment}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{debug\+Environment(const Q\+String\+List \&entries)}{debugEnvironment(const QStringList &entries)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Core\+Application\+Impl\+::debug\+Environment (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+List \&}]{entries}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_core_application_impl_a29a336750c7ea04a570fbd769497c98f}{}\label{class_mdt_1_1_core_application_impl_a29a336750c7ea04a570fbd769497c98f}
+
+
+Debug environment. 
+
+
+
+Definition at line 93 of file Core\+Application\+Impl.\+cpp.
+
+
+
+Referenced by cache\+Directory\+Path().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!enable\+File\+Logging@{enable\+File\+Logging}}
+\index{enable\+File\+Logging@{enable\+File\+Logging}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{enable\+File\+Logging(\+Log\+File\+Name\+Format format)}{enableFileLogging(LogFileNameFormat format)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Core\+Application\+Impl\+::enable\+File\+Logging (
+\begin{DoxyParamCaption}
+\item[{{\bf Core\+Application\+Impl\+::\+Log\+File\+Name\+Format}}]{format}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_core_application_impl_a3bd40afeeb08ddcba8cbfc78c177305b}{}\label{class_mdt_1_1_core_application_impl_a3bd40afeeb08ddcba8cbfc78c177305b}
+
+
+Enable file logging. 
+
+
+
+Definition at line 49 of file Core\+Application\+Impl.\+cpp.
+
+
+
+References Mdt\+::\+Error\+Logger\+::\+Logger\+::add\+Backend(), Application\+Name, Application\+Name\+And\+Pid, is\+File\+Logging\+Enabled(), and log\+Directory\+Path().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!is\+File\+Logging\+Enabled@{is\+File\+Logging\+Enabled}}
+\index{is\+File\+Logging\+Enabled@{is\+File\+Logging\+Enabled}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{is\+File\+Logging\+Enabled() const }{isFileLoggingEnabled() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Core\+Application\+Impl\+::is\+File\+Logging\+Enabled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_core_application_impl_a42a42b5d134b70a6e1c0452f29c73912}{}\label{class_mdt_1_1_core_application_impl_a42a42b5d134b70a6e1c0452f29c73912}
+
+
+Check if file logging is enabled. 
+
+
+
+Definition at line 68 of file Core\+Application\+Impl.\+h.
+
+
+
+Referenced by enable\+File\+Logging().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!log\+Directory\+Path@{log\+Directory\+Path}}
+\index{log\+Directory\+Path@{log\+Directory\+Path}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{log\+Directory\+Path()}{logDirectoryPath()}}]{\setlength{\rightskip}{0pt plus 5cm}static Q\+String Mdt\+::\+Core\+Application\+Impl\+::log\+Directory\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_mdt_1_1_core_application_impl_a5335fddfbe75c3944199d30d201ece04}{}\label{class_mdt_1_1_core_application_impl_a5335fddfbe75c3944199d30d201ece04}
+
+
+Get the path to log file directory. 
+
+Returns \hyperlink{class_mdt_1_1_standard_paths_aa45caeb4d2b4a5c539d301d800a7deac}{Standard\+Paths\+::log\+Directory\+Path()} 
+
+Definition at line 77 of file Core\+Application\+Impl.\+h.
+
+
+
+References Mdt\+::\+Standard\+Paths\+::log\+Directory\+Path().
+
+
+
+Referenced by common\+Environment\+Entries(), and enable\+File\+Logging().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!log\+File\+Path@{log\+File\+Path}}
+\index{log\+File\+Path@{log\+File\+Path}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{log\+File\+Path()}{logFilePath()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Core\+Application\+Impl\+::log\+File\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_core_application_impl_abc2b6b3ab83fdf2fd9dca1447bc82418}{}\label{class_mdt_1_1_core_application_impl_abc2b6b3ab83fdf2fd9dca1447bc82418}
+
+
+Get the path to the log file. 
+
+
+
+Definition at line 84 of file Core\+Application\+Impl.\+h.
+
+
+
+Referenced by common\+Environment\+Entries().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!mdt\+Version@{mdt\+Version}}
+\index{mdt\+Version@{mdt\+Version}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{mdt\+Version()}{mdtVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Core\+Application\+Impl\+::mdt\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_core_application_impl_af8728d7751e6041d5680d99f033ae52d}{}\label{class_mdt_1_1_core_application_impl_af8728d7751e6041d5680d99f033ae52d}
+
+
+Get \hyperlink{namespace_mdt}{Mdt} library version. 
+
+
+
+Definition at line 88 of file Core\+Application\+Impl.\+cpp.
+
+
+
+Referenced by cache\+Directory\+Path(), common\+Environment\+Entries(), and Mdt\+::\+Core\+Application\+::mdt\+Version().
+
+\index{Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}!qt\+Version@{qt\+Version}}
+\index{qt\+Version@{qt\+Version}!Mdt\+::\+Core\+Application\+Impl@{Mdt\+::\+Core\+Application\+Impl}}
+\subsubsection[{\texorpdfstring{qt\+Version()}{qtVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Core\+Application\+Impl\+::qt\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_core_application_impl_a7c1f7ed8684b4d3ec8aa68a0da5d2d04}{}\label{class_mdt_1_1_core_application_impl_a7c1f7ed8684b4d3ec8aa68a0da5d2d04}
+
+
+Get Qt library version. 
+
+
+
+Definition at line 83 of file Core\+Application\+Impl.\+cpp.
+
+
+
+Referenced by cache\+Directory\+Path(), common\+Environment\+Entries(), and Mdt\+::\+Core\+Application\+::qt\+Version().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Application\+\_\+\+Core/src/\+Mdt/Core\+Application\+Impl.\+h\item 
+libs/\+Application\+\_\+\+Core/src/\+Mdt/Core\+Application\+Impl.\+cpp\end{DoxyCompactItemize}

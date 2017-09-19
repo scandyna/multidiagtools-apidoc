@@ -1,0 +1,146 @@
+\hypertarget{class_mdt_1_1_error_logger_1_1_backend}{}\section{Mdt\+:\+:Error\+Logger\+:\+:Backend Class Reference}
+\label{class_mdt_1_1_error_logger_1_1_backend}\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+
+
+\hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} backend.  
+
+
+
+
+{\ttfamily \#include $<$Backend.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Error\+Logger\+:\+:Backend\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mdt_1_1_error_logger_1_1_backend__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_backend_acf0b4a7f061c638207bfdb172fc8015c}{Backend} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_mdt_1_1_error_logger_1_1_backend_aba972e76fc4d6bb7665038cb8d1c88d7}{$\sim$\+Backend} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_mdt_1_1_error_logger_1_1_backend_acf37cfc576269934ca8ce04e3601058d}{log\+Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&error)=0
+\begin{DoxyCompactList}\small\item\em Log given error. \end{DoxyCompactList}\item 
+{\bfseries Backend} (const \hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} \&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_backend_a7bb295be149f2205fe63554e1ba06f66}{}\label{class_mdt_1_1_error_logger_1_1_backend_a7bb295be149f2205fe63554e1ba06f66}
+
+\item 
+{\bfseries Backend} (\hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} \&\&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_backend_aba1ff6190a3b08ca93e8edd7917a7d25}{}\label{class_mdt_1_1_error_logger_1_1_backend_aba1ff6190a3b08ca93e8edd7917a7d25}
+
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} \& {\bfseries operator=} (const \hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} \&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_backend_a9400fcafaec1e9e07da2d31dcc842b92}{}\label{class_mdt_1_1_error_logger_1_1_backend_a9400fcafaec1e9e07da2d31dcc842b92}
+
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} \& {\bfseries operator=} (\hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} \&\&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_backend_ae0beab19d09a61f83eb5feed501a7562}{}\label{class_mdt_1_1_error_logger_1_1_backend_ae0beab19d09a61f83eb5feed501a7562}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+String \hyperlink{class_mdt_1_1_error_logger_1_1_backend_a4a859ea87b93082e69791bcbd14c1f71}{tr} (const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Calls Q\+Object\+::tr() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} backend. 
+
+This class is a interface to create a error logger backend that will be used by error \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} to output errors.
+
+Notice that \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} executes from a non main thread, also take care that some functons must at least be reentrant. 
+
+Definition at line 40 of file Backend.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!Backend@{Backend}}
+\index{Backend@{Backend}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{Backend()}{Backend()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Error\+Logger\+::\+Backend\+::\+Backend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_acf0b4a7f061c638207bfdb172fc8015c}{}\label{class_mdt_1_1_error_logger_1_1_backend_acf0b4a7f061c638207bfdb172fc8015c}
+
+
+Constructor. 
+
+
+
+Definition at line 46 of file Backend.\+h.
+
+
+
+Referenced by $\sim$\+Backend().
+
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!````~Backend@{$\sim$\+Backend}}
+\index{````~Backend@{$\sim$\+Backend}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{$\sim$\+Backend()}{~Backend()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Mdt\+::\+Error\+Logger\+::\+Backend\+::$\sim$\+Backend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_aba972e76fc4d6bb7665038cb8d1c88d7}{}\label{class_mdt_1_1_error_logger_1_1_backend_aba972e76fc4d6bb7665038cb8d1c88d7}
+
+
+Destructor. 
+
+
+
+Definition at line 50 of file Backend.\+h.
+
+
+
+References Backend(), log\+Error(), and tr().
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!log\+Error@{log\+Error}}
+\index{log\+Error@{log\+Error}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{log\+Error(const Error \&error)=0}{logError(const Error &error)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mdt\+::\+Error\+Logger\+::\+Backend\+::log\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error} \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_acf37cfc576269934ca8ce04e3601058d}{}\label{class_mdt_1_1_error_logger_1_1_backend_acf37cfc576269934ca8ce04e3601058d}
+
+
+Log given error. 
+
+This function must be reentrant, because its called from \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} thread (witch is not the main thread). 
+
+Implemented in \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a31b8314d523a491b5441276122daed87}{Mdt\+::\+Error\+Logger\+::\+File\+Backend}, and \hyperlink{class_mdt_1_1_error_logger_1_1_console_backend_a2d30700dd6a91c244d68bd3670fdbc33}{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}.
+
+
+
+Referenced by $\sim$\+Backend().
+
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!tr@{tr}}
+\index{tr@{tr}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{tr(const char $\ast$text)}{tr(const char *text)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+Logger\+::\+Backend\+::tr (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_a4a859ea87b93082e69791bcbd14c1f71}{}\label{class_mdt_1_1_error_logger_1_1_backend_a4a859ea87b93082e69791bcbd14c1f71}
+
+
+Calls Q\+Object\+::tr() 
+
+
+
+Definition at line 24 of file Backend.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error(), Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::set\+Log\+File\+Path(), and $\sim$\+Backend().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Backend.\+h\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Backend.\+cpp\end{DoxyCompactItemize}

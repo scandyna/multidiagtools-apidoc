@@ -1,0 +1,122 @@
+\hypertarget{class_mdt_1_1_error_logger_1_1_logger}{}\section{Mdt\+:\+:Error\+Logger\+:\+:Logger Class Reference}
+\label{class_mdt_1_1_error_logger_1_1_logger}\index{Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}}
+
+
+Helper class to log \hyperlink{class_mdt_1_1_error}{Error} objects.  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Logger} (const \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} \&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_logger_a7bafe61d7b9487f34043aadeb5877199}{}\label{class_mdt_1_1_error_logger_1_1_logger_a7bafe61d7b9487f34043aadeb5877199}
+
+\item 
+{\bfseries Logger} (\hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} \&\&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_logger_a43285dd16581acb2b1a6b9ed19d67d88}{}\label{class_mdt_1_1_error_logger_1_1_logger_a43285dd16581acb2b1a6b9ed19d67d88}
+
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} \& {\bfseries operator=} (const \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} \&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_logger_a6544b92bff85410562d099d1875d6d36}{}\label{class_mdt_1_1_error_logger_1_1_logger_a6544b92bff85410562d099d1875d6d36}
+
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} \& {\bfseries operator=} (\hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} \&\&)=delete\hypertarget{class_mdt_1_1_error_logger_1_1_logger_a870e8601a17811c0b9e8d60603dc9cbe}{}\label{class_mdt_1_1_error_logger_1_1_logger_a870e8601a17811c0b9e8d60603dc9cbe}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_mdt_1_1_error_logger_1_1_logger_a383645fde118a3ab8af690c2abfe3950}{add\+Backend} (const std\+::shared\+\_\+ptr$<$ \hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} $>$ \&backend)
+\begin{DoxyCompactList}\small\item\em Add a logger backend. \end{DoxyCompactList}\item 
+static void \hyperlink{class_mdt_1_1_error_logger_1_1_logger_aa06a24a1d521258729ca172465b02040}{log\+Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&error)
+\begin{DoxyCompactList}\small\item\em Log given error. \end{DoxyCompactList}\item 
+static void \hyperlink{class_mdt_1_1_error_logger_1_1_logger_a3bb1951ee52da826fde82dab52d54c4b}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em Cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to log \hyperlink{class_mdt_1_1_error}{Error} objects. 
+
+Definition at line 40 of file Logger.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}!add\+Backend@{add\+Backend}}
+\index{add\+Backend@{add\+Backend}!Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}}
+\subsubsection[{\texorpdfstring{add\+Backend(const std\+::shared\+\_\+ptr$<$ Backend $>$ \&backend)}{addBackend(const std::shared_ptr< Backend > &backend)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+Logger\+::\+Logger\+::add\+Backend (
+\begin{DoxyParamCaption}
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Backend} $>$ \&}]{backend}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_logger_1_1_logger_a383645fde118a3ab8af690c2abfe3950}{}\label{class_mdt_1_1_error_logger_1_1_logger_a383645fde118a3ab8af690c2abfe3950}
+
+
+Add a logger backend. 
+
+
+
+Definition at line 27 of file Logger.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Core\+Application\+Impl\+::common\+Environment\+Entries(), and Mdt\+::\+Core\+Application\+Impl\+::enable\+File\+Logging().
+
+\index{Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}}
+\subsubsection[{\texorpdfstring{cleanup()}{cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+Logger\+::\+Logger\+::cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_logger_1_1_logger_a3bb1951ee52da826fde82dab52d54c4b}{}\label{class_mdt_1_1_error_logger_1_1_logger_a3bb1951ee52da826fde82dab52d54c4b}
+
+
+Cleanup. 
+
+\begin{DoxyNote}{Note}
+This function must be called before returning from main(). Not doing so conducts to undefined behaviour. Consider using a \hyperlink{class_mdt_1_1_error_logger_1_1_logger_guard}{Logger\+Guard}. 
+\end{DoxyNote}
+
+
+Definition at line 39 of file Logger.\+cpp.
+
+
+
+References Mdt\+::\+Error\+::is\+Null().
+
+
+
+Referenced by Mdt\+::\+Core\+Application\+Impl\+::$\sim$\+Core\+Application\+Impl(), and Mdt\+::\+Error\+Logger\+::\+Logger\+Guard\+::$\sim$\+Logger\+Guard().
+
+\index{Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}!log\+Error@{log\+Error}}
+\index{log\+Error@{log\+Error}!Mdt\+::\+Error\+Logger\+::\+Logger@{Mdt\+::\+Error\+Logger\+::\+Logger}}
+\subsubsection[{\texorpdfstring{log\+Error(const Error \&error)}{logError(const Error &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+Logger\+::\+Logger\+::log\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error} \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_logger_1_1_logger_aa06a24a1d521258729ca172465b02040}{}\label{class_mdt_1_1_error_logger_1_1_logger_aa06a24a1d521258729ca172465b02040}
+
+
+Log given error. 
+
+This function is thread safe \begin{DoxyPrecond}{Precondition}
+error must not be null 
+\end{DoxyPrecond}
+
+
+Definition at line 33 of file Logger.\+cpp.
+
+
+
+References Mdt\+::\+Error\+::is\+Null().
+
+
+
+Referenced by Mdt\+::\+Error\+::commit().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Logger.\+h\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Logger.\+cpp\end{DoxyCompactItemize}

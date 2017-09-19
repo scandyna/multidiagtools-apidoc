@@ -1,0 +1,84 @@
+\hypertarget{class_mdt_1_1_error_logger_1_1_logger_guard}{}\section{Mdt\+:\+:Error\+Logger\+:\+:Logger\+Guard Class Reference}
+\label{class_mdt_1_1_error_logger_1_1_logger_guard}\index{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}}
+
+
+Scope guard for error \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger}.  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_logger_guard_a206dae2204438c86ce5fb70470b800e4}{Logger\+Guard} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_logger_guard_a46942a98dcdf36a9df5857e9114e7466}{$\sim$\+Logger\+Guard} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Scope guard for error \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger}. 
+
+Typical usage\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} main()
+\{
+  \textcolor{keyword}{using} mdt::error::Logger;
+  \textcolor{keyword}{using} mdt::error::LoggerGuard;
+
+  \hyperlink{class_mdt_1_1_error_logger_1_1_logger_guard_a206dae2204438c86ce5fb70470b800e4}{LoggerGuard} loggerGuard;
+
+  \textcolor{comment}{// .. application code}
+
+  \textcolor{comment}{// Here, Logger::cleanup() will be called by loggerGuard.}
+\}
+\end{DoxyCode}
+ 
+
+Definition at line 138 of file Logger.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}!Logger\+Guard@{Logger\+Guard}}
+\index{Logger\+Guard@{Logger\+Guard}!Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}}
+\subsubsection[{\texorpdfstring{Logger\+Guard()}{LoggerGuard()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Error\+Logger\+::\+Logger\+Guard\+::\+Logger\+Guard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_logger_1_1_logger_guard_a206dae2204438c86ce5fb70470b800e4}{}\label{class_mdt_1_1_error_logger_1_1_logger_guard_a206dae2204438c86ce5fb70470b800e4}
+
+
+Constructor. 
+
+
+
+Definition at line 176 of file Logger.\+cpp.
+
+\index{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}!````~Logger\+Guard@{$\sim$\+Logger\+Guard}}
+\index{````~Logger\+Guard@{$\sim$\+Logger\+Guard}!Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}}
+\subsubsection[{\texorpdfstring{$\sim$\+Logger\+Guard()}{~LoggerGuard()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Error\+Logger\+::\+Logger\+Guard\+::$\sim$\+Logger\+Guard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_logger_1_1_logger_guard_a46942a98dcdf36a9df5857e9114e7466}{}\label{class_mdt_1_1_error_logger_1_1_logger_guard_a46942a98dcdf36a9df5857e9114e7466}
+
+
+Destructor. 
+
+Will call cleanup on error logger 
+
+Definition at line 180 of file Logger.\+cpp.
+
+
+
+References Mdt\+::\+Error\+Logger\+::\+Logger\+::cleanup().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Logger.\+h\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Logger.\+cpp\end{DoxyCompactItemize}

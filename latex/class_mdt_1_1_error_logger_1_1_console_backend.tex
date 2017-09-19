@@ -1,0 +1,96 @@
+\hypertarget{class_mdt_1_1_error_logger_1_1_console_backend}{}\section{Mdt\+:\+:Error\+Logger\+:\+:Console\+Backend Class Reference}
+\label{class_mdt_1_1_error_logger_1_1_console_backend}\index{Mdt\+::\+Error\+Logger\+::\+Console\+Backend@{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}}
+
+
+Console backend for error \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger}.  
+
+
+
+
+{\ttfamily \#include $<$Console\+Backend.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Error\+Logger\+:\+:Console\+Backend\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_mdt_1_1_error_logger_1_1_console_backend__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Error\+Logger\+:\+:Console\+Backend\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_mdt_1_1_error_logger_1_1_console_backend__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_console_backend_a7ac5878daa1e4204884d62c592de0e57}{$\sim$\+Console\+Backend} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_logger_1_1_console_backend_a2d30700dd6a91c244d68bd3670fdbc33}{log\+Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&error)
+\begin{DoxyCompactList}\small\item\em Log given error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Console backend for error \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger}. 
+
+Definition at line 31 of file Console\+Backend.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Console\+Backend@{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}!````~Console\+Backend@{$\sim$\+Console\+Backend}}
+\index{````~Console\+Backend@{$\sim$\+Console\+Backend}!Mdt\+::\+Error\+Logger\+::\+Console\+Backend@{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}}
+\subsubsection[{\texorpdfstring{$\sim$\+Console\+Backend()}{~ConsoleBackend()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::$\sim$\+Console\+Backend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_logger_1_1_console_backend_a7ac5878daa1e4204884d62c592de0e57}{}\label{class_mdt_1_1_error_logger_1_1_console_backend_a7ac5878daa1e4204884d62c592de0e57}
+
+
+Destructor. 
+
+
+
+Definition at line 30 of file Console\+Backend.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Console\+Backend@{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}!log\+Error@{log\+Error}}
+\index{log\+Error@{log\+Error}!Mdt\+::\+Error\+Logger\+::\+Console\+Backend@{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}}
+\subsubsection[{\texorpdfstring{log\+Error(const Error \&error)}{logError(const Error &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error} \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_error_logger_1_1_console_backend_a2d30700dd6a91c244d68bd3670fdbc33}{}\label{class_mdt_1_1_error_logger_1_1_console_backend_a2d30700dd6a91c244d68bd3670fdbc33}
+
+
+Log given error. 
+
+
+
+Implements \hyperlink{class_mdt_1_1_error_logger_1_1_backend_acf37cfc576269934ca8ce04e3601058d}{Mdt\+::\+Error\+Logger\+::\+Backend}.
+
+
+
+Definition at line 34 of file Console\+Backend.\+cpp.
+
+
+
+References Mdt\+::\+Error\+::file\+Line(), Mdt\+::\+Error\+::file\+Name(), Mdt\+::\+Error\+::function\+Name(), Mdt\+::\+Error\+::get\+Error\+Stack(), Mdt\+::\+Error\+::informative\+Text(), Mdt\+::\+Error\+::text(), and Mdt\+::\+Error\+Logger\+::\+Backend\+::tr().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Console\+Backend.\+h\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Console\+Backend.\+cpp\end{DoxyCompactItemize}

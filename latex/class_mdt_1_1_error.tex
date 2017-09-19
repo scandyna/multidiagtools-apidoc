@@ -1,0 +1,699 @@
+\hypertarget{class_mdt_1_1_error}{}\section{Mdt\+:\+:Error Class Reference}
+\label{class_mdt_1_1_error}\index{Mdt\+::\+Error@{Mdt\+::\+Error}}
+
+
+Value class that contains a error.  
+
+
+
+
+{\ttfamily \#include $<$Error.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \+: short \{ \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a1f0076cc77af5bed268bcef0c88969de}{No\+Error}, 
+\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6cf5d2017767cf4086ebb2d245d42f11}{Info}, 
+\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6b9dbb52e31678b806f4ecf1ae23d2ab}{Warning}, 
+\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6d4d123a2a43721c206c455a721567b6}{Critical}
+ \}\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_error}{Error} level. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_error_af7cd5683888bc46f9a484670f02520d5}{Error} ()
+\begin{DoxyCompactList}\small\item\em Construct a null error. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mdt_1_1_error_ad12894ddf0783443f8351371b701ca89}{Error} (const T \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const Q\+String \&class\+Name, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+\begin{DoxyCompactList}\small\item\em Construct a error with error and source set. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}{Error} (const T \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+\begin{DoxyCompactList}\small\item\em Construct a error with error and source set. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error_a7d7baf19eba7c6f5fb446a919fe8ee41}{Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&)=default
+\begin{DoxyCompactList}\small\item\em Construct a copy of other error. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{is\+Null} () const 
+\begin{DoxyCompactList}\small\item\em Check if error is null. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a77014ce33160e1f01b3fbb3e55f19783}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear error. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a895930ac30664f54a7f22ae593db53a0}{set\+Error} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level})
+\begin{DoxyCompactList}\small\item\em Set error. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_error_a3f6e9656170e35c5a198bf05ccec9cd1}{set\+Error} (const T \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level})
+\begin{DoxyCompactList}\small\item\em Set user defined error. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error} () const 
+\begin{DoxyCompactList}\small\item\em Get user defined error. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a85d4e982ed7972b8d43f78129d6c51e6}{update\+Text} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text})
+\begin{DoxyCompactList}\small\item\em Update error text. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a12c8b4de8011d03fa7d45d8e653713ae}{set\+Informative\+Text} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text})
+\begin{DoxyCompactList}\small\item\em Set informative text. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_error_a12fcf366a6bf68b8daaea4b43526e033}{informative\+Text} () const 
+\begin{DoxyCompactList}\small\item\em Get informative text. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level} () const 
+\begin{DoxyCompactList}\small\item\em Get error level. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text} () const 
+\begin{DoxyCompactList}\small\item\em Get error text. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}{stack\+Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error})
+\begin{DoxyCompactList}\small\item\em Stack given error. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_mdt_1_1_error}{Error} $>$ \hyperlink{class_mdt_1_1_error_a6acc6143b706449ba1ff083286d5ccf6}{get\+Error\+Stack} () const 
+\begin{DoxyCompactList}\small\item\em Get error stack. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a785bdfbb360e3a29a465a9baeb1ac58b}{set\+Source} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const Q\+String \&class\+Name, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+\begin{DoxyCompactList}\small\item\em Add the source of error. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}{set\+Source} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+\begin{DoxyCompactList}\small\item\em Add the source of error. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_a1b4a57bd4177d2985abd62b6b49a43f8}{commit} ()
+\begin{DoxyCompactList}\small\item\em Commit error. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Ger error source function. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Get error source file (name only) \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line} () const 
+\begin{DoxyCompactList}\small\item\em Get error source line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_ab8b7aaf497879d1ca16784fae96d3bb3}{from\+Q\+File\+Device} (const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const Q\+String \&class\+Name, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape file\+Device}. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}{from\+Q\+File\+Device} (const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape file\+Device}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Value class that contains a error. 
+
+\hyperlink{class_mdt_1_1_error}{Error} contains only a pointer to (implicitly) shared data (also known as copy-\/on-\/write). As long as no error was set, no more memory is allocated. This allows to store a \hyperlink{class_mdt_1_1_error}{Error} object with a few overhead.
+
+Concept of error stack
+
+Imagine a case of a application that provides document editing functionnality, and the user wants to save a document. The application will probably call a helper function from its own library, which also calls a other system function from a onther part of the library, which finally calls a (maybe system dependant) low level function. The low level function fails (for some reason). How could the application provide the most usefull error message to the user ? Lets illustrate a possible call stack\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*3{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Function}&{\bf \hyperlink{class_mdt_1_1_error}{Error}}&{\bf \hyperlink{class_mdt_1_1_error}{Error} message }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Function}&{\bf \hyperlink{class_mdt_1_1_error}{Error}}&{\bf \hyperlink{class_mdt_1_1_error}{Error} message }\\\cline{1-3}
+\endhead
+write()&E\+D\+Q\+U\+OT (int)&Disk quota exhausted \\\cline{1-3}
+write\+To\+File()&Disk\+Quota\+Exhausted (enum)&Could not write to file \textquotesingle{}document.\+txt\textquotesingle{} because disk quota exhausted \\\cline{1-3}
+save\+Document()&&Could not save your work to \textquotesingle{}document.\+txt\textquotesingle{}. This is because you reached the disk quota. Please try to save the document to a other place and contact your administrator to solve the problem. \\\cline{1-3}
+\end{longtabu}
+In above scenario, the application can build appropriate message because it knows what Disk\+Quota\+Exhausted means. For some other errors (that the application currently not handles), it could also simply display the error returned from save\+Document(). To implement such error stack, simply, at each level, stack a error that a function returns to current error. For example, in write\+To\+File(), if write() fails, we create a new \hyperlink{class_mdt_1_1_error}{Error}, and return it. Then, save\+Document() will fail, create its own \hyperlink{class_mdt_1_1_error}{Error} object, and stack the one returned by write\+To\+File(). To stack a error, use \hyperlink{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}{stack\+Error()} , and use \hyperlink{class_mdt_1_1_error_a6acc6143b706449ba1ff083286d5ccf6}{get\+Error\+Stack()} to get stacked errors back.
+
+If you need to send \hyperlink{class_mdt_1_1_error}{Error} object across threads with Qt signal/slot (queued), \hyperlink{class_mdt_1_1_error}{Error} must be registered with q\+Register\+Meta\+Type(). This is allready done in Mdt\+::\+Application\+::init(). If you don\textquotesingle{}t use Mdt\+::\+Application, don\textquotesingle{}t forget to call q\+Register\+Meta\+Type$<$\+Mdt\+::\+Error$>$() in, f.\+ex., your main() function. 
+
+Definition at line 259 of file Error.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Level@{Level}}
+\index{Level@{Level}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{Level}{Level}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mdt\+::\+Error\+::\+Level} \+: short}\hypertarget{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{}\label{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}
+
+
+\hyperlink{class_mdt_1_1_error}{Error} level. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{No\+Error@{No\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}\index{Mdt\+::\+Error@{Mdt\+::\+Error}!No\+Error@{No\+Error}}\item[{\em 
+No\+Error\hypertarget{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a1f0076cc77af5bed268bcef0c88969de}{}\label{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a1f0076cc77af5bed268bcef0c88969de}
+}]No error . \index{Info@{Info}!Mdt\+::\+Error@{Mdt\+::\+Error}}\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Info@{Info}}\item[{\em 
+Info\hypertarget{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6cf5d2017767cf4086ebb2d245d42f11}{}\label{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6cf5d2017767cf4086ebb2d245d42f11}
+}]Just a information, application continues to work in normal way . \index{Warning@{Warning}!Mdt\+::\+Error@{Mdt\+::\+Error}}\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Warning@{Warning}}\item[{\em 
+Warning\hypertarget{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6b9dbb52e31678b806f4ecf1ae23d2ab}{}\label{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6b9dbb52e31678b806f4ecf1ae23d2ab}
+}]\hyperlink{class_mdt_1_1_error}{Error} that could be handled \index{Critical@{Critical}!Mdt\+::\+Error@{Mdt\+::\+Error}}\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Critical@{Critical}}\item[{\em 
+Critical\hypertarget{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6d4d123a2a43721c206c455a721567b6}{}\label{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6d4d123a2a43721c206c455a721567b6}
+}]\hyperlink{class_mdt_1_1_error}{Error} that was not handled \end{description}
+\end{Desc}
+
+
+Definition at line 265 of file Error.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error()}{Error()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_af7cd5683888bc46f9a484670f02520d5}{}\label{class_mdt_1_1_error_af7cd5683888bc46f9a484670f02520d5}
+
+
+Construct a null error. 
+
+
+
+Definition at line 36 of file Error.\+cpp.
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error(const T \&error, const Q\+String \&text, Level level, const Q\+String \&file\+Name, int file\+Line, const Q\+String \&class\+Name, const Q\+String \&function\+Name)}{Error(const T &error, const QString &text, Level level, const QString &fileName, int fileLine, const QString &className, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Mdt\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{error, }
+\item[{const Q\+String \&}]{text, }
+\item[{{\bf Level}}]{level, }
+\item[{const Q\+String \&}]{file\+Name, }
+\item[{int}]{file\+Line, }
+\item[{const Q\+String \&}]{class\+Name, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_ad12894ddf0783443f8351371b701ca89}{}\label{class_mdt_1_1_error_ad12894ddf0783443f8351371b701ca89}
+
+
+Construct a error with error and source set. 
+
+Calling this constructor directly is a bit long. Consider using mdt\+Error\+New() or mdt\+Error\+New\+T() macro. 
+
+Definition at line 283 of file Error.\+h.
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error(const T \&error, const Q\+String \&text, Level level, const Q\+String \&file\+Name, int file\+Line, const Q\+Object $\ast$const obj, const Q\+String \&function\+Name)}{Error(const T &error, const QString &text, Level level, const QString &fileName, int fileLine, const QObject *const obj, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Mdt\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{error, }
+\item[{const Q\+String \&}]{text, }
+\item[{{\bf Level}}]{level, }
+\item[{const Q\+String \&}]{file\+Name, }
+\item[{int}]{file\+Line, }
+\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}{}\label{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}
+
+
+Construct a error with error and source set. 
+
+Calling this constructor directly is a bit long. Consider using mdt\+Error\+New\+Q() or mdt\+Error\+New\+T\+Q() macro. 
+
+Definition at line 299 of file Error.\+h.
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error(const Error \&)=default}{Error(const Error &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_error_a7d7baf19eba7c6f5fb446a919fe8ee41}{}\label{class_mdt_1_1_error_a7d7baf19eba7c6f5fb446a919fe8ee41}
+
+
+Construct a copy of other error. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!clear@{clear}}
+\index{clear@{clear}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a77014ce33160e1f01b3fbb3e55f19783}{}\label{class_mdt_1_1_error_a77014ce33160e1f01b3fbb3e55f19783}
+
+
+Clear error. 
+
+Will also free internal resources. After clear, the error is null. 
+
+Definition at line 40 of file Error.\+cpp.
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!commit@{commit}}
+\index{commit@{commit}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{commit()}{commit()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::commit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a1b4a57bd4177d2985abd62b6b49a43f8}{}\label{class_mdt_1_1_error_a1b4a57bd4177d2985abd62b6b49a43f8}
+
+
+Commit error. 
+
+Will use mdt\+::error\+::\+Logger to output the error. 
+
+Definition at line 142 of file Error.\+cpp.
+
+
+
+References Mdt\+::\+Error\+Logger\+::\+Logger\+::log\+Error().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!error@{error}}
+\index{error@{error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{error() const }{error() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Mdt\+::\+Error\+::error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{}\label{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}
+
+
+Get user defined error. 
+
+If no error was set, a default constructed error of type T is returned.
+
+\begin{DoxyPrecond}{Precondition}
+Requested type T must match the one that was stored with \hyperlink{class_mdt_1_1_error_a895930ac30664f54a7f22ae593db53a0}{set\+Error()} 
+\end{DoxyPrecond}
+
+
+Definition at line 369 of file Error.\+h.
+
+
+
+Referenced by from\+Q\+File\+Device().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!file\+Line@{file\+Line}}
+\index{file\+Line@{file\+Line}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{file\+Line() const }{fileLine() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Error\+::file\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{}\label{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}
+
+
+Get error source line. 
+
+
+
+Definition at line 156 of file Error.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error(), and set\+Source().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!file\+Name@{file\+Name}}
+\index{file\+Name@{file\+Name}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{file\+Name() const }{fileName() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+::file\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{}\label{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}
+
+
+Get error source file (name only) 
+
+If no error was set, a empty string is returned.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{is\+Null()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 148 of file Error.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!from\+Q\+File\+Device@{from\+Q\+File\+Device}}
+\index{from\+Q\+File\+Device@{from\+Q\+File\+Device}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{from\+Q\+File\+Device(const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const Q\+String \&class\+Name, const Q\+String \&function\+Name)}{fromQFileDevice(const QFileDevice &fileDevice, const QString &sourceCodeFile, int line, const QString &className, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Mdt\+::\+Error\+::from\+Q\+File\+Device (
+\begin{DoxyParamCaption}
+\item[{const Q\+File\+Device \&}]{file\+Device, }
+\item[{const Q\+String \&}]{source\+Code\+File, }
+\item[{int}]{line, }
+\item[{const Q\+String \&}]{class\+Name, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_ab8b7aaf497879d1ca16784fae96d3bb3}{}\label{class_mdt_1_1_error_ab8b7aaf497879d1ca16784fae96d3bb3}
+
+
+Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape file\+Device}. 
+
+\begin{DoxySeeAlso}{See also}
+mdt\+Error\+From\+Q\+File\+Device() 
+\end{DoxySeeAlso}
+
+
+Definition at line 196 of file Error.\+cpp.
+
+
+
+References error(), set\+Error(), and set\+Source().
+
+
+
+Referenced by from\+Q\+File\+Device().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!from\+Q\+File\+Device@{from\+Q\+File\+Device}}
+\index{from\+Q\+File\+Device@{from\+Q\+File\+Device}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{from\+Q\+File\+Device(const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const Q\+Object $\ast$const obj, const Q\+String \&function\+Name)}{fromQFileDevice(const QFileDevice &fileDevice, const QString &sourceCodeFile, int line, const QObject *const obj, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Mdt\+::\+Error\+::from\+Q\+File\+Device (
+\begin{DoxyParamCaption}
+\item[{const Q\+File\+Device \&}]{file\+Device, }
+\item[{const Q\+String \&}]{source\+Code\+File, }
+\item[{int}]{line, }
+\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}{}\label{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}
+
+
+Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape file\+Device}. 
+
+\begin{DoxySeeAlso}{See also}
+mdt\+Error\+From\+Q\+File\+Device\+Q() 
+\end{DoxySeeAlso}
+
+
+Definition at line 208 of file Error.\+cpp.
+
+
+
+References from\+Q\+File\+Device().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!function\+Name@{function\+Name}}
+\index{function\+Name@{function\+Name}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{function\+Name() const }{functionName() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+::function\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{}\label{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}
+
+
+Ger error source function. 
+
+If no error was set, a empty string is returned.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{is\+Null()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 164 of file Error.\+cpp.
+
+
+
+References Critical, and No\+Error.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!get\+Error\+Stack@{get\+Error\+Stack}}
+\index{get\+Error\+Stack@{get\+Error\+Stack}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{get\+Error\+Stack() const }{getErrorStack() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Error} $>$ Mdt\+::\+Error\+::get\+Error\+Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a6acc6143b706449ba1ff083286d5ccf6}{}\label{class_mdt_1_1_error_a6acc6143b706449ba1ff083286d5ccf6}
+
+
+Get error stack. 
+
+If no error was set, a empty stack is returned.
+
+\begin{DoxyNote}{Note}
+The returned stack is rebuilt at each call. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}{stack\+Error()} 
+
+\hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{is\+Null()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 103 of file Error.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!informative\+Text@{informative\+Text}}
+\index{informative\+Text@{informative\+Text}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{informative\+Text() const }{informativeText() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+::informative\+Text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a12fcf366a6bf68b8daaea4b43526e033}{}\label{class_mdt_1_1_error_a12fcf366a6bf68b8daaea4b43526e033}
+
+
+Get informative text. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a12c8b4de8011d03fa7d45d8e653713ae}{set\+Informative\+Text()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 61 of file Error.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!is\+Null@{is\+Null}}
+\index{is\+Null@{is\+Null}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{is\+Null() const }{isNull() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Error\+::is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{}\label{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}
+
+
+Check if error is null. 
+
+Returns true as long as no error was set, or after clear was called. 
+
+Definition at line 320 of file Error.\+h.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Logger\+::cleanup(), Mdt\+::\+Error\+Logger\+::\+Logger\+::log\+Error(), set\+Informative\+Text(), and update\+Text().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!level@{level}}
+\index{level@{level}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{level() const }{level() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error\+::\+Level} Mdt\+::\+Error\+::level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{}\label{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}
+
+
+Get error level. 
+
+If no error was set, No\+Error is returned.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{is\+Null()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 69 of file Error.\+cpp.
+
+
+
+References No\+Error.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Error@{set\+Error}}
+\index{set\+Error@{set\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{set\+Error(const Q\+String \&text, Level level)}{setError(const QString &text, Level level)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::set\+Error (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{text, }
+\item[{{\bf Level}}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_a895930ac30664f54a7f22ae593db53a0}{}\label{class_mdt_1_1_error_a895930ac30664f54a7f22ae593db53a0}
+
+
+Set error. 
+
+
+
+Definition at line 337 of file Error.\+h.
+
+
+
+Referenced by from\+Q\+File\+Device(), and Mdt\+::\+Error\+Q\+Process\+::from\+Q\+Process().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Error@{set\+Error}}
+\index{set\+Error@{set\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{set\+Error(const T \&error, const Q\+String \&text, Level level)}{setError(const T &error, const QString &text, Level level)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Error\+::set\+Error (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{error, }
+\item[{const Q\+String \&}]{text, }
+\item[{{\bf Level}}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_a3f6e9656170e35c5a198bf05ccec9cd1}{}\label{class_mdt_1_1_error_a3f6e9656170e35c5a198bf05ccec9cd1}
+
+
+Set user defined error. 
+
+Setting error will clear it first.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of user defined error. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em error} & \hyperlink{class_mdt_1_1_error}{Error} of type T that will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+error type T must be default and copy constructible. 
+\end{DoxyPrecond}
+
+
+Definition at line 351 of file Error.\+h.
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Informative\+Text@{set\+Informative\+Text}}
+\index{set\+Informative\+Text@{set\+Informative\+Text}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{set\+Informative\+Text(const Q\+String \&text)}{setInformativeText(const QString &text)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::set\+Informative\+Text (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{text}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a12c8b4de8011d03fa7d45d8e653713ae}{}\label{class_mdt_1_1_error_a12c8b4de8011d03fa7d45d8e653713ae}
+
+
+Set informative text. 
+
+Can be set to give the user a fuller description of the error. This is the same meaning than Q\+Message\+Box, and is used the same way in mdt\+Error\+Dialog.
+
+\begin{DoxyPrecond}{Precondition}
+this error must not be null when calling this function 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a12fcf366a6bf68b8daaea4b43526e033}{informative\+Text()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 53 of file Error.\+cpp.
+
+
+
+References is\+Null(), and text().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Source@{set\+Source}}
+\index{set\+Source@{set\+Source}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{set\+Source(const Q\+String \&file\+Name, int file\+Line, const Q\+String \&class\+Name, const Q\+String \&function\+Name)}{setSource(const QString &fileName, int fileLine, const QString &className, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::set\+Source (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{file\+Name, }
+\item[{int}]{file\+Line, }
+\item[{const Q\+String \&}]{class\+Name, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a785bdfbb360e3a29a465a9baeb1ac58b}{}\label{class_mdt_1_1_error_a785bdfbb360e3a29a465a9baeb1ac58b}
+
+
+Add the source of error. 
+
+It\textquotesingle{}s possible to use the helper macro M\+D\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+T\+\_\+\+S\+R\+C()
+
+\begin{DoxyPrecond}{Precondition}
+this error must not be null when calling this function 
+\end{DoxyPrecond}
+
+
+Definition at line 120 of file Error.\+cpp.
+
+
+
+References file\+Line().
+
+
+
+Referenced by from\+Q\+File\+Device(), Mdt\+::\+Error\+Q\+Process\+::from\+Q\+Process(), and set\+Source().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Source@{set\+Source}}
+\index{set\+Source@{set\+Source}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{set\+Source(const Q\+String \&file\+Name, int file\+Line, const Q\+Object $\ast$const obj, const Q\+String \&function\+Name)}{setSource(const QString &fileName, int fileLine, const QObject *const obj, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::set\+Source (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{file\+Name, }
+\item[{int}]{file\+Line, }
+\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}{}\label{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}
+
+
+Add the source of error. 
+
+Avoids typing class\+Name by hand. Note that this only works on functions that are \hyperlink{class_q_object}{Q\+Object} (subclasses).
+
+It\textquotesingle{}s possible to use the helper macro M\+D\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+T\+\_\+\+S\+R\+C\+\_\+\+Q()
+
+\begin{DoxyPrecond}{Precondition}
+this error must not be null when calling this function 
+\end{DoxyPrecond}
+
+
+Definition at line 134 of file Error.\+cpp.
+
+
+
+References set\+Source().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!stack\+Error@{stack\+Error}}
+\index{stack\+Error@{stack\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{stack\+Error(const Error \&error)}{stackError(const Error &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::stack\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error} \&}]{error}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}{}\label{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}
+
+
+Stack given error. 
+
+\begin{DoxyPrecond}{Precondition}
+this error and given error must not be null 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a6acc6143b706449ba1ff083286d5ccf6}{get\+Error\+Stack()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 85 of file Error.\+cpp.
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!text@{text}}
+\index{text@{text}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{text() const }{text() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+::text (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{}\label{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}
+
+
+Get error text. 
+
+If no error was set, a empty string is returned.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{is\+Null()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 77 of file Error.\+cpp.
+
+
+
+Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error(), set\+Informative\+Text(), and update\+Text().
+
+\index{Mdt\+::\+Error@{Mdt\+::\+Error}!update\+Text@{update\+Text}}
+\index{update\+Text@{update\+Text}!Mdt\+::\+Error@{Mdt\+::\+Error}}
+\subsubsection[{\texorpdfstring{update\+Text(const Q\+String \&text)}{updateText(const QString &text)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::update\+Text (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{text}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_error_a85d4e982ed7972b8d43f78129d6c51e6}{}\label{class_mdt_1_1_error_a85d4e982ed7972b8d43f78129d6c51e6}
+
+
+Update error text. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}{stack\+Error()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 45 of file Error.\+cpp.
+
+
+
+References is\+Null(), and text().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/Error.\+h\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/Error.\+cpp\end{DoxyCompactItemize}

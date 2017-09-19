@@ -1,0 +1,175 @@
+\hypertarget{class_mdt_1_1_abstract_console_application_main_function}{}\section{Mdt\+:\+:Abstract\+Console\+Application\+Main\+Function Class Reference}
+\label{class_mdt_1_1_abstract_console_application_main_function}\index{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}}
+
+
+Abstract base of a main function in Qt console application with a event loop.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Console\+Application\+Main\+Function.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Abstract\+Console\+Application\+Main\+Function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_mdt_1_1_abstract_console_application_main_function__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Abstract\+Console\+Application\+Main\+Function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_mdt_1_1_abstract_console_application_main_function__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_mdt_1_1_abstract_console_application_main_function_a7f00b12d06e341d037cd1a69632b2ac2}{about\+To\+Quit} ()
+\begin{DoxyCompactList}\small\item\em Cleanup code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}{Abstract\+Console\+Application\+Main\+Function} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_mdt_1_1_abstract_console_application_main_function_a34213b6ac2188b3620f5c2f5ce4ee287}{run\+Main} ()=0
+\begin{DoxyCompactList}\small\item\em main function implementation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+String\+List \hyperlink{class_mdt_1_1_abstract_console_application_main_function_a4bfe1909139f3c30b03797f7778290fb}{get\+Arguments} ()
+\begin{DoxyCompactList}\small\item\em Returns the list of command-\/line arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base of a main function in Qt console application with a event loop. 
+
+The class declaration My\+Main\+Function.\+h could look like\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{class }MyMainFunction : \textcolor{keyword}{public} \hyperlink{class_mdt_1_1_abstract_console_application_main_function}{Mdt::AbstractConsoleApplicationMainFunction}
+\{
+ Q\_OBJECT
+
+ \textcolor{keyword}{public}:
+
+  \textcolor{keyword}{explicit} MyMainFunction(\hyperlink{class_q_object}{QObject}* parent = \textcolor{keyword}{nullptr});
+  \textcolor{keywordtype}{int} \hyperlink{class_mdt_1_1_abstract_console_application_main_function_a34213b6ac2188b3620f5c2f5ce4ee287}{runMain}() \textcolor{keyword}{override};
+\};
+\end{DoxyCode}
+
+
+Example of the implementation in My\+Main\+Function.\+cpp\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} MyMainFunction::runMain()
+\{
+  qDebug() << \textcolor{stringliteral}{"My main ..."};
+\}
+\end{DoxyCode}
+
+
+Finaly, in main.\+cpp\+: 
+\begin{DoxyCode}
+Mdt::Application app(argc, argv);
+
+\textcolor{keywordflow}{if}(!app.init())\{
+  \textcolor{keywordflow}{return} 1;
+\}
+\textcolor{comment}{// This will call runMain() once the event loop started}
+MyMainFunction mainImpl;
+
+\textcolor{keywordflow}{return} app.exec();
+\end{DoxyCode}
+ 
+
+Definition at line 65 of file Abstract\+Console\+Application\+Main\+Function.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}!Abstract\+Console\+Application\+Main\+Function@{Abstract\+Console\+Application\+Main\+Function}}
+\index{Abstract\+Console\+Application\+Main\+Function@{Abstract\+Console\+Application\+Main\+Function}!Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}}
+\subsubsection[{\texorpdfstring{Abstract\+Console\+Application\+Main\+Function(\+Q\+Object $\ast$parent=nullptr)}{AbstractConsoleApplicationMainFunction(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Abstract\+Console\+Application\+Main\+Function\+::\+Abstract\+Console\+Application\+Main\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}{}\label{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}
+
+
+Constructor. 
+
+
+
+Definition at line 27 of file Abstract\+Console\+Application\+Main\+Function.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}!about\+To\+Quit@{about\+To\+Quit}}
+\index{about\+To\+Quit@{about\+To\+Quit}!Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}}
+\subsubsection[{\texorpdfstring{about\+To\+Quit}{aboutToQuit}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Abstract\+Console\+Application\+Main\+Function\+::about\+To\+Quit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [slot]}}\hypertarget{class_mdt_1_1_abstract_console_application_main_function_a7f00b12d06e341d037cd1a69632b2ac2}{}\label{class_mdt_1_1_abstract_console_application_main_function_a7f00b12d06e341d037cd1a69632b2ac2}
+
+
+Cleanup code. 
+
+If some cleanup has to be done before the application exists, this function can be implemented. See \hyperlink{class_q_core_application}{Q\+Core\+Application} documentation to know why this is a recommanded way to do cleanup.
+
+This default implementation does nothing. 
+
+Definition at line 41 of file Abstract\+Console\+Application\+Main\+Function.\+cpp.
+
+
+
+References run\+Main().
+
+\index{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}!get\+Arguments@{get\+Arguments}}
+\index{get\+Arguments@{get\+Arguments}!Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}}
+\subsubsection[{\texorpdfstring{get\+Arguments()}{getArguments()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Abstract\+Console\+Application\+Main\+Function\+::get\+Arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_abstract_console_application_main_function_a4bfe1909139f3c30b03797f7778290fb}{}\label{class_mdt_1_1_abstract_console_application_main_function_a4bfe1909139f3c30b03797f7778290fb}
+
+
+Returns the list of command-\/line arguments. 
+
+Returns Q\+Core\+Application\+::arguments(). As stated in \hyperlink{class_q_core_application}{Q\+Core\+Application} documentation, this method is slow, so the result should be stored in a variable if accessed many times (this is wy it is prefixed with get here)
+
+\begin{DoxyPrecond}{Precondition}
+A instance of a \hyperlink{class_q_core_application}{Q\+Core\+Application} (or one of its derivate) must exist. 
+\end{DoxyPrecond}
+
+
+Definition at line 34 of file Abstract\+Console\+Application\+Main\+Function.\+cpp.
+
+\index{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}!run\+Main@{run\+Main}}
+\index{run\+Main@{run\+Main}!Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}}
+\subsubsection[{\texorpdfstring{run\+Main()=0}{runMain()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Mdt\+::\+Abstract\+Console\+Application\+Main\+Function\+::run\+Main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_mdt_1_1_abstract_console_application_main_function_a34213b6ac2188b3620f5c2f5ce4ee287}{}\label{class_mdt_1_1_abstract_console_application_main_function_a34213b6ac2188b3620f5c2f5ce4ee287}
+
+
+main function implementation 
+
+
+
+Referenced by about\+To\+Quit().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Application\+\_\+\+Core/src/\+Mdt/Abstract\+Console\+Application\+Main\+Function.\+h\item 
+libs/\+Application\+\_\+\+Core/src/\+Mdt/Abstract\+Console\+Application\+Main\+Function.\+cpp\end{DoxyCompactItemize}

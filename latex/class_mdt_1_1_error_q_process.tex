@@ -1,0 +1,97 @@
+\hypertarget{class_mdt_1_1_error_q_process}{}\section{Mdt\+:\+:Error\+Q\+Process Class Reference}
+\label{class_mdt_1_1_error_q_process}\index{Mdt\+::\+Error\+Q\+Process@{Mdt\+::\+Error\+Q\+Process}}
+
+
+Translate Q\+Process errors to \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error}.  
+
+
+
+
+{\ttfamily \#include $<$Error\+Q\+Process.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_error_q_process_a2dda98dd359be476ce2039c5a5a9c157}{from\+Q\+Process} (const Q\+Process \&process, const Q\+String \&file, int line, const Q\+String \&class\+Name, const Q\+String \&function\+Name)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape process}. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_error_q_process_a013ef5e5f23c26375845ef9e925adef3}{from\+Q\+Process} (const Q\+Process \&process, const Q\+String \&file, int line, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&function\+Name)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape process}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Translate Q\+Process errors to \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error}. 
+
+\begin{DoxySeeAlso}{See also}
+mdt\+Error\+From\+Q\+Process() 
+
+mdt\+Error\+From\+Q\+Process\+Q() 
+\end{DoxySeeAlso}
+
+
+Definition at line 54 of file Error\+Q\+Process.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Error\+Q\+Process@{Mdt\+::\+Error\+Q\+Process}!from\+Q\+Process@{from\+Q\+Process}}
+\index{from\+Q\+Process@{from\+Q\+Process}!Mdt\+::\+Error\+Q\+Process@{Mdt\+::\+Error\+Q\+Process}}
+\subsubsection[{\texorpdfstring{from\+Q\+Process(const Q\+Process \&process, const Q\+String \&file, int line, const Q\+String \&class\+Name, const Q\+String \&function\+Name)}{fromQProcess(const QProcess &process, const QString &file, int line, const QString &className, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Mdt\+::\+Error\+Q\+Process\+::from\+Q\+Process (
+\begin{DoxyParamCaption}
+\item[{const Q\+Process \&}]{process, }
+\item[{const Q\+String \&}]{file, }
+\item[{int}]{line, }
+\item[{const Q\+String \&}]{class\+Name, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_q_process_a2dda98dd359be476ce2039c5a5a9c157}{}\label{class_mdt_1_1_error_q_process_a2dda98dd359be476ce2039c5a5a9c157}
+
+
+Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape process}. 
+
+\begin{DoxySeeAlso}{See also}
+mdt\+Error\+From\+Q\+Process() 
+\end{DoxySeeAlso}
+
+
+Definition at line 44 of file Error\+Q\+Process.\+cpp.
+
+
+
+References Mdt\+::\+Error\+::set\+Error(), and Mdt\+::\+Error\+::set\+Source().
+
+
+
+Referenced by from\+Q\+Process().
+
+\index{Mdt\+::\+Error\+Q\+Process@{Mdt\+::\+Error\+Q\+Process}!from\+Q\+Process@{from\+Q\+Process}}
+\index{from\+Q\+Process@{from\+Q\+Process}!Mdt\+::\+Error\+Q\+Process@{Mdt\+::\+Error\+Q\+Process}}
+\subsubsection[{\texorpdfstring{from\+Q\+Process(const Q\+Process \&process, const Q\+String \&file, int line, const Q\+Object $\ast$const obj, const Q\+String \&function\+Name)}{fromQProcess(const QProcess &process, const QString &file, int line, const QObject *const obj, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Mdt\+::\+Error\+Q\+Process\+::from\+Q\+Process (
+\begin{DoxyParamCaption}
+\item[{const Q\+Process \&}]{process, }
+\item[{const Q\+String \&}]{file, }
+\item[{int}]{line, }
+\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+String \&}]{function\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_q_process_a013ef5e5f23c26375845ef9e925adef3}{}\label{class_mdt_1_1_error_q_process_a013ef5e5f23c26375845ef9e925adef3}
+
+
+Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape process}. 
+
+\begin{DoxySeeAlso}{See also}
+mdt\+Error\+From\+Q\+Process\+Q() 
+\end{DoxySeeAlso}
+
+
+Definition at line 55 of file Error\+Q\+Process.\+cpp.
+
+
+
+References from\+Q\+Process().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/Error\+Q\+Process.\+h\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/Error\+Q\+Process.\+cpp\end{DoxyCompactItemize}
