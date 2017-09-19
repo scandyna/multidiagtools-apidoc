@@ -232,10 +232,6 @@ Will use mdt\+::error\+::\+Logger to output the error.
 
 Definition at line 142 of file Error.\+cpp.
 
-
-
-References Mdt\+::\+Error\+Logger\+::\+Logger\+::log\+Error().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!error@{error}}
 \index{error@{error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{error() const }{error() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Mdt\+::\+Error\+::error (
@@ -256,10 +252,6 @@ Requested type T must match the one that was stored with \hyperlink{class_mdt_1_
 
 Definition at line 369 of file Error.\+h.
 
-
-
-Referenced by from\+Q\+File\+Device().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!file\+Line@{file\+Line}}
 \index{file\+Line@{file\+Line}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{file\+Line() const }{fileLine() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Error\+::file\+Line (
@@ -274,10 +266,6 @@ Get error source line.
 
 
 Definition at line 156 of file Error.\+cpp.
-
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error(), and set\+Source().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!file\+Name@{file\+Name}}
 \index{file\+Name@{file\+Name}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -298,10 +286,6 @@ If no error was set, a empty string is returned.
 
 
 Definition at line 148 of file Error.\+cpp.
-
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!from\+Q\+File\+Device@{from\+Q\+File\+Device}}
 \index{from\+Q\+File\+Device@{from\+Q\+File\+Device}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -325,14 +309,6 @@ mdt\+Error\+From\+Q\+File\+Device()
 
 Definition at line 196 of file Error.\+cpp.
 
-
-
-References error(), set\+Error(), and set\+Source().
-
-
-
-Referenced by from\+Q\+File\+Device().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!from\+Q\+File\+Device@{from\+Q\+File\+Device}}
 \index{from\+Q\+File\+Device@{from\+Q\+File\+Device}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{from\+Q\+File\+Device(const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const Q\+Object $\ast$const obj, const Q\+String \&function\+Name)}{fromQFileDevice(const QFileDevice &fileDevice, const QString &sourceCodeFile, int line, const QObject *const obj, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error} Mdt\+::\+Error\+::from\+Q\+File\+Device (
@@ -355,10 +331,6 @@ mdt\+Error\+From\+Q\+File\+Device\+Q()
 
 Definition at line 208 of file Error.\+cpp.
 
-
-
-References from\+Q\+File\+Device().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!function\+Name@{function\+Name}}
 \index{function\+Name@{function\+Name}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{function\+Name() const }{functionName() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+::function\+Name (
@@ -378,14 +350,6 @@ If no error was set, a empty string is returned.
 
 
 Definition at line 164 of file Error.\+cpp.
-
-
-
-References Critical, and No\+Error.
-
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!get\+Error\+Stack@{get\+Error\+Stack}}
 \index{get\+Error\+Stack@{get\+Error\+Stack}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -412,10 +376,6 @@ The returned stack is rebuilt at each call.
 
 Definition at line 103 of file Error.\+cpp.
 
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!informative\+Text@{informative\+Text}}
 \index{informative\+Text@{informative\+Text}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{informative\+Text() const }{informativeText() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+::informative\+Text (
@@ -434,10 +394,6 @@ Get informative text.
 
 Definition at line 61 of file Error.\+cpp.
 
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), and Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!is\+Null@{is\+Null}}
 \index{is\+Null@{is\+Null}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{is\+Null() const }{isNull() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Error\+::is\+Null (
@@ -452,10 +408,6 @@ Check if error is null.
 Returns true as long as no error was set, or after clear was called. 
 
 Definition at line 320 of file Error.\+h.
-
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Logger\+::cleanup(), Mdt\+::\+Error\+Logger\+::\+Logger\+::log\+Error(), set\+Informative\+Text(), and update\+Text().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!level@{level}}
 \index{level@{level}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -477,14 +429,6 @@ If no error was set, No\+Error is returned.
 
 Definition at line 69 of file Error.\+cpp.
 
-
-
-References No\+Error.
-
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Error@{set\+Error}}
 \index{set\+Error@{set\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{set\+Error(const Q\+String \&text, Level level)}{setError(const QString &text, Level level)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::set\+Error (
@@ -500,10 +444,6 @@ Set error.
 
 
 Definition at line 337 of file Error.\+h.
-
-
-
-Referenced by from\+Q\+File\+Device(), and Mdt\+::\+Error\+Q\+Process\+::from\+Q\+Process().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Error@{set\+Error}}
 \index{set\+Error@{set\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -560,10 +500,6 @@ this error must not be null when calling this function
 
 Definition at line 53 of file Error.\+cpp.
 
-
-
-References is\+Null(), and text().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Source@{set\+Source}}
 \index{set\+Source@{set\+Source}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{set\+Source(const Q\+String \&file\+Name, int file\+Line, const Q\+String \&class\+Name, const Q\+String \&function\+Name)}{setSource(const QString &fileName, int fileLine, const QString &className, const QString &functionName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::set\+Source (
@@ -586,14 +522,6 @@ this error must not be null when calling this function
 
 
 Definition at line 120 of file Error.\+cpp.
-
-
-
-References file\+Line().
-
-
-
-Referenced by from\+Q\+File\+Device(), Mdt\+::\+Error\+Q\+Process\+::from\+Q\+Process(), and set\+Source().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!set\+Source@{set\+Source}}
 \index{set\+Source@{set\+Source}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -619,10 +547,6 @@ this error must not be null when calling this function
 
 
 Definition at line 134 of file Error.\+cpp.
-
-
-
-References set\+Source().
 
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!stack\+Error@{stack\+Error}}
 \index{stack\+Error@{stack\+Error}!Mdt\+::\+Error@{Mdt\+::\+Error}}
@@ -665,10 +589,6 @@ If no error was set, a empty string is returned.
 
 Definition at line 77 of file Error.\+cpp.
 
-
-
-Referenced by Mdt\+::\+Error\+Logger\+::\+Console\+Backend\+::log\+Error(), Mdt\+::\+Error\+Logger\+::\+File\+Backend\+::log\+Error(), set\+Informative\+Text(), and update\+Text().
-
 \index{Mdt\+::\+Error@{Mdt\+::\+Error}!update\+Text@{update\+Text}}
 \index{update\+Text@{update\+Text}!Mdt\+::\+Error@{Mdt\+::\+Error}}
 \subsubsection[{\texorpdfstring{update\+Text(const Q\+String \&text)}{updateText(const QString &text)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Error\+::update\+Text (
@@ -686,10 +606,6 @@ Update error text.
 
 
 Definition at line 45 of file Error.\+cpp.
-
-
-
-References is\+Null(), and text().
 
 
 
