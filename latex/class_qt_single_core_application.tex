@@ -1,0 +1,167 @@
+\hypertarget{class_qt_single_core_application}{}\section{Qt\+Single\+Core\+Application Class Reference}
+\label{class_qt_single_core_application}\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+
+
+A variant of the \hyperlink{class_qt_single_application}{Qt\+Single\+Application} class for non-\/\+G\+UI applications.  
+
+
+
+
+{\ttfamily \#include $<$qtsinglecoreapplication.\+h$>$}
+
+
+
+Inheritance diagram for Qt\+Single\+Core\+Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_qt_single_core_application__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Qt\+Single\+Core\+Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_qt_single_core_application__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_qt_single_core_application_a07493d0807b216ca870adc6d40f856b0}{send\+Message} (const Q\+String \&message, int timeout=5000)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_qt_single_core_application_a1af66a1770ff5eec8006a26a2ce42ca1}{message\+Received} (const Q\+String \&message)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_qt_single_core_application_a1329cb65a5706c21257f191b9d8b6548}{Qt\+Single\+Core\+Application} (int \&argc, char $\ast$$\ast$argv)
+\item 
+\hyperlink{class_qt_single_core_application_a2c5792a0addef95dd78b37ab55a985a7}{Qt\+Single\+Core\+Application} (const Q\+String \&\hyperlink{class_qt_single_core_application_aad587c2d4536fd153672af7ee0389478}{id}, int \&argc, char $\ast$$\ast$argv)
+\item 
+bool \hyperlink{class_qt_single_core_application_a419bfb7b02f0459f4d207d448bc6c876}{is\+Running} ()
+\item 
+Q\+String \hyperlink{class_qt_single_core_application_aad587c2d4536fd153672af7ee0389478}{id} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A variant of the \hyperlink{class_qt_single_application}{Qt\+Single\+Application} class for non-\/\+G\+UI applications. 
+
+This class is a variant of \hyperlink{class_qt_single_application}{Qt\+Single\+Application} suited for use in console (non-\/\+G\+UI) applications. It is an extension of \hyperlink{class_q_core_application}{Q\+Core\+Application} (instead of \hyperlink{class_q_application}{Q\+Application}). It does not require the Qt\+Gui library.
+
+The A\+PI and usage is identical to \hyperlink{class_qt_single_application}{Qt\+Single\+Application}, except that functions relating to the \char`\"{}activation window\char`\"{} are not present, for obvious reasons. Please refer to the \hyperlink{class_qt_single_application}{Qt\+Single\+Application} documentation for explanation of the usage.
+
+A \hyperlink{class_qt_single_core_application}{Qt\+Single\+Core\+Application} instance can communicate to a \hyperlink{class_qt_single_application}{Qt\+Single\+Application} instance if they share the same application id. Hence, this class can be used to create a light-\/weight command-\/line tool that sends commands to a G\+UI application.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_qt_single_application}{Qt\+Single\+Application} 
+\end{DoxySeeAlso}
+
+
+Definition at line 48 of file qtsinglecoreapplication.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\subsubsection[{\texorpdfstring{Qt\+Single\+Core\+Application(int \&argc, char $\ast$$\ast$argv)}{QtSingleCoreApplication(int &argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}Qt\+Single\+Core\+Application\+::\+Qt\+Single\+Core\+Application (
+\begin{DoxyParamCaption}
+\item[{int \&}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{class_qt_single_core_application_a1329cb65a5706c21257f191b9d8b6548}{}\label{class_qt_single_core_application_a1329cb65a5706c21257f191b9d8b6548}
+Creates a \hyperlink{class_qt_single_core_application}{Qt\+Single\+Core\+Application} object. The application identifier will be Q\+Core\+Application\+::application\+File\+Path(). {\itshape argc} and {\itshape argv} are passed on to the Q\+Core\+Appliation constructor. 
+
+Definition at line 73 of file qtsinglecoreapplication.\+cpp.
+
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\subsubsection[{\texorpdfstring{Qt\+Single\+Core\+Application(const Q\+String \&id, int \&argc, char $\ast$$\ast$argv)}{QtSingleCoreApplication(const QString &id, int &argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}Qt\+Single\+Core\+Application\+::\+Qt\+Single\+Core\+Application (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{app\+Id, }
+\item[{int \&}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{class_qt_single_core_application_a2c5792a0addef95dd78b37ab55a985a7}{}\label{class_qt_single_core_application_a2c5792a0addef95dd78b37ab55a985a7}
+Creates a \hyperlink{class_qt_single_core_application}{Qt\+Single\+Core\+Application} object with the application identifier {\itshape app\+Id}. {\itshape argc} and {\itshape argv} are passed on to the Q\+Core\+Appliation constructor. 
+
+Definition at line 86 of file qtsinglecoreapplication.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!id@{id}}
+\index{id@{id}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\subsubsection[{\texorpdfstring{id() const }{id() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Qt\+Single\+Core\+Application\+::id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_qt_single_core_application_aad587c2d4536fd153672af7ee0389478}{}\label{class_qt_single_core_application_aad587c2d4536fd153672af7ee0389478}
+Returns the application identifier. Two processes with the same identifier will be regarded as instances of the same application. 
+
+Definition at line 136 of file qtsinglecoreapplication.\+cpp.
+
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!is\+Running@{is\+Running}}
+\index{is\+Running@{is\+Running}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\subsubsection[{\texorpdfstring{is\+Running()}{isRunning()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Qt\+Single\+Core\+Application\+::is\+Running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_qt_single_core_application_a419bfb7b02f0459f4d207d448bc6c876}{}\label{class_qt_single_core_application_a419bfb7b02f0459f4d207d448bc6c876}
+Returns true if another instance of this application is running; otherwise false.
+
+This function does not find instances of this application that are being run by a different user (on Windows\+: that are running in another session).
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_qt_single_core_application_a07493d0807b216ca870adc6d40f856b0}{send\+Message()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 105 of file qtsinglecoreapplication.\+cpp.
+
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!message\+Received@{message\+Received}}
+\index{message\+Received@{message\+Received}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\subsubsection[{\texorpdfstring{message\+Received}{messageReceived}}]{\setlength{\rightskip}{0pt plus 5cm}void Qt\+Single\+Core\+Application\+::message\+Received (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\hypertarget{class_qt_single_core_application_a1af66a1770ff5eec8006a26a2ce42ca1}{}\label{class_qt_single_core_application_a1af66a1770ff5eec8006a26a2ce42ca1}
+This signal is emitted when the current instance receives a {\itshape message} from another instance of this application.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_qt_single_core_application_a07493d0807b216ca870adc6d40f856b0}{send\+Message()} 
+\end{DoxySeeAlso}
+\index{Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!Qt\+Single\+Core\+Application@{Qt\+Single\+Core\+Application}}
+\subsubsection[{\texorpdfstring{send\+Message}{sendMessage}}]{\setlength{\rightskip}{0pt plus 5cm}bool Qt\+Single\+Core\+Application\+::send\+Message (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{message, }
+\item[{int}]{timeout = {\ttfamily 5000}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_qt_single_core_application_a07493d0807b216ca870adc6d40f856b0}{}\label{class_qt_single_core_application_a07493d0807b216ca870adc6d40f856b0}
+Tries to send the text {\itshape message} to the currently running instance. The \hyperlink{class_qt_single_core_application}{Qt\+Single\+Core\+Application} object in the running instance will emit the \hyperlink{class_qt_single_core_application_a1af66a1770ff5eec8006a26a2ce42ca1}{message\+Received()} signal when it receives the message.
+
+This function returns true if the message has been sent to, and processed by, the current instance. If there is no instance currently running, or if the running instance fails to process the message within {\itshape timeout} milliseconds, this function return false.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_qt_single_core_application_a419bfb7b02f0459f4d207d448bc6c876}{is\+Running()}, \hyperlink{class_qt_single_core_application_a1af66a1770ff5eec8006a26a2ce42ca1}{message\+Received()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 125 of file qtsinglecoreapplication.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Qt\+Solutions/\+Qt\+Single\+Application\+\_\+\+Core/src/qtsinglecoreapplication.\+h\item 
+libs/\+Qt\+Solutions/\+Qt\+Single\+Application\+\_\+\+Core/src/qtsinglecoreapplication.\+cpp\end{DoxyCompactItemize}

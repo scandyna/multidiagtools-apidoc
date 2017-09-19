@@ -1,3 +1,5 @@
 <map id="QCoreApplication" name="QCoreApplication">
 <area shape="rect" id="node2" href="$class_mdt_1_1_core_application.html" title="CoreApplication adds some helper to QCoreApplication for application initialization. " alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node3" href="$class_qt_single_core_application.html" title="A variant of the QtSingleApplication class for non&#45;GUI applications. " alt="" coords="174,80,338,107"/>
+<area shape="rect" id="node4" href="$class_mdt_1_1_single_core_application.html" title="SingleCoreApplication adds some helper to QtSingleCoreApplication for application initialization..." alt="" coords="166,155,346,181"/>
 </map>
