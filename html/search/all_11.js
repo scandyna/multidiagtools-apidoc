@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['unescapeescapedtokens',['unescapeEscapedTokens',['../namespace_mdt_1_1_algorithm.html#a130525973374548a61151ef433a8534c',1,'Mdt::Algorithm']]],
-  ['unlock',['unlock',['../class_qt_l_p___private_1_1_qt_locked_file.html#abb4d7e6211d9e6e14afaa661818fb2bf',1,'QtLP_Private::QtLockedFile']]],
-  ['updatetext',['updateText',['../class_mdt_1_1_error.html#a85d4e982ed7972b8d43f78129d6c51e6',1,'Mdt::Error']]]
+  ['text',['text',['../class_mdt_1_1_error.html#a99327678615e8f2bddd22cd59482bfc2',1,'Mdt::Error']]],
+  ['todo_20list',['Todo List',['../todo.html',1,'']]],
+  ['todouble',['toDouble',['../class_mdt_1_1_numeric_1_1_double.html#a962b13f89e149e5e7cec93405513479d',1,'Mdt::Numeric::Double']]],
+  ['tr',['tr',['../class_mdt_1_1_error_logger_1_1_backend.html#a4a859ea87b93082e69791bcbd14c1f71',1,'Mdt::ErrorLogger::Backend']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['genericerror',['GenericError',['../struct_mdt_1_1_generic_error.html',1,'Mdt']]]
+  ['filebackend',['FileBackend',['../class_mdt_1_1_error_logger_1_1_file_backend.html',1,'Mdt::ErrorLogger']]]
 ];
