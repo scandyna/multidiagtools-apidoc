@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. " alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node1" href="$class_q_object.html" title="QObject" alt="" coords="5,42,76,69"/>
+<area shape="rect" id="node2" href="$class_mdt_1_1_abstract_console_application_main_function.html" title="Abstract base of a main function in Qt console application with a event loop. " alt="" coords="124,5,337,47"/>
+<area shape="rect" id="node3" href="$class_qt_local_peer.html" title="QtLocalPeer" alt="" coords="183,71,278,98"/>
 </map>

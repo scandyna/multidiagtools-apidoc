@@ -97,7 +97,7 @@ save\+Document()&&Could not save your work to \textquotesingle{}document.\+txt\t
 \end{longtabu}
 In above scenario, the application can build appropriate message because it knows what Disk\+Quota\+Exhausted means. For some other errors (that the application currently not handles), it could also simply display the error returned from save\+Document(). To implement such error stack, simply, at each level, stack a error that a function returns to current error. For example, in write\+To\+File(), if write() fails, we create a new \hyperlink{class_mdt_1_1_error}{Error}, and return it. Then, save\+Document() will fail, create its own \hyperlink{class_mdt_1_1_error}{Error} object, and stack the one returned by write\+To\+File(). To stack a error, use \hyperlink{class_mdt_1_1_error_a4133276f217c5a6dac890a18059607cd}{stack\+Error()} , and use \hyperlink{class_mdt_1_1_error_a6acc6143b706449ba1ff083286d5ccf6}{get\+Error\+Stack()} to get stacked errors back.
 
-If you need to send \hyperlink{class_mdt_1_1_error}{Error} object across threads with Qt signal/slot (queued), \hyperlink{class_mdt_1_1_error}{Error} must be registered with q\+Register\+Meta\+Type(). This is allready done in Mdt\+::\+Application\+::init(). If you don\textquotesingle{}t use Mdt\+::\+Application, don\textquotesingle{}t forget to call q\+Register\+Meta\+Type$<$\+Mdt\+::\+Error$>$() in, f.\+ex., your main() function. 
+If you need to send \hyperlink{class_mdt_1_1_error}{Error} object across threads with Qt signal/slot (queued), \hyperlink{class_mdt_1_1_error}{Error} must be registered with q\+Register\+Meta\+Type(). This is allready done in Mdt\+::\+Application\+::init(). If you don\textquotesingle{}t use \hyperlink{class_mdt_1_1_application}{Mdt\+::\+Application}, don\textquotesingle{}t forget to call q\+Register\+Meta\+Type$<$\+Mdt\+::\+Error$>$() in, f.\+ex., your main() function. 
 
 Definition at line 259 of file Error.\+h.
 
@@ -488,7 +488,7 @@ Definition at line 351 of file Error.\+h.
 
 Set informative text. 
 
-Can be set to give the user a fuller description of the error. This is the same meaning than Q\+Message\+Box, and is used the same way in mdt\+Error\+Dialog.
+Can be set to give the user a fuller description of the error. This is the same meaning than \hyperlink{class_q_message_box}{Q\+Message\+Box}, and is used the same way in mdt\+Error\+Dialog.
 
 \begin{DoxyPrecond}{Precondition}
 this error must not be null when calling this function 

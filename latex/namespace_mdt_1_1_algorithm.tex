@@ -1,0 +1,348 @@
+\hypertarget{namespace_mdt_1_1_algorithm}{}\section{Mdt\+:\+:Algorithm Namespace Reference}
+\label{namespace_mdt_1_1_algorithm}\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+
+
+Some helper that could be usefull.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{namespace_mdt_1_1_algorithm_a0a56e72bba54740c5dc83b59ea1c2d91}{remove\+First\+Last\+Char\+If} (const Q\+String \&str, Q\+Char c)
+\begin{DoxyCompactList}\small\item\em Get a string with first and last char removed in str if they match c. \end{DoxyCompactList}\item 
+int \hyperlink{namespace_mdt_1_1_algorithm_aadf56549e804ffc292f5b61d4872512b}{index\+Of\+First\+Escaped\+Token} (const Q\+String \&str, int from, const std\+::vector$<$ Q\+Char $>$ \&tokens, const Q\+Char \&escape)
+\begin{DoxyCompactList}\small\item\em Find the first token that is escaped in str. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_algorithm_a130525973374548a61151ef433a8534c}{unescape\+Escaped\+Tokens} (const Q\+String \&str, const std\+::vector$<$ Q\+Char $>$ \&tokens, const Q\+Char \&escape)
+\begin{DoxyCompactList}\small\item\em Get a string in which each escaped token is unescaped. \end{DoxyCompactList}\item 
+int \hyperlink{namespace_mdt_1_1_algorithm_a25b3247b25cdf25db6a2641269e37e0d}{index\+Of\+First\+Non\+Escaped\+Token} (const Q\+String \&str, int from, const std\+::vector$<$ Q\+Char $>$ \&tokens, const Q\+Char \&escape)
+\begin{DoxyCompactList}\small\item\em Find the first token that is not escaped in str. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_algorithm_a1b8c9cb581bf7a508e3bab5e91c60370}{replace\+Non\+Escaped\+Tokens} (const Q\+String \&str, const std\+::initializer\+\_\+list$<$ std\+::pair$<$ Q\+Char, Q\+String $>$ $>$ \&replace\+List, const Q\+Char \&escape)
+\begin{DoxyCompactList}\small\item\em Get a string in which each non escaped token is replaced. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Forward\+It , typename Output\+It , typename Unary\+Predicate $>$ }\\Forward\+It \hyperlink{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{move\+If} (Forward\+It first, Forward\+It last, Output\+It d\+\_\+first, Unary\+Predicate p)
+\begin{DoxyCompactList}\small\item\em Move a range of elements to a new location. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Source\+Container , typename Destination\+Container , typename Unary\+Predicate $>$ }\\void \hyperlink{namespace_mdt_1_1_algorithm_a89aa15ad38ca6c49c884319b9585f1f8}{move\+If} (Source\+Container \&source\+Conatiner, Destination\+Container \&destination\+Container, Unary\+Predicate p)
+\begin{DoxyCompactList}\small\item\em Move a range of elements to a new location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some helper that could be usefull. 
+
+\subsection{Function Documentation}
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!index\+Of\+First\+Escaped\+Token@{index\+Of\+First\+Escaped\+Token}}
+\index{index\+Of\+First\+Escaped\+Token@{index\+Of\+First\+Escaped\+Token}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{index\+Of\+First\+Escaped\+Token(const Q\+String \&str, int from, const std\+::vector$<$ Q\+Char $>$ \&tokens, const Q\+Char \&escape)}{indexOfFirstEscapedToken(const QString &str, int from, const std::vector< QChar > &tokens, const QChar &escape)}}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Algorithm\+::index\+Of\+First\+Escaped\+Token (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{str, }
+\item[{int}]{from, }
+\item[{const std\+::vector$<$ Q\+Char $>$ \&}]{tokens, }
+\item[{const Q\+Char \&}]{escape}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_aadf56549e804ffc292f5b61d4872512b}{}\label{namespace_mdt_1_1_algorithm_aadf56549e804ffc292f5b61d4872512b}
+
+
+Find the first token that is escaped in str. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String in which to find token \\
+\hline
+{\em from} & Index in str from which to start \\
+\hline
+{\em tokens} & List of elements that are tokens \\
+\hline
+{\em escape} & Char that is used to escape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+from must be in a valid position in str\+: 0 $<$= from $<$ str length . This implies also that str is not empty. 
+
+tokens must not be a empty list 
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Define what happens when escape is same as a token \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+The position of escape that matched a token, or -\/1 if no token was found.
+\end{DoxyReturn}
+Example\+: 
+\begin{DoxyCode}
+QString str = \textcolor{stringliteral}{"A?B\(\backslash\)\(\backslash\)?CD\(\backslash\)\(\backslash\)?E"};
+\textcolor{keywordtype}{int} i;
+
+i = \hyperlink{namespace_mdt_1_1_algorithm_aadf56549e804ffc292f5b61d4872512b}{indexOfFirstEscapedToken}(str, 0, \{\textcolor{charliteral}{'?'},\textcolor{charliteral}{'*'}\}, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'});
+\textcolor{comment}{// i == 3}
+
+i = \hyperlink{namespace_mdt_1_1_algorithm_aadf56549e804ffc292f5b61d4872512b}{indexOfFirstEscapedToken}(str, 4, \{\textcolor{charliteral}{'?'},\textcolor{charliteral}{'*'}\}, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'});
+\textcolor{comment}{// i == 7}
+\end{DoxyCode}
+ 
+
+Definition at line 43 of file Algorithm.\+cpp.
+
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!index\+Of\+First\+Non\+Escaped\+Token@{index\+Of\+First\+Non\+Escaped\+Token}}
+\index{index\+Of\+First\+Non\+Escaped\+Token@{index\+Of\+First\+Non\+Escaped\+Token}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{index\+Of\+First\+Non\+Escaped\+Token(const Q\+String \&str, int from, const std\+::vector$<$ Q\+Char $>$ \&tokens, const Q\+Char \&escape)}{indexOfFirstNonEscapedToken(const QString &str, int from, const std::vector< QChar > &tokens, const QChar &escape)}}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Algorithm\+::index\+Of\+First\+Non\+Escaped\+Token (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{str, }
+\item[{int}]{from, }
+\item[{const std\+::vector$<$ Q\+Char $>$ \&}]{tokens, }
+\item[{const Q\+Char \&}]{escape}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_a25b3247b25cdf25db6a2641269e37e0d}{}\label{namespace_mdt_1_1_algorithm_a25b3247b25cdf25db6a2641269e37e0d}
+
+
+Find the first token that is not escaped in str. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String in which to find token \\
+\hline
+{\em from} & Index in str from which to start \\
+\hline
+{\em tokens} & List of elements that are tokens \\
+\hline
+{\em escape} & Char that is used to escape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+from must be in a valid position in str\+: 0 $<$= from $<$ str length . This implies also that str is not empty. 
+
+tokens must not be a empty list 
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000002}{Todo}]Define what happens when escape is same as a token \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+The position that matched, or -\/1 if no token was found.
+\end{DoxyReturn}
+Example\+: 
+\begin{DoxyCode}
+QString str = \textcolor{stringliteral}{"A?B\(\backslash\)\(\backslash\)?C?"};
+\textcolor{keywordtype}{int} i;
+
+i = \hyperlink{namespace_mdt_1_1_algorithm_a25b3247b25cdf25db6a2641269e37e0d}{indexOfFirstNonEscapedToken}(str, 0, \{\textcolor{charliteral}{'?'},\textcolor{charliteral}{'*'}\}, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'});
+\textcolor{comment}{// i == 1}
+
+i = \hyperlink{namespace_mdt_1_1_algorithm_a25b3247b25cdf25db6a2641269e37e0d}{indexOfFirstNonEscapedToken}(str, 2, \{\textcolor{charliteral}{'?'},\textcolor{charliteral}{'*'}\}, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'});
+\textcolor{comment}{// i == 6}
+\end{DoxyCode}
+ 
+
+Definition at line 87 of file Algorithm.\+cpp.
+
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!move\+If@{move\+If}}
+\index{move\+If@{move\+If}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{move\+If(\+Forward\+It first, Forward\+It last, Output\+It d\+\_\+first, Unary\+Predicate p)}{moveIf(ForwardIt first, ForwardIt last, OutputIt d_first, UnaryPredicate p)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Forward\+It , typename Output\+It , typename Unary\+Predicate $>$ Forward\+It Mdt\+::\+Algorithm\+::move\+If (
+\begin{DoxyParamCaption}
+\item[{Forward\+It}]{first, }
+\item[{Forward\+It}]{last, }
+\item[{Output\+It}]{d\+\_\+first, }
+\item[{Unary\+Predicate}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{}\label{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}
+
+
+Move a range of elements to a new location. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000003}{Todo}]Add \hyperlink{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{move\+If()} in \hyperlink{namespace_mdt_1_1_algorithm}{Mdt\+::\+Algorithm}\+:\end{DoxyRefDesc}
+
+
+\begin{DoxyNote}{Note}
+Probably not a good idea
+\end{DoxyNote}
+
+\begin{DoxyItemize}
+\item Internaly, use std\+::partition
+\item Explain what Source\+Container requires\+: iterator, begin(), end()
+\item Explain what Destination\+Container requires\+: iterator, compatible with std\+::back\+\_\+inserter, erase(const\+\_\+iterator first, const\+\_\+iterator last) erase\+: Q\+Vector has erase(iterator first, iterator last), check.
+\end{DoxyItemize}
+
+template$<$typename Forward\+It, typename Output\+It, typename Unary\+Predicate$>$ void \hyperlink{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{move\+If(\+Forward\+It first, Forward\+It last, Output\+It d\+\_\+first, Unary\+Predicate p)};
+
+template$<$typename Source\+Container, typename Destination\+Container, typename Unary\+Predicate$>$ void \hyperlink{namespace_mdt_1_1_algorithm_a89aa15ad38ca6c49c884319b9585f1f8}{move\+If(\+Source\+Container \& source\+Conatiner, Destination\+Container \& destination\+Container, Unary\+Predicate p)};
+
+Move the elements, for which the predicate {\itshape p} returns true, from range \mbox{[}{\itshape first}, {\itshape last}) to range {\itshape d\+\_\+first} .
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The beginnig of the source range \\
+\hline
+{\em last} & The end of the source range \\
+\hline
+{\em d\+\_\+first} & \\
+\hline
+{\em p} & The unary predicate which returns true if a element must be moved. The signature of the predicate function should be equivalent to the following\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} pred(\textcolor{keyword}{const} Type & value);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A iterator past the end of the new source range. 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+{\itshape first} and {\itshape last} must meet the requirement of \href{http://en.cppreference.com/w/cpp/concept/ValueSwappable}{\tt Value\+Swappable} and \href{http://en.cppreference.com/w/cpp/concept/ForwardIterator}{\tt Forward\+Iterator} 
+
+{\itshape d\+\_\+first} must meet the requirement of \href{http://en.cppreference.com/w/cpp/concept/OutputIterator}{\tt Output\+Iterator}
+\end{DoxyPrecond}
+Example\+: 
+\begin{DoxyCode}
+QStringList sourceList\{\textcolor{stringliteral}{"A"},\textcolor{stringliteral}{"B"},\textcolor{stringliteral}{"C"}\};
+QStringList destinationList;
+
+\textcolor{keyword}{const} \textcolor{keyword}{auto} predicate = [](\textcolor{keyword}{const} QString & value)\{
+  \textcolor{keywordflow}{return} value == QLatin1String(\textcolor{stringliteral}{"B"});
+\};
+\textcolor{keyword}{auto} it = \hyperlink{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{Mdt::Algorithm::moveIf}(sourceList.cbegin(), sourceList.cend(), 
+      std::back\_inserter(destinationList), predicate);
+sourceList.erase(it, sourceList.cend());
+\end{DoxyCode}
+ source\+List will contain A,C abd destination\+List will contain B .
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]Check, think that cbegin()/cend() will not work\end{DoxyRefDesc}
+
+
+\begin{DoxySeeAlso}{See also}
+void \hyperlink{namespace_mdt_1_1_algorithm_a89aa15ad38ca6c49c884319b9585f1f8}{move\+If(\+Source\+Container \&, Destination\+Container \&, Unary\+Predicate)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 187 of file Algorithm.\+h.
+
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!move\+If@{move\+If}}
+\index{move\+If@{move\+If}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{move\+If(\+Source\+Container \&source\+Conatiner, Destination\+Container \&destination\+Container, Unary\+Predicate p)}{moveIf(SourceContainer &sourceConatiner, DestinationContainer &destinationContainer, UnaryPredicate p)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Source\+Container , typename Destination\+Container , typename Unary\+Predicate $>$ void Mdt\+::\+Algorithm\+::move\+If (
+\begin{DoxyParamCaption}
+\item[{Source\+Container \&}]{source\+Conatiner, }
+\item[{Destination\+Container \&}]{destination\+Container, }
+\item[{Unary\+Predicate}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_a89aa15ad38ca6c49c884319b9585f1f8}{}\label{namespace_mdt_1_1_algorithm_a89aa15ad38ca6c49c884319b9585f1f8}
+
+
+Move a range of elements to a new location. 
+
+Move the elements, for which the predicate {\itshape p} returns true, from {\itshape source\+Conatiner} to {\itshape destination\+Container} .
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The unary predicate which returns true if a element must be moved. The signature of the predicate function should be equivalent to the following\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} pred(\textcolor{keyword}{const} Type & value);
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape Source\+Container} requires S\+TL compatible begin(), end() and erase() methods. 
+
+{\itshape Destination\+Container} requires a push\+\_\+back() method that can be used by std\+::back\+\_\+inserter .
+\end{DoxyPrecond}
+Example\+: 
+\begin{DoxyCode}
+QStringList sourceList\{\textcolor{stringliteral}{"A"},\textcolor{stringliteral}{"B"},\textcolor{stringliteral}{"C"}\};
+QStringList destinationList;
+
+\textcolor{keyword}{const} \textcolor{keyword}{auto} predicate = [](\textcolor{keyword}{const} QString & value)\{
+  \textcolor{keywordflow}{return} value == QLatin1String(\textcolor{stringliteral}{"B"});
+\};
+\hyperlink{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{Mdt::Algorithm::moveIf}(sourceList, destinationList, predicate);
+\end{DoxyCode}
+ source\+List will contain A,C abd destination\+List will contain B .
+
+\begin{DoxySeeAlso}{See also}
+Forward\+It \hyperlink{namespace_mdt_1_1_algorithm_a1f739be25cc7de2c30a21b85d9b25f0a}{move\+If(\+Forward\+It, Forward\+It, Output\+It, Unary\+Predicate)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 224 of file Algorithm.\+h.
+
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!remove\+First\+Last\+Char\+If@{remove\+First\+Last\+Char\+If}}
+\index{remove\+First\+Last\+Char\+If@{remove\+First\+Last\+Char\+If}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{remove\+First\+Last\+Char\+If(const Q\+String \&str, Q\+Char c)}{removeFirstLastCharIf(const QString &str, QChar c)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Algorithm\+::remove\+First\+Last\+Char\+If (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{str, }
+\item[{Q\+Char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_a0a56e72bba54740c5dc83b59ea1c2d91}{}\label{namespace_mdt_1_1_algorithm_a0a56e72bba54740c5dc83b59ea1c2d91}
+
+
+Get a string with first and last char removed in str if they match c. 
+
+
+
+Definition at line 29 of file Algorithm.\+cpp.
+
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!replace\+Non\+Escaped\+Tokens@{replace\+Non\+Escaped\+Tokens}}
+\index{replace\+Non\+Escaped\+Tokens@{replace\+Non\+Escaped\+Tokens}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{replace\+Non\+Escaped\+Tokens(const Q\+String \&str, const std\+::initializer\+\_\+list$<$ std\+::pair$<$ Q\+Char, Q\+String $>$ $>$ \&replace\+List, const Q\+Char \&escape)}{replaceNonEscapedTokens(const QString &str, const std::initializer_list< std::pair< QChar, QString > > &replaceList, const QChar &escape)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Algorithm\+::replace\+Non\+Escaped\+Tokens (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{str, }
+\item[{const std\+::initializer\+\_\+list$<$ std\+::pair$<$ Q\+Char, Q\+String $>$ $>$ \&}]{replace\+List, }
+\item[{const Q\+Char \&}]{escape}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_a1b8c9cb581bf7a508e3bab5e91c60370}{}\label{namespace_mdt_1_1_algorithm_a1b8c9cb581bf7a508e3bab5e91c60370}
+
+
+Get a string in which each non escaped token is replaced. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String in which to search tokens to replace \\
+\hline
+{\em replace\+List} & List of replacement par. For each pair, first is the token to match and second is its replacement \\
+\hline
+{\em escape} & Char that is used to escape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+str with tokens replaced
+\end{DoxyReturn}
+Example\+: 
+\begin{DoxyCode}
+QString str = \textcolor{stringliteral}{"A*B?C\(\backslash\)\(\backslash\)?D"};
+
+str = \hyperlink{namespace_mdt_1_1_algorithm_a1b8c9cb581bf7a508e3bab5e91c60370}{replaceNonEscapedTokens}(str, \{\{\textcolor{charliteral}{'?'},\textcolor{stringliteral}{"."}\},\{\textcolor{charliteral}{'*'},\textcolor{stringliteral}{".*"}\}\}, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} );
+\textcolor{comment}{// str == "A%B\_C\(\backslash\)\(\backslash\)?D"}
+\end{DoxyCode}
+ 
+
+Definition at line 119 of file Algorithm.\+cpp.
+
+\index{Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}!unescape\+Escaped\+Tokens@{unescape\+Escaped\+Tokens}}
+\index{unescape\+Escaped\+Tokens@{unescape\+Escaped\+Tokens}!Mdt\+::\+Algorithm@{Mdt\+::\+Algorithm}}
+\subsubsection[{\texorpdfstring{unescape\+Escaped\+Tokens(const Q\+String \&str, const std\+::vector$<$ Q\+Char $>$ \&tokens, const Q\+Char \&escape)}{unescapeEscapedTokens(const QString &str, const std::vector< QChar > &tokens, const QChar &escape)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Algorithm\+::unescape\+Escaped\+Tokens (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{str, }
+\item[{const std\+::vector$<$ Q\+Char $>$ \&}]{tokens, }
+\item[{const Q\+Char \&}]{escape}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_algorithm_a130525973374548a61151ef433a8534c}{}\label{namespace_mdt_1_1_algorithm_a130525973374548a61151ef433a8534c}
+
+
+Get a string in which each escaped token is unescaped. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String in which to find escaped tokens \\
+\hline
+{\em tokens} & List of elements that are tokens \\
+\hline
+{\em escape} & Char that is used to escape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+str with tokens unescaped
+\end{DoxyReturn}
+Example\+: 
+\begin{DoxyCode}
+QString str = \textcolor{stringliteral}{"A*B?C\(\backslash\)\(\backslash\)?D"};
+
+str = \hyperlink{namespace_mdt_1_1_algorithm_a130525973374548a61151ef433a8534c}{unescapeEscapedTokens}(str, \{\textcolor{charliteral}{'?'},\textcolor{stringliteral}{"*"}\}, \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} );
+\textcolor{comment}{// str == "A*B?C?D"}
+\end{DoxyCode}
+ 
+
+Definition at line 66 of file Algorithm.\+cpp.
+
