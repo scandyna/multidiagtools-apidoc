@@ -1,0 +1,431 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Path\+List Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_path_list}\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+
+
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} contains a list of paths.  
+
+
+
+
+{\ttfamily \#include $<$Path\+List.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}{const\+\_\+iterator} = Q\+String\+List\+::const\+\_\+iterator
+\begin{DoxyCompactList}\small\item\em S\+T\+L-\/style const iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a4a415acb1aa87350536e9e34980ed7fe}{Path\+List} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a empty path list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_adc70e99b4aabb7edd3c6ad03a15117a8}{Path\+List} (std\+::initializer\+\_\+list$<$ Q\+String $>$ list)
+\begin{DoxyCompactList}\small\item\em Construct a path list from {\itshape list}. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a904588c5a1ad74269af5418749e6f8fc}{Path\+List} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&)=default
+\begin{DoxyCompactList}\small\item\em Copy construct a path list from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a5be033c921bce08dff33e25122ea3def}{operator=} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&)=default
+\begin{DoxyCompactList}\small\item\em Assign a path list to this one by copy. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_aa18f629ded1d797c13d61165b8749bf6}{Path\+List} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move construct a path list from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a8f96ea72207a6a869edeff57dbeed43a}{operator=} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Assign a path list to this one by move. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a2d8d99897e5a693e761f6df4523b115c}{append\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a path to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a1d83d10599fac6d015a6779153364ab3}{append\+Path\+List} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&path\+List)
+\begin{DoxyCompactList}\small\item\em Add a path list to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a3fcd8dbdb27b4ead271623a46fa81b38}{prepend\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a path to the beginning of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a681de54da92349f89f1df37c876e0c67}{prepend\+Path\+List} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&path\+List)
+\begin{DoxyCompactList}\small\item\em Add a path list to the beginning of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a341e4b7de4f7c6ed11769bd4449aa013}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear this path list. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_afd40c0f5d21c285bb5f1778a8832167e}{to\+String\+List} () const 
+\begin{DoxyCompactList}\small\item\em Get a list of strings for this list. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_ae2b68179e5536ee2bc063b133f88bb4a}{is\+Empty} () const 
+\begin{DoxyCompactList}\small\item\em Check if this path list is empty. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a13c645c41b4492ab0d10b887cb77e739}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the first item in the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a980da2988f38bf64bf76f6b61b572582}{cbegin} () const 
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the first item in the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_ab65fbf7392d22bf249583ff1aefd3f78}{end} () const 
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the last item in the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a0a36320111aac2c79060dbe778286f54}{cend} () const 
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the last item in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_aa21f8eef32f3c07d2c54c949a219d7b7}{from\+String\+List} (const Q\+String\+List \&paths)
+\begin{DoxyCompactList}\small\item\em Get a path list from a string list. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a71377c7947695d47b9ed88e1ace136d8}{get\+System\+Executable\+Path\+List} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system executable paths. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a50b46470e23ed409806563b3a49655e4}{get\+System\+Library\+Path\+List} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system library paths. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_aaad86a05cd05cd43a059ce4faae98fb2}{get\+System\+Library\+Known\+Path\+List\+Linux} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system library paths for Linux. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list_a94b801e76dc61dac792299af2acf1bd5}{get\+System\+Library\+Known\+Path\+List\+Windows} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system library paths for Windows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} contains a list of paths. 
+
+Definition at line 33 of file Path\+List.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{const\+\_\+iterator}{const_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::const\+\_\+iterator} =  Q\+String\+List\+::const\+\_\+iterator}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a2666c4c9348c4f7a28014d4de9599717}
+
+
+S\+T\+L-\/style const iterator. 
+
+
+
+Definition at line 39 of file Path\+List.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!Path\+List@{Path\+List}}
+\index{Path\+List@{Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{Path\+List()=default}{PathList()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::\+Path\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a4a415acb1aa87350536e9e34980ed7fe}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a4a415acb1aa87350536e9e34980ed7fe}
+
+
+Construct a empty path list. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!Path\+List@{Path\+List}}
+\index{Path\+List@{Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{Path\+List(std\+::initializer\+\_\+list$<$ Q\+String $>$ list)}{PathList(std::initializer_list< QString > list)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ Q\+String $>$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_adc70e99b4aabb7edd3c6ad03a15117a8}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_adc70e99b4aabb7edd3c6ad03a15117a8}
+
+
+Construct a path list from {\itshape list}. 
+
+
+
+Definition at line 47 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!Path\+List@{Path\+List}}
+\index{Path\+List@{Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{Path\+List(const Path\+List \&)=default}{PathList(const PathList &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a904588c5a1ad74269af5418749e6f8fc}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a904588c5a1ad74269af5418749e6f8fc}
+
+
+Copy construct a path list from a other. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!Path\+List@{Path\+List}}
+\index{Path\+List@{Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{Path\+List(\+Path\+List \&\&)=default}{PathList(PathList &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Path\+List} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_aa18f629ded1d797c13d61165b8749bf6}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_aa18f629ded1d797c13d61165b8749bf6}
+
+
+Move construct a path list from a other. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!append\+Path@{append\+Path}}
+\index{append\+Path@{append\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{append\+Path(const Q\+String \&path)}{appendPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::append\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a2d8d99897e5a693e761f6df4523b115c}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a2d8d99897e5a693e761f6df4523b115c}
+
+
+Add a path to the end of this list. 
+
+If {\itshape path} allready exists in this list, it will be moved to the end.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not be a empty string 
+\end{DoxyPrecond}
+
+
+Definition at line 33 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!append\+Path\+List@{append\+Path\+List}}
+\index{append\+Path\+List@{append\+Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{append\+Path\+List(const Path\+List \&path\+List)}{appendPathList(const PathList &pathList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::append\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{path\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a1d83d10599fac6d015a6779153364ab3}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a1d83d10599fac6d015a6779153364ab3}
+
+
+Add a path list to the end of this list. 
+
+If a path in {\itshape path\+List} allready exists in this list, it will be moved to the end.
+
+If {\itshape path\+List} contains a empty path, it will not be added to this list. 
+
+Definition at line 41 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!begin@{begin}}
+\index{begin@{begin}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a13c645c41b4492ab0d10b887cb77e739}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a13c645c41b4492ab0d10b887cb77e739}
+
+
+Returns a const S\+T\+L-\/style iterator pointing to the first item in the list. 
+
+
+
+Definition at line 133 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{cbegin() const }{cbegin() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::cbegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a980da2988f38bf64bf76f6b61b572582}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a980da2988f38bf64bf76f6b61b572582}
+
+
+Returns a const S\+T\+L-\/style iterator pointing to the first item in the list. 
+
+
+
+Definition at line 140 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!cend@{cend}}
+\index{cend@{cend}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{cend() const }{cend() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::cend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a0a36320111aac2c79060dbe778286f54}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a0a36320111aac2c79060dbe778286f54}
+
+
+Returns a const S\+T\+L-\/style iterator pointing to the last item in the list. 
+
+
+
+Definition at line 154 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!clear@{clear}}
+\index{clear@{clear}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a341e4b7de4f7c6ed11769bd4449aa013}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a341e4b7de4f7c6ed11769bd4449aa013}
+
+
+Clear this path list. 
+
+
+
+Definition at line 70 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!end@{end}}
+\index{end@{end}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_ab65fbf7392d22bf249583ff1aefd3f78}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_ab65fbf7392d22bf249583ff1aefd3f78}
+
+
+Returns a const S\+T\+L-\/style iterator pointing to the last item in the list. 
+
+
+
+Definition at line 147 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!from\+String\+List@{from\+String\+List}}
+\index{from\+String\+List@{from\+String\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{from\+String\+List(const Q\+String\+List \&paths)}{fromStringList(const QStringList &paths)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Path\+List} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::from\+String\+List (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+List \&}]{paths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_aa21f8eef32f3c07d2c54c949a219d7b7}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_aa21f8eef32f3c07d2c54c949a219d7b7}
+
+
+Get a path list from a string list. 
+
+
+
+Definition at line 119 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!get\+System\+Executable\+Path\+List@{get\+System\+Executable\+Path\+List}}
+\index{get\+System\+Executable\+Path\+List@{get\+System\+Executable\+Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Executable\+Path\+List()}{getSystemExecutablePathList()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::get\+System\+Executable\+Path\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a71377c7947695d47b9ed88e1ace136d8}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a71377c7947695d47b9ed88e1ace136d8}
+
+
+Get a list of system executable paths. 
+
+Will get paths from the P\+A\+TH environment variable, which should be set on most operating systems.
+
+\begin{DoxyNote}{Note}
+The list of paths is built at each call of this method 
+\end{DoxyNote}
+
+
+Definition at line 75 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!get\+System\+Library\+Known\+Path\+List\+Linux@{get\+System\+Library\+Known\+Path\+List\+Linux}}
+\index{get\+System\+Library\+Known\+Path\+List\+Linux@{get\+System\+Library\+Known\+Path\+List\+Linux}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Library\+Known\+Path\+List\+Linux()}{getSystemLibraryKnownPathListLinux()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::get\+System\+Library\+Known\+Path\+List\+Linux (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_aaad86a05cd05cd43a059ce4faae98fb2}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_aaad86a05cd05cd43a059ce4faae98fb2}
+
+
+Get a list of system library paths for Linux. 
+
+Returns a hard-\/coded list of system library paths that are known to exist on certains Linux distributions 
+
+Definition at line 111 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!get\+System\+Library\+Known\+Path\+List\+Windows@{get\+System\+Library\+Known\+Path\+List\+Windows}}
+\index{get\+System\+Library\+Known\+Path\+List\+Windows@{get\+System\+Library\+Known\+Path\+List\+Windows}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Library\+Known\+Path\+List\+Windows()}{getSystemLibraryKnownPathListWindows()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::get\+System\+Library\+Known\+Path\+List\+Windows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a94b801e76dc61dac792299af2acf1bd5}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a94b801e76dc61dac792299af2acf1bd5}
+
+
+Get a list of system library paths for Windows. 
+
+Returns a hard-\/coded list of system library paths that are known to exist Windows 
+
+Definition at line 116 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!get\+System\+Library\+Path\+List@{get\+System\+Library\+Path\+List}}
+\index{get\+System\+Library\+Path\+List@{get\+System\+Library\+Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Library\+Path\+List()}{getSystemLibraryPathList()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::get\+System\+Library\+Path\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a50b46470e23ed409806563b3a49655e4}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a50b46470e23ed409806563b3a49655e4}
+
+
+Get a list of system library paths. 
+
+\begin{DoxyNote}{Note}
+The list of paths is built at each call of this method 
+\end{DoxyNote}
+
+
+Definition at line 93 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{is\+Empty() const }{isEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_ae2b68179e5536ee2bc063b133f88bb4a}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_ae2b68179e5536ee2bc063b133f88bb4a}
+
+
+Check if this path list is empty. 
+
+
+
+Definition at line 126 of file Path\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{operator=(const Path\+List \&)=default}{operator=(const PathList &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List}\& Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a5be033c921bce08dff33e25122ea3def}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a5be033c921bce08dff33e25122ea3def}
+
+
+Assign a path list to this one by copy. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{operator=(\+Path\+List \&\&)=default}{operator=(PathList &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List}\& Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Path\+List} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a8f96ea72207a6a869edeff57dbeed43a}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a8f96ea72207a6a869edeff57dbeed43a}
+
+
+Assign a path list to this one by move. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!prepend\+Path@{prepend\+Path}}
+\index{prepend\+Path@{prepend\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{prepend\+Path(const Q\+String \&path)}{prependPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::prepend\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a3fcd8dbdb27b4ead271623a46fa81b38}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a3fcd8dbdb27b4ead271623a46fa81b38}
+
+
+Add a path to the beginning of this list. 
+
+If {\itshape path} allready exists in this list, it will be moved to the beginning.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not be a empty string 
+\end{DoxyPrecond}
+
+
+Definition at line 50 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!prepend\+Path\+List@{prepend\+Path\+List}}
+\index{prepend\+Path\+List@{prepend\+Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{prepend\+Path\+List(const Path\+List \&path\+List)}{prependPathList(const PathList &pathList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::prepend\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{path\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_a681de54da92349f89f1df37c876e0c67}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_a681de54da92349f89f1df37c876e0c67}
+
+
+Add a path list to the beginning of this list. 
+
+If a path in {\itshape path\+List} allready exists in this list, it will be moved to the beginning.
+
+If {\itshape path\+List} contains a empty path, it will not be added to this list. 
+
+Definition at line 58 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}!to\+String\+List@{to\+String\+List}}
+\index{to\+String\+List@{to\+String\+List}!Mdt\+::\+Deploy\+Utils\+::\+Path\+List@{Mdt\+::\+Deploy\+Utils\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{to\+String\+List() const }{toStringList() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Deploy\+Utils\+::\+Path\+List\+::to\+String\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_path_list_afd40c0f5d21c285bb5f1778a8832167e}{}\label{class_mdt_1_1_deploy_utils_1_1_path_list_afd40c0f5d21c285bb5f1778a8832167e}
+
+
+Get a list of strings for this list. 
+
+
+
+Definition at line 112 of file Path\+List.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Path\+List.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Path\+List.\+cpp\end{DoxyCompactItemize}

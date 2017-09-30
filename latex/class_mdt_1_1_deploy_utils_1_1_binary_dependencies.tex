@@ -1,0 +1,190 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies}\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+
+
+Find dependencies for a executable or a library.  
+
+
+
+
+{\ttfamily \#include $<$Binary\+Dependencies.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_aa4decd7ce7db7292738f6d300445e6b0}{Binary\+Dependencies} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a6bb36d0457ccd40462edb70cefc25bba}{$\sim$\+Binary\+Dependencies} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ab57081aeb3581d58f5677129ce564013}{find\+Dependencies} (const Q\+String \&binary\+File\+Path, const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&search\+First\+Path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find dependencies for a executable or a library. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a6b2116711ce9bbc3b3523eac16af28ec}{find\+Dependencies} (const Q\+String\+List \&binaries\+File\+Paths, const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&search\+First\+Path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find dependencies for a list of executables and/or libraries. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a99b12cd9e28d27d33d416a51e116f54e}{find\+Dependencies} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries, const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&search\+First\+Path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find dependencies for a lits of libraries. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a53e68f923a4c13493eba8990eaf6b5ef}{dependencies} () const 
+\begin{DoxyCompactList}\small\item\em Get dependencies. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ada341a03a0f42c02cf0d23f82e21f58e}{last\+Error} () const 
+\begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Find dependencies for a executable or a library. 
+
+Definition at line 40 of file Binary\+Dependencies.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!Binary\+Dependencies@{Binary\+Dependencies}}
+\index{Binary\+Dependencies@{Binary\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{Binary\+Dependencies(\+Q\+Object $\ast$parent=nullptr)}{BinaryDependencies(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::\+Binary\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_aa4decd7ce7db7292738f6d300445e6b0}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_aa4decd7ce7db7292738f6d300445e6b0}
+
+
+Constructor. 
+
+
+
+Definition at line 35 of file Binary\+Dependencies.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!````~Binary\+Dependencies@{$\sim$\+Binary\+Dependencies}}
+\index{````~Binary\+Dependencies@{$\sim$\+Binary\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{$\sim$\+Binary\+Dependencies()}{~BinaryDependencies()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::$\sim$\+Binary\+Dependencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a6bb36d0457ccd40462edb70cefc25bba}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a6bb36d0457ccd40462edb70cefc25bba}
+
+
+Destructor. 
+
+
+
+Definition at line 40 of file Binary\+Dependencies.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{dependencies() const }{dependencies() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Info\+List} Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::dependencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a53e68f923a4c13493eba8990eaf6b5ef}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a53e68f923a4c13493eba8990eaf6b5ef}
+
+
+Get dependencies. 
+
+
+
+Definition at line 83 of file Binary\+Dependencies.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Q\+String \&binary\+File\+Path, const Path\+List \&search\+First\+Path\+Prefix\+List)}{findDependencies(const QString &binaryFilePath, const PathList &searchFirstPathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path, }
+\item[{const {\bf Path\+List} \&}]{search\+First\+Path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ab57081aeb3581d58f5677129ce564013}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ab57081aeb3581d58f5677129ce564013}
+
+
+Find dependencies for a executable or a library. 
+
+For target platforms that do not support R\+P\+A\+TH (like D\+LL based systems), dependencies must be searched in several directories. Dependning on implementation, dependencies will be searched in the directory of {\itshape binary\+File\+Path} first. Then, dependencies will be searched, for each path in {\itshape search\+First\+Path\+Prefix\+List} , in known subdirectories (like lib, bin, qt5/lib, qt5/bin). Finally, depending of the implementation, dependencies can also be serached in in system paths. 
+
+Definition at line 44 of file Binary\+Dependencies.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Q\+String\+List \&binaries\+File\+Paths, const Path\+List \&search\+First\+Path\+Prefix\+List)}{findDependencies(const QStringList &binariesFilePaths, const PathList &searchFirstPathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+List \&}]{binaries\+File\+Paths, }
+\item[{const {\bf Path\+List} \&}]{search\+First\+Path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a6b2116711ce9bbc3b3523eac16af28ec}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a6b2116711ce9bbc3b3523eac16af28ec}
+
+
+Find dependencies for a list of executables and/or libraries. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ab57081aeb3581d58f5677129ce564013}{find\+Dependencies(const Q\+String \&, const Path\+List \&)} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+It is assumed that each binary file has the same binary format (PA, or elf, or ...) 
+\end{DoxyNote}
+
+
+Definition at line 63 of file Binary\+Dependencies.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Library\+Info\+List \&libraries, const Path\+List \&search\+First\+Path\+Prefix\+List)}{findDependencies(const LibraryInfoList &libraries, const PathList &searchFirstPathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{libraries, }
+\item[{const {\bf Path\+List} \&}]{search\+First\+Path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a99b12cd9e28d27d33d416a51e116f54e}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_a99b12cd9e28d27d33d416a51e116f54e}
+
+
+Find dependencies for a lits of libraries. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ab57081aeb3581d58f5677129ce564013}{find\+Dependencies(const Q\+String \&, const Path\+List \&)} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+It is assumed that each library has the same binary format (PA, or elf, or ...) 
+\end{DoxyNote}
+\begin{DoxyPrecond}{Precondition}
+Each library list libraries must have its full path set 
+\end{DoxyPrecond}
+
+
+Definition at line 84 of file Binary\+Dependencies.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies}}
+\subsubsection[{\texorpdfstring{last\+Error() const }{lastError() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Error} Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ada341a03a0f42c02cf0d23f82e21f58e}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ada341a03a0f42c02cf0d23f82e21f58e}
+
+
+Get last error. 
+
+
+
+Definition at line 90 of file Binary\+Dependencies.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Binary\+Dependencies.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Binary\+Dependencies.\+cpp\end{DoxyCompactItemize}

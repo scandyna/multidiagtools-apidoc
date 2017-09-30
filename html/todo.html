@@ -81,8 +81,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000005"></a>Namespace <a class="el" href="namespace_mdt.html">Mdt</a>  </dt>
-<dd>Check if a limit of number of errors in queue should be implemented  </dd>
+<dt><a class="anchor" id="_todo000006"></a>Namespace <a class="el" href="namespace_mdt.html">Mdt</a>  </dt>
+<dd><p class="startdd">Maybe, console backend should not be called from other thread -&gt; What's about a non main thread calling <a class="el" href="class_mdt_1_1_error.html#a1b4a57bd4177d2985abd62b6b49a43f8" title="Commit error. ">Mdt::Error::commit()</a> ? -&gt; Implement a queue that "lives" in the main thread ? </p>
+<p class="enddd">Check if a limit of number of errors in queue should be implemented  </p>
+</dd>
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="namespace_mdt_1_1_algorithm.html#aadf56549e804ffc292f5b61d4872512b">Mdt::Algorithm::indexOfFirstEscapedToken</a>  (const QString &amp;str, int from, const std::vector&lt; QChar &gt; &amp;tokens, const QChar &amp;escape)</dt>
 <dd>Define what happens when escape is same as a token  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="namespace_mdt_1_1_algorithm.html#a25b3247b25cdf25db6a2641269e37e0d">Mdt::Algorithm::indexOfFirstNonEscapedToken</a>  (const QString &amp;str, int from, const std::vector&lt; QChar &gt; &amp;tokens, const QChar &amp;escape)</dt>
@@ -90,13 +92,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="namespace_mdt_1_1_algorithm.html#a1f739be25cc7de2c30a21b85d9b25f0a">Mdt::Algorithm::moveIf</a>  (ForwardIt first, ForwardIt last, OutputIt d_first, UnaryPredicate p)</dt>
 <dd><p class="startdd">Add <a class="el" href="namespace_mdt_1_1_algorithm.html#a1f739be25cc7de2c30a21b85d9b25f0a" title="Move a range of elements to a new location. ">moveIf()</a> in <a class="el" href="namespace_mdt_1_1_algorithm.html" title="Some helper that could be usefull. ">Mdt::Algorithm</a>:</p>
 <p>Check, think that cbegin()/cend() will not work</p>
-<p class="enddd">Check, think that cbegin()/cend() will not work</p>
+<p class="enddd">Check, think that cbegin()/cend() will not work </p>
 </dd>
+<dt><a class="anchor" id="_todo000005"></a>Class <a class="el" href="class_mdt_1_1_deploy_utils_1_1_platform.html">Mdt::DeployUtils::Platform</a>  </dt>
+<dd>Currently, we have a very poor support. </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 20 2017 13:27:39 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2017 12:22:40 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

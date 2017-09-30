@@ -1,0 +1,151 @@
+\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template}{}\section{Mdt\+:\+:Plain\+Text\+:\+:Csv\+Parser\+Template$<$ Source\+Iterator $>$ Class Template Reference}
+\label{class_mdt_1_1_plain_text_1_1_csv_parser_template}\index{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template$<$ Source\+Iterator $>$@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template$<$ Source\+Iterator $>$}}
+
+
+C\+SV parser template.  
+
+
+
+
+{\ttfamily \#include $<$Csv\+Parser\+Template.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Plain\+Text\+:\+:Csv\+Parser\+Template$<$ Source\+Iterator $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mdt_1_1_plain_text_1_1_csv_parser_template__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template_a0365862918b7ffb5e70bfd2fd6a0e95e}{Csv\+Parser\+Template} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\bfseries Csv\+Parser\+Template} (const \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template}{Csv\+Parser\+Template} \&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_a50df2d2fb8eda54bf9ec1dced98013e3}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_a50df2d2fb8eda54bf9ec1dced98013e3}
+
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template}{Csv\+Parser\+Template} \& {\bfseries operator=} (const \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template}{Csv\+Parser\+Template} \&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_a231614b1287419ebd121c7909802f1a7}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_a231614b1287419ebd121c7909802f1a7}
+
+\item 
+{\bfseries Csv\+Parser\+Template} (\hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template}{Csv\+Parser\+Template} \&\&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_af7d085875af2f5244958e0cb06daf39b}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_af7d085875af2f5244958e0cb06daf39b}
+
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template}{Csv\+Parser\+Template} \& {\bfseries operator=} (\hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template}{Csv\+Parser\+Template} \&\&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_aa7bfc2bddc9d3ae6690d741c2a24550d}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_aa7bfc2bddc9d3ae6690d741c2a24550d}
+
+\item 
+void \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template_a95c35ee9721efec0aedcf8b18b310001}{setup\+Parser} (const \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_settings}{Csv\+Parser\+Settings} \&settings)
+\begin{DoxyCompactList}\small\item\em Setup parser. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template_a215191b75041f462135572f328669731}{is\+Valid} () const 
+\begin{DoxyCompactList}\small\item\em Check if parser is valid. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected}$<$ String\+Record $>$ \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template_aa6a88c11fa8def4ee7fd3437d9099a95}{read\+Line} (Source\+Iterator \&first, const Source\+Iterator \&last)
+\begin{DoxyCompactList}\small\item\em Read one line of C\+SV data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Source\+Iterator$>$\\*
+class Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template$<$ Source\+Iterator $>$}
+
+C\+SV parser template. 
+
+This class implements the parser logic, and can act on different input containers that have S\+TL compatible iterators.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Source\+Iterator} & Type of iterator that will act on the source. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+Including directly this header in a project can slow down compilation time 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} 
+
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_file_parser}{Csv\+File\+Parser} 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+Some part of this A\+PI documentation refers to following standards\+: \begin{DoxyItemize}
+\item C\+S\+V-\/1203 available here\+: \href{http://mastpoint.com/csv-1203}{\tt http\+://mastpoint.\+com/csv-\/1203} \item R\+FC 4180 available here\+: \href{https://tools.ietf.org/html/rfc4180}{\tt https\+://tools.\+ietf.\+org/html/rfc4180} \end{DoxyItemize}
+
+\end{DoxyNote}
+
+
+Definition at line 40 of file Csv\+File\+Parser.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}!Csv\+Parser\+Template@{Csv\+Parser\+Template}}
+\index{Csv\+Parser\+Template@{Csv\+Parser\+Template}!Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}}
+\subsubsection[{\texorpdfstring{Csv\+Parser\+Template()=default}{CsvParserTemplate()=default}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Source\+Iterator$>$ {\bf Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}$<$ Source\+Iterator $>$\+::{\bf Csv\+Parser\+Template} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_a0365862918b7ffb5e70bfd2fd6a0e95e}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_a0365862918b7ffb5e70bfd2fd6a0e95e}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}}
+\subsubsection[{\texorpdfstring{is\+Valid() const }{isValid() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Source\+Iterator$>$ bool {\bf Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}$<$ Source\+Iterator $>$\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_a215191b75041f462135572f328669731}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_a215191b75041f462135572f328669731}
+
+
+Check if parser is valid. 
+
+Parser is valid once \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template_a95c35ee9721efec0aedcf8b18b310001}{setup\+Parser()} was called at least once 
+
+Definition at line 146 of file Csv\+Parser\+Template.\+h.
+
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}!read\+Line@{read\+Line}}
+\index{read\+Line@{read\+Line}!Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}}
+\subsubsection[{\texorpdfstring{read\+Line(\+Source\+Iterator \&first, const Source\+Iterator \&last)}{readLine(SourceIterator &first, const SourceIterator &last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Source\+Iterator$>$ {\bf Mdt\+::\+Expected}$<$String\+Record$>$ {\bf Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}$<$ Source\+Iterator $>$\+::read\+Line (
+\begin{DoxyParamCaption}
+\item[{Source\+Iterator \&}]{first, }
+\item[{const Source\+Iterator \&}]{last}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_aa6a88c11fa8def4ee7fd3437d9099a95}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_aa6a88c11fa8def4ee7fd3437d9099a95}
+
+
+Read one line of C\+SV data. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_template_a95c35ee9721efec0aedcf8b18b310001}{setup\+Parser()} must be called at least once before 
+\end{DoxyPrecond}
+
+
+Definition at line 155 of file Csv\+Parser\+Template.\+h.
+
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}!setup\+Parser@{setup\+Parser}}
+\index{setup\+Parser@{setup\+Parser}!Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template@{Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}}
+\subsubsection[{\texorpdfstring{setup\+Parser(const Csv\+Parser\+Settings \&settings)}{setupParser(const CsvParserSettings &settings)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Source\+Iterator$>$ void {\bf Mdt\+::\+Plain\+Text\+::\+Csv\+Parser\+Template}$<$ Source\+Iterator $>$\+::setup\+Parser (
+\begin{DoxyParamCaption}
+\item[{const {\bf Csv\+Parser\+Settings} \&}]{settings}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_parser_template_a95c35ee9721efec0aedcf8b18b310001}{}\label{class_mdt_1_1_plain_text_1_1_csv_parser_template_a95c35ee9721efec0aedcf8b18b310001}
+
+
+Setup parser. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape settings} must be valid 
+\end{DoxyPrecond}
+
+
+Definition at line 78 of file Csv\+Parser\+Template.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Plain\+Text\+\_\+\+Core/src/\+Mdt/\+Plain\+Text/Csv\+File\+Parser.\+h\item 
+libs/\+Plain\+Text\+\_\+\+Core/src/\+Mdt/\+Plain\+Text/Csv\+Parser\+Template.\+h\end{DoxyCompactItemize}

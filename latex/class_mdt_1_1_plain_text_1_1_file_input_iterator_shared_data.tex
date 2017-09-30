@@ -1,0 +1,241 @@
+\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{}\section{Mdt\+:\+:Plain\+Text\+:\+:File\+Input\+Iterator\+Shared\+Data Class Reference}
+\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+
+
+Contains shared part of \hyperlink{struct_mdt_1_1_plain_text_1_1_file_input_iterator}{File\+Input\+Iterator}.  
+
+
+
+
+{\ttfamily \#include $<$File\+Input\+Iterator\+Shared\+Data.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a481b4eba3da74b1d7473b36e64ca372a}{File\+Input\+Iterator\+Shared\+Data} (int raw\+Data\+Buffer\+Capacity=1024)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a801c96b3ccddd767cfcdabca6e0f388f}{File\+Input\+Iterator\+Shared\+Data} (const \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{File\+Input\+Iterator\+Shared\+Data} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy is disabled. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{File\+Input\+Iterator\+Shared\+Data} \& \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a1a49a2fb26a1165f1b785b9bab46f5e8}{operator=} (const \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{File\+Input\+Iterator\+Shared\+Data} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignement is disabled. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a1788932d201f21a9cc294ef8237c2d0f}{File\+Input\+Iterator\+Shared\+Data} (const \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{File\+Input\+Iterator\+Shared\+Data} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Move is disabled. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{File\+Input\+Iterator\+Shared\+Data} \& \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a545a229a11409c6601525900cbf75889}{operator=} (\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data}{File\+Input\+Iterator\+Shared\+Data} \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Assignement is disabled. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a5ea699bdb5e6a72c06054e90138a4707}{$\sim$\+File\+Input\+Iterator\+Shared\+Data} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_afdd5aec3bbdda3e55e11bf8a09c2fbff}{set\+Source} (Q\+I\+O\+Device $\ast$device, const Q\+Byte\+Array \&encoding)
+\begin{DoxyCompactList}\small\item\em Set source. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a588463721c160b7132b1d8ecbf94e0c3}{at\+End} () const 
+\begin{DoxyCompactList}\small\item\em Check if end was reached. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a734dd9507b4d12060516c1d37d0d8dc6}{advance} ()
+\begin{DoxyCompactList}\small\item\em Advance by one unicode char in buffer. \end{DoxyCompactList}\item 
+Q\+Char \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a95213b7621f220618e8c67bc4f5f7bfc}{get} () const 
+\begin{DoxyCompactList}\small\item\em Get current char in unicode buffer. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a250ee77491bce6036150de5219e62d32}{last\+Error} () const 
+\begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains shared part of \hyperlink{struct_mdt_1_1_plain_text_1_1_file_input_iterator}{File\+Input\+Iterator}. 
+
+Definition at line 38 of file File\+Input\+Iterator\+Shared\+Data.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!File\+Input\+Iterator\+Shared\+Data@{File\+Input\+Iterator\+Shared\+Data}}
+\index{File\+Input\+Iterator\+Shared\+Data@{File\+Input\+Iterator\+Shared\+Data}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{File\+Input\+Iterator\+Shared\+Data(int raw\+Data\+Buffer\+Capacity=1024)}{FileInputIteratorSharedData(int rawDataBufferCapacity=1024)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::\+File\+Input\+Iterator\+Shared\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{raw\+Data\+Buffer\+Capacity = {\ttfamily 1024}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a481b4eba3da74b1d7473b36e64ca372a}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a481b4eba3da74b1d7473b36e64ca372a}
+
+
+Default constructor. 
+
+
+
+Definition at line 31 of file File\+Input\+Iterator\+Shared\+Data.\+cpp.
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!File\+Input\+Iterator\+Shared\+Data@{File\+Input\+Iterator\+Shared\+Data}}
+\index{File\+Input\+Iterator\+Shared\+Data@{File\+Input\+Iterator\+Shared\+Data}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{File\+Input\+Iterator\+Shared\+Data(const File\+Input\+Iterator\+Shared\+Data \&)=delete}{FileInputIteratorSharedData(const FileInputIteratorSharedData &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::\+File\+Input\+Iterator\+Shared\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Input\+Iterator\+Shared\+Data} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a801c96b3ccddd767cfcdabca6e0f388f}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a801c96b3ccddd767cfcdabca6e0f388f}
+
+
+Copy is disabled. 
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!File\+Input\+Iterator\+Shared\+Data@{File\+Input\+Iterator\+Shared\+Data}}
+\index{File\+Input\+Iterator\+Shared\+Data@{File\+Input\+Iterator\+Shared\+Data}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{File\+Input\+Iterator\+Shared\+Data(const File\+Input\+Iterator\+Shared\+Data \&\&)=delete}{FileInputIteratorSharedData(const FileInputIteratorSharedData &&)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::\+File\+Input\+Iterator\+Shared\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Input\+Iterator\+Shared\+Data} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a1788932d201f21a9cc294ef8237c2d0f}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a1788932d201f21a9cc294ef8237c2d0f}
+
+
+Move is disabled. 
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!````~File\+Input\+Iterator\+Shared\+Data@{$\sim$\+File\+Input\+Iterator\+Shared\+Data}}
+\index{````~File\+Input\+Iterator\+Shared\+Data@{$\sim$\+File\+Input\+Iterator\+Shared\+Data}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{$\sim$\+File\+Input\+Iterator\+Shared\+Data()}{~FileInputIteratorSharedData()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::$\sim$\+File\+Input\+Iterator\+Shared\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a5ea699bdb5e6a72c06054e90138a4707}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a5ea699bdb5e6a72c06054e90138a4707}
+
+
+Destructor. 
+
+
+
+Definition at line 40 of file File\+Input\+Iterator\+Shared\+Data.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!advance@{advance}}
+\index{advance@{advance}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{advance()}{advance()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::advance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a734dd9507b4d12060516c1d37d0d8dc6}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a734dd9507b4d12060516c1d37d0d8dc6}
+
+
+Advance by one unicode char in buffer. 
+
+If internal unicode buffer has data available, current position is simply incremented by 1. If no more data is available any more, a chunk is readen frome device, decoded into unicode buffer and current position set to its beginning.
+
+Retuns false if a error occured.
+
+\begin{DoxyPrecond}{Precondition}
+This function can only be called once \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_afdd5aec3bbdda3e55e11bf8a09c2fbff}{set\+Source()} successfully returned. 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a250ee77491bce6036150de5219e62d32}{last\+Error()} 
+
+\hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a95213b7621f220618e8c67bc4f5f7bfc}{get()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 110 of file File\+Input\+Iterator\+Shared\+Data.\+cpp.
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!at\+End@{at\+End}}
+\index{at\+End@{at\+End}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{at\+End() const }{atEnd() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::at\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a588463721c160b7132b1d8ecbf94e0c3}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a588463721c160b7132b1d8ecbf94e0c3}
+
+
+Check if end was reached. 
+
+Returns true when I/O device is at end, and no more data is available in internal unicode buffer.
+
+If no device was set or was closed, this function also returns true. 
+
+Definition at line 94 of file File\+Input\+Iterator\+Shared\+Data.\+h.
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!get@{get}}
+\index{get@{get}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{get() const }{get() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Char Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a95213b7621f220618e8c67bc4f5f7bfc}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a95213b7621f220618e8c67bc4f5f7bfc}
+
+
+Get current char in unicode buffer. 
+
+Does nothing else than return the char referenced by current position. Calling this function multiple times also returns allways the same char.
+
+\begin{DoxyPrecond}{Precondition}
+This function must not be called after \hyperlink{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a588463721c160b7132b1d8ecbf94e0c3}{at\+End()} returns true. 
+\end{DoxyPrecond}
+
+
+Definition at line 125 of file File\+Input\+Iterator\+Shared\+Data.\+h.
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{last\+Error() const }{lastError() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Error} Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a250ee77491bce6036150de5219e62d32}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a250ee77491bce6036150de5219e62d32}
+
+
+Get last error. 
+
+
+
+Definition at line 133 of file File\+Input\+Iterator\+Shared\+Data.\+h.
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{operator=(const File\+Input\+Iterator\+Shared\+Data \&)=delete}{operator=(const FileInputIteratorSharedData &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Input\+Iterator\+Shared\+Data}\& Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf File\+Input\+Iterator\+Shared\+Data} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a1a49a2fb26a1165f1b785b9bab46f5e8}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a1a49a2fb26a1165f1b785b9bab46f5e8}
+
+
+Assignement is disabled. 
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{operator=(\+File\+Input\+Iterator\+Shared\+Data \&\&)=delete}{operator=(FileInputIteratorSharedData &&)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+Input\+Iterator\+Shared\+Data}\& Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf File\+Input\+Iterator\+Shared\+Data} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a545a229a11409c6601525900cbf75889}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_a545a229a11409c6601525900cbf75889}
+
+
+Assignement is disabled. 
+
+\index{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}!set\+Source@{set\+Source}}
+\index{set\+Source@{set\+Source}!Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data@{Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data}}
+\subsubsection[{\texorpdfstring{set\+Source(\+Q\+I\+O\+Device $\ast$device, const Q\+Byte\+Array \&encoding)}{setSource(QIODevice *device, const QByteArray &encoding)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Plain\+Text\+::\+File\+Input\+Iterator\+Shared\+Data\+::set\+Source (
+\begin{DoxyParamCaption}
+\item[{Q\+I\+O\+Device $\ast$}]{device, }
+\item[{const Q\+Byte\+Array \&}]{encoding}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_afdd5aec3bbdda3e55e11bf8a09c2fbff}{}\label{class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data_afdd5aec3bbdda3e55e11bf8a09c2fbff}
+
+
+Set source. 
+
+First, it is checked that device is open. Then, a text decoder is created, based on given encoding. If above operations succeeds, and device is not at end, a first chunk of data is read and decoded into unicode buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & I/O device on witch data will be read. Note\+: device is not owned here (will not be deleted) \\
+\hline
+{\em encoding} & Encoding name of the data that device will read. Will use Q\+Text\+Codec\+::codec\+For\+Name() to get apropriate codec. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if device is not open, or no codec could be found for given encoding, true if all goes well.
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+device must be a valid pointer 
+
+device must readable (Q\+I\+O\+Device\+::is\+Readable() must return true) 
+\end{DoxyPrecond}
+
+
+Definition at line 45 of file File\+Input\+Iterator\+Shared\+Data.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Plain\+Text\+\_\+\+Core/src/\+Mdt/\+Plain\+Text/File\+Input\+Iterator\+Shared\+Data.\+h\item 
+libs/\+Plain\+Text\+\_\+\+Core/src/\+Mdt/\+Plain\+Text/File\+Input\+Iterator\+Shared\+Data.\+cpp\end{DoxyCompactItemize}

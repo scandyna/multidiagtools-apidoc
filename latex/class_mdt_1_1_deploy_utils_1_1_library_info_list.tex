@@ -1,0 +1,371 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Library\+Info\+List Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_library_info_list}\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+
+
+Container that holds a list of \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info}.  
+
+
+
+
+{\ttfamily \#include $<$Library\+Info\+List.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{const\+\_\+iterator} = Q\+Vector$<$ \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} $>$\+::\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em S\+T\+L-\/style const iterator. \end{DoxyCompactList}\item 
+using \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_afcdf2c32ca02273dd257814517b691e8}{value\+\_\+type} = Q\+Vector$<$ \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} $>$\+::\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_afcdf2c32ca02273dd257814517b691e8}{value\+\_\+type}
+\begin{DoxyCompactList}\small\item\em S\+TL value type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3157bd9fc09a3472c1a0e2e615d619ea}{Library\+Info\+List} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a empty library info list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_ad7855d64a98e84a8ae1cf71acf03dbc4}{Library\+Info\+List} (std\+::initializer\+\_\+list$<$ \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} $>$ list)
+\begin{DoxyCompactList}\small\item\em Construct a library info list from initializer lists. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab96b187fdc2f20b37aee8786018a4675}{Library\+Info\+List} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&)=default
+\begin{DoxyCompactList}\small\item\em Copy construct a library info list from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3f6c7292e77383705324a45b26c2240f}{operator=} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&)=default
+\begin{DoxyCompactList}\small\item\em Copy assign a library info list this this one. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a81366014bcc6c3e6577e52bbe42f0893}{Library\+Info\+List} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move construct a library info list from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a6c572a7666d521fec0aadc0ac1b6ed92}{operator=} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move assign a library info list this this one. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2fd0bcb2c98ed5a9587e54d6496dac14}{add\+Library} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} \&library)
+\begin{DoxyCompactList}\small\item\em Add a library info to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab2b6f563946dbd690155c7b46e5b94c0}{push\+\_\+back} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} \&library)
+\begin{DoxyCompactList}\small\item\em Add a library info to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a08bddbe73a73a1c3b11c1d7633d4ca5c}{add\+Libraries} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries)
+\begin{DoxyCompactList}\small\item\em Add a list of libraries to this list. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a4a43a85999332ac32f738342fc8d832a}{count} () const 
+\begin{DoxyCompactList}\small\item\em Get count of items in this list. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3868a02a4c0d4836f9c90fabde0213db}{is\+Empty} () const 
+\begin{DoxyCompactList}\small\item\em Check if this list is empty. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2bdcf5564dd1846be16fc5544120fe03}{contains\+Library\+Absolute\+File\+Path} (const Q\+String \&file\+Path) const 
+\begin{DoxyCompactList}\small\item\em Check if this list contains library. \end{DoxyCompactList}\item 
+const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a9c8d42963dc6318d45d90f3e63aa5569}{at} (int index) const 
+\begin{DoxyCompactList}\small\item\em Get library info list at index. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_ac6d89745bccdd70bcf08d5bbe6f9a539}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab98b4f9f2c911281467301b4c4a485f2}{reserve} (int size)
+\begin{DoxyCompactList}\small\item\em Attempts to allocate memory for at least size elements. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3e40ff4b11d26a0e2acecc7aaf78248b}{cbegin} () const 
+\begin{DoxyCompactList}\small\item\em Returns an S\+T\+L-\/style const iterator pointing to the first item in this list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a77c1177f462f83424ce183b1c33f3e6c}{cend} () const 
+\begin{DoxyCompactList}\small\item\em Returns an S\+T\+L-\/style iterator pointing to the imaginary item after the last item in this list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a8615c525532a7f1dd3ae5cea7b7ff738}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Returns an S\+T\+L-\/style const iterator pointing to the first item in this list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_ac634a5731ec5fd1b0a4fef46bb5c194a}{end} () const 
+\begin{DoxyCompactList}\small\item\em Returns an S\+T\+L-\/style iterator pointing to the imaginary item after the last item in this list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container that holds a list of \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info}. 
+
+Definition at line 34 of file Library\+Info\+List.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{const\+\_\+iterator}{const_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::const\+\_\+iterator} =  Q\+Vector$<${\bf Library\+Info}$>$\+::{\bf const\+\_\+iterator}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a07338b20f243a1c7fcb3f696a35ddd44}
+
+
+S\+T\+L-\/style const iterator. 
+
+
+
+Definition at line 40 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::value\+\_\+type} =  Q\+Vector$<${\bf Library\+Info}$>$\+::{\bf value\+\_\+type}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_afcdf2c32ca02273dd257814517b691e8}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_afcdf2c32ca02273dd257814517b691e8}
+
+
+S\+TL value type. 
+
+
+
+Definition at line 44 of file Library\+Info\+List.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!Library\+Info\+List@{Library\+Info\+List}}
+\index{Library\+Info\+List@{Library\+Info\+List}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{Library\+Info\+List()=default}{LibraryInfoList()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::\+Library\+Info\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3157bd9fc09a3472c1a0e2e615d619ea}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3157bd9fc09a3472c1a0e2e615d619ea}
+
+
+Construct a empty library info list. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!Library\+Info\+List@{Library\+Info\+List}}
+\index{Library\+Info\+List@{Library\+Info\+List}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{Library\+Info\+List(std\+::initializer\+\_\+list$<$ Library\+Info $>$ list)}{LibraryInfoList(std::initializer_list< LibraryInfo > list)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::\+Library\+Info\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ {\bf Library\+Info} $>$}]{list}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_ad7855d64a98e84a8ae1cf71acf03dbc4}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_ad7855d64a98e84a8ae1cf71acf03dbc4}
+
+
+Construct a library info list from initializer lists. 
+
+
+
+Definition at line 27 of file Library\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!Library\+Info\+List@{Library\+Info\+List}}
+\index{Library\+Info\+List@{Library\+Info\+List}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{Library\+Info\+List(const Library\+Info\+List \&)=default}{LibraryInfoList(const LibraryInfoList &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::\+Library\+Info\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab96b187fdc2f20b37aee8786018a4675}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab96b187fdc2f20b37aee8786018a4675}
+
+
+Copy construct a library info list from a other. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!Library\+Info\+List@{Library\+Info\+List}}
+\index{Library\+Info\+List@{Library\+Info\+List}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{Library\+Info\+List(\+Library\+Info\+List \&\&)=default}{LibraryInfoList(LibraryInfoList &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::\+Library\+Info\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Library\+Info\+List} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a81366014bcc6c3e6577e52bbe42f0893}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a81366014bcc6c3e6577e52bbe42f0893}
+
+
+Move construct a library info list from a other. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!add\+Libraries@{add\+Libraries}}
+\index{add\+Libraries@{add\+Libraries}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{add\+Libraries(const Library\+Info\+List \&libraries)}{addLibraries(const LibraryInfoList &libraries)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::add\+Libraries (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{libraries}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a08bddbe73a73a1c3b11c1d7633d4ca5c}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a08bddbe73a73a1c3b11c1d7633d4ca5c}
+
+
+Add a list of libraries to this list. 
+
+Will add each libraries from {\itshape libraries} that not actually exists in this list. 
+
+Definition at line 40 of file Library\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!add\+Library@{add\+Library}}
+\index{add\+Library@{add\+Library}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{add\+Library(const Library\+Info \&library)}{addLibrary(const LibraryInfo &library)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::add\+Library (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info} \&}]{library}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2fd0bcb2c98ed5a9587e54d6496dac14}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2fd0bcb2c98ed5a9587e54d6496dac14}
+
+
+Add a library info to the end of this list. 
+
+If {\itshape library} allready exists, it will not be added. 
+
+Definition at line 32 of file Library\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!at@{at}}
+\index{at@{at}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{at(int index) const }{at(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Library\+Info}\& Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::at (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a9c8d42963dc6318d45d90f3e63aa5569}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a9c8d42963dc6318d45d90f3e63aa5569}
+
+
+Get library info list at index. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be in a valid range ( 0 $<$= index $<$ \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a4a43a85999332ac32f738342fc8d832a}{count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 113 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!begin@{begin}}
+\index{begin@{begin}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a8615c525532a7f1dd3ae5cea7b7ff738}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a8615c525532a7f1dd3ae5cea7b7ff738}
+
+
+Returns an S\+T\+L-\/style const iterator pointing to the first item in this list. 
+
+
+
+Definition at line 144 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{cbegin() const }{cbegin() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::cbegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3e40ff4b11d26a0e2acecc7aaf78248b}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3e40ff4b11d26a0e2acecc7aaf78248b}
+
+
+Returns an S\+T\+L-\/style const iterator pointing to the first item in this list. 
+
+
+
+Definition at line 130 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!cend@{cend}}
+\index{cend@{cend}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{cend() const }{cend() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::cend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a77c1177f462f83424ce183b1c33f3e6c}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a77c1177f462f83424ce183b1c33f3e6c}
+
+
+Returns an S\+T\+L-\/style iterator pointing to the imaginary item after the last item in this list. 
+
+
+
+Definition at line 137 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!clear@{clear}}
+\index{clear@{clear}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_ac6d89745bccdd70bcf08d5bbe6f9a539}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_ac6d89745bccdd70bcf08d5bbe6f9a539}
+
+
+Clear this list. 
+
+
+
+Definition at line 60 of file Library\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!contains\+Library\+Absolute\+File\+Path@{contains\+Library\+Absolute\+File\+Path}}
+\index{contains\+Library\+Absolute\+File\+Path@{contains\+Library\+Absolute\+File\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{contains\+Library\+Absolute\+File\+Path(const Q\+String \&file\+Path) const }{containsLibraryAbsoluteFilePath(const QString &filePath) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::contains\+Library\+Absolute\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{file\+Path}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2bdcf5564dd1846be16fc5544120fe03}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2bdcf5564dd1846be16fc5544120fe03}
+
+
+Check if this list contains library. 
+
+
+
+Definition at line 52 of file Library\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!count@{count}}
+\index{count@{count}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{count() const }{count() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a4a43a85999332ac32f738342fc8d832a}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a4a43a85999332ac32f738342fc8d832a}
+
+
+Get count of items in this list. 
+
+
+
+Definition at line 93 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!end@{end}}
+\index{end@{end}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator} Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_ac634a5731ec5fd1b0a4fef46bb5c194a}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_ac634a5731ec5fd1b0a4fef46bb5c194a}
+
+
+Returns an S\+T\+L-\/style iterator pointing to the imaginary item after the last item in this list. 
+
+
+
+Definition at line 151 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{is\+Empty() const }{isEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3868a02a4c0d4836f9c90fabde0213db}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3868a02a4c0d4836f9c90fabde0213db}
+
+
+Check if this list is empty. 
+
+
+
+Definition at line 100 of file Library\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{operator=(const Library\+Info\+List \&)=default}{operator=(const LibraryInfoList &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Info\+List}\& Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3f6c7292e77383705324a45b26c2240f}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a3f6c7292e77383705324a45b26c2240f}
+
+
+Copy assign a library info list this this one. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{operator=(\+Library\+Info\+List \&\&)=default}{operator=(LibraryInfoList &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Info\+List}\& Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Library\+Info\+List} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_a6c572a7666d521fec0aadc0ac1b6ed92}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_a6c572a7666d521fec0aadc0ac1b6ed92}
+
+
+Move assign a library info list this this one. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const Library\+Info \&library)}{push_back(const LibraryInfo &library)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info} \&}]{library}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab2b6f563946dbd690155c7b46e5b94c0}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab2b6f563946dbd690155c7b46e5b94c0}
+
+
+Add a library info to the end of this list. 
+
+This method is used for S\+TL compatibility and is the same as \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list_a2fd0bcb2c98ed5a9587e54d6496dac14}{add\+Library()} 
+
+Definition at line 47 of file Library\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}!reserve@{reserve}}
+\index{reserve@{reserve}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List}}
+\subsubsection[{\texorpdfstring{reserve(int size)}{reserve(int size)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Library\+Info\+List\+::reserve (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab98b4f9f2c911281467301b4c4a485f2}{}\label{class_mdt_1_1_deploy_utils_1_1_library_info_list_ab98b4f9f2c911281467301b4c4a485f2}
+
+
+Attempts to allocate memory for at least size elements. 
+
+
+
+Definition at line 65 of file Library\+Info\+List.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Library\+Info\+List.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Library\+Info\+List.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,235 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Library\+Tree Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_library_tree}\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+
+
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} is a tree that contains library names.  
+
+
+
+
+{\ttfamily \#include $<$Library\+Tree.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_a5e2c5933e88786b6e67709c2887e15de}{Library\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Construct a empty library tree. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_a6682b1ebd66c94223cd3b43f5c4878f3}{$\sim$\+Library\+Tree} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\bfseries Library\+Tree} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} \&)=delete\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_ab7ba543cdaf20aad5df777428651b6e4}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_ab7ba543cdaf20aad5df777428651b6e4}
+
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} \& {\bfseries operator=} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} \&)=delete\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_acfece4c061b7357f52174fa654d51528}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_acfece4c061b7357f52174fa654d51528}
+
+\item 
+{\bfseries Library\+Tree} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} \&\&)=delete\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_ac53e6f8b53200866351c9c93f2999a8f}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_ac53e6f8b53200866351c9c93f2999a8f}
+
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} \& {\bfseries operator=} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} \&\&)=delete\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a85365ed8e477b71afd9a78654c7ecab4}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a85365ed8e477b71afd9a78654c7ecab4}
+
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_node}{Library\+Tree\+Node} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_ab11aef58e0492638f23169073820ffac}{set\+Root\+Binary} (const Q\+String \&name)
+\begin{DoxyCompactList}\small\item\em Set the root binary. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_ac58cd1beebbbb7c8b1606670e38d2a69}{root\+Binary} () const 
+\begin{DoxyCompactList}\small\item\em Get the root binary. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_node}{Library\+Tree\+Node} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_aed0a4f339a65e462a578e00231cf522c}{add\+Library} (const Q\+String \&name, \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_node}{Library\+Tree\+Node} parent)
+\begin{DoxyCompactList}\small\item\em Add a library that is a child of {\itshape parent}. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_a150df5c2a8a9a05c38e3172b9a4a4f21}{get\+Library\+List} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_node}{Library\+Tree\+Node} parent) const 
+\begin{DoxyCompactList}\small\item\em Get a list of libraries that are direct children of {\itshape parent}. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_a7ee09eb33f1f392b66017d3ab7475f53}{to\+Flat\+List} () const 
+\begin{DoxyCompactList}\small\item\em Get a list of all libraries. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_a1035b22adbe9c119339ce83a33ed8eba}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear this tree. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_a87fc3fa448d541cc97e6dd31f6288376}{contains\+Node} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_node}{Library\+Tree\+Node} node) const 
+\begin{DoxyCompactList}\small\item\em Check if this tree contains a specific node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree} is a tree that contains library names. 
+
+The tree represents library dependencies of a binary (a executable or a library).
+
+\begin{DoxyNote}{Note}
+All binary and library are simple names, stored and returned unchanged. The user of the tree chooses what name makes sense (name with or without extension, ...) 
+\end{DoxyNote}
+
+
+Definition at line 43 of file Library\+Tree.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!Library\+Tree@{Library\+Tree}}
+\index{Library\+Tree@{Library\+Tree}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{Library\+Tree()}{LibraryTree()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::\+Library\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a5e2c5933e88786b6e67709c2887e15de}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a5e2c5933e88786b6e67709c2887e15de}
+
+
+Construct a empty library tree. 
+
+
+
+Definition at line 139 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!````~Library\+Tree@{$\sim$\+Library\+Tree}}
+\index{````~Library\+Tree@{$\sim$\+Library\+Tree}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{$\sim$\+Library\+Tree()}{~LibraryTree()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::$\sim$\+Library\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a6682b1ebd66c94223cd3b43f5c4878f3}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a6682b1ebd66c94223cd3b43f5c4878f3}
+
+
+Destructor. 
+
+
+
+Definition at line 144 of file Library\+Tree.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!add\+Library@{add\+Library}}
+\index{add\+Library@{add\+Library}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{add\+Library(const Q\+String \&name, Library\+Tree\+Node parent)}{addLibrary(const QString &name, LibraryTreeNode parent)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Tree\+Node} Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::add\+Library (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{name, }
+\item[{{\bf Library\+Tree\+Node}}]{parent}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_aed0a4f339a65e462a578e00231cf522c}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_aed0a4f339a65e462a578e00231cf522c}
+
+
+Add a library that is a child of {\itshape parent}. 
+
+\begin{DoxyPrecond}{Precondition}
+Root binary must have been set before adding a library 
+
+{\itshape parent} must not be null 
+
+{\itshape parent} must be a existing node in this tree 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+A node identifier that relates to the added library 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!clear@{clear}}
+\index{clear@{clear}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a1035b22adbe9c119339ce83a33ed8eba}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a1035b22adbe9c119339ce83a33ed8eba}
+
+
+Clear this tree. 
+
+
+
+Definition at line 179 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!contains\+Node@{contains\+Node}}
+\index{contains\+Node@{contains\+Node}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{contains\+Node(\+Library\+Tree\+Node node) const }{containsNode(LibraryTreeNode node) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::contains\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Library\+Tree\+Node}}]{node}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a87fc3fa448d541cc97e6dd31f6288376}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a87fc3fa448d541cc97e6dd31f6288376}
+
+
+Check if this tree contains a specific node. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape node} must not be null 
+\end{DoxyPrecond}
+
+
+Definition at line 184 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!get\+Library\+List@{get\+Library\+List}}
+\index{get\+Library\+List@{get\+Library\+List}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Library\+List(\+Library\+Tree\+Node parent) const }{getLibraryList(LibraryTreeNode parent) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::get\+Library\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Library\+Tree\+Node}}]{parent}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a150df5c2a8a9a05c38e3172b9a4a4f21}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a150df5c2a8a9a05c38e3172b9a4a4f21}
+
+
+Get a list of libraries that are direct children of {\itshape parent}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape parent} must not be null 
+
+{\itshape parent} must be a existing node in this tree 
+\end{DoxyPrecond}
+\begin{DoxyNote}{Note}
+The list is build at each call of this method 
+\end{DoxyNote}
+
+
+Definition at line 166 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!root\+Binary@{root\+Binary}}
+\index{root\+Binary@{root\+Binary}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{root\+Binary() const }{rootBinary() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::root\+Binary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_ac58cd1beebbbb7c8b1606670e38d2a69}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_ac58cd1beebbbb7c8b1606670e38d2a69}
+
+
+Get the root binary. 
+
+
+
+Definition at line 153 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!set\+Root\+Binary@{set\+Root\+Binary}}
+\index{set\+Root\+Binary@{set\+Root\+Binary}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{set\+Root\+Binary(const Q\+String \&name)}{setRootBinary(const QString &name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Tree\+Node} Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::set\+Root\+Binary (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_ab11aef58e0492638f23169073820ffac}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_ab11aef58e0492638f23169073820ffac}
+
+
+Set the root binary. 
+
+\begin{DoxyNote}{Note}
+Setting a new root binary will first clear this tree 
+\end{DoxyNote}
+
+
+Definition at line 148 of file Library\+Tree.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}!to\+Flat\+List@{to\+Flat\+List}}
+\index{to\+Flat\+List@{to\+Flat\+List}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree}}
+\subsubsection[{\texorpdfstring{to\+Flat\+List() const }{toFlatList() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Deploy\+Utils\+::\+Library\+Tree\+::to\+Flat\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_tree_a7ee09eb33f1f392b66017d3ab7475f53}{}\label{class_mdt_1_1_deploy_utils_1_1_library_tree_a7ee09eb33f1f392b66017d3ab7475f53}
+
+
+Get a list of all libraries. 
+
+Returns a list containing all libraries, except the root. The list contains a unique instance of each library.
+
+\begin{DoxyNote}{Note}
+The list is build at each call of this method 
+\end{DoxyNote}
+
+
+Definition at line 174 of file Library\+Tree.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Library\+Tree.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Library\+Tree.\+cpp\end{DoxyCompactItemize}

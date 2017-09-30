@@ -1,0 +1,193 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Tool\+Executable\+Wrapper Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper}\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+
+
+Common base class for command line tools (ldd, objdump, ...)  
+
+
+
+
+{\ttfamily \#include $<$Tool\+Executable\+Wrapper.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Tool\+Executable\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Tool\+Executable\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a185d5724b1615df610d30e35070cb414}{Tool\+Executable\+Wrapper} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a16c605f652c0ce1df320abc514baa285}{read\+All\+Standard\+Output\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns all data available from standard output of the channel as string. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a4642cfbc69f58af32dc69b4c4619c002}{read\+All\+Standard\+Error\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns all data available from standard error of the channel as string. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a9289a5137a237600e869e077b97259a8}{last\+Error} () const 
+\begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a82d75a83041420d10cb163c084e9828c}{exec} (const Q\+String \&exe\+Name, const Q\+String\+List \&arguments)
+\begin{DoxyCompactList}\small\item\em Execute a command. \end{DoxyCompactList}\item 
+Q\+Process\+::\+Process\+Error \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a4a94d5952557daed5e91dafb8d4fef85}{last\+Process\+Error} () const 
+\begin{DoxyCompactList}\small\item\em Returns last error from process. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_ab85cd91b9a6a681624119b316d503e8a}{process\+Arguments} () const 
+\begin{DoxyCompactList}\small\item\em Get process arguments. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a13671f8e384893777fd1633dc4984244}{set\+Last\+Error} (const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \&error)
+\begin{DoxyCompactList}\small\item\em Set last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common base class for command line tools (ldd, objdump, ...) 
+
+Definition at line 34 of file Tool\+Executable\+Wrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!Tool\+Executable\+Wrapper@{Tool\+Executable\+Wrapper}}
+\index{Tool\+Executable\+Wrapper@{Tool\+Executable\+Wrapper}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{Tool\+Executable\+Wrapper(\+Q\+Object $\ast$parent=nullptr)}{ToolExecutableWrapper(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::\+Tool\+Executable\+Wrapper (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a185d5724b1615df610d30e35070cb414}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a185d5724b1615df610d30e35070cb414}
+
+
+Constructor. 
+
+
+
+Definition at line 28 of file Tool\+Executable\+Wrapper.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!exec@{exec}}
+\index{exec@{exec}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{exec(const Q\+String \&exe\+Name, const Q\+String\+List \&arguments)}{exec(const QString &exeName, const QStringList &arguments)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::exec (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{exe\+Name, }
+\item[{const Q\+String\+List \&}]{arguments}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a82d75a83041420d10cb163c084e9828c}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a82d75a83041420d10cb163c084e9828c}
+
+
+Execute a command. 
+
+
+
+Definition at line 43 of file Tool\+Executable\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{last\+Error() const }{lastError() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Error} Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a9289a5137a237600e869e077b97259a8}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a9289a5137a237600e869e077b97259a8}
+
+
+Get last error. 
+
+
+
+Definition at line 54 of file Tool\+Executable\+Wrapper.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!last\+Process\+Error@{last\+Process\+Error}}
+\index{last\+Process\+Error@{last\+Process\+Error}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{last\+Process\+Error() const }{lastProcessError() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Process\+::\+Process\+Error Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::last\+Process\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a4a94d5952557daed5e91dafb8d4fef85}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a4a94d5952557daed5e91dafb8d4fef85}
+
+
+Returns last error from process. 
+
+
+
+Definition at line 67 of file Tool\+Executable\+Wrapper.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!process\+Arguments@{process\+Arguments}}
+\index{process\+Arguments@{process\+Arguments}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{process\+Arguments() const }{processArguments() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::process\+Arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_ab85cd91b9a6a681624119b316d503e8a}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_ab85cd91b9a6a681624119b316d503e8a}
+
+
+Get process arguments. 
+
+
+
+Definition at line 74 of file Tool\+Executable\+Wrapper.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!read\+All\+Standard\+Error\+String@{read\+All\+Standard\+Error\+String}}
+\index{read\+All\+Standard\+Error\+String@{read\+All\+Standard\+Error\+String}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{read\+All\+Standard\+Error\+String()}{readAllStandardErrorString()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::read\+All\+Standard\+Error\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a4642cfbc69f58af32dc69b4c4619c002}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a4642cfbc69f58af32dc69b4c4619c002}
+
+
+Returns all data available from standard error of the channel as string. 
+
+
+
+Definition at line 38 of file Tool\+Executable\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!read\+All\+Standard\+Output\+String@{read\+All\+Standard\+Output\+String}}
+\index{read\+All\+Standard\+Output\+String@{read\+All\+Standard\+Output\+String}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{read\+All\+Standard\+Output\+String()}{readAllStandardOutputString()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::read\+All\+Standard\+Output\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a16c605f652c0ce1df320abc514baa285}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a16c605f652c0ce1df320abc514baa285}
+
+
+Returns all data available from standard output of the channel as string. 
+
+
+
+Definition at line 33 of file Tool\+Executable\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}!set\+Last\+Error@{set\+Last\+Error}}
+\index{set\+Last\+Error@{set\+Last\+Error}!Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{set\+Last\+Error(const Mdt\+::\+Error \&error)}{setLastError(const Mdt::Error &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Tool\+Executable\+Wrapper\+::set\+Last\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+Error} \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a13671f8e384893777fd1633dc4984244}{}\label{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper_a13671f8e384893777fd1633dc4984244}
+
+
+Set last error. 
+
+
+
+Definition at line 65 of file Tool\+Executable\+Wrapper.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Tool\+Executable\+Wrapper.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Tool\+Executable\+Wrapper.\+cpp\end{DoxyCompactItemize}

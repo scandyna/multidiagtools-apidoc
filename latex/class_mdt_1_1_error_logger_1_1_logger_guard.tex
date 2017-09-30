@@ -25,8 +25,8 @@ Typical usage\+:
 \begin{DoxyCode}
 \textcolor{keywordtype}{int} main()
 \{
-  \textcolor{keyword}{using} mdt::error::Logger;
-  \textcolor{keyword}{using} mdt::error::LoggerGuard;
+  \textcolor{keyword}{using} Mdt::Error::Logger;
+  \textcolor{keyword}{using} Mdt::Error::LoggerGuard;
 
   \hyperlink{class_mdt_1_1_error_logger_1_1_logger_guard_a206dae2204438c86ce5fb70470b800e4}{LoggerGuard} loggerGuard;
 
@@ -35,9 +35,23 @@ Typical usage\+:
   \textcolor{comment}{// Here, Logger::cleanup() will be called by loggerGuard.}
 \}
 \end{DoxyCode}
- 
 
-Definition at line 138 of file Logger.\+h.
+
+\begin{DoxyNote}{Note}
+When using one of the \hyperlink{namespace_mdt}{Mdt} \hyperlink{class_mdt_1_1_application}{Application}, the error logger is initialized, and logger\textquotesingle{}s cleanup is also called in its destructor.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_core_application}{Mdt\+::\+Core\+Application} 
+
+\hyperlink{class_mdt_1_1_single_core_application}{Mdt\+::\+Single\+Core\+Application} 
+
+\hyperlink{class_mdt_1_1_application}{Mdt\+::\+Application} 
+
+\hyperlink{class_mdt_1_1_single_application}{Mdt\+::\+Single\+Application} 
+\end{DoxySeeAlso}
+
+
+Definition at line 219 of file Logger.\+h.
 
 
 
@@ -55,7 +69,7 @@ Constructor.
 
 
 
-Definition at line 176 of file Logger.\+cpp.
+Definition at line 184 of file Logger.\+cpp.
 
 \index{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}!````~Logger\+Guard@{$\sim$\+Logger\+Guard}}
 \index{````~Logger\+Guard@{$\sim$\+Logger\+Guard}!Mdt\+::\+Error\+Logger\+::\+Logger\+Guard@{Mdt\+::\+Error\+Logger\+::\+Logger\+Guard}}
@@ -70,7 +84,7 @@ Destructor.
 
 Will call cleanup on error logger 
 
-Definition at line 180 of file Logger.\+cpp.
+Definition at line 188 of file Logger.\+cpp.
 
 
 

@@ -1,0 +1,135 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Objdump\+Wrapper Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper}\index{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}}
+
+
+Wrapps a objdump executable.  
+
+
+
+
+{\ttfamily \#include $<$Objdump\+Wrapper.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Objdump\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Objdump\+Wrapper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a6f042e9d1554f14fcc320c2efef16ffa}{Objdump\+Wrapper} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_ab97db66a2a9ad2db9932a7c833c11cd1}{exec\+Find\+Dependencies} (const Q\+String \&binary\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Execute the command to find dependencies. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a38237494f7027dec851514c7f7179278}{exec\+Read\+Format} (const Q\+String \&binary\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Execute the command to read format. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a515708420d15527141d19c365d3f1bd6}{find\+Objdump} ()
+\begin{DoxyCompactList}\small\item\em Find objdump executable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Wrapps a objdump executable. 
+
+Definition at line 32 of file Objdump\+Wrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}!Objdump\+Wrapper@{Objdump\+Wrapper}}
+\index{Objdump\+Wrapper@{Objdump\+Wrapper}!Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}}
+\subsubsection[{\texorpdfstring{Objdump\+Wrapper(\+Q\+Object $\ast$parent=nullptr)}{ObjdumpWrapper(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper\+::\+Objdump\+Wrapper (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a6f042e9d1554f14fcc320c2efef16ffa}{}\label{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a6f042e9d1554f14fcc320c2efef16ffa}
+
+
+Constructor. 
+
+
+
+Definition at line 30 of file Objdump\+Wrapper.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}!exec\+Find\+Dependencies@{exec\+Find\+Dependencies}}
+\index{exec\+Find\+Dependencies@{exec\+Find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}}
+\subsubsection[{\texorpdfstring{exec\+Find\+Dependencies(const Q\+String \&binary\+File\+Path)}{execFindDependencies(const QString &binaryFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper\+::exec\+Find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_ab97db66a2a9ad2db9932a7c833c11cd1}{}\label{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_ab97db66a2a9ad2db9932a7c833c11cd1}
+
+
+Execute the command to find dependencies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em binary\+File\+Path} & Path to a executable or a library \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Objdump\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}!exec\+Read\+Format@{exec\+Read\+Format}}
+\index{exec\+Read\+Format@{exec\+Read\+Format}!Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}}
+\subsubsection[{\texorpdfstring{exec\+Read\+Format(const Q\+String \&binary\+File\+Path)}{execReadFormat(const QString &binaryFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper\+::exec\+Read\+Format (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a38237494f7027dec851514c7f7179278}{}\label{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a38237494f7027dec851514c7f7179278}
+
+
+Execute the command to read format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em binary\+File\+Path} & Path to a executable or a library \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file Objdump\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}!find\+Objdump@{find\+Objdump}}
+\index{find\+Objdump@{find\+Objdump}!Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper}}
+\subsubsection[{\texorpdfstring{find\+Objdump()}{findObjdump()}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+Objdump\+Wrapper\+::find\+Objdump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a515708420d15527141d19c365d3f1bd6}{}\label{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper_a515708420d15527141d19c365d3f1bd6}
+
+
+Find objdump executable. 
+
+\begin{DoxyNote}{Note}
+This method is called automatically by find$\ast$() methods. 
+\end{DoxyNote}
+
+
+Definition at line 46 of file Objdump\+Wrapper.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Objdump\+Wrapper.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Objdump\+Wrapper.\+cpp\end{DoxyCompactItemize}

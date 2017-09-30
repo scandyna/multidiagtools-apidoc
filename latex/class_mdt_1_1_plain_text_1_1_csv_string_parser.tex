@@ -1,0 +1,178 @@
+\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser}{}\section{Mdt\+:\+:Plain\+Text\+:\+:Csv\+String\+Parser Class Reference}
+\label{class_mdt_1_1_plain_text_1_1_csv_string_parser}\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+
+
+C\+SV parser that acts on a Q\+String as input.  
+
+
+
+
+{\ttfamily \#include $<$Csv\+String\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a5a6afeedd8f074afe78fd5f161a06140}{Csv\+String\+Parser} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+{\bfseries Csv\+String\+Parser} (const \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} \&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a84ca6952a8857e7e9d3259fba72528f1}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a84ca6952a8857e7e9d3259fba72528f1}
+
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} \& {\bfseries operator=} (const \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} \&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a9a9adc7399b2c65bf852e17a5bb63f1e}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a9a9adc7399b2c65bf852e17a5bb63f1e}
+
+\item 
+{\bfseries Csv\+String\+Parser} (\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} \&\&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_af6cf2c19b06d8de56183a4849e76ab66}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_af6cf2c19b06d8de56183a4849e76ab66}
+
+\item 
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} \& {\bfseries operator=} (\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} \&\&)=delete\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a0f4b8b043c0fd1239c2d338c68c37ec7}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a0f4b8b043c0fd1239c2d338c68c37ec7}
+
+\item 
+void \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a30af818bc2d40ac11e29562e2dd19108}{set\+Csv\+Settings} (const \hyperlink{class_mdt_1_1_plain_text_1_1_csv_parser_settings}{Csv\+Parser\+Settings} \&settings)
+\begin{DoxyCompactList}\small\item\em Set C\+SV settings. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a671b38b46afd066a71677b7cdebdc154}{set\+Source} (const Q\+String \&source)
+\begin{DoxyCompactList}\small\item\em Set C\+SV source string. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a81d09c21ee3fdbc499e584d799e3a3ab}{at\+End} () const 
+\begin{DoxyCompactList}\small\item\em Check if parser is at end of the source. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected}$<$ String\+Record $>$ \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a4089cbf5a42d66903247c4bd5633e3fb}{read\+Line} ()
+\begin{DoxyCompactList}\small\item\em Read one line. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected}$<$ String\+Record\+List $>$ \hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a9bed7245aaadf05eccc231df11a7a9e1}{read\+All} ()
+\begin{DoxyCompactList}\small\item\em Read the entire C\+SV string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+SV parser that acts on a Q\+String as input. 
+
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser}{Csv\+String\+Parser} parses a C\+SV string. The C\+SV string can contain quoted section.
+
+\begin{DoxyNote}{Note}
+Some part of this A\+PI documentation refers to following standards\+: \begin{DoxyItemize}
+\item C\+S\+V-\/1203 available here\+: \href{http://mastpoint.com/csv-1203}{\tt http\+://mastpoint.\+com/csv-\/1203} \item R\+FC 4180 available here\+: \href{https://tools.ietf.org/html/rfc4180}{\tt https\+://tools.\+ietf.\+org/html/rfc4180} \end{DoxyItemize}
+
+\end{DoxyNote}
+
+
+Definition at line 46 of file Csv\+String\+Parser.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}!Csv\+String\+Parser@{Csv\+String\+Parser}}
+\index{Csv\+String\+Parser@{Csv\+String\+Parser}!Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+\subsubsection[{\texorpdfstring{Csv\+String\+Parser()}{CsvStringParser()}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser\+::\+Csv\+String\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a5a6afeedd8f074afe78fd5f161a06140}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a5a6afeedd8f074afe78fd5f161a06140}
+
+
+Default constructor. 
+
+
+
+Definition at line 26 of file Csv\+String\+Parser.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}!at\+End@{at\+End}}
+\index{at\+End@{at\+End}!Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+\subsubsection[{\texorpdfstring{at\+End() const }{atEnd() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser\+::at\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a81d09c21ee3fdbc499e584d799e3a3ab}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a81d09c21ee3fdbc499e584d799e3a3ab}
+
+
+Check if parser is at end of the source. 
+
+
+
+Definition at line 48 of file Csv\+String\+Parser.\+cpp.
+
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}!read\+All@{read\+All}}
+\index{read\+All@{read\+All}!Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+\subsubsection[{\texorpdfstring{read\+All()}{readAll()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expected}$<$ String\+Record\+List $>$ Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser\+::read\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a9bed7245aaadf05eccc231df11a7a9e1}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a9bed7245aaadf05eccc231df11a7a9e1}
+
+
+Read the entire C\+SV string. 
+
+\begin{DoxyPrecond}{Precondition}
+C\+SV settings must be set before calling this function 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a30af818bc2d40ac11e29562e2dd19108}{set\+Csv\+Settings()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 60 of file Csv\+String\+Parser.\+cpp.
+
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}!read\+Line@{read\+Line}}
+\index{read\+Line@{read\+Line}!Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+\subsubsection[{\texorpdfstring{read\+Line()}{readLine()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expected}$<$ String\+Record $>$ Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser\+::read\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a4089cbf5a42d66903247c4bd5633e3fb}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a4089cbf5a42d66903247c4bd5633e3fb}
+
+
+Read one line. 
+
+If a end of line is in a quoted section, it will not be threated as end of line.
+
+This function can be used, f.\+ex., to store a long string to some other storage device, without having to copy the entiere source before. Reading line by line can also save some memory.
+
+\begin{DoxyPrecond}{Precondition}
+C\+SV settings must be set before calling this function 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_plain_text_1_1_csv_string_parser_a30af818bc2d40ac11e29562e2dd19108}{set\+Csv\+Settings()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 53 of file Csv\+String\+Parser.\+cpp.
+
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}!set\+Csv\+Settings@{set\+Csv\+Settings}}
+\index{set\+Csv\+Settings@{set\+Csv\+Settings}!Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+\subsubsection[{\texorpdfstring{set\+Csv\+Settings(const Csv\+Parser\+Settings \&settings)}{setCsvSettings(const CsvParserSettings &settings)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser\+::set\+Csv\+Settings (
+\begin{DoxyParamCaption}
+\item[{const {\bf Csv\+Parser\+Settings} \&}]{settings}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a30af818bc2d40ac11e29562e2dd19108}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a30af818bc2d40ac11e29562e2dd19108}
+
+
+Set C\+SV settings. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape settings} must be valid 
+\end{DoxyPrecond}
+
+
+Definition at line 35 of file Csv\+String\+Parser.\+cpp.
+
+\index{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}!set\+Source@{set\+Source}}
+\index{set\+Source@{set\+Source}!Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser@{Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser}}
+\subsubsection[{\texorpdfstring{set\+Source(const Q\+String \&source)}{setSource(const QString &source)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Plain\+Text\+::\+Csv\+String\+Parser\+::set\+Source (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{source}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_plain_text_1_1_csv_string_parser_a671b38b46afd066a71677b7cdebdc154}{}\label{class_mdt_1_1_plain_text_1_1_csv_string_parser_a671b38b46afd066a71677b7cdebdc154}
+
+
+Set C\+SV source string. 
+
+\begin{DoxyNote}{Note}
+Parsing will be done directly on source Make shure that it is not modified during parsing process (take a look at Qt documentation about S\+TL style iterators invalidation for details) 
+\end{DoxyNote}
+
+
+Definition at line 42 of file Csv\+String\+Parser.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Plain\+Text\+\_\+\+Core/src/\+Mdt/\+Plain\+Text/Csv\+String\+Parser.\+h\item 
+libs/\+Plain\+Text\+\_\+\+Core/src/\+Mdt/\+Plain\+Text/Csv\+String\+Parser.\+cpp\end{DoxyCompactItemize}

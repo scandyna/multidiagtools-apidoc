@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="class_qt_l_p___private_1_1_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. ">QtLockedFile</a> class extends <a class="el" href="class_q_file.html">QFile</a> with advisory locking functions.  
+<p>The <a class="el" href="class_qt_l_p___private_1_1_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. ">QtLockedFile</a> class extends QFile with advisory locking functions.  
  <a href="class_qt_l_p___private_1_1_qt_locked_file.html#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for QtLP_Private::QtLockedFile:</div>
@@ -106,7 +106,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_qt_l_p___private_1_1_qt_locked_file__inherit__graph.png" border="0" usemap="#_qt_l_p___private_1_1_qt_locked_file_inherit__map" alt="Inheritance graph"/></div>
 <map name="_qt_l_p___private_1_1_qt_locked_file_inherit__map" id="_qt_l_p___private_1_1_qt_locked_file_inherit__map">
-<area shape="rect" id="node2" href="class_q_file.html" title="QFile" alt="" coords="71,5,125,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -116,7 +115,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_qt_l_p___private_1_1_qt_locked_file__coll__graph.png" border="0" usemap="#_qt_l_p___private_1_1_qt_locked_file_coll__map" alt="Collaboration graph"/></div>
 <map name="_qt_l_p___private_1_1_qt_locked_file_coll__map" id="_qt_l_p___private_1_1_qt_locked_file_coll__map">
-<area shape="rect" id="node2" href="class_q_file.html" title="QFile" alt="" coords="71,5,125,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -148,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aabfd6fb28f249a5fb01f3965de0e41f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="class_qt_l_p___private_1_1_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. ">QtLockedFile</a> class extends <a class="el" href="class_q_file.html">QFile</a> with advisory locking functions. </p>
+<div class="textblock"><p>The <a class="el" href="class_qt_l_p___private_1_1_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. ">QtLockedFile</a> class extends QFile with advisory locking functions. </p>
 <p>A file may be locked in read or write mode. Multiple instances of <em><a class="el" href="class_qt_l_p___private_1_1_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. ">QtLockedFile</a></em>, created in multiple processes running on the same machine, may have a file locked in read mode. Exactly one instance may have it locked in write mode. A read and a write lock cannot exist simultaneously on the same file.</p>
-<p>The file locks are advisory. This means that nothing prevents another process from manipulating a locked file using <a class="el" href="class_q_file.html">QFile</a> or file system functions offered by the OS. Serialization is only guaranteed if all processes that access the file use QLockedFile. Also, while holding a lock on a file, a process must not open the same file again (through any API), or locks can be unexpectedly lost.</p>
+<p>The file locks are advisory. This means that nothing prevents another process from manipulating a locked file using QFile or file system functions offered by the OS. Serialization is only guaranteed if all processes that access the file use QLockedFile. Also, while holding a lock on a file, a process must not open the same file again (through any API), or locks can be unexpectedly lost.</p>
 <p>The lock provided by an instance of <em><a class="el" href="class_qt_l_p___private_1_1_qt_locked_file.html" title="The QtLockedFile class extends QFile with advisory locking functions. ">QtLockedFile</a></em> is released whenever the program terminates. This is true even when the program crashes and no destructors are called. </p>
 
 <p>Definition at line <a class="el" href="qtlockedfile_8h_source.html#l00067">67</a> of file <a class="el" href="qtlockedfile_8h_source.html">qtlockedfile.h</a>.</p>
@@ -354,7 +352,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 20 2017 13:27:39 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2017 12:22:41 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

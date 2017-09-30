@@ -2,17 +2,17 @@
 \label{class_qt_locked_file}\index{Qt\+Locked\+File@{Qt\+Locked\+File}}
 
 
-The \hyperlink{class_qt_locked_file}{Qt\+Locked\+File} class extends \hyperlink{class_q_file}{Q\+File} with advisory locking functions.  
+The \hyperlink{class_qt_locked_file}{Qt\+Locked\+File} class extends Q\+File with advisory locking functions.  
 
 
 
 
 \subsection{Detailed Description}
-The \hyperlink{class_qt_locked_file}{Qt\+Locked\+File} class extends \hyperlink{class_q_file}{Q\+File} with advisory locking functions. 
+The \hyperlink{class_qt_locked_file}{Qt\+Locked\+File} class extends Q\+File with advisory locking functions. 
 
 A file may be locked in read or write mode. Multiple instances of {\itshape \hyperlink{class_qt_locked_file}{Qt\+Locked\+File}}, created in multiple processes running on the same machine, may have a file locked in read mode. Exactly one instance may have it locked in write mode. A read and a write lock cannot exist simultaneously on the same file.
 
-The file locks are advisory. This means that nothing prevents another process from manipulating a locked file using \hyperlink{class_q_file}{Q\+File} or file system functions offered by the OS. Serialization is only guaranteed if all processes that access the file use Q\+Locked\+File. Also, while holding a lock on a file, a process must not open the same file again (through any A\+PI), or locks can be unexpectedly lost.
+The file locks are advisory. This means that nothing prevents another process from manipulating a locked file using Q\+File or file system functions offered by the OS. Serialization is only guaranteed if all processes that access the file use Q\+Locked\+File. Also, while holding a lock on a file, a process must not open the same file again (through any A\+PI), or locks can be unexpectedly lost.
 
 The lock provided by an instance of {\itshape \hyperlink{class_qt_locked_file}{Qt\+Locked\+File}} is released whenever the program terminates. This is true even when the program crashes and no destructors are called. 
 

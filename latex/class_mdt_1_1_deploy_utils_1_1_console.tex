@@ -1,0 +1,124 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_console}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Console Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_console}\index{Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}}
+
+
+Display messages to the console.  
+
+
+
+
+{\ttfamily \#include $<$Console.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a389364a6d53b7361d321bd3aa9408f19}{set\+Level} (int \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a134e2d7e4a59b3634f007ae09301c684}{level})
+\begin{DoxyCompactList}\small\item\em Set level. \end{DoxyCompactList}\item 
+static int \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a134e2d7e4a59b3634f007ae09301c684}{level} ()
+\begin{DoxyCompactList}\small\item\em Get level. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a3ddc9a6338a0fd7d01ca7a60936415b5}{info} (int minlevel)
+\begin{DoxyCompactList}\small\item\em Display a information. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a9398a0a4aebbe2184847b1ed75a40def}{error} ()
+\begin{DoxyCompactList}\small\item\em Display a error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Display messages to the console. 
+
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console} can be used to display mesages to the user in a console application. It provides a basic filter mechanisme, based on levels.
+
+In the main\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a389364a6d53b7361d321bd3aa9408f19}{Console::setLevel}(2);
+\end{DoxyCode}
+ This configures \hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console} to output all messages that are at least of level 2 (messages of level 0, 1 and 2 are diplayed, messages with greater levels are not).
+
+Somewhere in the code\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a3ddc9a6338a0fd7d01ca7a60936415b5}{Console::info}(1) << \textcolor{stringliteral}{"Starting processing ..."};
+\end{DoxyCode}
+ This message will be displayed with obove configuration.
+
+
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_a3ddc9a6338a0fd7d01ca7a60936415b5}{Console::info}(3) << \textcolor{stringliteral}{"  Format of file"} << someFile << \textcolor{stringliteral}{": "} << someFormat;
+\end{DoxyCode}
+ This message will not be displayed with above configuration. 
+
+Definition at line 53 of file Console.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}!error@{error}}
+\index{error@{error}!Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}}
+\subsubsection[{\texorpdfstring{error()}{error()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Stream} Mdt\+::\+Deploy\+Utils\+::\+Console\+::error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_a9398a0a4aebbe2184847b1ed75a40def}{}\label{class_mdt_1_1_deploy_utils_1_1_console_a9398a0a4aebbe2184847b1ed75a40def}
+
+
+Display a error. 
+
+
+
+Definition at line 42 of file Console.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}!info@{info}}
+\index{info@{info}!Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}}
+\subsubsection[{\texorpdfstring{info(int minlevel)}{info(int minlevel)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Stream} Mdt\+::\+Deploy\+Utils\+::\+Console\+::info (
+\begin{DoxyParamCaption}
+\item[{int}]{minlevel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_a3ddc9a6338a0fd7d01ca7a60936415b5}{}\label{class_mdt_1_1_deploy_utils_1_1_console_a3ddc9a6338a0fd7d01ca7a60936415b5}
+
+
+Display a information. 
+
+{\itshape minlevel} is the minimum level required so that the message is diplayed. \begin{DoxyPrecond}{Precondition}
+{\itshape minlevel} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 35 of file Console.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}!level@{level}}
+\index{level@{level}!Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}}
+\subsubsection[{\texorpdfstring{level()}{level()}}]{\setlength{\rightskip}{0pt plus 5cm}static int Mdt\+::\+Deploy\+Utils\+::\+Console\+::level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_a134e2d7e4a59b3634f007ae09301c684}{}\label{class_mdt_1_1_deploy_utils_1_1_console_a134e2d7e4a59b3634f007ae09301c684}
+
+
+Get level. 
+
+
+
+Definition at line 65 of file Console.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!Mdt\+::\+Deploy\+Utils\+::\+Console@{Mdt\+::\+Deploy\+Utils\+::\+Console}}
+\subsubsection[{\texorpdfstring{set\+Level(int level)}{setLevel(int level)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Console\+::set\+Level (
+\begin{DoxyParamCaption}
+\item[{int}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_a389364a6d53b7361d321bd3aa9408f19}{}\label{class_mdt_1_1_deploy_utils_1_1_console_a389364a6d53b7361d321bd3aa9408f19}
+
+
+Set level. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape level} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 28 of file Console.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Console.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Console.\+cpp\end{DoxyCompactItemize}

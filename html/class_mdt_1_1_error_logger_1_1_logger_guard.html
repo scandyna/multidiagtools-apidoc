@@ -112,8 +112,16 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Scope guard for error <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a>. </p>
-<p>Typical usage: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  <span class="keyword">using</span> mdt::error::Logger;</div><div class="line">  <span class="keyword">using</span> mdt::error::LoggerGuard;</div><div class="line"></div><div class="line">  <a class="code" href="class_mdt_1_1_error_logger_1_1_logger_guard.html#a206dae2204438c86ce5fb70470b800e4">LoggerGuard</a> loggerGuard;</div><div class="line"></div><div class="line">  <span class="comment">// .. application code</span></div><div class="line"></div><div class="line">  <span class="comment">// Here, Logger::cleanup() will be called by loggerGuard.</span></div><div class="line">}</div></div><!-- fragment --> 
-<p>Definition at line <a class="el" href="_logger_8h_source.html#l00138">138</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
+<p>Typical usage: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  <span class="keyword">using</span> Mdt::Error::Logger;</div><div class="line">  <span class="keyword">using</span> Mdt::Error::LoggerGuard;</div><div class="line"></div><div class="line">  <a class="code" href="class_mdt_1_1_error_logger_1_1_logger_guard.html#a206dae2204438c86ce5fb70470b800e4">LoggerGuard</a> loggerGuard;</div><div class="line"></div><div class="line">  <span class="comment">// .. application code</span></div><div class="line"></div><div class="line">  <span class="comment">// Here, Logger::cleanup() will be called by loggerGuard.</span></div><div class="line">}</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>When using one of the <a class="el" href="namespace_mdt.html">Mdt</a> <a class="el" href="class_mdt_1_1_application.html" title="Application adds some helper for application initialization. ">Application</a>, the error logger is initialized, and logger's cleanup is also called in its destructor.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_mdt_1_1_core_application.html" title="CoreApplication adds some helper to QCoreApplication for application initialization. ">Mdt::CoreApplication</a> </dd>
+<dd>
+<a class="el" href="class_mdt_1_1_single_core_application.html" title="SingleCoreApplication adds some helper to QtSingleCoreApplication for application initialization...">Mdt::SingleCoreApplication</a> </dd>
+<dd>
+<a class="el" href="class_mdt_1_1_application.html" title="Application adds some helper for application initialization. ">Mdt::Application</a> </dd>
+<dd>
+<a class="el" href="class_mdt_1_1_single_application.html" title="SingleApplication adds some helper to QtSingleCoreApplication for application initialization. ">Mdt::SingleApplication</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="_logger_8h_source.html#l00219">219</a> of file <a class="el" href="_logger_8h_source.html">Logger.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a206dae2204438c86ce5fb70470b800e4"></a>
 <div class="memitem">
@@ -130,7 +138,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="_logger_8cpp_source.html#l00176">176</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_logger_8cpp_source.html#l00184">184</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
 
 </div>
 </div>
@@ -150,7 +158,7 @@ Public Member Functions</h2></td></tr>
 <p>Destructor. </p>
 <p>Will call cleanup on error logger </p>
 
-<p>Definition at line <a class="el" href="_logger_8cpp_source.html#l00180">180</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_logger_8cpp_source.html#l00188">188</a> of file <a class="el" href="_logger_8cpp_source.html">Logger.cpp</a>.</p>
 
 </div>
 </div>
@@ -161,7 +169,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 20 2017 13:27:39 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Sep 30 2017 12:22:41 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

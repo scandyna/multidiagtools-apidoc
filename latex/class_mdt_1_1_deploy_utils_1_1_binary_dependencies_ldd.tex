@@ -1,0 +1,101 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Ldd Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd}\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd}}
+
+
+Binary dependencies ldd implementation.  
+
+
+
+
+{\ttfamily \#include $<$Binary\+Dependencies\+Ldd.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Ldd\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Ldd\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2c033911e76b53cd89ecfcb4d91dcf10}{Binary\+Dependencies\+Ldd} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2e707c35408525ee49a0084ed1ee0555}{find\+Dependencies} (const Q\+String \&binary\+File\+Path) override
+\begin{DoxyCompactList}\small\item\em Find dependencies for a executable or a library. \end{DoxyCompactList}\item 
+void {\bfseries fill\+And\+Set\+Dependencies} (Plain\+Text\+::\+String\+Record\+List \&data)\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a61c12cac53a5031c6e5b67c0f5ea6268}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a61c12cac53a5031c6e5b67c0f5ea6268}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} {\bfseries string\+Record\+List\+To\+Library\+Info\+List} (const Plain\+Text\+::\+String\+Record\+List \&list)\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a94e4fe56032bee19342f94aa155616d3}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a94e4fe56032bee19342f94aa155616d3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Binary dependencies ldd implementation. 
+
+Definition at line 34 of file Binary\+Dependencies\+Ldd.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd}!Binary\+Dependencies\+Ldd@{Binary\+Dependencies\+Ldd}}
+\index{Binary\+Dependencies\+Ldd@{Binary\+Dependencies\+Ldd}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd}}
+\subsubsection[{\texorpdfstring{Binary\+Dependencies\+Ldd(\+Q\+Object $\ast$parent=nullptr)}{BinaryDependenciesLdd(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd\+::\+Binary\+Dependencies\+Ldd (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2c033911e76b53cd89ecfcb4d91dcf10}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2c033911e76b53cd89ecfcb4d91dcf10}
+
+
+Constructor. 
+
+
+
+Definition at line 50 of file Binary\+Dependencies\+Ldd.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Q\+String \&binary\+File\+Path) override}{findDependencies(const QString &binaryFilePath) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2e707c35408525ee49a0084ed1ee0555}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2e707c35408525ee49a0084ed1ee0555}
+
+
+Find dependencies for a executable or a library. 
+
+
+
+Implements \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}.
+
+
+
+Definition at line 56 of file Binary\+Dependencies\+Ldd.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Binary\+Dependencies\+Ldd.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Binary\+Dependencies\+Ldd.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,271 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Implementation\+Interface Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface}\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Implementation\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Implementation\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a242781cc7706c9cee62e6fe857a90194}{Binary\+Dependencies\+Implementation\+Interface} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8b83e0f29e8e5d7e760ad4f8f4d763d4}{set\+Library\+Search\+First\+Path\+List} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \&path\+List)
+\begin{DoxyCompactList}\small\item\em Set a list of paths where to search dependencies first. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8206539b4256a3cd2fbdcbba2930abde}{library\+Search\+First\+Path\+List} () const 
+\begin{DoxyCompactList}\small\item\em Get the list of paths where to search dependencies first. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}{find\+Dependencies} (const Q\+String \&binary\+File\+Path)=0
+\begin{DoxyCompactList}\small\item\em Find dependencies for a executable or a library. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a80ac2d4637c3551a186bd5afd4147390}{find\+Dependencies} (const Q\+String\+List \&binaries\+File\+Paths)
+\begin{DoxyCompactList}\small\item\em Find dependencies for a lits of binaries. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_accb8482907eba641b5f614b2357c7f9b}{find\+Dependencies} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries)
+\begin{DoxyCompactList}\small\item\em Find dependencies for a lits of libraries. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a2efebdcc70b6a43a23bc1908d94f4dc3}{dependencies} () const 
+\begin{DoxyCompactList}\small\item\em Get dependencies. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8e5a73410b12fa73a2087645cb0dc621}{last\+Error} () const 
+\begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_ae2d803dbc00c79897a9f42b4bc02996c}{set\+Dependencies} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a2efebdcc70b6a43a23bc1908d94f4dc3}{dependencies})
+\begin{DoxyCompactList}\small\item\em Set dependencies. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_ad089fb5f39dce89341d8150d61d2454d}{set\+Dependencies} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a2efebdcc70b6a43a23bc1908d94f4dc3}{dependencies}, const Q\+String\+List \&libraries\+To\+Exclude)
+\begin{DoxyCompactList}\small\item\em Set dependencies. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a5b641a5c61958ed07655a09ef2937996}{set\+Dependencies} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a2efebdcc70b6a43a23bc1908d94f4dc3}{dependencies}, const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries\+To\+Exclude)
+\begin{DoxyCompactList}\small\item\em Set dependencies. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a9745c52d6c7ebabee2e8b11eb80c3684}{set\+Last\+Error} (const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \&error)
+\begin{DoxyCompactList}\small\item\em Set last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file Binary\+Dependencies\+Implementation\+Interface.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!Binary\+Dependencies\+Implementation\+Interface@{Binary\+Dependencies\+Implementation\+Interface}}
+\index{Binary\+Dependencies\+Implementation\+Interface@{Binary\+Dependencies\+Implementation\+Interface}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{Binary\+Dependencies\+Implementation\+Interface(\+Q\+Object $\ast$parent=nullptr)}{BinaryDependenciesImplementationInterface(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::\+Binary\+Dependencies\+Implementation\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a242781cc7706c9cee62e6fe857a90194}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a242781cc7706c9cee62e6fe857a90194}
+
+
+Constructor. 
+
+
+
+Definition at line 29 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{dependencies() const }{dependencies() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Info\+List} Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::dependencies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a2efebdcc70b6a43a23bc1908d94f4dc3}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a2efebdcc70b6a43a23bc1908d94f4dc3}
+
+
+Get dependencies. 
+
+
+
+Definition at line 80 of file Binary\+Dependencies\+Implementation\+Interface.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Q\+String \&binary\+File\+Path)=0}{findDependencies(const QString &binaryFilePath)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}
+
+
+Find dependencies for a executable or a library. 
+
+
+
+Implemented in \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ad17be25ef296988d6255faa5c1dd573d}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Objdump}, and \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_ldd_a2e707c35408525ee49a0084ed1ee0555}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Ldd}.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Q\+String\+List \&binaries\+File\+Paths)}{findDependencies(const QStringList &binariesFilePaths)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+List \&}]{binaries\+File\+Paths}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a80ac2d4637c3551a186bd5afd4147390}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a80ac2d4637c3551a186bd5afd4147390}
+
+
+Find dependencies for a lits of binaries. 
+
+This default implementation simply calls \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}{find\+Dependencies(const Q\+String \&)} for each binary file in {\itshape binaries\+File\+Paths} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape binaries\+File\+Paths} must not be a empty list 
+\end{DoxyPrecond}
+
+
+Reimplemented in \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_acaa13006ae7478fa5555f0d7356ae9d2}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Objdump}.
+
+
+
+Definition at line 39 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!find\+Dependencies@{find\+Dependencies}}
+\index{find\+Dependencies@{find\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{find\+Dependencies(const Library\+Info\+List \&libraries)}{findDependencies(const LibraryInfoList &libraries)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::find\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{libraries}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_accb8482907eba641b5f614b2357c7f9b}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_accb8482907eba641b5f614b2357c7f9b}
+
+
+Find dependencies for a lits of libraries. 
+
+This default implementation simply calls \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}{find\+Dependencies(const Q\+String \&)} for each library in {\itshape libraries} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape libraries} must not be a empty list 
+\end{DoxyPrecond}
+
+
+Reimplemented in \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ae26f2210f17cca66ba313751ae08e412}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Objdump}.
+
+
+
+Definition at line 56 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{last\+Error() const }{lastError() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Error} Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8e5a73410b12fa73a2087645cb0dc621}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8e5a73410b12fa73a2087645cb0dc621}
+
+
+Get last error. 
+
+
+
+Definition at line 87 of file Binary\+Dependencies\+Implementation\+Interface.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!library\+Search\+First\+Path\+List@{library\+Search\+First\+Path\+List}}
+\index{library\+Search\+First\+Path\+List@{library\+Search\+First\+Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{library\+Search\+First\+Path\+List() const }{librarySearchFirstPathList() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::library\+Search\+First\+Path\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8206539b4256a3cd2fbdcbba2930abde}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8206539b4256a3cd2fbdcbba2930abde}
+
+
+Get the list of paths where to search dependencies first. 
+
+
+
+Definition at line 51 of file Binary\+Dependencies\+Implementation\+Interface.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!set\+Dependencies@{set\+Dependencies}}
+\index{set\+Dependencies@{set\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{set\+Dependencies(const Library\+Info\+List \&dependencies)}{setDependencies(const LibraryInfoList &dependencies)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::set\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{dependencies}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_ae2d803dbc00c79897a9f42b4bc02996c}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_ae2d803dbc00c79897a9f42b4bc02996c}
+
+
+Set dependencies. 
+
+
+
+Definition at line 73 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!set\+Dependencies@{set\+Dependencies}}
+\index{set\+Dependencies@{set\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{set\+Dependencies(const Library\+Info\+List \&dependencies, const Q\+String\+List \&libraries\+To\+Exclude)}{setDependencies(const LibraryInfoList &dependencies, const QStringList &librariesToExclude)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::set\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{dependencies, }
+\item[{const Q\+String\+List \&}]{libraries\+To\+Exclude}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_ad089fb5f39dce89341d8150d61d2454d}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_ad089fb5f39dce89341d8150d61d2454d}
+
+
+Set dependencies. 
+
+
+
+Definition at line 78 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!set\+Dependencies@{set\+Dependencies}}
+\index{set\+Dependencies@{set\+Dependencies}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{set\+Dependencies(const Library\+Info\+List \&dependencies, const Library\+Info\+List \&libraries\+To\+Exclude)}{setDependencies(const LibraryInfoList &dependencies, const LibraryInfoList &librariesToExclude)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::set\+Dependencies (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{dependencies, }
+\item[{const {\bf Library\+Info\+List} \&}]{libraries\+To\+Exclude}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a5b641a5c61958ed07655a09ef2937996}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a5b641a5c61958ed07655a09ef2937996}
+
+
+Set dependencies. 
+
+
+
+Definition at line 87 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!set\+Last\+Error@{set\+Last\+Error}}
+\index{set\+Last\+Error@{set\+Last\+Error}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{set\+Last\+Error(const Mdt\+::\+Error \&error)}{setLastError(const Mdt::Error &error)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::set\+Last\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+Error} \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a9745c52d6c7ebabee2e8b11eb80c3684}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a9745c52d6c7ebabee2e8b11eb80c3684}
+
+
+Set last error. 
+
+
+
+Definition at line 96 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}!set\+Library\+Search\+First\+Path\+List@{set\+Library\+Search\+First\+Path\+List}}
+\index{set\+Library\+Search\+First\+Path\+List@{set\+Library\+Search\+First\+Path\+List}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}}
+\subsubsection[{\texorpdfstring{set\+Library\+Search\+First\+Path\+List(const Path\+List \&path\+List)}{setLibrarySearchFirstPathList(const PathList &pathList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface\+::set\+Library\+Search\+First\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{path\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8b83e0f29e8e5d7e760ad4f8f4d763d4}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a8b83e0f29e8e5d7e760ad4f8f4d763d4}
+
+
+Set a list of paths where to search dependencies first. 
+
+
+
+Definition at line 34 of file Binary\+Dependencies\+Implementation\+Interface.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Binary\+Dependencies\+Implementation\+Interface.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Binary\+Dependencies\+Implementation\+Interface.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,249 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Library\+Version Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_library_version}\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+
+
+Representation of a version of a library.  
+
+
+
+
+{\ttfamily \#include $<$Library\+Version.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_ad9df7f4a011f6053ae40ae0d5f139c23}{Library\+Version} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a null version. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a94dd31adbe68dba547d67c0956669989}{Library\+Version} (qint8 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a12ad69de5e906500584d7c6f84c1f4b3}{version\+Major}, qint8 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a5974023e15b6810679f88ed1c0f8cd89}{version\+Minor}=-\/1, qint8 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a28dd254e9f168d136f8938d6f8860e08}{version\+Patch}=-\/1)
+\begin{DoxyCompactList}\small\item\em Construct a library version. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a3e956306079849688ebf9889ec9ea192}{Library\+Version} (const Q\+String \&version)
+\begin{DoxyCompactList}\small\item\em Construct a library version from a version string. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_aaac2f9f67caca950957270512ddff372}{Library\+Version} (const Q\+String\+Ref \&version)
+\begin{DoxyCompactList}\small\item\em Construct a library version from a version string. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a1bb3b5c62f995a638b2470523954cfd3}{Library\+Version} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \&)=default
+\begin{DoxyCompactList}\small\item\em Copy construct a version from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a94b675ac2b9536b17b6589cf022fb7d1}{operator=} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \&)=default
+\begin{DoxyCompactList}\small\item\em Copy assign to this version from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_ac7a782eb42a7da0506c7d1a37f659b46}{Library\+Version} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move construct a version from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a225f6ffcbb1069fbc2d9d29327903568}{operator=} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Move assign to this version from a other. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a7e4ee196a0e36a20e968f169aeeb0a3f}{is\+Null} () const 
+\begin{DoxyCompactList}\small\item\em Check is this library version is null. \end{DoxyCompactList}\item 
+qint8 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a12ad69de5e906500584d7c6f84c1f4b3}{version\+Major} () const 
+\begin{DoxyCompactList}\small\item\em Get version major. \end{DoxyCompactList}\item 
+qint8 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a5974023e15b6810679f88ed1c0f8cd89}{version\+Minor} () const 
+\begin{DoxyCompactList}\small\item\em Get version minor. \end{DoxyCompactList}\item 
+qint8 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a28dd254e9f168d136f8938d6f8860e08}{version\+Patch} () const 
+\begin{DoxyCompactList}\small\item\em Get version patch. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a3fb89e24a243d660084fdd618d7c3054}{to\+String} () const 
+\begin{DoxyCompactList}\small\item\em Get a string representation of this library version. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of a version of a library. 
+
+Definition at line 32 of file Library\+Version.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!Library\+Version@{Library\+Version}}
+\index{Library\+Version@{Library\+Version}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{Library\+Version()=default}{LibraryVersion()=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::\+Library\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_ad9df7f4a011f6053ae40ae0d5f139c23}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_ad9df7f4a011f6053ae40ae0d5f139c23}
+
+
+Construct a null version. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!Library\+Version@{Library\+Version}}
+\index{Library\+Version@{Library\+Version}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{Library\+Version(qint8 version\+Major, qint8 version\+Minor=-\/1, qint8 version\+Patch=-\/1)}{LibraryVersion(qint8 versionMajor, qint8 versionMinor=-1, qint8 versionPatch=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::\+Library\+Version (
+\begin{DoxyParamCaption}
+\item[{qint8}]{version\+Major, }
+\item[{qint8}]{version\+Minor = {\ttfamily -\/1}, }
+\item[{qint8}]{version\+Patch = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a94dd31adbe68dba547d67c0956669989}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a94dd31adbe68dba547d67c0956669989}
+
+
+Construct a library version. 
+
+\begin{DoxyPrecond}{Precondition}
+version\+Major must be $>$= 0 
+
+if version\+Patch is $>$=0 , version\+Minor must also be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 31 of file Library\+Version.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!Library\+Version@{Library\+Version}}
+\index{Library\+Version@{Library\+Version}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{Library\+Version(const Q\+String \&version)}{LibraryVersion(const QString &version)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::\+Library\+Version (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a3e956306079849688ebf9889ec9ea192}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a3e956306079849688ebf9889ec9ea192}
+
+
+Construct a library version from a version string. 
+
+If {\itshape version} does not represent a valid version string, this will be a null library version.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a7e4ee196a0e36a20e968f169aeeb0a3f}{is\+Null()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 54 of file Library\+Version.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!Library\+Version@{Library\+Version}}
+\index{Library\+Version@{Library\+Version}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{Library\+Version(const Q\+String\+Ref \&version)}{LibraryVersion(const QStringRef &version)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::\+Library\+Version (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+Ref \&}]{version}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_aaac2f9f67caca950957270512ddff372}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_aaac2f9f67caca950957270512ddff372}
+
+
+Construct a library version from a version string. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version_a3e956306079849688ebf9889ec9ea192}{Library\+Version(const Q\+String \&)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 40 of file Library\+Version.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!Library\+Version@{Library\+Version}}
+\index{Library\+Version@{Library\+Version}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{Library\+Version(const Library\+Version \&)=default}{LibraryVersion(const LibraryVersion &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::\+Library\+Version (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Version} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a1bb3b5c62f995a638b2470523954cfd3}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a1bb3b5c62f995a638b2470523954cfd3}
+
+
+Copy construct a version from a other. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!Library\+Version@{Library\+Version}}
+\index{Library\+Version@{Library\+Version}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{Library\+Version(\+Library\+Version \&\&)=default}{LibraryVersion(LibraryVersion &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::\+Library\+Version (
+\begin{DoxyParamCaption}
+\item[{{\bf Library\+Version} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_ac7a782eb42a7da0506c7d1a37f659b46}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_ac7a782eb42a7da0506c7d1a37f659b46}
+
+
+Move construct a version from a other. 
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!is\+Null@{is\+Null}}
+\index{is\+Null@{is\+Null}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{is\+Null() const }{isNull() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a7e4ee196a0e36a20e968f169aeeb0a3f}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a7e4ee196a0e36a20e968f169aeeb0a3f}
+
+
+Check is this library version is null. 
+
+
+
+Definition at line 83 of file Library\+Version.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{operator=(const Library\+Version \&)=default}{operator=(const LibraryVersion &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Version}\& Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Version} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a94b675ac2b9536b17b6589cf022fb7d1}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a94b675ac2b9536b17b6589cf022fb7d1}
+
+
+Copy assign to this version from a other. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!operator=@{operator=}}
+\index{operator=@{operator=}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{operator=(\+Library\+Version \&\&)=default}{operator=(LibraryVersion &&)=default}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Version}\& Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Library\+Version} \&\&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a225f6ffcbb1069fbc2d9d29327903568}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a225f6ffcbb1069fbc2d9d29327903568}
+
+
+Move assign to this version from a other. 
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{to\+String() const }{toString() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a3fb89e24a243d660084fdd618d7c3054}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a3fb89e24a243d660084fdd618d7c3054}
+
+
+Get a string representation of this library version. 
+
+
+
+Definition at line 70 of file Library\+Version.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!version\+Major@{version\+Major}}
+\index{version\+Major@{version\+Major}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{version\+Major() const }{versionMajor() const }}]{\setlength{\rightskip}{0pt plus 5cm}qint8 Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::version\+Major (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a12ad69de5e906500584d7c6f84c1f4b3}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a12ad69de5e906500584d7c6f84c1f4b3}
+
+
+Get version major. 
+
+
+
+Definition at line 90 of file Library\+Version.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!version\+Minor@{version\+Minor}}
+\index{version\+Minor@{version\+Minor}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{version\+Minor() const }{versionMinor() const }}]{\setlength{\rightskip}{0pt plus 5cm}qint8 Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::version\+Minor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a5974023e15b6810679f88ed1c0f8cd89}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a5974023e15b6810679f88ed1c0f8cd89}
+
+
+Get version minor. 
+
+
+
+Definition at line 97 of file Library\+Version.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}!version\+Patch@{version\+Patch}}
+\index{version\+Patch@{version\+Patch}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Version@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Version}}
+\subsubsection[{\texorpdfstring{version\+Patch() const }{versionPatch() const }}]{\setlength{\rightskip}{0pt plus 5cm}qint8 Mdt\+::\+Deploy\+Utils\+::\+Library\+Version\+::version\+Patch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_version_a28dd254e9f168d136f8938d6f8860e08}{}\label{class_mdt_1_1_deploy_utils_1_1_library_version_a28dd254e9f168d136f8938d6f8860e08}
+
+
+Get version patch. 
+
+
+
+Definition at line 104 of file Library\+Version.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Library\+Version.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Library\+Version.\+cpp\end{DoxyCompactItemize}
