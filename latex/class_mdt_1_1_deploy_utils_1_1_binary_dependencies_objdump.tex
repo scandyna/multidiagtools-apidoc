@@ -11,28 +11,12 @@ Binary dependencies objdump implementation.
 
 
 
-Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Objdump\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=264pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump__inherit__graph}
-\end{center}
-\end{figure}
+Inherits Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface.
 
-
-Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Binary\+Dependencies\+Objdump\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=264pt]{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_a3bb8d6f31156903ae1b279b3dd6e87b8}{Binary\+Dependencies\+Objdump} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_a3bb8d6f31156903ae1b279b3dd6e87b8}{Binary\+Dependencies\+Objdump} (Q\+Object $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ad17be25ef296988d6255faa5c1dd573d}{find\+Dependencies} (const Q\+String \&binary\+File\+Path) override
 \begin{DoxyCompactList}\small\item\em Find dependencies for a executable or a library. \end{DoxyCompactList}\item 
@@ -42,7 +26,6 @@ bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ae26f
 \begin{DoxyCompactList}\small\item\em Find dependencies for a list of libraries. \end{DoxyCompactList}\item 
 \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_af0ed8d25c32ae6fa1540ce43c63b1af6}{library\+Search\+Path\+List} () const 
 \begin{DoxyCompactList}\small\item\em Get a list of paths where libraries are searched. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
@@ -57,7 +40,7 @@ Definition at line 37 of file Binary\+Dependencies\+Objdump.\+h.
 \index{Binary\+Dependencies\+Objdump@{Binary\+Dependencies\+Objdump}!Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Objdump@{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Objdump}}
 \subsubsection[{\texorpdfstring{Binary\+Dependencies\+Objdump(\+Q\+Object $\ast$parent=nullptr)}{BinaryDependenciesObjdump(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Objdump\+::\+Binary\+Dependencies\+Objdump (
 \begin{DoxyParamCaption}
-\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr}}
 \end{DoxyParamCaption}
 )}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_a3bb8d6f31156903ae1b279b3dd6e87b8}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_a3bb8d6f31156903ae1b279b3dd6e87b8}
 
@@ -77,14 +60,10 @@ Definition at line 58 of file Binary\+Dependencies\+Objdump.\+cpp.
 \begin{DoxyParamCaption}
 \item[{const Q\+String \&}]{binary\+File\+Path}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ad17be25ef296988d6255faa5c1dd573d}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ad17be25ef296988d6255faa5c1dd573d}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ad17be25ef296988d6255faa5c1dd573d}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ad17be25ef296988d6255faa5c1dd573d}
 
 
 Find dependencies for a executable or a library. 
-
-
-
-Implements \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_adeba489faa5c76a45bbe322e814cfbc0}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}.
 
 
 
@@ -96,14 +75,10 @@ Definition at line 63 of file Binary\+Dependencies\+Objdump.\+cpp.
 \begin{DoxyParamCaption}
 \item[{const Q\+String\+List \&}]{binaries\+File\+Paths}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_acaa13006ae7478fa5555f0d7356ae9d2}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_acaa13006ae7478fa5555f0d7356ae9d2}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_acaa13006ae7478fa5555f0d7356ae9d2}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_acaa13006ae7478fa5555f0d7356ae9d2}
 
 
 Find dependencies for a list of binaries. 
-
-
-
-Reimplemented from \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_a80ac2d4637c3551a186bd5afd4147390}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}.
 
 
 
@@ -115,14 +90,10 @@ Definition at line 75 of file Binary\+Dependencies\+Objdump.\+cpp.
 \begin{DoxyParamCaption}
 \item[{const {\bf Library\+Info\+List} \&}]{libraries}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ae26f2210f17cca66ba313751ae08e412}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ae26f2210f17cca66ba313751ae08e412}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ae26f2210f17cca66ba313751ae08e412}{}\label{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_objdump_ae26f2210f17cca66ba313751ae08e412}
 
 
 Find dependencies for a list of libraries. 
-
-
-
-Reimplemented from \hyperlink{class_mdt_1_1_deploy_utils_1_1_binary_dependencies_implementation_interface_accb8482907eba641b5f614b2357c7f9b}{Mdt\+::\+Deploy\+Utils\+::\+Binary\+Dependencies\+Implementation\+Interface}.
 
 
 

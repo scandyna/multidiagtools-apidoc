@@ -11,22 +11,8 @@ Abstract base of a main function in Qt console application with a event loop.
 
 
 
-Inheritance diagram for Mdt\+:\+:Abstract\+Console\+Application\+Main\+Function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=240pt]{class_mdt_1_1_abstract_console_application_main_function__inherit__graph}
-\end{center}
-\end{figure}
+Inherits Q\+Object.
 
-
-Collaboration diagram for Mdt\+:\+:Abstract\+Console\+Application\+Main\+Function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=240pt]{class_mdt_1_1_abstract_console_application_main_function__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Slots}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,7 +21,7 @@ virtual void \hyperlink{class_mdt_1_1_abstract_console_application_main_function
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}{Abstract\+Console\+Application\+Main\+Function} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=nullptr)
+\hyperlink{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}{Abstract\+Console\+Application\+Main\+Function} (Q\+Object $\ast$parent=nullptr)
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
 virtual int \hyperlink{class_mdt_1_1_abstract_console_application_main_function_a34213b6ac2188b3620f5c2f5ce4ee287}{run\+Main} ()=0
 \begin{DoxyCompactList}\small\item\em main function implementation \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -57,7 +43,7 @@ The class declaration My\+Main\+Function.\+h could look like\+:
 
  \textcolor{keyword}{public}:
 
-  \textcolor{keyword}{explicit} MyMainFunction(\hyperlink{class_q_object}{QObject}* parent = \textcolor{keyword}{nullptr});
+  \textcolor{keyword}{explicit} MyMainFunction(QObject* parent = \textcolor{keyword}{nullptr});
   \textcolor{keywordtype}{int} \hyperlink{class_mdt_1_1_abstract_console_application_main_function_a34213b6ac2188b3620f5c2f5ce4ee287}{runMain}() \textcolor{keyword}{override};
 \};
 \end{DoxyCode}
@@ -74,7 +60,7 @@ Example of the implementation in My\+Main\+Function.\+cpp\+:
 
 Finaly, in main.\+cpp\+: 
 \begin{DoxyCode}
-\hyperlink{class_q_core_application}{QCoreApplication} app(argc, argv);
+QCoreApplication app(argc, argv);
 
 \textcolor{comment}{// This will call runMain() once the event loop started}
 MyMainFunction mainImpl;
@@ -92,7 +78,7 @@ Definition at line 62 of file Abstract\+Console\+Application\+Main\+Function.\+h
 \index{Abstract\+Console\+Application\+Main\+Function@{Abstract\+Console\+Application\+Main\+Function}!Mdt\+::\+Abstract\+Console\+Application\+Main\+Function@{Mdt\+::\+Abstract\+Console\+Application\+Main\+Function}}
 \subsubsection[{\texorpdfstring{Abstract\+Console\+Application\+Main\+Function(\+Q\+Object $\ast$parent=nullptr)}{AbstractConsoleApplicationMainFunction(QObject *parent=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Abstract\+Console\+Application\+Main\+Function\+::\+Abstract\+Console\+Application\+Main\+Function (
 \begin{DoxyParamCaption}
-\item[{{\bf Q\+Object} $\ast$}]{parent = {\ttfamily nullptr}}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}{}\label{class_mdt_1_1_abstract_console_application_main_function_aec80aaecedd4a2d6696878b96cfc9b40}
 
@@ -117,7 +103,7 @@ Definition at line 27 of file Abstract\+Console\+Application\+Main\+Function.\+c
 
 Cleanup code. 
 
-If some cleanup has to be done before the application exists, this function can be implemented. See \hyperlink{class_q_core_application}{Q\+Core\+Application} documentation to know why this is a recommanded way to do cleanup.
+If some cleanup has to be done before the application exists, this function can be implemented. See Q\+Core\+Application documentation to know why this is a recommanded way to do cleanup.
 
 This default implementation does nothing. 
 
@@ -134,10 +120,10 @@ Definition at line 41 of file Abstract\+Console\+Application\+Main\+Function.\+c
 
 Returns the list of command-\/line arguments. 
 
-Returns Q\+Core\+Application\+::arguments(). As stated in \hyperlink{class_q_core_application}{Q\+Core\+Application} documentation, this method is slow, so the result should be stored in a variable if accessed many times (this is wy it is prefixed with get here)
+Returns Q\+Core\+Application\+::arguments(). As stated in Q\+Core\+Application documentation, this method is slow, so the result should be stored in a variable if accessed many times (this is wy it is prefixed with get here)
 
 \begin{DoxyPrecond}{Precondition}
-A instance of a \hyperlink{class_q_core_application}{Q\+Core\+Application} (or one of its derivate) must exist. 
+A instance of a Q\+Core\+Application (or one of its derivate) must exist. 
 \end{DoxyPrecond}
 
 

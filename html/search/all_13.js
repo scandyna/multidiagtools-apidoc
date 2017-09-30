@@ -5,6 +5,5 @@ var searchData=
   ['version',['version',['../class_mdt_1_1_deploy_utils_1_1_library_name.html#a59e3df9a9af9a081a9b09eec7292bb80',1,'Mdt::DeployUtils::LibraryName']]],
   ['versionmajor',['versionMajor',['../class_mdt_1_1_deploy_utils_1_1_library_version.html#a12ad69de5e906500584d7c6f84c1f4b3',1,'Mdt::DeployUtils::LibraryVersion']]],
   ['versionminor',['versionMinor',['../class_mdt_1_1_deploy_utils_1_1_library_version.html#a5974023e15b6810679f88ed1c0f8cd89',1,'Mdt::DeployUtils::LibraryVersion']]],
-  ['versionpatch',['versionPatch',['../class_mdt_1_1_deploy_utils_1_1_library_version.html#a28dd254e9f168d136f8938d6f8860e08',1,'Mdt::DeployUtils::LibraryVersion']]],
-  ['vertexdata',['VertexData',['../struct_mdt_1_1_deploy_utils_1_1_impl_1_1_library_tree_1_1_vertex_data.html',1,'Mdt::DeployUtils::Impl::LibraryTree']]]
+  ['versionpatch',['versionPatch',['../class_mdt_1_1_deploy_utils_1_1_library_version.html#a28dd254e9f168d136f8938d6f8860e08',1,'Mdt::DeployUtils::LibraryVersion']]]
 ];

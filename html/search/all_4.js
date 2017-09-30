@@ -10,9 +10,6 @@ var searchData=
   ['errordialog',['ErrorDialog',['../class_mdt_1_1_error_dialog.html',1,'Mdt']]],
   ['errordialog',['ErrorDialog',['../class_mdt_1_1_error_dialog.html#a75180123982c0d9261a51badd2cc8b35',1,'Mdt::ErrorDialog::ErrorDialog(QWidget *parent=nullptr)'],['../class_mdt_1_1_error_dialog.html#a5f8bc28282e07d709cd9157bd4425d83',1,'Mdt::ErrorDialog::ErrorDialog(const Mdt::Error &amp;error, QWidget *parent=nullptr)']]],
   ['erroroccured',['errorOccured',['../struct_mdt_1_1_plain_text_1_1_file_input_iterator.html#afa93baaf36f16456fa29451fa4fcf9f3',1,'Mdt::PlainText::FileInputIterator']]],
-  ['errorprivate',['ErrorPrivate',['../struct_mdt_1_1_error_private.html',1,'Mdt']]],
-  ['errorprivatebase',['ErrorPrivateBase',['../struct_mdt_1_1_error_private_base.html',1,'Mdt']]],
-  ['errorprivatebase',['ErrorPrivateBase',['../struct_mdt_1_1_error_private_base.html#a9c56872835666228e16e25c320914b95',1,'Mdt::ErrorPrivateBase']]],
   ['errorqprocess',['ErrorQProcess',['../class_mdt_1_1_error_q_process.html',1,'Mdt']]],
   ['escaperegexmetacharacters',['escapeRegexMetacharacters',['../class_mdt_1_1_filter_expression_1_1_like_expression_regex_transform.html#a0beac0e2295cfa541e2511e814c54b8f',1,'Mdt::FilterExpression::LikeExpressionRegexTransform']]],
   ['excludesystempaths',['ExcludeSystemPaths',['../class_mdt_1_1_deploy_utils_1_1_library.html#ab9f58dba8290dd1882a21d73cc7c10d0ad00095fee49be0d8f0e8c7467dc8ebec',1,'Mdt::DeployUtils::Library']]],
@@ -25,6 +22,5 @@ var searchData=
   ['expected',['Expected',['../class_mdt_1_1_expected.html',1,'Mdt']]],
   ['expected',['Expected',['../class_mdt_1_1_expected.html#ab271cafc564b8dba7c5737a8e6f78a8d',1,'Mdt::Expected::Expected()'],['../class_mdt_1_1_expected.html#a5046d26152b32d7184d756f00325cd60',1,'Mdt::Expected::Expected(const T &amp;v)'],['../class_mdt_1_1_expected.html#abf1fd00a7d5508ab2030f729105de12f',1,'Mdt::Expected::Expected(T &amp;&amp;v)'],['../class_mdt_1_1_expected.html#a98be29378d9ee4d855b041c5a347d967',1,'Mdt::Expected::Expected(const Mdt::Error &amp;e)'],['../class_mdt_1_1_expected.html#a63cf8d36dfb4657d39fcfb614f575ab4',1,'Mdt::Expected::Expected(Mdt::Error &amp;&amp;e)'],['../class_mdt_1_1_expected.html#a74ad44cec43f7cae5cd73388283818e3',1,'Mdt::Expected::Expected(const Expected &amp;other)'],['../class_mdt_1_1_expected.html#a8d14f0fbfb0c4e1acbfbae539f797aa8',1,'Mdt::Expected::Expected(Expected &amp;&amp;other)']]],
   ['expression',['expression',['../struct_mdt_1_1_filter_expression_1_1_like_expression_terminal.html#a412c52c77b9901dc8fc1e59a42df568b',1,'Mdt::FilterExpression::LikeExpressionTerminal']]],
-  ['extends',['extends',['../classboost_1_1proto_1_1extends.html',1,'']]],
   ['extension',['extension',['../class_mdt_1_1_deploy_utils_1_1_library_name.html#a34442b11c8cd11ceb8f6903d473dcd2d',1,'Mdt::DeployUtils::LibraryName']]]
 ];

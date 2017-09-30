@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['qabstracttablemodel',['QAbstractTableModel',['../class_q_abstract_table_model.html',1,'']]],
-  ['qapplication',['QApplication',['../class_q_application.html',1,'']]],
-  ['qcoreapplication',['QCoreApplication',['../class_q_core_application.html',1,'']]],
-  ['qmessagebox',['QMessageBox',['../class_q_message_box.html',1,'']]],
-  ['qobject',['QObject',['../class_q_object.html',1,'']]],
-  ['qshareddata',['QSharedData',['../class_q_shared_data.html',1,'']]],
   ['qtlibrary',['QtLibrary',['../class_mdt_1_1_deploy_utils_1_1_qt_library.html',1,'Mdt::DeployUtils']]],
-  ['qtlocalpeer',['QtLocalPeer',['../class_qt_local_peer.html',1,'']]],
   ['qtlockedfile',['QtLockedFile',['../class_qt_l_p___private_1_1_qt_locked_file.html',1,'QtLP_Private']]],
-  ['qtlockedfile',['QtLockedFile',['../class_qt_locked_file.html',1,'QtLockedFile'],['../class_qt_l_p___private_1_1_qt_locked_file.html#a69bf1d82b1ca46f97466634d8f9587aa',1,'QtLP_Private::QtLockedFile::QtLockedFile()'],['../class_qt_l_p___private_1_1_qt_locked_file.html#a8b7a228ae02dca4bb99743219d0cdb7b',1,'QtLP_Private::QtLockedFile::QtLockedFile(const QString &amp;name)']]],
+  ['qtlockedfile',['QtLockedFile',['../class_qt_l_p___private_1_1_qt_locked_file.html#a69bf1d82b1ca46f97466634d8f9587aa',1,'QtLP_Private::QtLockedFile::QtLockedFile()'],['../class_qt_l_p___private_1_1_qt_locked_file.html#a8b7a228ae02dca4bb99743219d0cdb7b',1,'QtLP_Private::QtLockedFile::QtLockedFile(const QString &amp;name)']]],
   ['qtmodulelist',['QtModuleList',['../class_mdt_1_1_deploy_utils_1_1_qt_module_list.html',1,'Mdt::DeployUtils']]],
   ['qtmodulelist',['QtModuleList',['../class_mdt_1_1_deploy_utils_1_1_qt_module_list.html#ab23ea2c60a6bf96708beb5c383b35436',1,'Mdt::DeployUtils::QtModuleList::QtModuleList()=default'],['../class_mdt_1_1_deploy_utils_1_1_qt_module_list.html#a891a99d6bb1c71d110f5efaba0996d95',1,'Mdt::DeployUtils::QtModuleList::QtModuleList(std::initializer_list&lt; QtModule &gt; list)'],['../class_mdt_1_1_deploy_utils_1_1_qt_module_list.html#a56486fa00efe046b3987b4d414af2806',1,'Mdt::DeployUtils::QtModuleList::QtModuleList(const QtModuleList &amp;)=default'],['../class_mdt_1_1_deploy_utils_1_1_qt_module_list.html#a0b3220a68573bed2411c497b505623d4',1,'Mdt::DeployUtils::QtModuleList::QtModuleList(QtModuleList &amp;&amp;)=default']]],
   ['qtsingleapplication',['QtSingleApplication',['../class_qt_single_application.html',1,'QtSingleApplication'],['../class_qt_single_application.html#afe5e96d236e42949e65669eca282acbd',1,'QtSingleApplication::QtSingleApplication(int &amp;argc, char **argv, bool GUIenabled=true)'],['../class_qt_single_application.html#a746192779985e28f22fd17766884518e',1,'QtSingleApplication::QtSingleApplication(const QString &amp;id, int &amp;argc, char **argv)'],['../class_qt_single_application.html#adcb7a28eec3eef34c6474fb419509895',1,'QtSingleApplication::QtSingleApplication(int &amp;argc, char **argv, Type type)']]],

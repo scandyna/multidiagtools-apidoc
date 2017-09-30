@@ -1,4 +1,3 @@
 <map id="Mdt::SingleCoreApplication" name="Mdt::SingleCoreApplication">
-<area shape="rect" id="node2" href="$class_qt_single_core_application.html" title="A variant of the QtSingleApplication class for non&#45;GUI applications. " alt="" coords="13,80,177,107"/>
-<area shape="rect" id="node3" href="$class_q_core_application.html" title="QCoreApplication" alt="" coords="33,5,157,32"/>
+<area shape="rect" id="node2" href="$class_qt_single_core_application.html" title="A variant of the QtSingleApplication class for non&#45;GUI applications. " alt="" coords="13,5,177,32"/>
 </map>

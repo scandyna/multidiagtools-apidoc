@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['genericerror',['GenericError',['../struct_mdt_1_1_generic_error.html',1,'Mdt']]],
   ['get',['get',['../class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data.html#a95213b7621f220618e8c67bc4f5f7bfc',1,'Mdt::PlainText::FileInputIteratorSharedData']]],
   ['getarguments',['getArguments',['../class_mdt_1_1_abstract_console_application_main_function.html#a4bfe1909139f3c30b03797f7778290fb',1,'Mdt::AbstractConsoleApplicationMainFunction']]],
   ['geterrorstack',['getErrorStack',['../class_mdt_1_1_error.html#a6acc6143b706449ba1ff083286d5ccf6',1,'Mdt::Error']]],

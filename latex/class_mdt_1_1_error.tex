@@ -10,14 +10,6 @@ Value class that contains a error.
 {\ttfamily \#include $<$Error.\+h$>$}
 
 \subsection*{Public Types}
-\begin{DoxyCompactItemize}
-\item 
-enum \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \+: short \{ \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a1f0076cc77af5bed268bcef0c88969de}{No\+Error}, 
-\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6cf5d2017767cf4086ebb2d245d42f11}{Info}, 
-\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6b9dbb52e31678b806f4ecf1ae23d2ab}{Warning}, 
-\hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068a6d4d123a2a43721c206c455a721567b6}{Critical}
- \}\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_error}{Error} level. \end{DoxyCompactList}
-\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,7 +17,7 @@ enum \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \+
 \begin{DoxyCompactList}\small\item\em Construct a null error. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mdt_1_1_error_ad12894ddf0783443f8351371b701ca89}{Error} (const T \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const Q\+String \&class\+Name, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
 \begin{DoxyCompactList}\small\item\em Construct a error with error and source set. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}{Error} (const T \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}{Error} (const T \&\hyperlink{class_mdt_1_1_error_a0d042250a76d0351b8c19367572f5e11}{error}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a99327678615e8f2bddd22cd59482bfc2}{text}, \hyperlink{class_mdt_1_1_error_ab533dc690f68a8635232db594194a068}{Level} \hyperlink{class_mdt_1_1_error_a9c73117a49791ab87163b815d6a3e0c9}{level}, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const Q\+Object $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
 \begin{DoxyCompactList}\small\item\em Construct a error with error and source set. \end{DoxyCompactList}\item 
 \hyperlink{class_mdt_1_1_error_a7d7baf19eba7c6f5fb446a919fe8ee41}{Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&)=default
 \begin{DoxyCompactList}\small\item\em Construct a copy of other error. \end{DoxyCompactList}\item 
@@ -55,7 +47,7 @@ std\+::vector$<$ \hyperlink{class_mdt_1_1_error}{Error} $>$ \hyperlink{class_mdt
 \begin{DoxyCompactList}\small\item\em Get error stack. \end{DoxyCompactList}\item 
 void \hyperlink{class_mdt_1_1_error_a785bdfbb360e3a29a465a9baeb1ac58b}{set\+Source} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const Q\+String \&class\+Name, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
 \begin{DoxyCompactList}\small\item\em Add the source of error. \end{DoxyCompactList}\item 
-void \hyperlink{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}{set\+Source} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+void \hyperlink{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}{set\+Source} (const Q\+String \&\hyperlink{class_mdt_1_1_error_a5f7cdab03c2c0955693ace234039cd53}{file\+Name}, int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line}, const Q\+Object $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
 \begin{DoxyCompactList}\small\item\em Add the source of error. \end{DoxyCompactList}\item 
 void \hyperlink{class_mdt_1_1_error_a1b4a57bd4177d2985abd62b6b49a43f8}{commit} ()
 \begin{DoxyCompactList}\small\item\em Commit error. \end{DoxyCompactList}\item 
@@ -70,7 +62,7 @@ int \hyperlink{class_mdt_1_1_error_a5b887edc31341eb23557905e7a2d69ae}{file\+Line
 \item 
 static \hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_ab8b7aaf497879d1ca16784fae96d3bb3}{from\+Q\+File\+Device} (const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const Q\+String \&class\+Name, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
 \begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape file\+Device}. \end{DoxyCompactList}\item 
-static \hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}{from\+Q\+File\+Device} (const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const \hyperlink{class_q_object}{Q\+Object} $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
+static \hyperlink{class_mdt_1_1_error}{Error} \hyperlink{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}{from\+Q\+File\+Device} (const Q\+File\+Device \&file\+Device, const Q\+String \&source\+Code\+File, int line, const Q\+Object $\ast$const obj, const Q\+String \&\hyperlink{class_mdt_1_1_error_a5706a74669219d9672ee20414f805cab}{function\+Name})
 \begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} from last error in {\itshape file\+Device}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -176,7 +168,7 @@ Definition at line 283 of file Error.\+h.
 \item[{{\bf Level}}]{level, }
 \item[{const Q\+String \&}]{file\+Name, }
 \item[{int}]{file\+Line, }
-\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+Object $\ast$const}]{obj, }
 \item[{const Q\+String \&}]{function\+Name}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}{}\label{class_mdt_1_1_error_a8643711dcae19d29e332b10b5420dd21}
@@ -316,7 +308,7 @@ Definition at line 196 of file Error.\+cpp.
 \item[{const Q\+File\+Device \&}]{file\+Device, }
 \item[{const Q\+String \&}]{source\+Code\+File, }
 \item[{int}]{line, }
-\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+Object $\ast$const}]{obj, }
 \item[{const Q\+String \&}]{function\+Name}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}{}\label{class_mdt_1_1_error_a34634c895dff4e9972e8af71dcb10882}
@@ -488,7 +480,7 @@ Definition at line 351 of file Error.\+h.
 
 Set informative text. 
 
-Can be set to give the user a fuller description of the error. This is the same meaning than \hyperlink{class_q_message_box}{Q\+Message\+Box}, and is used the same way in mdt\+Error\+Dialog.
+Can be set to give the user a fuller description of the error. This is the same meaning than Q\+Message\+Box, and is used the same way in mdt\+Error\+Dialog.
 
 \begin{DoxyPrecond}{Precondition}
 this error must not be null when calling this function 
@@ -529,7 +521,7 @@ Definition at line 120 of file Error.\+cpp.
 \begin{DoxyParamCaption}
 \item[{const Q\+String \&}]{file\+Name, }
 \item[{int}]{file\+Line, }
-\item[{const {\bf Q\+Object} $\ast$const}]{obj, }
+\item[{const Q\+Object $\ast$const}]{obj, }
 \item[{const Q\+String \&}]{function\+Name}
 \end{DoxyParamCaption}
 )}\hypertarget{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}{}\label{class_mdt_1_1_error_a38d1fb6f1d17a4a3d483ea367bdcb416}
@@ -537,7 +529,7 @@ Definition at line 120 of file Error.\+cpp.
 
 Add the source of error. 
 
-Avoids typing class\+Name by hand. Note that this only works on functions that are \hyperlink{class_q_object}{Q\+Object} (subclasses).
+Avoids typing class\+Name by hand. Note that this only works on functions that are Q\+Object (subclasses).
 
 It\textquotesingle{}s possible to use the helper macro M\+D\+T\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+E\+T\+\_\+\+S\+R\+C\+\_\+\+Q()
 
