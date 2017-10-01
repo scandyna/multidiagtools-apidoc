@@ -1,0 +1,132 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression}{}\section{Mdt\+:\+:Item\+Model\+:\+:Filter\+Expression Class Reference}
+\label{class_mdt_1_1_item_model_1_1_filter_expression}\index{Mdt\+::\+Item\+Model\+::\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Filter\+Expression}}
+
+
+Filter expression used in \hyperlink{class_mdt_1_1_item_model_1_1_filter_proxy_model}{Filter\+Proxy\+Model}.  
+
+
+
+
+{\ttfamily \#include $<$Filter\+Expression.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a991926d42a916bdd2b118d112773e4d6}{Filter\+Expression} ()=default\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a991926d42a916bdd2b118d112773e4d6}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a991926d42a916bdd2b118d112773e4d6}
+
+\begin{DoxyCompactList}\small\item\em Construct a empty expression. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a596b69598114d9247badab72ad1478fc}{Filter\+Expression} (const \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression} \&other)=default\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a596b69598114d9247badab72ad1478fc}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a596b69598114d9247badab72ad1478fc}
+
+\begin{DoxyCompactList}\small\item\em Construct a expression as copy of other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a8755f63fcb4cab2bc6dbc9fea895d8fb}{Filter\+Expression} (\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression} \&\&other)=default\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a8755f63fcb4cab2bc6dbc9fea895d8fb}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a8755f63fcb4cab2bc6dbc9fea895d8fb}
+
+\begin{DoxyCompactList}\small\item\em Construct a expression by moving other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression} \& \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_adf9287c07c7e0c1b37e54d0d644f827a}{operator=} (const \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression} \&other)=default\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_adf9287c07c7e0c1b37e54d0d644f827a}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_adf9287c07c7e0c1b37e54d0d644f827a}
+
+\begin{DoxyCompactList}\small\item\em Assign other expression to this. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression} \& \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a1692f9d77ba22d8b07a72a717802f54d}{operator=} (\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression} \&\&)=default\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a1692f9d77ba22d8b07a72a717802f54d}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a1692f9d77ba22d8b07a72a717802f54d}
+
+\begin{DoxyCompactList}\small\item\em Assign other expression to this. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Expr $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a2d6ddcef4483460923d9964c1a61231a}{set\+Expression} (const Expr \&expr)
+\begin{DoxyCompactList}\small\item\em Set expression. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a42f096dd1b5fad93e52d75a39d077c66}{is\+Null} () const \hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a42f096dd1b5fad93e52d75a39d077c66}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a42f096dd1b5fad93e52d75a39d077c66}
+
+\begin{DoxyCompactList}\small\item\em Check if this expression is null. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a88e6a9af1e0e340cec3faa2c9c52ffb3}{eval} (const Q\+Abstract\+Item\+Model $\ast$const model, int row, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const 
+\begin{DoxyCompactList}\small\item\em Evaluate if row matches stored expression in model. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a0309a5f50c4417471589df184319b849}{greatest\+Column} () const \hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a0309a5f50c4417471589df184319b849}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a0309a5f50c4417471589df184319b849}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest column in this expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter expression used in \hyperlink{class_mdt_1_1_item_model_1_1_filter_proxy_model}{Filter\+Proxy\+Model}. 
+
+Example of usage\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "Mdt/ItemModel/FilterExpression.h"}
+
+\textcolor{keyword}{using} \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Mdt::ItemModel::FilterExpression};
+\textcolor{keyword}{using} \hyperlink{namespace_mdt_1_1_item_model_ab26db9f7af785f84cb82892583f7609c}{Mdt::ItemModel::FilterColumn};
+\textcolor{keyword}{using} Like = \hyperlink{namespace_mdt_1_1_item_model_a8c8326d469af353aa345651a135251b0}{Mdt::ItemModel::LikeExpression};
+
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_expression_a991926d42a916bdd2b118d112773e4d6}{FilterExpression} filter;
+\hyperlink{namespace_mdt_1_1_item_model_ab26db9f7af785f84cb82892583f7609c}{FilterColumn} clientId(0);
+\hyperlink{namespace_mdt_1_1_item_model_ab26db9f7af785f84cb82892583f7609c}{FilterColumn} clientName(2);
+
+filter.setExpression( clientId > 12 && clientName == Like(\textcolor{stringliteral}{"M?t"}) );
+\end{DoxyCode}
+ 
+
+Definition at line 55 of file Filter\+Expression.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Filter\+Expression}!eval@{eval}}
+\index{eval@{eval}!Mdt\+::\+Item\+Model\+::\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Filter\+Expression}}
+\subsubsection[{\texorpdfstring{eval(const Q\+Abstract\+Item\+Model $\ast$const model, int row, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const }{eval(const QAbstractItemModel *const model, int row, Qt::CaseSensitivity caseSensitivity) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Filter\+Expression\+::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\+Abstract\+Item\+Model $\ast$const}]{model, }
+\item[{int}]{row, }
+\item[{Qt\+::\+Case\+Sensitivity}]{case\+Sensitivity}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a88e6a9af1e0e340cec3faa2c9c52ffb3}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a88e6a9af1e0e340cec3faa2c9c52ffb3}
+
+
+Evaluate if row matches stored expression in model. 
+
+\begin{DoxyPrecond}{Precondition}
+this expression must not be null 
+
+{\itshape model} must be a valid pointer (not null) 
+
+{\itshape must} be in valid range ( 0 $<$= row $<$ model-\/$>$row\+Count() ) 
+\end{DoxyPrecond}
+
+
+Definition at line 30 of file Filter\+Expression.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Filter\+Expression}!set\+Expression@{set\+Expression}}
+\index{set\+Expression@{set\+Expression}!Mdt\+::\+Item\+Model\+::\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Filter\+Expression}}
+\subsubsection[{\texorpdfstring{set\+Expression(const Expr \&expr)}{setExpression(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Expr $>$ void Mdt\+::\+Item\+Model\+::\+Filter\+Expression\+::set\+Expression (
+\begin{DoxyParamCaption}
+\item[{const Expr \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_filter_expression_a2d6ddcef4483460923d9964c1a61231a}{}\label{class_mdt_1_1_item_model_1_1_filter_expression_a2d6ddcef4483460923d9964c1a61231a}
+
+
+Set expression. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Expr} & Type of the expression. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & Expression to hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Expr must be a filter expression type. A filter expression is based on Filter\+Column, comparison operators, logical A\+ND, logical OR. For example (see example code above for details)\+: 
+\begin{DoxyCode}
+\textcolor{comment}{// Example of valid filter expression}
+cliendId == 25
+(cliendId == 25) && (clientName != \textcolor{stringliteral}{"A"})
+
+\textcolor{comment}{// Example of invalid filter expression}
+cliendId + 5
+\end{DoxyCode}
+ 
+\end{DoxyPrecond}
+
+
+Definition at line 100 of file Filter\+Expression.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Filter\+Expression.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Filter\+Expression.\+cpp\end{DoxyCompactItemize}

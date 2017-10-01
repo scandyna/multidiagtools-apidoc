@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reference',['reference',['../class_mdt_1_1_plain_text_1_1_record_list_template.html#a9f3af13db580a27488883003f589489f',1,'Mdt::PlainText::RecordListTemplate::reference()'],['../class_mdt_1_1_plain_text_1_1_record_template.html#ab949b8e6a719f3155a6ff2116e3628ce',1,'Mdt::PlainText::RecordTemplate::reference()']]]
+  ['likeexpression',['LikeExpression',['../namespace_mdt_1_1_item_model.html#a8c8326d469af353aa345651a135251b0',1,'Mdt::ItemModel']]]
 ];

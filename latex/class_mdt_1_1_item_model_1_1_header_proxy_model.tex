@@ -1,0 +1,113 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_header_proxy_model}{}\section{Mdt\+:\+:Item\+Model\+:\+:Header\+Proxy\+Model Class Reference}
+\label{class_mdt_1_1_item_model_1_1_header_proxy_model}\index{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model}}
+
+
+\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model}{Header\+Proxy\+Model} provides a simple way to set custom headers.  
+
+
+
+
+{\ttfamily \#include $<$Header\+Proxy\+Model.\+h$>$}
+
+
+
+Inherits Q\+Identity\+Proxy\+Model.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_af27843ac970fa2832121a406629b1978}{Header\+Proxy\+Model} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_item_model_1_1_header_proxy_model_af27843ac970fa2832121a406629b1978}{}\label{class_mdt_1_1_item_model_1_1_header_proxy_model_af27843ac970fa2832121a406629b1978}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_a235a2fb883c67db953319b5340dfeb23}{header\+Data} (int section, Qt\+::\+Orientation orientation, int role=Qt\+::\+Display\+Role) const override
+\begin{DoxyCompactList}\small\item\em Get header data. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_a274a131720e80f358a426376886130e4}{horizontal\+Header\+Data} (int column, int role=Qt\+::\+Display\+Role) const 
+\begin{DoxyCompactList}\small\item\em Get horizontal header data. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_a88a4b7d8a409e1c9f970482389942c1b}{set\+Horizontal\+Header\+Labels} (const Q\+String\+List \&labels)\hypertarget{class_mdt_1_1_item_model_1_1_header_proxy_model_a88a4b7d8a409e1c9f970482389942c1b}{}\label{class_mdt_1_1_item_model_1_1_header_proxy_model_a88a4b7d8a409e1c9f970482389942c1b}
+
+\begin{DoxyCompactList}\small\item\em Set horizontal header labels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model}{Header\+Proxy\+Model} provides a simple way to set custom headers. 
+
+Common way to use Qt\textquotesingle{}s item/view is to implement a item model, that let the user access relevant data. Such model also should implement header data access methodes. But, for some cases, it can be enouth to work with a existing model, such as \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model}{Variant\+Table\+Model}, that do not provide header data methods. In the latter case, \hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model}{Header\+Proxy\+Model} can be used.
+
+Typical usage\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <Mdt/ItemModel/VariantTableModel.h>}
+\textcolor{preprocessor}{#include <Mdt/ItemModel/HeaderProxyModel.h>}
+\textcolor{preprocessor}{#include <QTableView>}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespace_mdt_1_1_item_model}{Mdt::ItemModel};
+
+\textcolor{comment}{// Setup model}
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model}{VariantTableModel} model;
+model.\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_af9db809e602bc61d218245c605e3473b}{populate}(5, 2);
+\textcolor{comment}{// Setup proxy model}
+\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model}{HeaderProxyModel} headerModel;
+headerModel.setSourceModel(&model);
+headerModel.\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_a88a4b7d8a409e1c9f970482389942c1b}{setHorizontalHeaderLabels}(\{\textcolor{stringliteral}{"Id"},\textcolor{stringliteral}{"Name"}\});
+\textcolor{comment}{// Setup view}
+QTableView view;
+view.setModel(&headerModel);
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+When you have to deal with several proxy models, \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container}{Proxy\+Model\+Container} can be helpful. 
+\end{DoxyNote}
+
+
+Definition at line 62 of file Header\+Proxy\+Model.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model}!header\+Data@{header\+Data}}
+\index{header\+Data@{header\+Data}!Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{header\+Data(int section, Qt\+::\+Orientation orientation, int role=\+Qt\+::\+Display\+Role) const override}{headerData(int section, Qt::Orientation orientation, int role=Qt::DisplayRole) const override}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model\+::header\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{section, }
+\item[{Qt\+::\+Orientation}]{orientation, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:DisplayRole}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_header_proxy_model_a235a2fb883c67db953319b5340dfeb23}{}\label{class_mdt_1_1_item_model_1_1_header_proxy_model_a235a2fb883c67db953319b5340dfeb23}
+
+
+Get header data. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_a274a131720e80f358a426376886130e4}{horizontal\+Header\+Data()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 30 of file Header\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model}!horizontal\+Header\+Data@{horizontal\+Header\+Data}}
+\index{horizontal\+Header\+Data@{horizontal\+Header\+Data}!Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{horizontal\+Header\+Data(int column, int role=\+Qt\+::\+Display\+Role) const }{horizontalHeaderData(int column, int role=Qt::DisplayRole) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Header\+Proxy\+Model\+::horizontal\+Header\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:DisplayRole}}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_header_proxy_model_a274a131720e80f358a426376886130e4}{}\label{class_mdt_1_1_item_model_1_1_header_proxy_model_a274a131720e80f358a426376886130e4}
+
+
+Get horizontal header data. 
+
+If some horizontal header data has been set, and {\itshape column} is in that bound, these header data will be returned. Else, if a source model has allready been set, the header data from this model will be returned. Else, a null Q\+Variant is returned.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_header_proxy_model_a88a4b7d8a409e1c9f970482389942c1b}{set\+Horizontal\+Header\+Labels()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 38 of file Header\+Proxy\+Model.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Header\+Proxy\+Model.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Header\+Proxy\+Model.\+cpp\end{DoxyCompactItemize}

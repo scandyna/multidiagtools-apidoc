@@ -1,0 +1,102 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_row_list}{}\section{Mdt\+:\+:Item\+Model\+:\+:Row\+List Class Reference}
+\label{class_mdt_1_1_item_model_1_1_row_list}\index{Mdt\+::\+Item\+Model\+::\+Row\+List@{Mdt\+::\+Item\+Model\+::\+Row\+List}}
+
+
+A list of row indexes in a item model.  
+
+
+
+
+{\ttfamily \#include $<$Row\+List.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Row\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_mdt_1_1_item_model_1_1_row_list__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Item\+Model\+:\+:Row\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_mdt_1_1_item_model_1_1_row_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_list_ae7615db36b2dc16567a0f3013cd34035}{Row\+List} () noexcept=default\hypertarget{class_mdt_1_1_item_model_1_1_row_list_ae7615db36b2dc16567a0f3013cd34035}{}\label{class_mdt_1_1_item_model_1_1_row_list_ae7615db36b2dc16567a0f3013cd34035}
+
+\begin{DoxyCompactList}\small\item\em Construct a empty list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_list_a802975a4285db79d5745fae814b1c3c6}{Row\+List} (std\+::initializer\+\_\+list$<$ int $>$ list)
+\begin{DoxyCompactList}\small\item\em Construct a list of rows. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_row_list_a65e550ee78e70f792d87fb69076c4181}{greatest\+Row} () const 
+\begin{DoxyCompactList}\small\item\em Get the greatest row. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_item_model_1_1_row_list}{Row\+List} \hyperlink{class_mdt_1_1_item_model_1_1_row_list_aa0f0c3fde6de5153c53c43d35034039d}{from\+Model\+Index\+List} (const Q\+Model\+Index\+List \&model\+Index\+List)\hypertarget{class_mdt_1_1_item_model_1_1_row_list_aa0f0c3fde6de5153c53c43d35034039d}{}\label{class_mdt_1_1_item_model_1_1_row_list_aa0f0c3fde6de5153c53c43d35034039d}
+
+\begin{DoxyCompactList}\small\item\em Get a list of rows from a list of Q\+Model\+Index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A list of row indexes in a item model. 
+
+Definition at line 33 of file Row\+List.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Row\+List@{Mdt\+::\+Item\+Model\+::\+Row\+List}!Row\+List@{Row\+List}}
+\index{Row\+List@{Row\+List}!Mdt\+::\+Item\+Model\+::\+Row\+List@{Mdt\+::\+Item\+Model\+::\+Row\+List}}
+\subsubsection[{\texorpdfstring{Row\+List(std\+::initializer\+\_\+list$<$ int $>$ list)}{RowList(std::initializer_list< int > list)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Item\+Model\+::\+Row\+List\+::\+Row\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ int $>$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_list_a802975a4285db79d5745fae814b1c3c6}{}\label{class_mdt_1_1_item_model_1_1_row_list_a802975a4285db79d5745fae814b1c3c6}
+
+
+Construct a list of rows. 
+
+\begin{DoxyPrecond}{Precondition}
+Each row in {\itshape list} must be $>$= 0 
+
+Each row in {\itshape list} must be unique 
+\end{DoxyPrecond}
+
+
+Definition at line 46 of file Row\+List.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Row\+List@{Mdt\+::\+Item\+Model\+::\+Row\+List}!greatest\+Row@{greatest\+Row}}
+\index{greatest\+Row@{greatest\+Row}!Mdt\+::\+Item\+Model\+::\+Row\+List@{Mdt\+::\+Item\+Model\+::\+Row\+List}}
+\subsubsection[{\texorpdfstring{greatest\+Row() const }{greatestRow() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Row\+List\+::greatest\+Row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_list_a65e550ee78e70f792d87fb69076c4181}{}\label{class_mdt_1_1_item_model_1_1_row_list_a65e550ee78e70f792d87fb69076c4181}
+
+
+Get the greatest row. 
+
+Returns -\/1 if this list is empty. 
+
+Definition at line 54 of file Row\+List.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+List.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+List.\+cpp\end{DoxyCompactItemize}

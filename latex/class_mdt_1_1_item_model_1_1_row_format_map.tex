@@ -1,0 +1,95 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_row_format_map}{}\section{Mdt\+:\+:Item\+Model\+:\+:Row\+Format\+Map Class Reference}
+\label{class_mdt_1_1_item_model_1_1_row_format_map}\index{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}}
+
+
+Stores formats for certain row in a item model.  
+
+
+
+
+{\ttfamily \#include $<$Row\+Format\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_row_format_map_a58ace09b65c3ab2c5cc7f1c614ab7a5f}{set\+Format\+For\+Row} (int row, const T \&format)
+\begin{DoxyCompactList}\small\item\em Set format for given row. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_row_format_map_a01a33cc062d5b80398fd90f7d3987ec5}{clear\+Format\+For\+Row} (int row)
+\begin{DoxyCompactList}\small\item\em Clear format for given row. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_row_format_map_ae4cb6cb5dea94241bb79bc34b23ac637}{format\+For\+Row} (int row) const 
+\begin{DoxyCompactList}\small\item\em Get format for given row. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores formats for certain row in a item model. 
+
+Definition at line 32 of file Row\+Format\+Map.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}!clear\+Format\+For\+Row@{clear\+Format\+For\+Row}}
+\index{clear\+Format\+For\+Row@{clear\+Format\+For\+Row}!Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}}
+\subsubsection[{\texorpdfstring{clear\+Format\+For\+Row(int row)}{clearFormatForRow(int row)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map\+::clear\+Format\+For\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_row_format_map_a01a33cc062d5b80398fd90f7d3987ec5}{}\label{class_mdt_1_1_item_model_1_1_row_format_map_a01a33cc062d5b80398fd90f7d3987ec5}
+
+
+Clear format for given row. 
+
+Does nothing if no format was set for {\itshape row} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 25 of file Row\+Format\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}!format\+For\+Row@{format\+For\+Row}}
+\index{format\+For\+Row@{format\+For\+Row}!Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}}
+\subsubsection[{\texorpdfstring{format\+For\+Row(int row) const }{formatForRow(int row) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map\+::format\+For\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_format_map_ae4cb6cb5dea94241bb79bc34b23ac637}{}\label{class_mdt_1_1_item_model_1_1_row_format_map_ae4cb6cb5dea94241bb79bc34b23ac637}
+
+
+Get format for given row. 
+
+Returns a Q\+Variant with value of type passed in \hyperlink{class_mdt_1_1_item_model_1_1_row_format_map_a58ace09b65c3ab2c5cc7f1c614ab7a5f}{set\+Format\+For\+Row()} if a format was set for {\itshape row}, otherwise a null Q\+Variant.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 63 of file Row\+Format\+Map.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}!set\+Format\+For\+Row@{set\+Format\+For\+Row}}
+\index{set\+Format\+For\+Row@{set\+Format\+For\+Row}!Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map}}
+\subsubsection[{\texorpdfstring{set\+Format\+For\+Row(int row, const T \&format)}{setFormatForRow(int row, const T &format)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Row\+Format\+Map\+::set\+Format\+For\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{const T \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_format_map_a58ace09b65c3ab2c5cc7f1c614ab7a5f}{}\label{class_mdt_1_1_item_model_1_1_row_format_map_a58ace09b65c3ab2c5cc7f1c614ab7a5f}
+
+
+Set format for given row. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 41 of file Row\+Format\+Map.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+Format\+Map.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+Format\+Map.\+cpp\end{DoxyCompactItemize}

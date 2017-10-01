@@ -1,0 +1,99 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface}{}\section{Mdt\+:\+:Item\+Model\+:\+:Expression\+:\+:Container\+Interface Class Reference}
+\label{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface}\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}}
+
+
+Interface for container implementing a expression acting on a item model.  
+
+
+
+
+{\ttfamily \#include $<$Container\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Expression\+:\+:Container\+Interface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a2d24ef03a002562a9e395a6e4e5cce36}{eval} (const Q\+Abstract\+Item\+Model $\ast$const model, int row, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const =0
+\begin{DoxyCompactList}\small\item\em Evaluate if row matches stored expression in model. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_aa07af77ddc086a9d7bdc851ecc5e8b25}{eval} (const Q\+Abstract\+Item\+Model $\ast$const model, int row, const \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_parent_model_eval_data}{Parent\+Model\+Eval\+Data} \&parent\+Model\+Data, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const =0
+\begin{DoxyCompactList}\small\item\em Evaluate if row matches stored expression in model. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_af55900089c16d4d580eeb1489912068b}{get\+Relation\+Key\+For\+Equality} () const =0\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_af55900089c16d4d580eeb1489912068b}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_af55900089c16d4d580eeb1489912068b}
+
+\begin{DoxyCompactList}\small\item\em Get a relation key that contains pais of equaly compared columns of this expression. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_ab53dfe2e8d51e95952f7068e1a06c20a}{get\+Greatest\+Column} () const =0\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_ab53dfe2e8d51e95952f7068e1a06c20a}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_ab53dfe2e8d51e95952f7068e1a06c20a}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest column in this expression. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a251a91b98e5dfb88f2ac0e1281dbc454}{get\+Greatest\+Parent\+Model\+Column} () const =0\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a251a91b98e5dfb88f2ac0e1281dbc454}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a251a91b98e5dfb88f2ac0e1281dbc454}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest parent model column in this expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for container implementing a expression acting on a item model. 
+
+Definition at line 34 of file Container\+Interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}!eval@{eval}}
+\index{eval@{eval}!Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}}
+\subsubsection[{\texorpdfstring{eval(const Q\+Abstract\+Item\+Model $\ast$const model, int row, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const =0}{eval(const QAbstractItemModel *const model, int row, Qt::CaseSensitivity caseSensitivity) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface\+::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\+Abstract\+Item\+Model $\ast$const}]{model, }
+\item[{int}]{row, }
+\item[{Qt\+::\+Case\+Sensitivity}]{case\+Sensitivity}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a2d24ef03a002562a9e395a6e4e5cce36}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a2d24ef03a002562a9e395a6e4e5cce36}
+
+
+Evaluate if row matches stored expression in model. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer (not null) 
+
+{\itshape must} be in valid range ( 0 $<$= row $<$ model-\/$>$row\+Count() ) 
+\end{DoxyPrecond}
+
+
+Implemented in \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5a9aef0b74b06dca38f681302d92a5e9}{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container$<$ Stored\+Expr $>$}.
+
+\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}!eval@{eval}}
+\index{eval@{eval}!Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}}
+\subsubsection[{\texorpdfstring{eval(const Q\+Abstract\+Item\+Model $\ast$const model, int row, const Parent\+Model\+Eval\+Data \&parent\+Model\+Data, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const =0}{eval(const QAbstractItemModel *const model, int row, const ParentModelEvalData &parentModelData, Qt::CaseSensitivity caseSensitivity) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface\+::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\+Abstract\+Item\+Model $\ast$const}]{model, }
+\item[{int}]{row, }
+\item[{const {\bf Parent\+Model\+Eval\+Data} \&}]{parent\+Model\+Data, }
+\item[{Qt\+::\+Case\+Sensitivity}]{case\+Sensitivity}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_aa07af77ddc086a9d7bdc851ecc5e8b25}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_aa07af77ddc086a9d7bdc851ecc5e8b25}
+
+
+Evaluate if row matches stored expression in model. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer (not null) 
+
+{\itshape must} be in valid range ( 0 $<$= row $<$ model-\/$>$row\+Count() ) 
+
+{\itshape parent\+Model\+Data} must not be null 
+\end{DoxyPrecond}
+
+
+Implemented in \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a918fdd7c8ae52da3e2bf78bde697d1d9}{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container$<$ Stored\+Expr $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/\+Expression/Container\+Interface.\+h\end{DoxyCompactItemize}

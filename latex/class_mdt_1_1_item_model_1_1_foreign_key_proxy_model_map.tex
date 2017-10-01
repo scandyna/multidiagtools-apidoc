@@ -1,0 +1,272 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map}{}\section{Mdt\+:\+:Item\+Model\+:\+:Foreign\+Key\+Proxy\+Model\+Map Class Reference}
+\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map}\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+
+
+Used for implementation of \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model}{Foreign\+Key\+Proxy\+Model}.  
+
+
+
+
+{\ttfamily \#include $<$Foreign\+Key\+Proxy\+Model\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ac0cbe6136460449e0cb89c562ba57967}{add\+Foreign\+Key} (const Q\+String \&foreign\+Entity\+Name, const \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key}{Mdt\+::\+Item\+Model\+::\+Foreign\+Key} \&fk)
+\begin{DoxyCompactList}\small\item\em Add a foreign key. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad50a0a9b87d4b12fef9684d709f98573}{remove\+Foreign\+Key} (const Q\+String \&foreign\+Entity\+Name)
+\begin{DoxyCompactList}\small\item\em Remove a foreign key. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a9ab589f729105935603c79360b66dc95}{remove\+All\+Foreign\+Keys} ()\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a9ab589f729105935603c79360b66dc95}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a9ab589f729105935603c79360b66dc95}
+
+\begin{DoxyCompactList}\small\item\em Remove all foreign keys. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad940e0016c2aef5cdbc361e4694580ab}{has\+Foreign\+Key\+Referencing} (const Q\+String \&entity\+Name) const 
+\begin{DoxyCompactList}\small\item\em Check if a foreign key referencing a entity exists. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_foreign_key}{Foreign\+Key} \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ab82d367b28be4991adc4fcb36e6168d6}{get\+Foreign\+Key\+Referencing} (const Q\+String \&entity\+Name) const 
+\begin{DoxyCompactList}\small\item\em Get foreign key referencing a entity. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad33a24987e9cbf427cac683338a88d2a}{set\+Foreign\+Key\+Editable} (const Q\+String \&foreign\+Entity\+Name, bool editable)
+\begin{DoxyCompactList}\small\item\em Set foreign key editable. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a42f428f656691943d790443451297217}{set\+All\+Foreign\+Keys\+Editable} (bool editable)
+\begin{DoxyCompactList}\small\item\em Set all foreign key editable. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ac20ee568993aca1576ca32556225a4a9}{is\+Foreign\+Key\+Editable} (const Q\+String \&foreign\+Entity\+Name) const 
+\begin{DoxyCompactList}\small\item\em Check if foreign key is editable. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a2bc5888181a683c01bc0d3d5d1d376f6}{set\+Foreign\+Key\+Items\+Enabled} (const Q\+String \&foreign\+Entity\+Name, bool enable)
+\begin{DoxyCompactList}\small\item\em Set foreign key items enabled. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_aa551f338a946cbb2268643ba4f2140dc}{set\+All\+Foreign\+Keys\+Items\+Enabled} (bool enable)
+\begin{DoxyCompactList}\small\item\em Set foreign key items enabled for all foreign keys. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a295911d09e817851b33b21209f573fff}{is\+Foreign\+Key\+Items\+Enabled} (const Q\+String \&foreign\+Entity\+Name) const 
+\begin{DoxyCompactList}\small\item\em Check if foreign key items are enabled. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_item_flags}{Foreign\+Key\+Proxy\+Model\+Map\+Item\+Flags} \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ae7f1203033e44bc15834f8de8998483a}{get\+Most\+Restrictive\+Flags\+For\+Column} (int column) const 
+\begin{DoxyCompactList}\small\item\em Get most restricitive flags for a column. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_column_list}{Column\+List} \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_aa966ed79640b10d9b5bfe12f1f778426}{get\+Columns\+Part\+Of\+Foreign\+Key} () const \hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_aa966ed79640b10d9b5bfe12f1f778426}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_aa966ed79640b10d9b5bfe12f1f778426}
+
+\begin{DoxyCompactList}\small\item\em Get a list of all columns that are part of a foreign key. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_list}{Foreign\+Key\+List} \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a7f46b5ad35e8b35de94dd0cd938073a6}{get\+Foreign\+Key\+List} () const \hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a7f46b5ad35e8b35de94dd0cd938073a6}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a7f46b5ad35e8b35de94dd0cd938073a6}
+
+\begin{DoxyCompactList}\small\item\em Get a list of foreign keys. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used for implementation of \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model}{Foreign\+Key\+Proxy\+Model}. 
+
+Definition at line 35 of file Foreign\+Key\+Proxy\+Model\+Map.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!add\+Foreign\+Key@{add\+Foreign\+Key}}
+\index{add\+Foreign\+Key@{add\+Foreign\+Key}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{add\+Foreign\+Key(const Q\+String \&foreign\+Entity\+Name, const Mdt\+::\+Item\+Model\+::\+Foreign\+Key \&fk)}{addForeignKey(const QString &foreignEntityName, const Mdt::ItemModel::ForeignKey &fk)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::add\+Foreign\+Key (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{foreign\+Entity\+Name, }
+\item[{const {\bf Mdt\+::\+Item\+Model\+::\+Foreign\+Key} \&}]{fk}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ac0cbe6136460449e0cb89c562ba57967}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ac0cbe6136460449e0cb89c562ba57967}
+
+
+Add a foreign key. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape foreign\+Entity\+Name} must not be empty 
+
+A foreign key referencing {\itshape foreign\+Entity\+Name} must not allready exist 
+
+{\itshape fk} must not be null 
+\end{DoxyPrecond}
+
+
+Definition at line 27 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!get\+Foreign\+Key\+Referencing@{get\+Foreign\+Key\+Referencing}}
+\index{get\+Foreign\+Key\+Referencing@{get\+Foreign\+Key\+Referencing}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{get\+Foreign\+Key\+Referencing(const Q\+String \&entity\+Name) const }{getForeignKeyReferencing(const QString &entityName) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Foreign\+Key} Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::get\+Foreign\+Key\+Referencing (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{entity\+Name}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ab82d367b28be4991adc4fcb36e6168d6}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ab82d367b28be4991adc4fcb36e6168d6}
+
+
+Get foreign key referencing a entity. 
+
+Returns the foreign key referencing the entity named {\itshape entity\+Name} if it exists, otherwise a null foreign key.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape entity\+Name} must not be empty 
+\end{DoxyPrecond}
+
+
+Definition at line 55 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!get\+Most\+Restrictive\+Flags\+For\+Column@{get\+Most\+Restrictive\+Flags\+For\+Column}}
+\index{get\+Most\+Restrictive\+Flags\+For\+Column@{get\+Most\+Restrictive\+Flags\+For\+Column}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{get\+Most\+Restrictive\+Flags\+For\+Column(int column) const }{getMostRestrictiveFlagsForColumn(int column) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Foreign\+Key\+Proxy\+Model\+Map\+Item\+Flags} Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::get\+Most\+Restrictive\+Flags\+For\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ae7f1203033e44bc15834f8de8998483a}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ae7f1203033e44bc15834f8de8998483a}
+
+
+Get most restricitive flags for a column. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 108 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!has\+Foreign\+Key\+Referencing@{has\+Foreign\+Key\+Referencing}}
+\index{has\+Foreign\+Key\+Referencing@{has\+Foreign\+Key\+Referencing}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{has\+Foreign\+Key\+Referencing(const Q\+String \&entity\+Name) const }{hasForeignKeyReferencing(const QString &entityName) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::has\+Foreign\+Key\+Referencing (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{entity\+Name}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad940e0016c2aef5cdbc361e4694580ab}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad940e0016c2aef5cdbc361e4694580ab}
+
+
+Check if a foreign key referencing a entity exists. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape entity\+Name} must not be empty 
+\end{DoxyPrecond}
+
+
+Definition at line 48 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!is\+Foreign\+Key\+Editable@{is\+Foreign\+Key\+Editable}}
+\index{is\+Foreign\+Key\+Editable@{is\+Foreign\+Key\+Editable}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{is\+Foreign\+Key\+Editable(const Q\+String \&foreign\+Entity\+Name) const }{isForeignKeyEditable(const QString &foreignEntityName) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::is\+Foreign\+Key\+Editable (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{foreign\+Entity\+Name}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ac20ee568993aca1576ca32556225a4a9}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ac20ee568993aca1576ca32556225a4a9}
+
+
+Check if foreign key is editable. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape foreign\+Entity\+Name} must not be empty 
+
+A foreign key referencing {\itshape foreign\+Entity\+Name} must exist 
+\end{DoxyPrecond}
+
+
+Definition at line 77 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!is\+Foreign\+Key\+Items\+Enabled@{is\+Foreign\+Key\+Items\+Enabled}}
+\index{is\+Foreign\+Key\+Items\+Enabled@{is\+Foreign\+Key\+Items\+Enabled}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{is\+Foreign\+Key\+Items\+Enabled(const Q\+String \&foreign\+Entity\+Name) const }{isForeignKeyItemsEnabled(const QString &foreignEntityName) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::is\+Foreign\+Key\+Items\+Enabled (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{foreign\+Entity\+Name}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a295911d09e817851b33b21209f573fff}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a295911d09e817851b33b21209f573fff}
+
+
+Check if foreign key items are enabled. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape foreign\+Entity\+Name} must not be empty 
+
+A foreign key referencing {\itshape foreign\+Entity\+Name} must exist 
+\end{DoxyPrecond}
+
+
+Definition at line 100 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!remove\+Foreign\+Key@{remove\+Foreign\+Key}}
+\index{remove\+Foreign\+Key@{remove\+Foreign\+Key}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{remove\+Foreign\+Key(const Q\+String \&foreign\+Entity\+Name)}{removeForeignKey(const QString &foreignEntityName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::remove\+Foreign\+Key (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{foreign\+Entity\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad50a0a9b87d4b12fef9684d709f98573}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad50a0a9b87d4b12fef9684d709f98573}
+
+
+Remove a foreign key. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape foreign\+Entity\+Name} must not be empty 
+\end{DoxyPrecond}
+
+
+Definition at line 36 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!set\+All\+Foreign\+Keys\+Editable@{set\+All\+Foreign\+Keys\+Editable}}
+\index{set\+All\+Foreign\+Keys\+Editable@{set\+All\+Foreign\+Keys\+Editable}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{set\+All\+Foreign\+Keys\+Editable(bool editable)}{setAllForeignKeysEditable(bool editable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::set\+All\+Foreign\+Keys\+Editable (
+\begin{DoxyParamCaption}
+\item[{bool}]{editable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a42f428f656691943d790443451297217}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a42f428f656691943d790443451297217}
+
+
+Set all foreign key editable. 
+
+By default, all foreign keys are editable 
+
+Definition at line 70 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!set\+All\+Foreign\+Keys\+Items\+Enabled@{set\+All\+Foreign\+Keys\+Items\+Enabled}}
+\index{set\+All\+Foreign\+Keys\+Items\+Enabled@{set\+All\+Foreign\+Keys\+Items\+Enabled}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{set\+All\+Foreign\+Keys\+Items\+Enabled(bool enable)}{setAllForeignKeysItemsEnabled(bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::set\+All\+Foreign\+Keys\+Items\+Enabled (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_aa551f338a946cbb2268643ba4f2140dc}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_aa551f338a946cbb2268643ba4f2140dc}
+
+
+Set foreign key items enabled for all foreign keys. 
+
+By default, all foreign keys items are enabled. 
+
+Definition at line 93 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!set\+Foreign\+Key\+Editable@{set\+Foreign\+Key\+Editable}}
+\index{set\+Foreign\+Key\+Editable@{set\+Foreign\+Key\+Editable}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{set\+Foreign\+Key\+Editable(const Q\+String \&foreign\+Entity\+Name, bool editable)}{setForeignKeyEditable(const QString &foreignEntityName, bool editable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::set\+Foreign\+Key\+Editable (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{foreign\+Entity\+Name, }
+\item[{bool}]{editable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad33a24987e9cbf427cac683338a88d2a}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_ad33a24987e9cbf427cac683338a88d2a}
+
+
+Set foreign key editable. 
+
+By default, all foreign keys are editable
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape foreign\+Entity\+Name} must not be empty 
+
+A foreign key referencing {\itshape foreign\+Entity\+Name} must exist 
+\end{DoxyPrecond}
+
+
+Definition at line 62 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}!set\+Foreign\+Key\+Items\+Enabled@{set\+Foreign\+Key\+Items\+Enabled}}
+\index{set\+Foreign\+Key\+Items\+Enabled@{set\+Foreign\+Key\+Items\+Enabled}!Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map@{Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map}}
+\subsubsection[{\texorpdfstring{set\+Foreign\+Key\+Items\+Enabled(const Q\+String \&foreign\+Entity\+Name, bool enable)}{setForeignKeyItemsEnabled(const QString &foreignEntityName, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Foreign\+Key\+Proxy\+Model\+Map\+::set\+Foreign\+Key\+Items\+Enabled (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{foreign\+Entity\+Name, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a2bc5888181a683c01bc0d3d5d1d376f6}{}\label{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model_map_a2bc5888181a683c01bc0d3d5d1d376f6}
+
+
+Set foreign key items enabled. 
+
+By default, all foreign keys items are enabled.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape foreign\+Entity\+Name} must not be empty 
+\end{DoxyPrecond}
+
+
+Definition at line 85 of file Foreign\+Key\+Proxy\+Model\+Map.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Foreign\+Key\+Proxy\+Model\+Map.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Foreign\+Key\+Proxy\+Model\+Map.\+cpp\end{DoxyCompactItemize}

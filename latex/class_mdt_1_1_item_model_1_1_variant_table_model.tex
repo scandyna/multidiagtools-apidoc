@@ -1,0 +1,698 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model}{}\section{Mdt\+:\+:Item\+Model\+:\+:Variant\+Table\+Model Class Reference}
+\label{class_mdt_1_1_item_model_1_1_variant_table_model}\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+
+
+Table model that stores Q\+Variant data.  
+
+
+
+
+{\ttfamily \#include $<$Variant\+Table\+Model.\+h$>$}
+
+
+
+Inherits Q\+Abstract\+Table\+Model.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a6a3955e35972ecdf682b233138e7e21c}{Variant\+Table\+Model} (\hyperlink{namespace_mdt_1_1_item_model_ad48e47e80d7e13b5b951346649748190}{Variant\+Table\+Model\+Storage\+Rule} storage\+Rule=\hyperlink{namespace_mdt_1_1_item_model_ad48e47e80d7e13b5b951346649748190ae88ac0701e175a5eb535dad1703db2a1}{Variant\+Table\+Model\+Storage\+Rule\+::\+Group\+Display\+And\+Edit\+Role\+Data}, Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a6a3955e35972ecdf682b233138e7e21c}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a6a3955e35972ecdf682b233138e7e21c}
+
+\begin{DoxyCompactList}\small\item\em Construct a model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a5beb3844e52deb88eba0f50075ab942e}{set\+Pass\+Roles\+In\+Data\+Chaged} (bool pass)
+\begin{DoxyCompactList}\small\item\em Tell if this model must pass roles in data changed signal. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count} (const Q\+Model\+Index \&parent=Q\+Model\+Index()) const override\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}
+
+\begin{DoxyCompactList}\small\item\em Get row count. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count} (const Q\+Model\+Index \&parent=Q\+Model\+Index()) const override\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}
+
+\begin{DoxyCompactList}\small\item\em Get column count. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a88bb1b4c736812bfd14e9008923c39a4}{data} (const Q\+Model\+Index \&index, int role=Qt\+::\+Display\+Role) const override
+\begin{DoxyCompactList}\small\item\em Get data at index. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a5a232a35eadb8d96a40679207ad5d4d2}{data} (int row, int column, int role=Qt\+::\+Display\+Role) const 
+\begin{DoxyCompactList}\small\item\em Get data at row and column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_abd94c5d8358c6951bfefd405ead3228f}{set\+Item\+Enabled} (const Q\+Model\+Index \&index, bool enable)
+\begin{DoxyCompactList}\small\item\em Set item enabled at index. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_ac440fe0392eab209d6950bfeb4cc9397}{set\+Item\+Enabled} (int row, int column, bool enable)
+\begin{DoxyCompactList}\small\item\em Set item enabled at row and column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a9c7a72625c0e4bf871f0e25773937b57}{set\+Item\+Editable} (const Q\+Model\+Index \&index, bool editable)
+\begin{DoxyCompactList}\small\item\em Set item editable at index. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a0d3bc90ae245bb011b98718b0d83e786}{set\+Item\+Editable} (int row, int column, bool editable)
+\begin{DoxyCompactList}\small\item\em Set item editable at row and column. \end{DoxyCompactList}\item 
+Qt\+::\+Item\+Flags \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a077612298e4d3e522d3ea10f4284c3b5}{flags} (const Q\+Model\+Index \&index) const override
+\begin{DoxyCompactList}\small\item\em Get flags at index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a5a752c74aa50dd06043f753da6b74905}{set\+Data} (const Q\+Model\+Index \&index, const Q\+Variant \&value, int role=Qt\+::\+Edit\+Role) override
+\begin{DoxyCompactList}\small\item\em Set data at index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_af8eec79a03c244c02c988d640605f521}{set\+Data} (int row, int column, const Q\+Variant \&value, int role=Qt\+::\+Edit\+Role)
+\begin{DoxyCompactList}\small\item\em Set data at row and column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a70feaea87d484ab2fa220a408f043a3a}{append\+Row} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a70feaea87d484ab2fa220a408f043a3a}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a70feaea87d484ab2fa220a408f043a3a}
+
+\begin{DoxyCompactList}\small\item\em Append a row. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_ab3e2fb4840ebccaa1fca900bbab9befe}{prepend\+Row} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_ab3e2fb4840ebccaa1fca900bbab9befe}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_ab3e2fb4840ebccaa1fca900bbab9befe}
+
+\begin{DoxyCompactList}\small\item\em Prepend a row. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a91bc169e793e08a91cefae7e6cac1a7c}{insert\+Rows} (int row, int count, const Q\+Model\+Index \&parent=Q\+Model\+Index()) override
+\begin{DoxyCompactList}\small\item\em Implement Q\+Abstract\+Table\+Model\+::insert\+Rows() \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a0c89f7be9a176fdbe38f842efc3fc86d}{remove\+First\+Row} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a0c89f7be9a176fdbe38f842efc3fc86d}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a0c89f7be9a176fdbe38f842efc3fc86d}
+
+\begin{DoxyCompactList}\small\item\em Remove first row. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acc6926aae3931b07c5091b900b25b00d}{remove\+Last\+Row} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_acc6926aae3931b07c5091b900b25b00d}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_acc6926aae3931b07c5091b900b25b00d}
+
+\begin{DoxyCompactList}\small\item\em Remove last row. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a2cb9681cc329e62d1c61fbb62c755dbe}{remove\+Rows} (int row, int count, const Q\+Model\+Index \&parent=Q\+Model\+Index()) override
+\begin{DoxyCompactList}\small\item\em Implement Q\+Abstract\+Table\+Model\+::remove\+Rows() \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a6ff8ca41cf00aba78e0044f70fc35d86}{append\+Column} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a6ff8ca41cf00aba78e0044f70fc35d86}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a6ff8ca41cf00aba78e0044f70fc35d86}
+
+\begin{DoxyCompactList}\small\item\em Append a column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a3b604f387fe26429ca91dc935f480746}{prepend\+Column} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a3b604f387fe26429ca91dc935f480746}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a3b604f387fe26429ca91dc935f480746}
+
+\begin{DoxyCompactList}\small\item\em Prepend a column. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a7782e835293db0671ccc7d1ea727b6d6}{insert\+Columns} (int column, int count, const Q\+Model\+Index \&parent=Q\+Model\+Index()) override
+\begin{DoxyCompactList}\small\item\em Implement Q\+Abstract\+Table\+Model\+::insert\+Columns() \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a12182b8cf290c8e8f534537689715a25}{remove\+First\+Column} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a12182b8cf290c8e8f534537689715a25}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a12182b8cf290c8e8f534537689715a25}
+
+\begin{DoxyCompactList}\small\item\em Remove first column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a02bcc8e91fbac9afa1ec79af9a870c59}{remove\+Last\+Column} ()\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a02bcc8e91fbac9afa1ec79af9a870c59}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a02bcc8e91fbac9afa1ec79af9a870c59}
+
+\begin{DoxyCompactList}\small\item\em Remove last column. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a6091c284af32cef7eaba917f0233ffab}{remove\+Columns} (int column, int count, const Q\+Model\+Index \&parent=Q\+Model\+Index()) override
+\begin{DoxyCompactList}\small\item\em Implement Q\+Abstract\+Table\+Model\+::remove\+Columns() \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76fa49b2a855d67d3a77f8c86ef996e7}{resize} (int rows, int columns)
+\begin{DoxyCompactList}\small\item\em Resize model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acac5b4e0db09d93611d5eb0232d1a1d9}{populate\+Column\+With\+Int} (int column, int first\+Value, int increment=1)
+\begin{DoxyCompactList}\small\item\em Populate a column with int values. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a7dbaf44c75eb3c8074a3e3d70be25753}{populate\+Column\+With\+Ascii} (int column, char first\+Value, int increment=1)
+\begin{DoxyCompactList}\small\item\em Populate a column with A\+S\+C\+II values. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a7d5a58a9383e56d61c5066085e36c9e6}{populate\+Column} (int column, const std\+::vector$<$ Q\+Variant $>$ \&\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a88bb1b4c736812bfd14e9008923c39a4}{data}, Qt\+::\+Item\+Data\+Role role=Qt\+::\+Display\+Role)
+\begin{DoxyCompactList}\small\item\em Populate a column with data. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_af55fafebf9aa4f5ee6d5266792823653}{repopulate\+By\+Columns} (const std\+::vector$<$ std\+::vector$<$ Q\+Variant $>$ $>$ \&\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a88bb1b4c736812bfd14e9008923c39a4}{data}, Qt\+::\+Item\+Data\+Role role=Qt\+::\+Display\+Role)
+\begin{DoxyCompactList}\small\item\em Repopulate model with data. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_af9db809e602bc61d218245c605e3473b}{populate} (int rows, int columns)
+\begin{DoxyCompactList}\small\item\em Populate model with data. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_ad1a16af9a0840d48f9b160407adf1c1b}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear all data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Table model that stores Q\+Variant data. 
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "Mdt/ItemModel/VariantTableModel.h"}
+\textcolor{preprocessor}{#include <QTableView>}
+
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model}{Mdt::ItemModel::VariantTableModel} model;
+QTableView view;
+
+view.setModel(&model);
+view.show();
+model.\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_af9db809e602bc61d218245c605e3473b}{populate}(3, 2);
+\end{DoxyCode}
+
+
+This class is mostly used in unit tests in \hyperlink{namespace_mdt}{Mdt} libraries. 
+
+Definition at line 48 of file Variant\+Table\+Model.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!clear@{clear}}
+\index{clear@{clear}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_ad1a16af9a0840d48f9b160407adf1c1b}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_ad1a16af9a0840d48f9b160407adf1c1b}
+
+
+Clear all data. 
+
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} and \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} will return 0 after this call 
+
+Definition at line 377 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!data@{data}}
+\index{data@{data}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{data(const Q\+Model\+Index \&index, int role=\+Qt\+::\+Display\+Role) const override}{data(const QModelIndex &index, int role=Qt::DisplayRole) const override}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::data (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:DisplayRole}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a88bb1b4c736812bfd14e9008923c39a4}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a88bb1b4c736812bfd14e9008923c39a4}
+
+
+Get data at index. 
+
+If storage rule (passed in constructor) is Separate\+Display\+And\+Edit\+Role\+Data, data for Qt\+::\+Edit\+Role will be distinct from data for Qt\+::\+Display\+Role.
+
+If {\itshape role} is other than Qt\+::\+Display\+Role or Qt\+::\+Edit\+Role, an null value is returned.
+
+If {\itshape index} is not valid, or out of range, an null value is returned. 
+
+Definition at line 53 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!data@{data}}
+\index{data@{data}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{data(int row, int column, int role=\+Qt\+::\+Display\+Role) const }{data(int row, int column, int role=Qt::DisplayRole) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::data (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:DisplayRole}}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a5a232a35eadb8d96a40679207ad5d4d2}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a5a232a35eadb8d96a40679207ad5d4d2}
+
+
+Get data at row and column. 
+
+\begin{DoxyPrecond}{Precondition}
+row must be in valid range ( 0 $<$= row $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} ) 
+
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+data(const Q\+Model\+Index \&, int) 
+\end{DoxySeeAlso}
+
+
+Definition at line 69 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!flags@{flags}}
+\index{flags@{flags}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{flags(const Q\+Model\+Index \&index) const override}{flags(const QModelIndex &index) const override}}]{\setlength{\rightskip}{0pt plus 5cm}Qt\+::\+Item\+Flags Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::flags (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a077612298e4d3e522d3ea10f4284c3b5}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a077612298e4d3e522d3ea10f4284c3b5}
+
+
+Get flags at index. 
+
+If {\itshape index} is not valid, or out of range, this method returns Q\+Abstract\+Table\+Model\textquotesingle{}s flags. 
+
+Definition at line 122 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!insert\+Columns@{insert\+Columns}}
+\index{insert\+Columns@{insert\+Columns}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{insert\+Columns(int column, int count, const Q\+Model\+Index \&parent=\+Q\+Model\+Index()) override}{insertColumns(int column, int count, const QModelIndex &parent=QModelIndex()) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::insert\+Columns (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{count, }
+\item[{const Q\+Model\+Index \&}]{parent = {\ttfamily QModelIndex()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a7782e835293db0671ccc7d1ea727b6d6}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a7782e835293db0671ccc7d1ea727b6d6}
+
+
+Implement Q\+Abstract\+Table\+Model\+::insert\+Columns() 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be in correct range ( 0 $<$= column $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+
+{\itshape count} must be $>$= 1 
+\end{DoxyPrecond}
+
+
+Definition at line 242 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!insert\+Rows@{insert\+Rows}}
+\index{insert\+Rows@{insert\+Rows}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{insert\+Rows(int row, int count, const Q\+Model\+Index \&parent=\+Q\+Model\+Index()) override}{insertRows(int row, int count, const QModelIndex &parent=QModelIndex()) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::insert\+Rows (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{count, }
+\item[{const Q\+Model\+Index \&}]{parent = {\ttfamily QModelIndex()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a91bc169e793e08a91cefae7e6cac1a7c}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a91bc169e793e08a91cefae7e6cac1a7c}
+
+
+Implement Q\+Abstract\+Table\+Model\+::insert\+Rows() 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be in correct range ( 0 $<$= column $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} ) 
+
+{\itshape count} must be $>$= 1 
+\end{DoxyPrecond}
+
+
+Definition at line 184 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!populate@{populate}}
+\index{populate@{populate}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{populate(int rows, int columns)}{populate(int rows, int columns)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::populate (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{columns}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_af9db809e602bc61d218245c605e3473b}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_af9db809e602bc61d218245c605e3473b}
+
+
+Populate model with data. 
+
+Form is\+: For row 0\+: 0A, 0B, ..., 0Z For row 1\+: 1A, 1B, ..., 1Z
+
+If storage rule (passed in constructor) is Separate\+Display\+And\+Edit\+Role\+Data, data for Qt\+::\+Edit\+Role will not be set. 
+
+Definition at line 365 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!populate\+Column@{populate\+Column}}
+\index{populate\+Column@{populate\+Column}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{populate\+Column(int column, const std\+::vector$<$ Q\+Variant $>$ \&data, Qt\+::\+Item\+Data\+Role role=\+Qt\+::\+Display\+Role)}{populateColumn(int column, const std::vector< QVariant > &data, Qt::ItemDataRole role=Qt::DisplayRole)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::populate\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{const std\+::vector$<$ Q\+Variant $>$ \&}]{data, }
+\item[{Qt\+::\+Item\+Data\+Role}]{role = {\ttfamily Qt\+:\+:DisplayRole}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a7d5a58a9383e56d61c5066085e36c9e6}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a7d5a58a9383e56d61c5066085e36c9e6}
+
+
+Populate a column with data. 
+
+For example, if we have a model with 3 rows and 2 columns\+: 
+\begin{DoxyCode}
+model.\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a7d5a58a9383e56d61c5066085e36c9e6}{populateColumn}(0, \{1,2,3\});
+\end{DoxyCode}
+ will update first column\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+1&\\\cline{1-2}
+2&\\\cline{1-2}
+3&\\\cline{1-2}
+\end{longtabu}
+If we populate column 0 with less data than \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()}, like this\+: 
+\begin{DoxyCode}
+model.\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a7d5a58a9383e56d61c5066085e36c9e6}{populateColumn}(0, \{\textcolor{charliteral}{'A'},\textcolor{charliteral}{'B'}\});
+\end{DoxyCode}
+ the last row will be keeped untouched\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+A&\\\cline{1-2}
+B&\\\cline{1-2}
+3&\\\cline{1-2}
+\end{longtabu}
+
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+
+{\itshape data} size must be $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} 
+
+{\itshape role} must be Qt\+::\+Display\+Role or Qt\+::\+Edit\+Role 
+
+If {\itshape role} is Qt\+::\+Edit\+Role, strage strategy must be \hyperlink{namespace_mdt_1_1_item_model_ad48e47e80d7e13b5b951346649748190a8e198c923f2850676a3665c1ddc73204}{Variant\+Table\+Model\+Storage\+Rule\+::\+Separate\+Display\+And\+Edit\+Role\+Data} 
+\end{DoxyPrecond}
+
+
+Definition at line 333 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!populate\+Column\+With\+Ascii@{populate\+Column\+With\+Ascii}}
+\index{populate\+Column\+With\+Ascii@{populate\+Column\+With\+Ascii}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{populate\+Column\+With\+Ascii(int column, char first\+Value, int increment=1)}{populateColumnWithAscii(int column, char firstValue, int increment=1)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::populate\+Column\+With\+Ascii (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{char}]{first\+Value, }
+\item[{int}]{increment = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a7dbaf44c75eb3c8074a3e3d70be25753}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a7dbaf44c75eb3c8074a3e3d70be25753}
+
+
+Populate a column with A\+S\+C\+II values. 
+
+For each row, starting from 0, value at column will be updated.
+
+For example, if we have a model with 3 rows and 2 columns\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+A&\\\cline{1-2}
+B&\\\cline{1-2}
+C&\\\cline{1-2}
+\end{longtabu}
+populate\+Column\+With\+Ascii(1, \textquotesingle{}b\textquotesingle{}, 3) will update second column\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+A&\textquotesingle{}b\textquotesingle{} \\\cline{1-2}
+B&\textquotesingle{}e\textquotesingle{} \\\cline{1-2}
+C&\textquotesingle{}h\textquotesingle{} \\\cline{1-2}
+\end{longtabu}
+
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} )
+\end{DoxyPrecond}
+Note\+: no checks are done for first\+Value and increment. 
+
+Definition at line 320 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!populate\+Column\+With\+Int@{populate\+Column\+With\+Int}}
+\index{populate\+Column\+With\+Int@{populate\+Column\+With\+Int}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{populate\+Column\+With\+Int(int column, int first\+Value, int increment=1)}{populateColumnWithInt(int column, int firstValue, int increment=1)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::populate\+Column\+With\+Int (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{first\+Value, }
+\item[{int}]{increment = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_acac5b4e0db09d93611d5eb0232d1a1d9}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_acac5b4e0db09d93611d5eb0232d1a1d9}
+
+
+Populate a column with int values. 
+
+For each row, starting from 0, value at column will be updated.
+
+For example, if we have a model with 3 rows and 2 columns\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+A&\\\cline{1-2}
+B&\\\cline{1-2}
+C&\\\cline{1-2}
+\end{longtabu}
+populate\+Column\+With\+Int(1, 2, 4) will update second column\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+A&2 \\\cline{1-2}
+B&6 \\\cline{1-2}
+C&10 \\\cline{1-2}
+\end{longtabu}
+
+
+\begin{DoxyPrecond}{Precondition}
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 307 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!remove\+Columns@{remove\+Columns}}
+\index{remove\+Columns@{remove\+Columns}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{remove\+Columns(int column, int count, const Q\+Model\+Index \&parent=\+Q\+Model\+Index()) override}{removeColumns(int column, int count, const QModelIndex &parent=QModelIndex()) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::remove\+Columns (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{count, }
+\item[{const Q\+Model\+Index \&}]{parent = {\ttfamily QModelIndex()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a6091c284af32cef7eaba917f0233ffab}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a6091c284af32cef7eaba917f0233ffab}
+
+
+Implement Q\+Abstract\+Table\+Model\+::remove\+Columns() 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+
+{\itshape count} must be $>$= 1 
+
+{\itshape column} + {\itshape count} must be in correct range ( 0 $<$= column $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 277 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!remove\+Rows@{remove\+Rows}}
+\index{remove\+Rows@{remove\+Rows}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{remove\+Rows(int row, int count, const Q\+Model\+Index \&parent=\+Q\+Model\+Index()) override}{removeRows(int row, int count, const QModelIndex &parent=QModelIndex()) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::remove\+Rows (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{count, }
+\item[{const Q\+Model\+Index \&}]{parent = {\ttfamily QModelIndex()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a2cb9681cc329e62d1c61fbb62c755dbe}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a2cb9681cc329e62d1c61fbb62c755dbe}
+
+
+Implement Q\+Abstract\+Table\+Model\+::remove\+Rows() 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+
+{\itshape count} must be $>$= 1 
+
+{\itshape row} + {\itshape count} must be in correct range ( 0 $<$= column $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 216 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!repopulate\+By\+Columns@{repopulate\+By\+Columns}}
+\index{repopulate\+By\+Columns@{repopulate\+By\+Columns}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{repopulate\+By\+Columns(const std\+::vector$<$ std\+::vector$<$ Q\+Variant $>$ $>$ \&data, Qt\+::\+Item\+Data\+Role role=\+Qt\+::\+Display\+Role)}{repopulateByColumns(const std::vector< std::vector< QVariant > > &data, Qt::ItemDataRole role=Qt::DisplayRole)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::repopulate\+By\+Columns (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::vector$<$ Q\+Variant $>$ $>$ \&}]{data, }
+\item[{Qt\+::\+Item\+Data\+Role}]{role = {\ttfamily Qt\+:\+:DisplayRole}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_af55fafebf9aa4f5ee6d5266792823653}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_af55fafebf9aa4f5ee6d5266792823653}
+
+
+Repopulate model with data. 
+
+Calling\+: 
+\begin{DoxyCode}
+model.populateByColumns(\{\{1,2,3\},\{\textcolor{stringliteral}{"A"},\textcolor{stringliteral}{"B"},\textcolor{stringliteral}{"C"}\}\});
+\end{DoxyCode}
+ will populate the model\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*2{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Col 0}&{\bf Col 1 }\\\cline{1-2}
+\endhead
+1&A \\\cline{1-2}
+2&B \\\cline{1-2}
+3&C \\\cline{1-2}
+\end{longtabu}
+
+
+This method will also reset the model.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape data} must have at least 1 row 
+
+each row must have at least 1 column 
+
+each column must be the same size 
+\end{DoxyPrecond}
+
+
+Definition at line 349 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!resize@{resize}}
+\index{resize@{resize}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{resize(int rows, int columns)}{resize(int rows, int columns)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::resize (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{columns}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a76fa49b2a855d67d3a77f8c86ef996e7}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a76fa49b2a855d67d3a77f8c86ef996e7}
+
+
+Resize model. 
+
+For new count of rows, respectively columns, that is greater than current count, new null elements are added. For count that is less than current one, elements are removed.
+
+This method will also reset the model.
+
+\begin{DoxyPrecond}{Precondition}
+rows must be $>$= 0 
+
+columns must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 296 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Data(const Q\+Model\+Index \&index, const Q\+Variant \&value, int role=\+Qt\+::\+Edit\+Role) override}{setData(const QModelIndex &index, const QVariant &value, int role=Qt::EditRole) override}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Data (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index, }
+\item[{const Q\+Variant \&}]{value, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:EditRole}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a5a752c74aa50dd06043f753da6b74905}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a5a752c74aa50dd06043f753da6b74905}
+
+
+Set data at index. 
+
+If storage rule (passed in constructor) is Separate\+Display\+And\+Edit\+Role\+Data, data for Qt\+::\+Edit\+Role will be distinct from data for Qt\+::\+Display\+Role.
+
+If {\itshape role} is other than Qt\+::\+Display\+Role or Qt\+::\+Edit\+Role, no data is set and this function returns false.
+
+If {\itshape index} is not valid, or out of range, this method returns false. 
+
+Definition at line 135 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Data(int row, int column, const Q\+Variant \&value, int role=\+Qt\+::\+Edit\+Role)}{setData(int row, int column, const QVariant &value, int role=Qt::EditRole)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column, }
+\item[{const Q\+Variant \&}]{value, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:EditRole}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_af8eec79a03c244c02c988d640605f521}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_af8eec79a03c244c02c988d640605f521}
+
+
+Set data at row and column. 
+
+\begin{DoxyPrecond}{Precondition}
+row must be in valid range ( 0 $<$= row $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} ) 
+
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a5a752c74aa50dd06043f753da6b74905}{set\+Data(const Q\+Model\+Index \&, const Q\+Variant \&, int)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 161 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Item\+Editable@{set\+Item\+Editable}}
+\index{set\+Item\+Editable@{set\+Item\+Editable}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Item\+Editable(const Q\+Model\+Index \&index, bool editable)}{setItemEditable(const QModelIndex &index, bool editable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Item\+Editable (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index, }
+\item[{bool}]{editable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a9c7a72625c0e4bf871f0e25773937b57}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a9c7a72625c0e4bf871f0e25773937b57}
+
+
+Set item editable at index. 
+
+\begin{DoxyPrecond}{Precondition}
+index must be in valid range ( 0 $<$= index.\+row() $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} and 0 $<$= index.\+column() $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 102 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Item\+Editable@{set\+Item\+Editable}}
+\index{set\+Item\+Editable@{set\+Item\+Editable}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Item\+Editable(int row, int column, bool editable)}{setItemEditable(int row, int column, bool editable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Item\+Editable (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column, }
+\item[{bool}]{editable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a0d3bc90ae245bb011b98718b0d83e786}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a0d3bc90ae245bb011b98718b0d83e786}
+
+
+Set item editable at row and column. 
+
+\begin{DoxyPrecond}{Precondition}
+row must be in valid range ( 0 $<$= row $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} ) 
+
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a9c7a72625c0e4bf871f0e25773937b57}{set\+Item\+Editable(const Q\+Model\+Index \&, bool)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 112 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Item\+Enabled@{set\+Item\+Enabled}}
+\index{set\+Item\+Enabled@{set\+Item\+Enabled}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Item\+Enabled(const Q\+Model\+Index \&index, bool enable)}{setItemEnabled(const QModelIndex &index, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Item\+Enabled (
+\begin{DoxyParamCaption}
+\item[{const Q\+Model\+Index \&}]{index, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_abd94c5d8358c6951bfefd405ead3228f}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_abd94c5d8358c6951bfefd405ead3228f}
+
+
+Set item enabled at index. 
+
+\begin{DoxyPrecond}{Precondition}
+index must be in valid range ( 0 $<$= index.\+row() $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} and 0 $<$= index.\+column() $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 82 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Item\+Enabled@{set\+Item\+Enabled}}
+\index{set\+Item\+Enabled@{set\+Item\+Enabled}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Item\+Enabled(int row, int column, bool enable)}{setItemEnabled(int row, int column, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Item\+Enabled (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_ac440fe0392eab209d6950bfeb4cc9397}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_ac440fe0392eab209d6950bfeb4cc9397}
+
+
+Set item enabled at row and column. 
+
+\begin{DoxyPrecond}{Precondition}
+row must be in valid range ( 0 $<$= row $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_a76330ef86b94573e02a61946e50e99a9}{row\+Count()} ) 
+
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_acd4d14fc0041cdd9e509987e49dcf5b3}{column\+Count()} ) 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_abd94c5d8358c6951bfefd405ead3228f}{set\+Item\+Enabled(const Q\+Model\+Index \&, bool)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 92 of file Variant\+Table\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}!set\+Pass\+Roles\+In\+Data\+Chaged@{set\+Pass\+Roles\+In\+Data\+Chaged}}
+\index{set\+Pass\+Roles\+In\+Data\+Chaged@{set\+Pass\+Roles\+In\+Data\+Chaged}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model}}
+\subsubsection[{\texorpdfstring{set\+Pass\+Roles\+In\+Data\+Chaged(bool pass)}{setPassRolesInDataChaged(bool pass)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+::set\+Pass\+Roles\+In\+Data\+Chaged (
+\begin{DoxyParamCaption}
+\item[{bool}]{pass}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_a5beb3844e52deb88eba0f50075ab942e}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_a5beb3844e52deb88eba0f50075ab942e}
+
+
+Tell if this model must pass roles in data changed signal. 
+
+By default, roles are passed in data\+Changed() signal. 
+
+Definition at line 34 of file Variant\+Table\+Model.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Variant\+Table\+Model.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Variant\+Table\+Model.\+cpp\end{DoxyCompactItemize}

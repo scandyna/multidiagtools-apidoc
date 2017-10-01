@@ -1,0 +1,4 @@
+<map id="Mdt::ItemModel::PkFkProxyModelBase" name="Mdt::ItemModel::PkFkProxyModelBase">
+<area shape="rect" id="node2" href="$class_mdt_1_1_item_model_1_1_foreign_key_proxy_model.html" title="Hold informations about a foreign key of a item model. " alt="" coords="5,95,192,136"/>
+<area shape="rect" id="node3" href="$class_mdt_1_1_item_model_1_1_primary_key_proxy_model.html" title="Hold informations about a primary key of a item model. " alt="" coords="216,95,405,136"/>
+</map>

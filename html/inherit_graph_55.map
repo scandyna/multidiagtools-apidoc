@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_mdt_1_1_standard_paths.html" title="Provides methods for accessing standard paths. " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node1" href="$class_mdt_1_1_item_model_1_1_expression_1_1_container_interface.html" title="Interface for container implementing a expression acting on a item model. " alt="" coords="5,13,192,54"/>
+<area shape="rect" id="node2" href="$class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container.html" title="Implementation of container for FilterExpression. " alt="" coords="240,5,427,61"/>
 </map>

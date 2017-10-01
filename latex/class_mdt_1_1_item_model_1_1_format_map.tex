@@ -1,0 +1,218 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_format_map}{}\section{Mdt\+:\+:Item\+Model\+:\+:Format\+Map Class Reference}
+\label{class_mdt_1_1_item_model_1_1_format_map}\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+
+
+Stores formats for certain row, column and index in a item model.  
+
+
+
+
+{\ttfamily \#include $<$Format\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_format_map_a63d0551849d06f3b5dec777e09022ff1}{Format\+Map} ()\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a63d0551849d06f3b5dec777e09022ff1}{}\label{class_mdt_1_1_item_model_1_1_format_map_a63d0551849d06f3b5dec777e09022ff1}
+
+\begin{DoxyCompactList}\small\item\em Construct a format map. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a85f43d8c348e1792f32316850cc90364}{set\+Priority} (const std\+::array$<$ \hyperlink{namespace_mdt_1_1_item_model_a4f59200e524d67369e535854e7d8f12b}{Format\+Map\+Priority}, 3 $>$ \&priority)
+\begin{DoxyCompactList}\small\item\em Set priority when format conflics. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a6eab528c819ecde8cda4393d0da28aea}{set\+Format\+For\+Index} (int row, int column, const T \&format)
+\begin{DoxyCompactList}\small\item\em Set format for given row and column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a50b9217d6f0a388c0451c9ddfd2374e4}{clear\+Format\+For\+Index} (int row, int column)
+\begin{DoxyCompactList}\small\item\em Clear format for given row and column. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a586db9a9a1ffead14e284691c3da6f6b}{set\+Format\+For\+Row} (int row, const T \&format)
+\begin{DoxyCompactList}\small\item\em Set format for given row. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_acfbb7468ff0952c542b70cb064f1801b}{clear\+Format\+For\+Row} (int row)
+\begin{DoxyCompactList}\small\item\em Clear format for given row. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a80612dc4fa4371c06e7eb0d80c48ea5d}{set\+Format\+For\+Column} (int column, const T \&format)
+\begin{DoxyCompactList}\small\item\em Set format for given column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a300438e47e67b2181bbe5fd1ef5b7589}{clear\+Format\+For\+Column} (int column)
+\begin{DoxyCompactList}\small\item\em Clear format for given column. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a60031943aea27ce6fd2d9aa119cdee03}{format\+For\+Index} (int row, int column) const 
+\begin{DoxyCompactList}\small\item\em Get format for given row and column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores formats for certain row, column and index in a item model. 
+
+Definition at line 42 of file Format\+Map.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!clear\+Format\+For\+Column@{clear\+Format\+For\+Column}}
+\index{clear\+Format\+For\+Column@{clear\+Format\+For\+Column}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{clear\+Format\+For\+Column(int column)}{clearFormatForColumn(int column)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::clear\+Format\+For\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a300438e47e67b2181bbe5fd1ef5b7589}{}\label{class_mdt_1_1_item_model_1_1_format_map_a300438e47e67b2181bbe5fd1ef5b7589}
+
+
+Clear format for given column. 
+
+Does nothing if no format was set for {\itshape column} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 51 of file Format\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!clear\+Format\+For\+Index@{clear\+Format\+For\+Index}}
+\index{clear\+Format\+For\+Index@{clear\+Format\+For\+Index}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{clear\+Format\+For\+Index(int row, int column)}{clearFormatForIndex(int row, int column)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::clear\+Format\+For\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a50b9217d6f0a388c0451c9ddfd2374e4}{}\label{class_mdt_1_1_item_model_1_1_format_map_a50b9217d6f0a388c0451c9ddfd2374e4}
+
+
+Clear format for given row and column. 
+
+Does nothing if no format was set for {\itshape row} and {\itshape column} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 36 of file Format\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!clear\+Format\+For\+Row@{clear\+Format\+For\+Row}}
+\index{clear\+Format\+For\+Row@{clear\+Format\+For\+Row}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{clear\+Format\+For\+Row(int row)}{clearFormatForRow(int row)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::clear\+Format\+For\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_acfbb7468ff0952c542b70cb064f1801b}{}\label{class_mdt_1_1_item_model_1_1_format_map_acfbb7468ff0952c542b70cb064f1801b}
+
+
+Clear format for given row. 
+
+Does nothing if no format was set for {\itshape row} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 44 of file Format\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!format\+For\+Index@{format\+For\+Index}}
+\index{format\+For\+Index@{format\+For\+Index}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{format\+For\+Index(int row, int column) const }{formatForIndex(int row, int column) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Format\+Map\+::format\+For\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a60031943aea27ce6fd2d9aa119cdee03}{}\label{class_mdt_1_1_item_model_1_1_format_map_a60031943aea27ce6fd2d9aa119cdee03}
+
+
+Get format for given row and column. 
+
+Returns a Q\+Variant with value of type passed in \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a586db9a9a1ffead14e284691c3da6f6b}{set\+Format\+For\+Row()} , \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a80612dc4fa4371c06e7eb0d80c48ea5d}{set\+Format\+For\+Column()} or \hyperlink{class_mdt_1_1_item_model_1_1_format_map_a6eab528c819ecde8cda4393d0da28aea}{set\+Format\+For\+Index()} , if a format was set for {\itshape row} and {\itshape column}, otherwise a null Q\+Variant.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 59 of file Format\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!set\+Format\+For\+Column@{set\+Format\+For\+Column}}
+\index{set\+Format\+For\+Column@{set\+Format\+For\+Column}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{set\+Format\+For\+Column(int column, const T \&format)}{setFormatForColumn(int column, const T &format)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::set\+Format\+For\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{const T \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a80612dc4fa4371c06e7eb0d80c48ea5d}{}\label{class_mdt_1_1_item_model_1_1_format_map_a80612dc4fa4371c06e7eb0d80c48ea5d}
+
+
+Set format for given column. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 110 of file Format\+Map.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!set\+Format\+For\+Index@{set\+Format\+For\+Index}}
+\index{set\+Format\+For\+Index@{set\+Format\+For\+Index}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{set\+Format\+For\+Index(int row, int column, const T \&format)}{setFormatForIndex(int row, int column, const T &format)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::set\+Format\+For\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{column, }
+\item[{const T \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a6eab528c819ecde8cda4393d0da28aea}{}\label{class_mdt_1_1_item_model_1_1_format_map_a6eab528c819ecde8cda4393d0da28aea}
+
+
+Set format for given row and column. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 70 of file Format\+Map.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!set\+Format\+For\+Row@{set\+Format\+For\+Row}}
+\index{set\+Format\+For\+Row@{set\+Format\+For\+Row}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{set\+Format\+For\+Row(int row, const T \&format)}{setFormatForRow(int row, const T &format)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::set\+Format\+For\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{const T \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a586db9a9a1ffead14e284691c3da6f6b}{}\label{class_mdt_1_1_item_model_1_1_format_map_a586db9a9a1ffead14e284691c3da6f6b}
+
+
+Set format for given row. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 91 of file Format\+Map.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}!set\+Priority@{set\+Priority}}
+\index{set\+Priority@{set\+Priority}!Mdt\+::\+Item\+Model\+::\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Format\+Map}}
+\subsubsection[{\texorpdfstring{set\+Priority(const std\+::array$<$ Format\+Map\+Priority, 3 $>$ \&priority)}{setPriority(const std::array< FormatMapPriority, 3 > &priority)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Format\+Map\+::set\+Priority (
+\begin{DoxyParamCaption}
+\item[{const std\+::array$<$ {\bf Format\+Map\+Priority}, 3 $>$ \&}]{priority}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_format_map_a85f43d8c348e1792f32316850cc90364}{}\label{class_mdt_1_1_item_model_1_1_format_map_a85f43d8c348e1792f32316850cc90364}
+
+
+Set priority when format conflics. 
+
+Define which format should be choosen when many where set for a specific index.
+
+For example\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_item_model_1_1_format_map_a85f43d8c348e1792f32316850cc90364}{setPriority}(\{FormatMapPriority::Row, FormatMapPriority::Column, FormatMapPriority::Index\});
+\end{DoxyCode}
+
+
+Default is index, then row, then column. 
+
+Definition at line 31 of file Format\+Map.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Format\+Map.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Format\+Map.\+cpp\end{DoxyCompactItemize}

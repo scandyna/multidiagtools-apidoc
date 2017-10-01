@@ -1,0 +1,84 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base}{}\section{Mdt\+:\+:Item\+Model\+:\+:Pk\+Fk\+Proxy\+Model\+Base Class Reference}
+\label{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base}\index{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base@{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base}}
+
+
+Common base for \hyperlink{class_mdt_1_1_item_model_1_1_primary_key_proxy_model}{Primary\+Key\+Proxy\+Model} and \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model}{Foreign\+Key\+Proxy\+Model}.  
+
+
+
+
+{\ttfamily \#include $<$Pk\+Fk\+Proxy\+Model\+Base.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Pk\+Fk\+Proxy\+Model\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_adb72f773a5efaa240e3916bbb4613fec}{Pk\+Fk\+Proxy\+Model\+Base} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_adb72f773a5efaa240e3916bbb4613fec}{}\label{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_adb72f773a5efaa240e3916bbb4613fec}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_key_record}{Key\+Record} \hyperlink{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_abd0ab0772251670482fd935f6e3c72a7}{get\+Key\+Record} (int row, const \hyperlink{class_mdt_1_1_item_model_1_1_column_list}{Column\+List} \&key) const 
+\begin{DoxyCompactList}\small\item\em Get key record for row. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_a4351563a94c85b165670a72e87f54bcf}{find\+First\+Row\+For\+Key\+Record} (const \hyperlink{class_mdt_1_1_item_model_1_1_key_record}{Key\+Record} \&record) const 
+\begin{DoxyCompactList}\small\item\em Find first row that matches key record. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common base for \hyperlink{class_mdt_1_1_item_model_1_1_primary_key_proxy_model}{Primary\+Key\+Proxy\+Model} and \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key_proxy_model}{Foreign\+Key\+Proxy\+Model}. 
+
+Definition at line 32 of file Pk\+Fk\+Proxy\+Model\+Base.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base@{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base}!find\+First\+Row\+For\+Key\+Record@{find\+First\+Row\+For\+Key\+Record}}
+\index{find\+First\+Row\+For\+Key\+Record@{find\+First\+Row\+For\+Key\+Record}!Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base@{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base}}
+\subsubsection[{\texorpdfstring{find\+First\+Row\+For\+Key\+Record(const Key\+Record \&record) const }{findFirstRowForKeyRecord(const KeyRecord &record) const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base\+::find\+First\+Row\+For\+Key\+Record (
+\begin{DoxyParamCaption}
+\item[{const {\bf Key\+Record} \&}]{record}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_a4351563a94c85b165670a72e87f54bcf}{}\label{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_a4351563a94c85b165670a72e87f54bcf}
+
+
+Find first row that matches key record. 
+
+Returns the first row that matches, otherwise -\/1 
+
+Definition at line 44 of file Pk\+Fk\+Proxy\+Model\+Base.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base@{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base}!get\+Key\+Record@{get\+Key\+Record}}
+\index{get\+Key\+Record@{get\+Key\+Record}!Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base@{Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base}}
+\subsubsection[{\texorpdfstring{get\+Key\+Record(int row, const Column\+List \&key) const }{getKeyRecord(int row, const ColumnList &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Key\+Record} Mdt\+::\+Item\+Model\+::\+Pk\+Fk\+Proxy\+Model\+Base\+::get\+Key\+Record (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{const {\bf Column\+List} \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_abd0ab0772251670482fd935f6e3c72a7}{}\label{class_mdt_1_1_item_model_1_1_pk_fk_proxy_model_base_abd0ab0772251670482fd935f6e3c72a7}
+
+
+Get key record for row. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be in correct range ( 0 $<$= row $<$ row\+Count() ) 
+\end{DoxyPrecond}
+
+
+Definition at line 31 of file Pk\+Fk\+Proxy\+Model\+Base.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Pk\+Fk\+Proxy\+Model\+Base.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Pk\+Fk\+Proxy\+Model\+Base.\+cpp\end{DoxyCompactItemize}

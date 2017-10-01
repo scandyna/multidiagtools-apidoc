@@ -1,0 +1,95 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_column_list}{}\section{Mdt\+:\+:Item\+Model\+:\+:Column\+List Class Reference}
+\label{class_mdt_1_1_item_model_1_1_column_list}\index{Mdt\+::\+Item\+Model\+::\+Column\+List@{Mdt\+::\+Item\+Model\+::\+Column\+List}}
+
+
+A list of column indexes in a item model.  
+
+
+
+
+{\ttfamily \#include $<$Column\+List.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Column\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_mdt_1_1_item_model_1_1_column_list__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Item\+Model\+:\+:Column\+List\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_mdt_1_1_item_model_1_1_column_list__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_column_list_a97097c9333625e619f64405e125f31ba}{Column\+List} () noexcept=default\hypertarget{class_mdt_1_1_item_model_1_1_column_list_a97097c9333625e619f64405e125f31ba}{}\label{class_mdt_1_1_item_model_1_1_column_list_a97097c9333625e619f64405e125f31ba}
+
+\begin{DoxyCompactList}\small\item\em Construct a empty list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_column_list_a1d44fa21bb6756af2333ffd30679e3bc}{Column\+List} (std\+::initializer\+\_\+list$<$ int $>$ list)
+\begin{DoxyCompactList}\small\item\em Construct a list of columns. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_column_list_a35d99eaaf6f1860a53e7d7af05b38cc0}{greatest\+Column} () const 
+\begin{DoxyCompactList}\small\item\em Get the greatest column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A list of column indexes in a item model. 
+
+Definition at line 32 of file Column\+List.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Column\+List@{Mdt\+::\+Item\+Model\+::\+Column\+List}!Column\+List@{Column\+List}}
+\index{Column\+List@{Column\+List}!Mdt\+::\+Item\+Model\+::\+Column\+List@{Mdt\+::\+Item\+Model\+::\+Column\+List}}
+\subsubsection[{\texorpdfstring{Column\+List(std\+::initializer\+\_\+list$<$ int $>$ list)}{ColumnList(std::initializer_list< int > list)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Item\+Model\+::\+Column\+List\+::\+Column\+List (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ int $>$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_item_model_1_1_column_list_a1d44fa21bb6756af2333ffd30679e3bc}{}\label{class_mdt_1_1_item_model_1_1_column_list_a1d44fa21bb6756af2333ffd30679e3bc}
+
+
+Construct a list of columns. 
+
+\begin{DoxyPrecond}{Precondition}
+Each column in {\itshape list} must be $>$= 0 
+
+Each column in {\itshape list} must be unique 
+\end{DoxyPrecond}
+
+
+Definition at line 45 of file Column\+List.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Column\+List@{Mdt\+::\+Item\+Model\+::\+Column\+List}!greatest\+Column@{greatest\+Column}}
+\index{greatest\+Column@{greatest\+Column}!Mdt\+::\+Item\+Model\+::\+Column\+List@{Mdt\+::\+Item\+Model\+::\+Column\+List}}
+\subsubsection[{\texorpdfstring{greatest\+Column() const }{greatestColumn() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Column\+List\+::greatest\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_column_list_a35d99eaaf6f1860a53e7d7af05b38cc0}{}\label{class_mdt_1_1_item_model_1_1_column_list_a35d99eaaf6f1860a53e7d7af05b38cc0}
+
+
+Get the greatest column. 
+
+Returns -\/1 if this list is empty. 
+
+Definition at line 58 of file Column\+List.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Column\+List.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,185 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base}{}\section{Mdt\+:\+:Item\+Model\+:\+:Row\+Column\+List\+Base Class Reference}
+\label{class_mdt_1_1_item_model_1_1_row_column_list_base}\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}}
+
+
+Common base for \hyperlink{class_mdt_1_1_item_model_1_1_row_list}{Row\+List} and \hyperlink{class_mdt_1_1_item_model_1_1_column_list}{Column\+List}.  
+
+
+
+
+{\ttfamily \#include $<$Row\+Column\+List\+Base.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Row\+Column\+List\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mdt_1_1_item_model_1_1_row_column_list_base__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ int $>$\+::\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a9dc577333fcf542eda83d99b68fb4d05}{iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a9dc577333fcf542eda83d99b68fb4d05}{iterator}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a9dc577333fcf542eda83d99b68fb4d05}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a9dc577333fcf542eda83d99b68fb4d05}
+
+\begin{DoxyCompactList}\small\item\em S\+TL iterator. \end{DoxyCompactList}\item 
+typedef std\+::vector$<$ int $>$\+::\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{const\+\_\+iterator}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}
+
+\begin{DoxyCompactList}\small\item\em S\+TL const iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_afd267c9bc025a86780b2e5077e906669}{Row\+Column\+List\+Base} () noexcept=default\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_afd267c9bc025a86780b2e5077e906669}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_afd267c9bc025a86780b2e5077e906669}
+
+\begin{DoxyCompactList}\small\item\em Construct a empty list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a66e0009dde912bc7d7649313002a0875}{Row\+Column\+List\+Base} (std\+::initializer\+\_\+list$<$ int $>$ list)
+\begin{DoxyCompactList}\small\item\em Construct a list of elements. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a3d44b64f2b4d508f716b9dc2b928ba90}{size} () const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a3d44b64f2b4d508f716b9dc2b928ba90}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a3d44b64f2b4d508f716b9dc2b928ba90}
+
+\begin{DoxyCompactList}\small\item\em Get size of the list. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a8de0548d924ab48d849bdd0fd1439519}{is\+Empty} () const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a8de0548d924ab48d849bdd0fd1439519}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a8de0548d924ab48d849bdd0fd1439519}
+
+\begin{DoxyCompactList}\small\item\em Check if this list is empty. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a42c297e8e33172fd0e3c4d7b0e5cfacf}{at} (int index) const 
+\begin{DoxyCompactList}\small\item\em Get element at index. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a4f43dc5fbe76b1274542dbf5715bd193}{contains} (int e) const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a4f43dc5fbe76b1274542dbf5715bd193}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a4f43dc5fbe76b1274542dbf5715bd193}
+
+\begin{DoxyCompactList}\small\item\em Check if this list contains a element. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_aae4b3c338ab2a8f5b8ca28eba920daf0}{append} (int e)
+\begin{DoxyCompactList}\small\item\em Append a element to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_adb258a1c871226cee29c4075aa03ae1e}{push\+\_\+back} (int e)
+\begin{DoxyCompactList}\small\item\em Append a element to the end of this list. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ac28c95047dac683a148a05105a1a6829}{greatest} () const 
+\begin{DoxyCompactList}\small\item\em Get the greatest element. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a4e517be54c9c18f1497d2aca771253a2}{clear} ()\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a4e517be54c9c18f1497d2aca771253a2}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a4e517be54c9c18f1497d2aca771253a2}
+
+\begin{DoxyCompactList}\small\item\em Clear. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a9dc577333fcf542eda83d99b68fb4d05}{iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_aa8bfa499fd04fa0d99ffdf21c504bbb7}{begin} ()\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_aa8bfa499fd04fa0d99ffdf21c504bbb7}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_aa8bfa499fd04fa0d99ffdf21c504bbb7}
+
+\begin{DoxyCompactList}\small\item\em Get iterator to the beginning of the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a9dc577333fcf542eda83d99b68fb4d05}{iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a3b33b53602d2263c335a35ae634cc79b}{end} ()\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a3b33b53602d2263c335a35ae634cc79b}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a3b33b53602d2263c335a35ae634cc79b}
+
+\begin{DoxyCompactList}\small\item\em Get iterator to the end of the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_aa123524b810bd276f5a32f3341032246}{begin} () const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_aa123524b810bd276f5a32f3341032246}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_aa123524b810bd276f5a32f3341032246}
+
+\begin{DoxyCompactList}\small\item\em Get const iterator to the beginning of the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_af4835099fa28baf64dfb747ad51299d4}{end} () const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_af4835099fa28baf64dfb747ad51299d4}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_af4835099fa28baf64dfb747ad51299d4}
+
+\begin{DoxyCompactList}\small\item\em Get const iterator to the end of the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_acf6198c31631c9a9ba355d40ee36809d}{cbegin} () const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_acf6198c31631c9a9ba355d40ee36809d}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_acf6198c31631c9a9ba355d40ee36809d}
+
+\begin{DoxyCompactList}\small\item\em Get const iterator to the beginning of the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_ab6fc8d06705e4434201915f0c9860721}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_aef355cddee3a52b4e1d5bce6e934c6bb}{cend} () const \hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_aef355cddee3a52b4e1d5bce6e934c6bb}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_aef355cddee3a52b4e1d5bce6e934c6bb}
+
+\begin{DoxyCompactList}\small\item\em Get const iterator to the end of the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common base for \hyperlink{class_mdt_1_1_item_model_1_1_row_list}{Row\+List} and \hyperlink{class_mdt_1_1_item_model_1_1_column_list}{Column\+List}. 
+
+Definition at line 32 of file Row\+Column\+List\+Base.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}!Row\+Column\+List\+Base@{Row\+Column\+List\+Base}}
+\index{Row\+Column\+List\+Base@{Row\+Column\+List\+Base}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}}
+\subsubsection[{\texorpdfstring{Row\+Column\+List\+Base(std\+::initializer\+\_\+list$<$ int $>$ list)}{RowColumnListBase(std::initializer_list< int > list)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base\+::\+Row\+Column\+List\+Base (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ int $>$}]{list}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a66e0009dde912bc7d7649313002a0875}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a66e0009dde912bc7d7649313002a0875}
+
+
+Construct a list of elements. 
+
+\begin{DoxyPrecond}{Precondition}
+Each element in {\itshape list} must be $>$= 0 
+
+Each element in {\itshape list} must be unique 
+\end{DoxyPrecond}
+
+
+Definition at line 40 of file Row\+Column\+List\+Base.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}!append@{append}}
+\index{append@{append}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}}
+\subsubsection[{\texorpdfstring{append(int e)}{append(int e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base\+::append (
+\begin{DoxyParamCaption}
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_aae4b3c338ab2a8f5b8ca28eba920daf0}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_aae4b3c338ab2a8f5b8ca28eba920daf0}
+
+
+Append a element to the end of this list. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape e} must be $>$= 0 
+
+{\itshape e} must not allready exists in this list 
+\end{DoxyPrecond}
+
+
+Definition at line 51 of file Row\+Column\+List\+Base.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}!at@{at}}
+\index{at@{at}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}}
+\subsubsection[{\texorpdfstring{at(int index) const }{at(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base\+::at (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_a42c297e8e33172fd0e3c4d7b0e5cfacf}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_a42c297e8e33172fd0e3c4d7b0e5cfacf}
+
+
+Get element at index. 
+
+\begin{DoxyPrecond}{Precondition}
+index must be $>$= 0 
+
+index must be $<$ \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_a3d44b64f2b4d508f716b9dc2b928ba90}{size()} 
+\end{DoxyPrecond}
+
+
+Definition at line 81 of file Row\+Column\+List\+Base.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}!greatest@{greatest}}
+\index{greatest@{greatest}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}}
+\subsubsection[{\texorpdfstring{greatest() const }{greatest() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base\+::greatest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_ac28c95047dac683a148a05105a1a6829}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_ac28c95047dac683a148a05105a1a6829}
+
+
+Get the greatest element. 
+
+Returns -\/1 if this list is empty. 
+
+Definition at line 58 of file Row\+Column\+List\+Base.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(int e)}{push_back(int e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Row\+Column\+List\+Base\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_list_base_adb258a1c871226cee29c4075aa03ae1e}{}\label{class_mdt_1_1_item_model_1_1_row_column_list_base_adb258a1c871226cee29c4075aa03ae1e}
+
+
+Append a element to the end of this list. 
+
+This is the same as \hyperlink{class_mdt_1_1_item_model_1_1_row_column_list_base_aae4b3c338ab2a8f5b8ca28eba920daf0}{append()} 
+
+Definition at line 103 of file Row\+Column\+List\+Base.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+Column\+List\+Base.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+Column\+List\+Base.\+cpp\end{DoxyCompactItemize}

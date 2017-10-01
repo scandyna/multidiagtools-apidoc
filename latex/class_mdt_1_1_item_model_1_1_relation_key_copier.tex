@@ -1,0 +1,219 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier}{}\section{Mdt\+:\+:Item\+Model\+:\+:Relation\+Key\+Copier Class Reference}
+\label{class_mdt_1_1_item_model_1_1_relation_key_copier}\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+
+
+Copies data from parent model to child model regarding relation key.  
+
+
+
+
+{\ttfamily \#include $<$Relation\+Key\+Copier.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_af163f1645e504521662abda21d4d6ae6}{set\+Parent\+Model} (Q\+Abstract\+Item\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Set parent model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_ada8fc2fc7d05de0d776535048e3137c7}{set\+Child\+Model} (Q\+Abstract\+Item\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Set child model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a4c3dd39e2643db52d293cb8046bedb1d}{add\+Column\+Pair} (int parent\+Model\+Column, int child\+Model\+Column)
+\begin{DoxyCompactList}\small\item\em Add a pair of columns. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_ac12292f5a74660172df78973967b8b2d}{set\+Key} (const \hyperlink{class_mdt_1_1_item_model_1_1_primary_key}{Primary\+Key} \&parent\+Model\+Pk, const \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key}{Foreign\+Key} \&child\+Model\+Fk)
+\begin{DoxyCompactList}\small\item\em Set relation key from parent model primary key and child model foreign key. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a9933201930c6d4ab74a1dbc555b1a309}{set\+Key} (const \hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \&\hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a136fdae81418f2a0ef99da0d4df5a775}{key})
+\begin{DoxyCompactList}\small\item\em Set relation key. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a136fdae81418f2a0ef99da0d4df5a775}{key} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_a136fdae81418f2a0ef99da0d4df5a775}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_a136fdae81418f2a0ef99da0d4df5a775}
+
+\begin{DoxyCompactList}\small\item\em Get relation key. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a9d9e3c714503dac4925b3ae04cc1bf41}{parent\+Model\+Current\+Row} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_a9d9e3c714503dac4925b3ae04cc1bf41}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_a9d9e3c714503dac4925b3ae04cc1bf41}
+
+\begin{DoxyCompactList}\small\item\em Get parent model current row. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a828cf1760009af95346e81860318a97d}{copy\+All\+Key\+Data} (\hyperlink{class_mdt_1_1_item_model_1_1_row_range}{Row\+Range} child\+Model\+Row\+Range, const Q\+Model\+Index \&parent=Q\+Model\+Index())
+\begin{DoxyCompactList}\small\item\em Copy all key data from parent model to child model for given row range for child model. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_afaf09fb0922dba087784d64a172dd61d}{copy\+Key\+Data} (const \hyperlink{class_mdt_1_1_item_model_1_1_row_list}{Row\+List} \&child\+Model\+Row\+List, \hyperlink{class_mdt_1_1_item_model_1_1_column_range}{Column\+Range} parent\+Model\+Column\+Range)
+\begin{DoxyCompactList}\small\item\em Copy key data from parent model to child model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier_a99a08a7cdb363bf62ff28b2f7fd8403e}{set\+Parent\+Model\+Current\+Row} (int row)
+\begin{DoxyCompactList}\small\item\em Set current row in parent model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Copies data from parent model to child model regarding relation key. 
+
+\begin{DoxyParagraph}{Keep models and relation key coherent}
+There is no good solution for \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier}{Relation\+Key\+Copier} to check if relation key is valid, regarding models, in a reliable way. The user of this class should take care of this. When setting parent model, child model, and relation key, no check will be done about columns that are to big regarding models. Then processing the copy, out of bound check is done, and nothing happens for a pair of columns when at least one is in invalid range. This also alows to change models and relation key at any time. 
+\end{DoxyParagraph}
+
+
+Definition at line 51 of file Relation\+Key\+Copier.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!add\+Column\+Pair@{add\+Column\+Pair}}
+\index{add\+Column\+Pair@{add\+Column\+Pair}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{add\+Column\+Pair(int parent\+Model\+Column, int child\+Model\+Column)}{addColumnPair(int parentModelColumn, int childModelColumn)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::add\+Column\+Pair (
+\begin{DoxyParamCaption}
+\item[{int}]{parent\+Model\+Column, }
+\item[{int}]{child\+Model\+Column}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_a4c3dd39e2643db52d293cb8046bedb1d}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_a4c3dd39e2643db52d293cb8046bedb1d}
+
+
+Add a pair of columns. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape parent\+Model\+Column} must be $>$= 0 
+
+{\itshape child\+Model\+Column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 48 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!copy\+All\+Key\+Data@{copy\+All\+Key\+Data}}
+\index{copy\+All\+Key\+Data@{copy\+All\+Key\+Data}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{copy\+All\+Key\+Data(\+Row\+Range child\+Model\+Row\+Range, const Q\+Model\+Index \&parent=\+Q\+Model\+Index())}{copyAllKeyData(RowRange childModelRowRange, const QModelIndex &parent=QModelIndex())}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::copy\+All\+Key\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Row\+Range}}]{child\+Model\+Row\+Range, }
+\item[{const Q\+Model\+Index \&}]{parent = {\ttfamily QModelIndex()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_a828cf1760009af95346e81860318a97d}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_a828cf1760009af95346e81860318a97d}
+
+
+Copy all key data from parent model to child model for given row range for child model. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]Define and fix preconditions \end{DoxyRefDesc}
+
+
+Definition at line 72 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!copy\+Key\+Data@{copy\+Key\+Data}}
+\index{copy\+Key\+Data@{copy\+Key\+Data}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{copy\+Key\+Data(const Row\+List \&child\+Model\+Row\+List, Column\+Range parent\+Model\+Column\+Range)}{copyKeyData(const RowList &childModelRowList, ColumnRange parentModelColumnRange)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::copy\+Key\+Data (
+\begin{DoxyParamCaption}
+\item[{const {\bf Row\+List} \&}]{child\+Model\+Row\+List, }
+\item[{{\bf Column\+Range}}]{parent\+Model\+Column\+Range}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_afaf09fb0922dba087784d64a172dd61d}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_afaf09fb0922dba087784d64a172dd61d}
+
+
+Copy key data from parent model to child model. 
+
+Will only affect rows from {\itshape child\+Model\+Row\+List} in child model. Will also only copy data that exists in key regarding {\itshape parent\+Model\+Column\+Range} .
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000008}{Todo}]Define and fix preconditions \end{DoxyRefDesc}
+
+
+Definition at line 95 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!set\+Child\+Model@{set\+Child\+Model}}
+\index{set\+Child\+Model@{set\+Child\+Model}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{set\+Child\+Model(\+Q\+Abstract\+Item\+Model $\ast$model)}{setChildModel(QAbstractItemModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::set\+Child\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Item\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_ada8fc2fc7d05de0d776535048e3137c7}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_ada8fc2fc7d05de0d776535048e3137c7}
+
+
+Set child model. 
+
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier}{Relation\+Key\+Copier} will not own the model (it will not delete it).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer 
+\end{DoxyPrecond}
+
+
+Definition at line 41 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{set\+Key(const Primary\+Key \&parent\+Model\+Pk, const Foreign\+Key \&child\+Model\+Fk)}{setKey(const PrimaryKey &parentModelPk, const ForeignKey &childModelFk)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Primary\+Key} \&}]{parent\+Model\+Pk, }
+\item[{const {\bf Foreign\+Key} \&}]{child\+Model\+Fk}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_ac12292f5a74660172df78973967b8b2d}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_ac12292f5a74660172df78973967b8b2d}
+
+
+Set relation key from parent model primary key and child model foreign key. 
+
+\begin{DoxyPrecond}{Precondition}
+parent\+Model\+Pk must not be null 
+
+child\+Model\+Fk must not be null 
+
+Both parent\+Model\+Pk and child\+Model\+Fk must have the same count of column indexes 
+\end{DoxyPrecond}
+
+
+Definition at line 56 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{set\+Key(const Relation\+Key \&key)}{setKey(const RelationKey &key)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation\+Key} \&}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_a9933201930c6d4ab74a1dbc555b1a309}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_a9933201930c6d4ab74a1dbc555b1a309}
+
+
+Set relation key. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape key} must not be null 
+\end{DoxyPrecond}
+
+
+Definition at line 65 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!set\+Parent\+Model@{set\+Parent\+Model}}
+\index{set\+Parent\+Model@{set\+Parent\+Model}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{set\+Parent\+Model(\+Q\+Abstract\+Item\+Model $\ast$model)}{setParentModel(QAbstractItemModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::set\+Parent\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Item\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_af163f1645e504521662abda21d4d6ae6}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_af163f1645e504521662abda21d4d6ae6}
+
+
+Set parent model. 
+
+Will also set parent model current row to -\/1.
+
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key_copier}{Relation\+Key\+Copier} will not own the model (it will not delete it).
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer 
+\end{DoxyPrecond}
+
+
+Definition at line 33 of file Relation\+Key\+Copier.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}!set\+Parent\+Model\+Current\+Row@{set\+Parent\+Model\+Current\+Row}}
+\index{set\+Parent\+Model\+Current\+Row@{set\+Parent\+Model\+Current\+Row}!Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier@{Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier}}
+\subsubsection[{\texorpdfstring{set\+Parent\+Model\+Current\+Row(int row)}{setParentModelCurrentRow(int row)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+Copier\+::set\+Parent\+Model\+Current\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_copier_a99a08a7cdb363bf62ff28b2f7fd8403e}{}\label{class_mdt_1_1_item_model_1_1_relation_key_copier_a99a08a7cdb363bf62ff28b2f7fd8403e}
+
+
+Set current row in parent model. 
+
+If parent model was not set, this slot does nothing.
+
+\begin{DoxyPrecond}{Precondition}
+If parent model is valid, row must be in range -\/1 $<$= row $<$ parent\+Model-\/$>$row\+Count() 
+\end{DoxyPrecond}
+
+
+Definition at line 113 of file Relation\+Key\+Copier.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Key\+Copier.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Key\+Copier.\+cpp\end{DoxyCompactItemize}

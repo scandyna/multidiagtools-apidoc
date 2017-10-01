@@ -1,0 +1,156 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_relation_key}{}\section{Mdt\+:\+:Item\+Model\+:\+:Relation\+Key Class Reference}
+\label{class_mdt_1_1_item_model_1_1_relation_key}\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}}
+
+
+Relation map between a key in parent model and a key in child model.  
+
+
+
+
+{\ttfamily \#include $<$Relation\+Key.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \hyperlink{class_mdt_1_1_item_model_1_1_relation_column_pair}{Relation\+Column\+Pair} $>$\+::\hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a9f5e75ac5ac158d06a10f1114f9d8b5d}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a9f5e75ac5ac158d06a10f1114f9d8b5d}{const\+\_\+iterator}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_a9f5e75ac5ac158d06a10f1114f9d8b5d}{}\label{class_mdt_1_1_item_model_1_1_relation_key_a9f5e75ac5ac158d06a10f1114f9d8b5d}
+
+\begin{DoxyCompactList}\small\item\em S\+TL const iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a57579edb6b0962eba3fd32723a297319}{add\+Column\+Pair} (int parent\+Model\+Column, int child\+Model\+Column)
+\begin{DoxyCompactList}\small\item\em Add a pair of columns. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_aa65daa433abfdf0a87c801ebf22c84e0}{set\+Key} (const \hyperlink{class_mdt_1_1_item_model_1_1_primary_key}{Primary\+Key} \&parent\+Model\+Pk, const \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key}{Foreign\+Key} \&child\+Model\+Fk)
+\begin{DoxyCompactList}\small\item\em Set rekation key from parent model primary key and child model foreign key. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_aea1f1830063a1e645985d68643963614}{column\+Pair\+Count} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_aea1f1830063a1e645985d68643963614}{}\label{class_mdt_1_1_item_model_1_1_relation_key_aea1f1830063a1e645985d68643963614}
+
+\begin{DoxyCompactList}\small\item\em Get count of column pairs in this key. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_afea43ebff7a2dd9d334a713ed9787799}{contains\+Column\+Pair} (int parent\+Model\+Column, int child\+Model\+Column) const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_afea43ebff7a2dd9d334a713ed9787799}{}\label{class_mdt_1_1_item_model_1_1_relation_key_afea43ebff7a2dd9d334a713ed9787799}
+
+\begin{DoxyCompactList}\small\item\em Check if this container allready has a column pair. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_column_pair}{Relation\+Column\+Pair} \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_aed3ebac01e8969d0e23df593a96d3486}{column\+Pair\+At} (int index) const 
+\begin{DoxyCompactList}\small\item\em Get column pair at index. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a8ff51a22ed307039ede6e3fbdfc46af3}{greatest\+Parent\+Model\+Column} () const 
+\begin{DoxyCompactList}\small\item\em Get the greatest column for parent model. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_ae7d8718603ab7c13be02a49ed34a3818}{greatest\+Child\+Model\+Column} () const 
+\begin{DoxyCompactList}\small\item\em Get the greatest column for child model. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a2da21411197c2de2771795dba79b896c}{is\+Null} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_a2da21411197c2de2771795dba79b896c}{}\label{class_mdt_1_1_item_model_1_1_relation_key_a2da21411197c2de2771795dba79b896c}
+
+\begin{DoxyCompactList}\small\item\em Check if this relation key is null. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a875168d781c486249511d18f00ae4655}{clear} ()\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_a875168d781c486249511d18f00ae4655}{}\label{class_mdt_1_1_item_model_1_1_relation_key_a875168d781c486249511d18f00ae4655}
+
+\begin{DoxyCompactList}\small\item\em Clear. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a9f5e75ac5ac158d06a10f1114f9d8b5d}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a8041b537cb265d142830bfa73f663962}{begin} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_a8041b537cb265d142830bfa73f663962}{}\label{class_mdt_1_1_item_model_1_1_relation_key_a8041b537cb265d142830bfa73f663962}
+
+\begin{DoxyCompactList}\small\item\em Get const iterator to the beginning. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key_a9f5e75ac5ac158d06a10f1114f9d8b5d}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_aa1bd55d42079629080f3c16b2ceb40a8}{end} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_key_aa1bd55d42079629080f3c16b2ceb40a8}{}\label{class_mdt_1_1_item_model_1_1_relation_key_aa1bd55d42079629080f3c16b2ceb40a8}
+
+\begin{DoxyCompactList}\small\item\em Get const iterator to the end. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Relation map between a key in parent model and a key in child model. 
+
+Definition at line 35 of file Relation\+Key.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}!add\+Column\+Pair@{add\+Column\+Pair}}
+\index{add\+Column\+Pair@{add\+Column\+Pair}!Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}}
+\subsubsection[{\texorpdfstring{add\+Column\+Pair(int parent\+Model\+Column, int child\+Model\+Column)}{addColumnPair(int parentModelColumn, int childModelColumn)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+::add\+Column\+Pair (
+\begin{DoxyParamCaption}
+\item[{int}]{parent\+Model\+Column, }
+\item[{int}]{child\+Model\+Column}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_a57579edb6b0962eba3fd32723a297319}{}\label{class_mdt_1_1_item_model_1_1_relation_key_a57579edb6b0962eba3fd32723a297319}
+
+
+Add a pair of columns. 
+
+\begin{DoxyPrecond}{Precondition}
+parent\+Model\+Column must be $>$= 0 
+
+child\+Model\+Column must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 29 of file Relation\+Key.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}!column\+Pair\+At@{column\+Pair\+At}}
+\index{column\+Pair\+At@{column\+Pair\+At}!Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}}
+\subsubsection[{\texorpdfstring{column\+Pair\+At(int index) const }{columnPairAt(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Relation\+Column\+Pair} Mdt\+::\+Item\+Model\+::\+Relation\+Key\+::column\+Pair\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_aed3ebac01e8969d0e23df593a96d3486}{}\label{class_mdt_1_1_item_model_1_1_relation_key_aed3ebac01e8969d0e23df593a96d3486}
+
+
+Get column pair at index. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be in a valid range ( 0 $<$= index $<$ \hyperlink{class_mdt_1_1_item_model_1_1_relation_key_aea1f1830063a1e645985d68643963614}{column\+Pair\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 73 of file Relation\+Key.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}!greatest\+Child\+Model\+Column@{greatest\+Child\+Model\+Column}}
+\index{greatest\+Child\+Model\+Column@{greatest\+Child\+Model\+Column}!Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}}
+\subsubsection[{\texorpdfstring{greatest\+Child\+Model\+Column() const }{greatestChildModelColumn() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Relation\+Key\+::greatest\+Child\+Model\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_ae7d8718603ab7c13be02a49ed34a3818}{}\label{class_mdt_1_1_item_model_1_1_relation_key_ae7d8718603ab7c13be02a49ed34a3818}
+
+
+Get the greatest column for child model. 
+
+Returns -\/1 if this key is empty. 
+
+Definition at line 71 of file Relation\+Key.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}!greatest\+Parent\+Model\+Column@{greatest\+Parent\+Model\+Column}}
+\index{greatest\+Parent\+Model\+Column@{greatest\+Parent\+Model\+Column}!Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}}
+\subsubsection[{\texorpdfstring{greatest\+Parent\+Model\+Column() const }{greatestParentModelColumn() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Relation\+Key\+::greatest\+Parent\+Model\+Column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_a8ff51a22ed307039ede6e3fbdfc46af3}{}\label{class_mdt_1_1_item_model_1_1_relation_key_a8ff51a22ed307039ede6e3fbdfc46af3}
+
+
+Get the greatest column for parent model. 
+
+Returns -\/1 if this key is empty. 
+
+Definition at line 59 of file Relation\+Key.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}!set\+Key@{set\+Key}}
+\index{set\+Key@{set\+Key}!Mdt\+::\+Item\+Model\+::\+Relation\+Key@{Mdt\+::\+Item\+Model\+::\+Relation\+Key}}
+\subsubsection[{\texorpdfstring{set\+Key(const Primary\+Key \&parent\+Model\+Pk, const Foreign\+Key \&child\+Model\+Fk)}{setKey(const PrimaryKey &parentModelPk, const ForeignKey &childModelFk)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Key\+::set\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Primary\+Key} \&}]{parent\+Model\+Pk, }
+\item[{const {\bf Foreign\+Key} \&}]{child\+Model\+Fk}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_key_aa65daa433abfdf0a87c801ebf22c84e0}{}\label{class_mdt_1_1_item_model_1_1_relation_key_aa65daa433abfdf0a87c801ebf22c84e0}
+
+
+Set rekation key from parent model primary key and child model foreign key. 
+
+\begin{DoxyPrecond}{Precondition}
+parent\+Model\+Pk must not be null 
+
+child\+Model\+Fk must not be null 
+
+Both parent\+Model\+Pk and child\+Model\+Fk must have the same count of fields 
+\end{DoxyPrecond}
+
+
+Definition at line 37 of file Relation\+Key.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Key.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Key.\+cpp\end{DoxyCompactItemize}

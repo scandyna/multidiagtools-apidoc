@@ -1,0 +1,459 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container}{}\section{Mdt\+:\+:Item\+Model\+:\+:Proxy\+Model\+Container Class Reference}
+\label{class_mdt_1_1_item_model_1_1_proxy_model_container}\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+
+
+Container for a chain of proxy models based on Q\+Abstract\+Proxy\+Model.  
+
+
+
+
+{\ttfamily \#include $<$Proxy\+Model\+Container.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_acef8f95b42382752a454b607bcf6d9b0}{Proxy\+Model\+Container} ()=default\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_acef8f95b42382752a454b607bcf6d9b0}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_acef8f95b42382752a454b607bcf6d9b0}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a74f1afaa5c2002a6c0f7d31caed4fb2e}{set\+Source\+Model} (Q\+Abstract\+Item\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Set source model. \end{DoxyCompactList}\item 
+Q\+Abstract\+Item\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}{source\+Model} () const 
+\begin{DoxyCompactList}\small\item\em Get source model. \end{DoxyCompactList}\item 
+Q\+Abstract\+Item\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ad7f8e95b0603b354a80bf4514db5a6e1}{model\+For\+View} () const 
+\begin{DoxyCompactList}\small\item\em Get model for the view. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a94a828852d4160371fc24ed05375e4b9}{append\+Proxy\+Model} (Q\+Abstract\+Proxy\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Add a proxy model to the end. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ab0bcb085825c4f8cca75b1f3a3cf66d8}{prepend\+Proxy\+Model} (Q\+Abstract\+Proxy\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Add a proxy model to the begin. \end{DoxyCompactList}\item 
+Q\+Abstract\+Proxy\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ae9bf6048838f4cbf29b6a2b21de64184}{first\+Proxy\+Model} () const 
+\begin{DoxyCompactList}\small\item\em Get first proxy model. \end{DoxyCompactList}\item 
+Q\+Abstract\+Proxy\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a36918ea3afc68b988252a48f56923299}{last\+Proxy\+Model} () const 
+\begin{DoxyCompactList}\small\item\em Get last proxy model. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ae0764cece09670828ea2e6510e674181}{proxy\+Model\+Count} () const \hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_ae0764cece09670828ea2e6510e674181}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_ae0764cece09670828ea2e6510e674181}
+
+\begin{DoxyCompactList}\small\item\em Get count of proxy models. \end{DoxyCompactList}\item 
+Q\+Abstract\+Proxy\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ad62fd2a1ea052a329dc270b1a56b15e5}{proxy\+Model\+At} (int index) const 
+\begin{DoxyCompactList}\small\item\em Get proxy model at index. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a67e280816efb16d71549adb28203d334}{index\+Of\+Proxy\+Model} (Q\+Abstract\+Proxy\+Model $\ast$model) const 
+\begin{DoxyCompactList}\small\item\em Get the index of the proxy model. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a8a879abfeaf15a007615de5a7d2bc5e6}{contains\+Proxy\+Model\+Of\+Type} () const \hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a8a879abfeaf15a007615de5a7d2bc5e6}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a8a879abfeaf15a007615de5a7d2bc5e6}
+
+\begin{DoxyCompactList}\small\item\em Check if a proxy model of type T exists in this container. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\int \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a6f30c538dbf176178dc19289c36748a4}{index\+Of\+First\+Proxy\+Model\+Of\+Type} () const 
+\begin{DoxyCompactList}\small\item\em Get the index of the first proxy model that is of type T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\Q\+Abstract\+Proxy\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_abf4845094dfd1b48277f01df79bc33d0}{first\+Proxy\+Model\+Of\+Type} () const 
+\begin{DoxyCompactList}\small\item\em Get the first proxy model that is of type T. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a2afbe8121856bfd574243e1b8cee3bdb}{remove\+Proxy\+Model} (Q\+Abstract\+Proxy\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Remove a proxy model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_acaab009c11a74490b652dd3485f3422d}{delete\+Proxy\+Model} (Q\+Abstract\+Proxy\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Delete a proxy model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a498bf32efbdcf4bd383a05b3926dc04f}{remove\+Proxy\+Model\+At} (int index)
+\begin{DoxyCompactList}\small\item\em Remove proxy model at index. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_aec42f1876e851e0ebb3b8dface7911b0}{delete\+Proxy\+Model\+At} (int index)
+\begin{DoxyCompactList}\small\item\em Delete proxy model at index. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a01b67ff228128152d660940e56a428c4}{remove\+First\+Proxy\+Model\+Of\+Type} ()
+\begin{DoxyCompactList}\small\item\em Remove the first proxy model of type T. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_adc193cdf0260595c0e532221dd234aa8}{delete\+First\+Proxy\+Model\+Of\+Type} ()
+\begin{DoxyCompactList}\small\item\em Delete the first proxy model of type T. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for a chain of proxy models based on Q\+Abstract\+Proxy\+Model. 
+
+The common way to use a proxy model between a source model and a view looks like\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{auto} *view = \textcolor{keyword}{new} QTableView;
+\textcolor{keyword}{auto} *\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}{sourceModel} = \textcolor{keyword}{new} MyItemModel(\textcolor{keyword}{this});
+\textcolor{keyword}{auto} *filterModel = \textcolor{keyword}{new} FilterProxyModel(\textcolor{keyword}{this});
+
+filterModel->setSourceModel(\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}{sourceModel});
+view->setModel(filterModel);
+\end{DoxyCode}
+ To insert a format model, we could do\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{auto} *formatModel = \textcolor{keyword}{new} FormatProxyModel(\textcolor{keyword}{this});
+
+filterModel->setSourceModel(\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}{sourceModel});
+formatModel->setSourceModel(filterModel);
+view->setModel(formatModel);
+\end{DoxyCode}
+
+
+If we have to handle a chain of proxy models, and be able to insert or remove proxy models, \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container}{Proxy\+Model\+Container} can be helpful.
+
+Above example could look like\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_acef8f95b42382752a454b607bcf6d9b0}{ProxyModelContainer} container;
+\textcolor{keyword}{auto} *view = \textcolor{keyword}{new} QTableView;
+
+container.setSourceModel( \textcolor{keyword}{new} MyItemModel(\textcolor{keyword}{this}) );
+container.appendProxyModel( \textcolor{keyword}{new} FilterProxyModel(\textcolor{keyword}{this}) );
+container.appendProxyModel( \textcolor{keyword}{new} FormatProxyModel(\textcolor{keyword}{this}) );
+view->setModel( container.modelForView() );
+\end{DoxyCode}
+
+
+If we have to access proxy models frquently, for example to change some setup, it can be helpful to create a custom container.
+
+Here is a example how this could be done\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{class }MyModelContainer
+\{
+ \textcolor{keyword}{public}:
+
+  \textcolor{comment}{// Here, parent is used for lifetime management of the proxy models}
+  MyModelContainer(QObject *parent = \textcolor{keyword}{nullptr})
+  \{
+    mContainer.appendProxyModel( \textcolor{keyword}{new} FilterProxyModel(parent) );
+    mContainer.appendProxyModel( \textcolor{keyword}{new} FormatProxyModel(parent) );
+  \}
+
+  \textcolor{comment}{// Set source model}
+  \textcolor{keywordtype}{void} \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a74f1afaa5c2002a6c0f7d31caed4fb2e}{setSourceModel}(QAbstractItemModel *model)
+  \{
+    mContainer.setSourceModel(model);
+  \}
+
+  \textcolor{comment}{// Get the model for the view}
+  QAbstractItemModel *\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ad7f8e95b0603b354a80bf4514db5a6e1}{modelForView}()\textcolor{keyword}{ const}
+\textcolor{keyword}{  }\{
+    \textcolor{keywordflow}{return} mContainer.modelForView();
+  \}
+
+  \textcolor{comment}{// Access the filter proxy model}
+  FilterProxyModel *filterModel()\textcolor{keyword}{ const}
+\textcolor{keyword}{  }\{
+    \textcolor{keywordflow}{return} \textcolor{keyword}{reinterpret\_cast<}FilterProxyModel*\textcolor{keyword}{>}( mContainer.proxyModelAt(0) );
+  \}
+
+  \textcolor{comment}{// Access the format proxy model}
+  FormatProxyModel *formatModel()\textcolor{keyword}{ const}
+\textcolor{keyword}{  }\{
+    \textcolor{keywordflow}{return} \textcolor{keyword}{reinterpret\_cast<}FormatProxyModel*\textcolor{keyword}{>}( mContainer.proxyModelAt(1) );
+  \}
+
+ \textcolor{keyword}{private}:
+
+  \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_acef8f95b42382752a454b607bcf6d9b0}{ProxyModelContainer} mContainer;
+\};
+\end{DoxyCode}
+
+
+\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container}{Proxy\+Model\+Container} does not own any model, source model and all proxy models will not be deleted when the container is destroyed. It is recommanded to use the Q\+Object mechanism to handle lifetime of models (passing a parent to each one). 
+
+Definition at line 121 of file Proxy\+Model\+Container.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!append\+Proxy\+Model@{append\+Proxy\+Model}}
+\index{append\+Proxy\+Model@{append\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{append\+Proxy\+Model(\+Q\+Abstract\+Proxy\+Model $\ast$model)}{appendProxyModel(QAbstractProxyModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::append\+Proxy\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Proxy\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a94a828852d4160371fc24ed05375e4b9}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a94a828852d4160371fc24ed05375e4b9}
+
+
+Add a proxy model to the end. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer 
+\end{DoxyPrecond}
+
+
+Definition at line 37 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!delete\+First\+Proxy\+Model\+Of\+Type@{delete\+First\+Proxy\+Model\+Of\+Type}}
+\index{delete\+First\+Proxy\+Model\+Of\+Type@{delete\+First\+Proxy\+Model\+Of\+Type}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{delete\+First\+Proxy\+Model\+Of\+Type()}{deleteFirstProxyModelOfType()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::delete\+First\+Proxy\+Model\+Of\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_adc193cdf0260595c0e532221dd234aa8}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_adc193cdf0260595c0e532221dd234aa8}
+
+
+Delete the first proxy model of type T. 
+
+Will remove and delete the proxy model.
+
+Will do nothing if not proxy model of type T exists in this container. 
+
+Definition at line 329 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!delete\+Proxy\+Model@{delete\+Proxy\+Model}}
+\index{delete\+Proxy\+Model@{delete\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{delete\+Proxy\+Model(\+Q\+Abstract\+Proxy\+Model $\ast$model)}{deleteProxyModel(QAbstractProxyModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::delete\+Proxy\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Proxy\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_acaab009c11a74490b652dd3485f3422d}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_acaab009c11a74490b652dd3485f3422d}
+
+
+Delete a proxy model. 
+
+Will remove and delete proxy model referenced by {\itshape model}. Does nothing if {\itshape model} does not exists in this container. 
+
+Definition at line 73 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!delete\+Proxy\+Model\+At@{delete\+Proxy\+Model\+At}}
+\index{delete\+Proxy\+Model\+At@{delete\+Proxy\+Model\+At}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{delete\+Proxy\+Model\+At(int index)}{deleteProxyModelAt(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::delete\+Proxy\+Model\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_aec42f1876e851e0ebb3b8dface7911b0}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_aec42f1876e851e0ebb3b8dface7911b0}
+
+
+Delete proxy model at index. 
+
+Will remove and delete the proxy model at index.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be in valid range ( 0 $<$= index $<$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ae0764cece09670828ea2e6510e674181}{proxy\+Model\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 96 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!first\+Proxy\+Model@{first\+Proxy\+Model}}
+\index{first\+Proxy\+Model@{first\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{first\+Proxy\+Model() const }{firstProxyModel() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Proxy\+Model$\ast$ Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::first\+Proxy\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_ae9bf6048838f4cbf29b6a2b21de64184}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_ae9bf6048838f4cbf29b6a2b21de64184}
+
+
+Get first proxy model. 
+
+The first proxy model is the nearest of the source model.
+
+\begin{DoxyPrecond}{Precondition}
+Cannot be called unless at least 1 proxy model was added the this container. 
+\end{DoxyPrecond}
+
+
+Definition at line 185 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!first\+Proxy\+Model\+Of\+Type@{first\+Proxy\+Model\+Of\+Type}}
+\index{first\+Proxy\+Model\+Of\+Type@{first\+Proxy\+Model\+Of\+Type}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{first\+Proxy\+Model\+Of\+Type() const }{firstProxyModelOfType() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ Q\+Abstract\+Proxy\+Model$\ast$ Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::first\+Proxy\+Model\+Of\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_abf4845094dfd1b48277f01df79bc33d0}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_abf4845094dfd1b48277f01df79bc33d0}
+
+
+Get the first proxy model that is of type T. 
+
+\begin{DoxyReturn}{Returns}
+The proxy model if found, else a nullptr 
+\end{DoxyReturn}
+
+
+Definition at line 265 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!index\+Of\+First\+Proxy\+Model\+Of\+Type@{index\+Of\+First\+Proxy\+Model\+Of\+Type}}
+\index{index\+Of\+First\+Proxy\+Model\+Of\+Type@{index\+Of\+First\+Proxy\+Model\+Of\+Type}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{index\+Of\+First\+Proxy\+Model\+Of\+Type() const }{indexOfFirstProxyModelOfType() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ int Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::index\+Of\+First\+Proxy\+Model\+Of\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a6f30c538dbf176178dc19289c36748a4}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a6f30c538dbf176178dc19289c36748a4}
+
+
+Get the index of the first proxy model that is of type T. 
+
+\begin{DoxyReturn}{Returns}
+The index of the proxy model if found, else -\/1 
+\end{DoxyReturn}
+
+
+Definition at line 247 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!index\+Of\+Proxy\+Model@{index\+Of\+Proxy\+Model}}
+\index{index\+Of\+Proxy\+Model@{index\+Of\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{index\+Of\+Proxy\+Model(\+Q\+Abstract\+Proxy\+Model $\ast$model) const }{indexOfProxyModel(QAbstractProxyModel *model) const }}]{\setlength{\rightskip}{0pt plus 5cm}int Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::index\+Of\+Proxy\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Proxy\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a67e280816efb16d71549adb28203d334}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a67e280816efb16d71549adb28203d334}
+
+
+Get the index of the proxy model. 
+
+\begin{DoxyReturn}{Returns}
+The index of the proxy model that is referenced by {\itshape model}, or -\/1 if not found. 
+\end{DoxyReturn}
+
+
+Definition at line 225 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!last\+Proxy\+Model@{last\+Proxy\+Model}}
+\index{last\+Proxy\+Model@{last\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{last\+Proxy\+Model() const }{lastProxyModel() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Proxy\+Model$\ast$ Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::last\+Proxy\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a36918ea3afc68b988252a48f56923299}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a36918ea3afc68b988252a48f56923299}
+
+
+Get last proxy model. 
+
+The last proxy model is the nearest of the view.
+
+\begin{DoxyPrecond}{Precondition}
+Cannot be called unless at least 1 proxy model was added the this container. 
+\end{DoxyPrecond}
+
+
+Definition at line 197 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!model\+For\+View@{model\+For\+View}}
+\index{model\+For\+View@{model\+For\+View}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{model\+For\+View() const }{modelForView() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Item\+Model$\ast$ Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::model\+For\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_ad7f8e95b0603b354a80bf4514db5a6e1}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_ad7f8e95b0603b354a80bf4514db5a6e1}
+
+
+Get model for the view. 
+
+If at least 1 proxy model exists int this container, this method returns \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a36918ea3afc68b988252a48f56923299}{last\+Proxy\+Model()}, else it returns \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}{source\+Model()}. 
+
+Definition at line 159 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!prepend\+Proxy\+Model@{prepend\+Proxy\+Model}}
+\index{prepend\+Proxy\+Model@{prepend\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{prepend\+Proxy\+Model(\+Q\+Abstract\+Proxy\+Model $\ast$model)}{prependProxyModel(QAbstractProxyModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::prepend\+Proxy\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Proxy\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_ab0bcb085825c4f8cca75b1f3a3cf66d8}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_ab0bcb085825c4f8cca75b1f3a3cf66d8}
+
+
+Add a proxy model to the begin. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer 
+\end{DoxyPrecond}
+
+
+Definition at line 51 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!proxy\+Model\+At@{proxy\+Model\+At}}
+\index{proxy\+Model\+At@{proxy\+Model\+At}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{proxy\+Model\+At(int index) const }{proxyModelAt(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Proxy\+Model$\ast$ Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::proxy\+Model\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_ad62fd2a1ea052a329dc270b1a56b15e5}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_ad62fd2a1ea052a329dc270b1a56b15e5}
+
+
+Get proxy model at index. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be in valid range ( 0 $<$= index $<$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ae0764cece09670828ea2e6510e674181}{proxy\+Model\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 214 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!remove\+First\+Proxy\+Model\+Of\+Type@{remove\+First\+Proxy\+Model\+Of\+Type}}
+\index{remove\+First\+Proxy\+Model\+Of\+Type@{remove\+First\+Proxy\+Model\+Of\+Type}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{remove\+First\+Proxy\+Model\+Of\+Type()}{removeFirstProxyModelOfType()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::remove\+First\+Proxy\+Model\+Of\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a01b67ff228128152d660940e56a428c4}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a01b67ff228128152d660940e56a428c4}
+
+
+Remove the first proxy model of type T. 
+
+Note that the model is only removed from this container, but not deleted.
+
+Will do nothing if not proxy model of type T exists in this container. 
+
+Definition at line 314 of file Proxy\+Model\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!remove\+Proxy\+Model@{remove\+Proxy\+Model}}
+\index{remove\+Proxy\+Model@{remove\+Proxy\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{remove\+Proxy\+Model(\+Q\+Abstract\+Proxy\+Model $\ast$model)}{removeProxyModel(QAbstractProxyModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::remove\+Proxy\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Proxy\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a2afbe8121856bfd574243e1b8cee3bdb}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a2afbe8121856bfd574243e1b8cee3bdb}
+
+
+Remove a proxy model. 
+
+Will remove proxy model referenced by {\itshape model}. Does nothing if {\itshape model} does not exists in this container. 
+
+Definition at line 64 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!remove\+Proxy\+Model\+At@{remove\+Proxy\+Model\+At}}
+\index{remove\+Proxy\+Model\+At@{remove\+Proxy\+Model\+At}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{remove\+Proxy\+Model\+At(int index)}{removeProxyModelAt(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::remove\+Proxy\+Model\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a498bf32efbdcf4bd383a05b3926dc04f}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a498bf32efbdcf4bd383a05b3926dc04f}
+
+
+Remove proxy model at index. 
+
+Note that the model is only removed from this container, but not deleted.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be in valid range ( 0 $<$= index $<$ \hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_ae0764cece09670828ea2e6510e674181}{proxy\+Model\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 82 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!set\+Source\+Model@{set\+Source\+Model}}
+\index{set\+Source\+Model@{set\+Source\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{set\+Source\+Model(\+Q\+Abstract\+Item\+Model $\ast$model)}{setSourceModel(QAbstractItemModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::set\+Source\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Item\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_a74f1afaa5c2002a6c0f7d31caed4fb2e}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_a74f1afaa5c2002a6c0f7d31caed4fb2e}
+
+
+Set source model. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer 
+\end{DoxyPrecond}
+
+
+Definition at line 27 of file Proxy\+Model\+Container.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}!source\+Model@{source\+Model}}
+\index{source\+Model@{source\+Model}!Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container@{Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container}}
+\subsubsection[{\texorpdfstring{source\+Model() const }{sourceModel() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Item\+Model$\ast$ Mdt\+::\+Item\+Model\+::\+Proxy\+Model\+Container\+::source\+Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}{}\label{class_mdt_1_1_item_model_1_1_proxy_model_container_ab77e422bbc3f5e2357a00e09909e75cc}
+
+
+Get source model. 
+
+Returns a nullptr until a model was set.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_proxy_model_container_a74f1afaa5c2002a6c0f7d31caed4fb2e}{set\+Source\+Model()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 148 of file Proxy\+Model\+Container.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Proxy\+Model\+Container.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Proxy\+Model\+Container.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,319 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model}{}\section{Mdt\+:\+:Item\+Model\+:\+:Sort\+Proxy\+Model Class Reference}
+\label{class_mdt_1_1_item_model_1_1_sort_proxy_model}\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+
+
+Provides support for sorting data between another model and a view.  
+
+
+
+
+{\ttfamily \#include $<$Sort\+Proxy\+Model.\+h$>$}
+
+
+
+Inherits Q\+Sort\+Filter\+Proxy\+Model.
+
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a082be5eeb363f73088ef22f8df646be2}{model\+Sorted} ()
+\begin{DoxyCompactList}\small\item\em Emitted when model was sorted. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a76e7daa6ca9a63cecd0b9bac99902c7a}{column\+Sorted} (int column)\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a76e7daa6ca9a63cecd0b9bac99902c7a}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a76e7daa6ca9a63cecd0b9bac99902c7a}
+
+\begin{DoxyCompactList}\small\item\em Emitted when a column was sorted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a1764706e28e183e83b51b0e349b33bff}{Sort\+Proxy\+Model} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a1764706e28e183e83b51b0e349b33bff}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a1764706e28e183e83b51b0e349b33bff}
+
+\begin{DoxyCompactList}\small\item\em Construct a sort proxy model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5a3f0c33b558ff9ce75c827e7b699663}{add\+Column\+To\+Sort\+Order} (int column, Qt\+::\+Sort\+Order sort\+Order=Qt\+::\+Ascending\+Order)
+\begin{DoxyCompactList}\small\item\em Add a column to columns sort order. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_adfa36c9c6ec5b3f52c115725224bdb38}{add\+Column\+To\+Sort\+Order} (int column, \hyperlink{namespace_mdt_1_1_item_model_a88210a5defc335e5beaed03043620b25}{String\+Numeric\+Mode} numeric\+Mode, Qt\+::\+Sort\+Order sort\+Order=Qt\+::\+Ascending\+Order, Qt\+::\+Case\+Sensitivity case\+Sensitivity=Qt\+::\+Case\+Insensitive)
+\begin{DoxyCompactList}\small\item\em Add a column to columns sort order. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_column_sort_order_list}{Column\+Sort\+Order\+List} \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9ad26aa44f91a430516189aa6a820879}{column\+Sort\+Order\+List} () const \hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9ad26aa44f91a430516189aa6a820879}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9ad26aa44f91a430516189aa6a820879}
+
+\begin{DoxyCompactList}\small\item\em Get a list of column sort order. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a34c1e790cbb91bb2437e3272ec160f26}{clear\+Columns\+Sort\+Order} ()
+\begin{DoxyCompactList}\small\item\em Clear columns sort order. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_aa950521a98fe18e3e426cbdc52fdd1dc}{set\+Column\+String\+Sort\+Attributes} (int column, \hyperlink{namespace_mdt_1_1_item_model_a88210a5defc335e5beaed03043620b25}{String\+Numeric\+Mode} numeric\+Mode, Qt\+::\+Case\+Sensitivity case\+Sensitivity=Qt\+::\+Case\+Insensitive)
+\begin{DoxyCompactList}\small\item\em Set string sorting attributes for a given column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a28e6beb7d35c73396a64b174ad7b9735}{clear\+Columns\+String\+Sort\+Attributes} ()
+\begin{DoxyCompactList}\small\item\em Clear string sort attributes. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a8f8c6a6eb76fe984a21dfe71d696dad1}{sort} (int column, Qt\+::\+Sort\+Order sort\+Order=Qt\+::\+Ascending\+Order) override
+\begin{DoxyCompactList}\small\item\em Sort a specific column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9d214a5366537d9d142f589a309f6422}{sort} ()
+\begin{DoxyCompactList}\small\item\em Sort by multiple columns. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_af876b581d18db1c44d05c56043563b71}{set\+Dynamic\+Sort\+Filter} (bool enable)\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_af876b581d18db1c44d05c56043563b71}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_af876b581d18db1c44d05c56043563b71}
+
+\begin{DoxyCompactList}\small\item\em Re-\/implemented from Q\+Sort\+Filter\+Proxy\+Model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a4e681acfa6322f38bb6f8318e1f6e355}{set\+Sort\+Case\+Sensitivity} (Qt\+::\+Case\+Sensitivity case\+Sensitivity)\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a4e681acfa6322f38bb6f8318e1f6e355}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a4e681acfa6322f38bb6f8318e1f6e355}
+
+\begin{DoxyCompactList}\small\item\em Re-\/implemented from Q\+Sort\+Filter\+Proxy\+Model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_af82b8bcdf55968707127d4ae53b5580e}{set\+Sort\+Locale\+Aware} (bool on)\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_af82b8bcdf55968707127d4ae53b5580e}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_af82b8bcdf55968707127d4ae53b5580e}
+
+\begin{DoxyCompactList}\small\item\em Re-\/implemented from Q\+Sort\+Filter\+Proxy\+Model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_aea5ce7fffac4ee8550cfec678d08c996}{set\+Sort\+Role} (int role)
+\begin{DoxyCompactList}\small\item\em Re-\/implemented from Q\+Sort\+Filter\+Proxy\+Model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5c50431f3ec1f559af45ee399d476d97}{set\+Source\+Model} (Q\+Abstract\+Item\+Model $\ast$source\+Model) override\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5c50431f3ec1f559af45ee399d476d97}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5c50431f3ec1f559af45ee399d476d97}
+
+\begin{DoxyCompactList}\small\item\em Re-\/implemented from Q\+Sort\+Filter\+Proxy\+Model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides support for sorting data between another model and a view. 
+
+Example of usage\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "Mdt/ItemModel/SortProxyModel.h"}
+\textcolor{preprocessor}{#include <QTableView>}
+\textcolor{preprocessor}{#include "ClientTableModel.h"}
+
+namepsace ItemModel = Mdt::ItemModel;
+\textcolor{keyword}{using} ItemModel::SortProxyModel;
+
+\textcolor{keyword}{auto} *view = \textcolor{keyword}{new} QTableView;
+\textcolor{keyword}{auto} *model = \textcolor{keyword}{new} ClientTableModel(view);
+\textcolor{keyword}{auto} *proxyModel = \textcolor{keyword}{new} \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a1764706e28e183e83b51b0e349b33bff}{SortProxyModel}(view);
+
+proxyModel->setSortLocaleAware(\textcolor{keyword}{true});
+proxyModel->setSourceModel(model);
+view->setModel(proxyModel);
+
+\textcolor{comment}{// Setup model to sort by columns 0, 2, 1 ascending:}
+proxyModel->addColumnToSortOrder(0, Qt::AscendingOrder);
+proxyModel->addColumnToSortOrder(2, \hyperlink{namespace_mdt_1_1_item_model_a88210a5defc335e5beaed03043620b25a2bd8ab451a35759c5737128e35c8011a}{StringNumericMode::Natural}, 
+      Qt::AscendingOrder);
+proxyModel->addColumnToSortOrder(1, Qt::AscendingOrder);
+
+proxyModel->sort();
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_filter_proxy_model}{Filter\+Proxy\+Model}
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000009}{Todo}]Define\+:
+\begin{DoxyItemize}
+\item column\+Count() changed due to\+: -\/$>$ inser columns -\/$>$ remove columns -\/$>$ model reset
+\item change model
+\item dynamic\+Sort\+Filter
+\item what impact have filter$\ast$ functions ? 
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+Definition at line 70 of file Sort\+Proxy\+Model.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!add\+Column\+To\+Sort\+Order@{add\+Column\+To\+Sort\+Order}}
+\index{add\+Column\+To\+Sort\+Order@{add\+Column\+To\+Sort\+Order}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{add\+Column\+To\+Sort\+Order(int column, Qt\+::\+Sort\+Order sort\+Order=\+Qt\+::\+Ascending\+Order)}{addColumnToSortOrder(int column, Qt::SortOrder sortOrder=Qt::AscendingOrder)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::add\+Column\+To\+Sort\+Order (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{Qt\+::\+Sort\+Order}]{sort\+Order = {\ttfamily Qt\+:\+:AscendingOrder}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5a3f0c33b558ff9ce75c827e7b699663}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5a3f0c33b558ff9ce75c827e7b699663}
+
+
+Add a column to columns sort order. 
+
+Columns sort order is similar meaning than S\+QL O\+R\+D\+ER BY clause.
+
+For example, to sort columns in order 0, 2, 1 all ascending, call\+: 
+\begin{DoxyCode}
+proxyModel.clearColumnsSortOrder();  \textcolor{comment}{// If a sort order was previously set}
+proxyModel.addColumnToSortOrder(0, Qt::AscendingOrder);
+proxyModel.addColumnToSortOrder(2, Qt::AscendingOrder);
+proxyModel.addColumnToSortOrder(1, Qt::AscendingOrder);
+\end{DoxyCode}
+
+
+When source model changes, resets, or its columns count changes, it is assumed that columns added to sort order are still valid. If, after such event, a column does not exist in model, it will simply be ignored.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 37 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!add\+Column\+To\+Sort\+Order@{add\+Column\+To\+Sort\+Order}}
+\index{add\+Column\+To\+Sort\+Order@{add\+Column\+To\+Sort\+Order}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{add\+Column\+To\+Sort\+Order(int column, String\+Numeric\+Mode numeric\+Mode, Qt\+::\+Sort\+Order sort\+Order=\+Qt\+::\+Ascending\+Order, Qt\+::\+Case\+Sensitivity case\+Sensitivity=\+Qt\+::\+Case\+Insensitive)}{addColumnToSortOrder(int column, StringNumericMode numericMode, Qt::SortOrder sortOrder=Qt::AscendingOrder, Qt::CaseSensitivity caseSensitivity=Qt::CaseInsensitive)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::add\+Column\+To\+Sort\+Order (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{{\bf String\+Numeric\+Mode}}]{numeric\+Mode, }
+\item[{Qt\+::\+Sort\+Order}]{sort\+Order = {\ttfamily Qt\+:\+:AscendingOrder}, }
+\item[{Qt\+::\+Case\+Sensitivity}]{case\+Sensitivity = {\ttfamily Qt\+:\+:CaseInsensitive}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_adfa36c9c6ec5b3f52c115725224bdb38}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_adfa36c9c6ec5b3f52c115725224bdb38}
+
+
+Add a column to columns sort order. 
+
+This version gives more control of string sorting.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5a3f0c33b558ff9ce75c827e7b699663}{add\+Column\+To\+Sort\+Order(int, Qt\+::\+Sort\+Order)} 
+
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_aa950521a98fe18e3e426cbdc52fdd1dc}{set\+Column\+String\+Sort\+Attributes()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 44 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!clear\+Columns\+Sort\+Order@{clear\+Columns\+Sort\+Order}}
+\index{clear\+Columns\+Sort\+Order@{clear\+Columns\+Sort\+Order}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{clear\+Columns\+Sort\+Order()}{clearColumnsSortOrder()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::clear\+Columns\+Sort\+Order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a34c1e790cbb91bb2437e3272ec160f26}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a34c1e790cbb91bb2437e3272ec160f26}
+
+
+Clear columns sort order. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5a3f0c33b558ff9ce75c827e7b699663}{add\+Column\+To\+Sort\+Order()} 
+
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a28e6beb7d35c73396a64b174ad7b9735}{clear\+Columns\+String\+Sort\+Attributes()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 52 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!clear\+Columns\+String\+Sort\+Attributes@{clear\+Columns\+String\+Sort\+Attributes}}
+\index{clear\+Columns\+String\+Sort\+Attributes@{clear\+Columns\+String\+Sort\+Attributes}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{clear\+Columns\+String\+Sort\+Attributes()}{clearColumnsStringSortAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::clear\+Columns\+String\+Sort\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a28e6beb7d35c73396a64b174ad7b9735}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a28e6beb7d35c73396a64b174ad7b9735}
+
+
+Clear string sort attributes. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_aa950521a98fe18e3e426cbdc52fdd1dc}{set\+Column\+String\+Sort\+Attributes()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 64 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!model\+Sorted@{model\+Sorted}}
+\index{model\+Sorted@{model\+Sorted}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{model\+Sorted}{modelSorted}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::model\+Sorted (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a082be5eeb363f73088ef22f8df646be2}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a082be5eeb363f73088ef22f8df646be2}
+
+
+Emitted when model was sorted. 
+
+This signal is only emitted when \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9d214a5366537d9d142f589a309f6422}{sort()} was called. If \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a8f8c6a6eb76fe984a21dfe71d696dad1}{sort(int, Qt\+::\+Sort\+Order)} is called, this signal is not emitted. \index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!set\+Column\+String\+Sort\+Attributes@{set\+Column\+String\+Sort\+Attributes}}
+\index{set\+Column\+String\+Sort\+Attributes@{set\+Column\+String\+Sort\+Attributes}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Column\+String\+Sort\+Attributes(int column, String\+Numeric\+Mode numeric\+Mode, Qt\+::\+Case\+Sensitivity case\+Sensitivity=\+Qt\+::\+Case\+Insensitive)}{setColumnStringSortAttributes(int column, StringNumericMode numericMode, Qt::CaseSensitivity caseSensitivity=Qt::CaseInsensitive)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::set\+Column\+String\+Sort\+Attributes (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{{\bf String\+Numeric\+Mode}}]{numeric\+Mode, }
+\item[{Qt\+::\+Case\+Sensitivity}]{case\+Sensitivity = {\ttfamily Qt\+:\+:CaseInsensitive}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_aa950521a98fe18e3e426cbdc52fdd1dc}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_aa950521a98fe18e3e426cbdc52fdd1dc}
+
+
+Set string sorting attributes for a given column. 
+
+If numeric\+Mode is Natural, numbers in strings are sorted in a natural way. For example\+: 10A,2A will be sorted 2A,10A .
+
+\begin{DoxyNote}{Note}
+If Q\+Sort\+Filter\+Proxy\+Model\+::is\+Sort\+Locale\+Aware() is true, sorting is allways case insensitive on some platforms (for example on P\+O\+S\+IX). Also, if {\itshape numeric\+Mode} is Natural, sorting is allways done local aware.
+\end{DoxyNote}
+When source model changes, resets, or its columns count changes, it is assumed that each column, for which a attribute was set, is still valid. If, after such event, a column does not exist in model, it will simply be ignored.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a28e6beb7d35c73396a64b174ad7b9735}{clear\+Columns\+String\+Sort\+Attributes()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 57 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!set\+Sort\+Role@{set\+Sort\+Role}}
+\index{set\+Sort\+Role@{set\+Sort\+Role}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Sort\+Role(int role)}{setSortRole(int role)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::set\+Sort\+Role (
+\begin{DoxyParamCaption}
+\item[{int}]{role}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_aea5ce7fffac4ee8550cfec678d08c996}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_aea5ce7fffac4ee8550cfec678d08c996}
+
+
+Re-\/implemented from Q\+Sort\+Filter\+Proxy\+Model. 
+
+Note that {\itshape role} will be the same for all columns in sort order. 
+
+Definition at line 115 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!sort@{sort}}
+\index{sort@{sort}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{sort(int column, Qt\+::\+Sort\+Order sort\+Order=\+Qt\+::\+Ascending\+Order) override}{sort(int column, Qt::SortOrder sortOrder=Qt::AscendingOrder) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::sort (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{Qt\+::\+Sort\+Order}]{sort\+Order = {\ttfamily Qt\+:\+:AscendingOrder}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a8f8c6a6eb76fe984a21dfe71d696dad1}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a8f8c6a6eb76fe984a21dfe71d696dad1}
+
+
+Sort a specific column. 
+
+Different attributes for string sorting can be set for any column. They can be set using \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_aa950521a98fe18e3e426cbdc52fdd1dc}{set\+Column\+String\+Sort\+Attributes()} , or directly while adding a column using \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_adfa36c9c6ec5b3f52c115725224bdb38}{add\+Column\+To\+Sort\+Order(int, String\+Numeric\+Mode, Qt\+::\+Sort\+Order, Qt\+::\+Case\+Sensitivity)} .
+
+If case sensitivity was set for {\itshape column} , it will be used, else, Q\+Sort\+Filter\+Proxy\+Model\+::sort\+Case\+Sensitivity() is considered.
+
+{\itshape sort\+Order} is allways used, regardless of any attributes set for {\itshape column} .
+
+As for Q\+Sort\+Filter\+Proxy\+Model, if {\itshape column} is -\/1, the sort order of the underlaying model is restored.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be -\/1 or a valid range ( -\/1 $>$= {\itshape column} $<$ column\+Count() ).
+\end{DoxyPrecond}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]Document\+:
+\begin{DoxyItemize}
+\item how does this interact with dynamic\+Sort\+Filter ? 
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+Definition at line 69 of file Sort\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}!sort@{sort}}
+\index{sort@{sort}!Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{sort()}{sort()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Sort\+Proxy\+Model\+::sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9d214a5366537d9d142f589a309f6422}{}\label{class_mdt_1_1_item_model_1_1_sort_proxy_model_a9d214a5366537d9d142f589a309f6422}
+
+
+Sort by multiple columns. 
+
+Sorts the model by each column added with \hyperlink{class_mdt_1_1_item_model_1_1_sort_proxy_model_a5a3f0c33b558ff9ce75c827e7b699663}{add\+Column\+To\+Sort\+Order()}.
+
+For each column, that is in sort order, and that have a case sensitivity defined by a string sort sttributes, this one will be used. For other columns, that are in sort order, Q\+Sort\+Filter\+Proxy\+Model\+::sort\+Case\+Sensitivity() is considered. 
+
+Definition at line 77 of file Sort\+Proxy\+Model.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Sort\+Proxy\+Model.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Sort\+Proxy\+Model.\+cpp\end{DoxyCompactItemize}

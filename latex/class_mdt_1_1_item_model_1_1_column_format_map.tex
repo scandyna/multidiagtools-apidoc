@@ -1,0 +1,95 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_column_format_map}{}\section{Mdt\+:\+:Item\+Model\+:\+:Column\+Format\+Map Class Reference}
+\label{class_mdt_1_1_item_model_1_1_column_format_map}\index{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}}
+
+
+Stores formats for certain column in a item model.  
+
+
+
+
+{\ttfamily \#include $<$Column\+Format\+Map.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_item_model_1_1_column_format_map_ad6fa4094d20c849c97dfeb102eb09195}{set\+Format\+For\+Column} (int column, const T \&format)
+\begin{DoxyCompactList}\small\item\em Set format for given column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_column_format_map_a5e78d3d3eaed6dd2da3e5201541d9a9a}{clear\+Format\+For\+Column} (int column)
+\begin{DoxyCompactList}\small\item\em Clear format for given column. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_column_format_map_adaeb39ac9dfcb16d4cd2f03b530e7380}{format\+For\+Column} (int column) const 
+\begin{DoxyCompactList}\small\item\em Get format for given column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores formats for certain column in a item model. 
+
+Definition at line 32 of file Column\+Format\+Map.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}!clear\+Format\+For\+Column@{clear\+Format\+For\+Column}}
+\index{clear\+Format\+For\+Column@{clear\+Format\+For\+Column}!Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}}
+\subsubsection[{\texorpdfstring{clear\+Format\+For\+Column(int column)}{clearFormatForColumn(int column)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map\+::clear\+Format\+For\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_column_format_map_a5e78d3d3eaed6dd2da3e5201541d9a9a}{}\label{class_mdt_1_1_item_model_1_1_column_format_map_a5e78d3d3eaed6dd2da3e5201541d9a9a}
+
+
+Clear format for given column. 
+
+Does nothing if no format was set for {\itshape column} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 25 of file Column\+Format\+Map.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}!format\+For\+Column@{format\+For\+Column}}
+\index{format\+For\+Column@{format\+For\+Column}!Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}}
+\subsubsection[{\texorpdfstring{format\+For\+Column(int column) const }{formatForColumn(int column) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map\+::format\+For\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_column_format_map_adaeb39ac9dfcb16d4cd2f03b530e7380}{}\label{class_mdt_1_1_item_model_1_1_column_format_map_adaeb39ac9dfcb16d4cd2f03b530e7380}
+
+
+Get format for given column. 
+
+Returns a Q\+Variant with value of type passed in \hyperlink{class_mdt_1_1_item_model_1_1_column_format_map_ad6fa4094d20c849c97dfeb102eb09195}{set\+Format\+For\+Column()} if a format was set for {\itshape column}, otherwise a null Q\+Variant.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 63 of file Column\+Format\+Map.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}!set\+Format\+For\+Column@{set\+Format\+For\+Column}}
+\index{set\+Format\+For\+Column@{set\+Format\+For\+Column}!Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map@{Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map}}
+\subsubsection[{\texorpdfstring{set\+Format\+For\+Column(int column, const T \&format)}{setFormatForColumn(int column, const T &format)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Item\+Model\+::\+Column\+Format\+Map\+::set\+Format\+For\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{const T \&}]{format}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_column_format_map_ad6fa4094d20c849c97dfeb102eb09195}{}\label{class_mdt_1_1_item_model_1_1_column_format_map_ad6fa4094d20c849c97dfeb102eb09195}
+
+
+Set format for given column. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 41 of file Column\+Format\+Map.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Column\+Format\+Map.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Column\+Format\+Map.\+cpp\end{DoxyCompactItemize}

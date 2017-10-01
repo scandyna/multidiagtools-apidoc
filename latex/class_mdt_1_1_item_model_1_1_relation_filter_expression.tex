@@ -1,0 +1,201 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression}{}\section{Mdt\+:\+:Item\+Model\+:\+:Relation\+Filter\+Expression Class Reference}
+\label{class_mdt_1_1_item_model_1_1_relation_filter_expression}\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}}
+
+
+Filter expression used in \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model}{Relation\+Filter\+Proxy\+Model}.  
+
+
+
+
+{\ttfamily \#include $<$Relation\+Filter\+Expression.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a7f0fa4a5e3bef21405f94f241a9ae88c}{Relation\+Filter\+Expression} ()=default\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a7f0fa4a5e3bef21405f94f241a9ae88c}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a7f0fa4a5e3bef21405f94f241a9ae88c}
+
+\begin{DoxyCompactList}\small\item\em Construct a empty expression. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Expr $>$ }\\\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a2cca7170a17aed9cbf525b166e25bd6b}{Relation\+Filter\+Expression} (const Expr \&expr)
+\begin{DoxyCompactList}\small\item\em Construct a expression. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_aa3e0d21e5161766954fd23beb132044a}{Relation\+Filter\+Expression} (const \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \&other)=default\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_aa3e0d21e5161766954fd23beb132044a}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_aa3e0d21e5161766954fd23beb132044a}
+
+\begin{DoxyCompactList}\small\item\em Construct a expression as copy of other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a4fa01cab2a92f76b8d2a097b4cc1ac30}{Relation\+Filter\+Expression} (\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \&\&other)=default\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a4fa01cab2a92f76b8d2a097b4cc1ac30}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a4fa01cab2a92f76b8d2a097b4cc1ac30}
+
+\begin{DoxyCompactList}\small\item\em Construct a expression by moving other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \& \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a674264fbd807b4294974f1c3f7fb6c3d}{operator=} (const \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \&other)=default\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a674264fbd807b4294974f1c3f7fb6c3d}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a674264fbd807b4294974f1c3f7fb6c3d}
+
+\begin{DoxyCompactList}\small\item\em Assign other expression to this. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \& \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_af08b89acec5eb3c9541aa33e87ee5787}{operator=} (\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \&\&)=default\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_af08b89acec5eb3c9541aa33e87ee5787}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_af08b89acec5eb3c9541aa33e87ee5787}
+
+\begin{DoxyCompactList}\small\item\em Assign other expression to this. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a087823f2bc6a47d7a552557f60993b67}{is\+Null} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a087823f2bc6a47d7a552557f60993b67}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a087823f2bc6a47d7a552557f60993b67}
+
+\begin{DoxyCompactList}\small\item\em Check if this expression is null. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a4b52afb99b104bf428ecc64d53416ae3}{eval} (const Q\+Abstract\+Item\+Model $\ast$const model, int row, const \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_parent_model_eval_data}{Expression\+::\+Parent\+Model\+Eval\+Data} \&parent\+Model\+Data, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const 
+\begin{DoxyCompactList}\small\item\em Evaluate if row matches stored expression in model. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a70a412ea498411b36b3f32cbafed201f}{get\+Relation\+Key\+For\+Equality} () const 
+\begin{DoxyCompactList}\small\item\em Get a relation key that contains pairs of equly compared columns of this expression. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_aa4aee02bc01b399cd4c46df18bc6101f}{greatest\+Column} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_aa4aee02bc01b399cd4c46df18bc6101f}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_aa4aee02bc01b399cd4c46df18bc6101f}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest column in this expression. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a9008ca4017f2c05c985cae66144ebe2f}{greatest\+Parent\+Model\+Column} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a9008ca4017f2c05c985cae66144ebe2f}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a9008ca4017f2c05c985cae66144ebe2f}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest parent model column in this expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_aed958ff87bd83aac0c3cb40605f22588}{from\+Relation\+Key} (const \hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \&relation\+Key)
+\begin{DoxyCompactList}\small\item\em Get a relation filter expression from a relation key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter expression used in \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model}{Relation\+Filter\+Proxy\+Model}. 
+
+Example of usage\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "Mdt/ItemModel/RelationFilterExpression.h"}
+
+\textcolor{keyword}{using namespace }\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Mdt::ItemModel::RelationFilterExpression};
+\textcolor{keyword}{using} \hyperlink{namespace_mdt_1_1_item_model_a60ac754611ae43e31bbe5244b2d24297}{Mdt::ItemModel::ChildModelColumn};
+\textcolor{keyword}{using} \hyperlink{namespace_mdt_1_1_item_model_a65a3c4f6cfb3d80d7f69e58cd17d8be7}{Mdt::ItemModel::ParentModelColumn};
+\textcolor{keyword}{using} Like = \hyperlink{namespace_mdt_1_1_item_model_a8c8326d469af353aa345651a135251b0}{Mdt::ItemModel::LikeExpression};
+
+\hyperlink{namespace_mdt_1_1_item_model_a65a3c4f6cfb3d80d7f69e58cd17d8be7}{ParentModelColumn} clientId(0);
+\hyperlink{namespace_mdt_1_1_item_model_a60ac754611ae43e31bbe5244b2d24297}{ChildModelColumn} addressClientId(1);
+
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression_a7f0fa4a5e3bef21405f94f241a9ae88c}{RelationFilterExpression} filter( addressClientId == clientId );
+\end{DoxyCode}
+ 
+
+Definition at line 58 of file Relation\+Filter\+Expression.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}!Relation\+Filter\+Expression@{Relation\+Filter\+Expression}}
+\index{Relation\+Filter\+Expression@{Relation\+Filter\+Expression}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}}
+\subsubsection[{\texorpdfstring{Relation\+Filter\+Expression(const Expr \&expr)}{RelationFilterExpression(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Expr $>$ Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression\+::\+Relation\+Filter\+Expression (
+\begin{DoxyParamCaption}
+\item[{const Expr \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a2cca7170a17aed9cbf525b166e25bd6b}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a2cca7170a17aed9cbf525b166e25bd6b}
+
+
+Construct a expression. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Expr} & Type of the expression. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & Expression to hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Expr must be a relation filter expression type. A relation filter expression is based on Child\+Model\+Column, Parent\+Model\+Column, comparison operators, logical A\+ND, logical OR. For example (see code above for details)\+: 
+\begin{DoxyCode}
+\textcolor{comment}{// Example of valid relation filter expression}
+addressClientId == cliendId
+(addressClientId == cliendId) && (addressClientId > 25)
+
+\textcolor{comment}{// Example of invalid relation filter expression}
+cliendId + 5
+\end{DoxyCode}
+ 
+\end{DoxyPrecond}
+
+
+Definition at line 84 of file Relation\+Filter\+Expression.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}!eval@{eval}}
+\index{eval@{eval}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}}
+\subsubsection[{\texorpdfstring{eval(const Q\+Abstract\+Item\+Model $\ast$const model, int row, const Expression\+::\+Parent\+Model\+Eval\+Data \&parent\+Model\+Data, Qt\+::\+Case\+Sensitivity case\+Sensitivity) const }{eval(const QAbstractItemModel *const model, int row, const Expression::ParentModelEvalData &parentModelData, Qt::CaseSensitivity caseSensitivity) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression\+::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\+Abstract\+Item\+Model $\ast$const}]{model, }
+\item[{int}]{row, }
+\item[{const {\bf Expression\+::\+Parent\+Model\+Eval\+Data} \&}]{parent\+Model\+Data, }
+\item[{Qt\+::\+Case\+Sensitivity}]{case\+Sensitivity}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a4b52afb99b104bf428ecc64d53416ae3}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a4b52afb99b104bf428ecc64d53416ae3}
+
+
+Evaluate if row matches stored expression in model. 
+
+\begin{DoxyPrecond}{Precondition}
+this expression must not be null 
+
+{\itshape model} must be a valid pointer (not null) 
+
+{\itshape row} must be in valid range ( 0 $<$= row $<$ model-\/$>$row\+Count() ) 
+
+{\itshape parent\+Model\+Data} must not be null 
+\end{DoxyPrecond}
+
+
+Definition at line 30 of file Relation\+Filter\+Expression.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}!from\+Relation\+Key@{from\+Relation\+Key}}
+\index{from\+Relation\+Key@{from\+Relation\+Key}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}}
+\subsubsection[{\texorpdfstring{from\+Relation\+Key(const Relation\+Key \&relation\+Key)}{fromRelationKey(const RelationKey &relationKey)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Relation\+Filter\+Expression} Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression\+::from\+Relation\+Key (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation\+Key} \&}]{relation\+Key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_aed958ff87bd83aac0c3cb40605f22588}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_aed958ff87bd83aac0c3cb40605f22588}
+
+
+Get a relation filter expression from a relation key. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape relation\+Key} must not be null 
+
+{\itshape relation\+Key} must contain max. 4 pairs of columns 
+\end{DoxyPrecond}
+
+
+Definition at line 48 of file Relation\+Filter\+Expression.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}!get\+Relation\+Key\+For\+Equality@{get\+Relation\+Key\+For\+Equality}}
+\index{get\+Relation\+Key\+For\+Equality@{get\+Relation\+Key\+For\+Equality}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression}}
+\subsubsection[{\texorpdfstring{get\+Relation\+Key\+For\+Equality() const }{getRelationKeyForEquality() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Relation\+Key} Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Expression\+::get\+Relation\+Key\+For\+Equality (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_expression_a70a412ea498411b36b3f32cbafed201f}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_expression_a70a412ea498411b36b3f32cbafed201f}
+
+
+Get a relation key that contains pairs of equly compared columns of this expression. 
+
+For example, this expression\+: 
+\begin{DoxyCode}
+\hyperlink{namespace_mdt_1_1_item_model_a65a3c4f6cfb3d80d7f69e58cd17d8be7}{ParentModelColumn} clientId(0);
+\hyperlink{namespace_mdt_1_1_item_model_a60ac754611ae43e31bbe5244b2d24297}{ChildModelColumn} addressClientId(1);
+addressClientId == cliendId;
+\end{DoxyCode}
+ The resulting relation key will contain 1 column pair with parent model column equal to 0 and child model column equal to 1
+
+Lets take a more complex expression\+: 
+\begin{DoxyCode}
+\hyperlink{namespace_mdt_1_1_item_model_a60ac754611ae43e31bbe5244b2d24297}{ChildModelColumn}(1) <= \hyperlink{namespace_mdt_1_1_item_model_a65a3c4f6cfb3d80d7f69e58cd17d8be7}{ParentModelColumn}(11) && 
+      \hyperlink{namespace_mdt_1_1_item_model_a60ac754611ae43e31bbe5244b2d24297}{ChildModelColumn}(2) < \hyperlink{namespace_mdt_1_1_item_model_a65a3c4f6cfb3d80d7f69e58cd17d8be7}{ParentModelColumn}(12);
+\end{DoxyCode}
+ The resulting relation key will only contain 1 column pair, with parent model column equal to 11 and child model column equal to 1, because Child\+Model\+Column(2) $<$ Parent\+Model\+Column(12) is not a equality.
+
+\begin{DoxyPrecond}{Precondition}
+this expression must not be null 
+\end{DoxyPrecond}
+
+
+Definition at line 41 of file Relation\+Filter\+Expression.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Filter\+Expression.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Filter\+Expression.\+cpp\end{DoxyCompactItemize}

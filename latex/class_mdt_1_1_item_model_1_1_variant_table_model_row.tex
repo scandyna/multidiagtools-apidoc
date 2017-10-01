@@ -1,0 +1,225 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row}{}\section{Mdt\+:\+:Item\+Model\+:\+:Variant\+Table\+Model\+Row Class Reference}
+\label{class_mdt_1_1_item_model_1_1_variant_table_model_row}\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+
+
+Container for \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model}{Variant\+Table\+Model}.  
+
+
+
+
+{\ttfamily \#include $<$Variant\+Table\+Model\+Row.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_abcca67f088c0267b2ef234d0fdf27e32}{Variant\+Table\+Model\+Row} (\hyperlink{namespace_mdt_1_1_item_model_ad48e47e80d7e13b5b951346649748190}{Variant\+Table\+Model\+Storage\+Rule} storage\+Rule, int col\+Count)\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_abcca67f088c0267b2ef234d0fdf27e32}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_abcca67f088c0267b2ef234d0fdf27e32}
+
+\begin{DoxyCompactList}\small\item\em Construct a row with col\+Count columns. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count} () const \hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}
+
+\begin{DoxyCompactList}\small\item\em Get column count. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a02e05fe2be00e196694f29448938c89b}{data} (int column, int role) const 
+\begin{DoxyCompactList}\small\item\em Get data at column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_aef7c9adec9dec2a7504f8e35fa7be4c8}{set\+Item\+Enabled} (int column, bool enable)
+\begin{DoxyCompactList}\small\item\em Set item enabled at column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a6f4939abd9d372df6f568a2d07ce97c5}{set\+Item\+Editable} (int column, bool editable)
+\begin{DoxyCompactList}\small\item\em Set item editable at column. \end{DoxyCompactList}\item 
+Qt\+::\+Item\+Flags \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a818c21a60b2df776f74aae0c44b71883}{flags} (int column, Qt\+::\+Item\+Flags current\+Flags) const 
+\begin{DoxyCompactList}\small\item\em Get flags at column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a4fe895e79697e13ee8f4d1c1f4968e5b}{set\+Data} (int column, const Q\+Variant \&value, int role=Qt\+::\+Edit\+Role)
+\begin{DoxyCompactList}\small\item\em Set data at column. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a3d94b7a58e1e834427f365857bd42e16}{resize} (int columns, \hyperlink{namespace_mdt_1_1_item_model_ad48e47e80d7e13b5b951346649748190}{Variant\+Table\+Model\+Storage\+Rule} storage\+Rule)
+\begin{DoxyCompactList}\small\item\em Resize row to columns count of columns. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_aa1bc0545214fee5e47af46f404e72cbc}{insert\+Columns} (int column, int count, \hyperlink{namespace_mdt_1_1_item_model_ad48e47e80d7e13b5b951346649748190}{Variant\+Table\+Model\+Storage\+Rule} storage\+Rule)
+\begin{DoxyCompactList}\small\item\em Insert {\itshape count} columns before {\itshape column}. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_aba5fe3be8adbc6bd830880154fe160f9}{remove\+Columns} (int column, int count)
+\begin{DoxyCompactList}\small\item\em Remove {\itshape count} columns starting with {\itshape column}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model}{Variant\+Table\+Model}. 
+
+Definition at line 32 of file Variant\+Table\+Model\+Row.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!data@{data}}
+\index{data@{data}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{data(int column, int role) const }{data(int column, int role) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::data (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{role}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_a02e05fe2be00e196694f29448938c89b}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_a02e05fe2be00e196694f29448938c89b}
+
+
+Get data at column. 
+
+If storage rule (passed in constructor) is Separate\+Display\+And\+Edit\+Role\+Data, data for Qt\+::\+Edit\+Role will be distinct from data for Qt\+::\+Display\+Role.
+
+\begin{DoxyPrecond}{Precondition}
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+
+role must be Qt\+::\+Display\+Role or Qt\+::\+Edit\+Role 
+\end{DoxyPrecond}
+
+
+Definition at line 59 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!flags@{flags}}
+\index{flags@{flags}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{flags(int column, Qt\+::\+Item\+Flags current\+Flags) const }{flags(int column, Qt::ItemFlags currentFlags) const }}]{\setlength{\rightskip}{0pt plus 5cm}Qt\+::\+Item\+Flags Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::flags (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{Qt\+::\+Item\+Flags}]{current\+Flags}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_a818c21a60b2df776f74aae0c44b71883}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_a818c21a60b2df776f74aae0c44b71883}
+
+
+Get flags at column. 
+
+Returns current\+Flags with Qt\+::\+Item\+Is\+Editable and Item\+Is\+Enabled set or unset regarding what was set ba \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a6f4939abd9d372df6f568a2d07ce97c5}{set\+Item\+Editable()} and \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_aef7c9adec9dec2a7504f8e35fa7be4c8}{set\+Item\+Enabled()}.
+
+\begin{DoxyPrecond}{Precondition}
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 99 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!insert\+Columns@{insert\+Columns}}
+\index{insert\+Columns@{insert\+Columns}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{insert\+Columns(int column, int count, Variant\+Table\+Model\+Storage\+Rule storage\+Rule)}{insertColumns(int column, int count, VariantTableModelStorageRule storageRule)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::insert\+Columns (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{count, }
+\item[{{\bf Variant\+Table\+Model\+Storage\+Rule}}]{storage\+Rule}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_aa1bc0545214fee5e47af46f404e72cbc}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_aa1bc0545214fee5e47af46f404e72cbc}
+
+
+Insert {\itshape count} columns before {\itshape column}. 
+
+If column is 0, new columns are prepended. If column is \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()}, columns are appended.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be in correct range ( 0 $<$= column $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+
+{\itshape count} must be $>$= 1 
+\end{DoxyPrecond}
+
+
+Definition at line 145 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!remove\+Columns@{remove\+Columns}}
+\index{remove\+Columns@{remove\+Columns}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{remove\+Columns(int column, int count)}{removeColumns(int column, int count)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::remove\+Columns (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_aba5fe3be8adbc6bd830880154fe160f9}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_aba5fe3be8adbc6bd830880154fe160f9}
+
+
+Remove {\itshape count} columns starting with {\itshape column}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape column} must be $>$= 0 
+
+{\itshape count} must be $>$= 1 
+
+{\itshape column} + {\itshape count} must be in correct range ( 0 $<$= column $<$= \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 159 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!resize@{resize}}
+\index{resize@{resize}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{resize(int columns, Variant\+Table\+Model\+Storage\+Rule storage\+Rule)}{resize(int columns, VariantTableModelStorageRule storageRule)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::resize (
+\begin{DoxyParamCaption}
+\item[{int}]{columns, }
+\item[{{\bf Variant\+Table\+Model\+Storage\+Rule}}]{storage\+Rule}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_a3d94b7a58e1e834427f365857bd42e16}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_a3d94b7a58e1e834427f365857bd42e16}
+
+
+Resize row to columns count of columns. 
+
+For new count columns that is greater than current count, new null elements are added. For count that is less than current one, elements are removed.
+
+\begin{DoxyPrecond}{Precondition}
+columns must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 131 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{set\+Data(int column, const Q\+Variant \&value, int role=\+Qt\+::\+Edit\+Role)}{setData(int column, const QVariant &value, int role=Qt::EditRole)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::set\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{const Q\+Variant \&}]{value, }
+\item[{int}]{role = {\ttfamily Qt\+:\+:EditRole}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_a4fe895e79697e13ee8f4d1c1f4968e5b}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_a4fe895e79697e13ee8f4d1c1f4968e5b}
+
+
+Set data at column. 
+
+If storage rule (passed in constructor) is Separate\+Display\+And\+Edit\+Role\+Data, data for Qt\+::\+Edit\+Role will be distinct from data for Qt\+::\+Display\+Role.
+
+\begin{DoxyPrecond}{Precondition}
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+
+role must be Qt\+::\+Display\+Role or Qt\+::\+Edit\+Role 
+\end{DoxyPrecond}
+
+
+Definition at line 115 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!set\+Item\+Editable@{set\+Item\+Editable}}
+\index{set\+Item\+Editable@{set\+Item\+Editable}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{set\+Item\+Editable(int column, bool editable)}{setItemEditable(int column, bool editable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::set\+Item\+Editable (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{bool}]{editable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_a6f4939abd9d372df6f568a2d07ce97c5}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_a6f4939abd9d372df6f568a2d07ce97c5}
+
+
+Set item editable at column. 
+
+\begin{DoxyPrecond}{Precondition}
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 84 of file Variant\+Table\+Model\+Row.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}!set\+Item\+Enabled@{set\+Item\+Enabled}}
+\index{set\+Item\+Enabled@{set\+Item\+Enabled}!Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row@{Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row}}
+\subsubsection[{\texorpdfstring{set\+Item\+Enabled(int column, bool enable)}{setItemEnabled(int column, bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Variant\+Table\+Model\+Row\+::set\+Item\+Enabled (
+\begin{DoxyParamCaption}
+\item[{int}]{column, }
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_variant_table_model_row_aef7c9adec9dec2a7504f8e35fa7be4c8}{}\label{class_mdt_1_1_item_model_1_1_variant_table_model_row_aef7c9adec9dec2a7504f8e35fa7be4c8}
+
+
+Set item enabled at column. 
+
+\begin{DoxyPrecond}{Precondition}
+column must be in valid range ( 0 $<$= column $<$ \hyperlink{class_mdt_1_1_item_model_1_1_variant_table_model_row_a244df69ed410f0dc7f1fdd48d1b55931}{column\+Count()} ) 
+\end{DoxyPrecond}
+
+
+Definition at line 72 of file Variant\+Table\+Model\+Row.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Variant\+Table\+Model\+Row.\+h\end{DoxyCompactItemize}

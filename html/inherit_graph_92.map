@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_mdt_1_1_item_model_1_1_range.html" title="Range represents a range of rows or columns in item models. " alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$class_mdt_1_1_item_model_1_1_column_range.html" title="ColumnRange represents a range of columns in item models. " alt="" coords="212,5,416,32"/>
+<area shape="rect" id="node3" href="$class_mdt_1_1_item_model_1_1_row_range.html" title="RowRange represents a range of rows in item models. " alt="" coords="221,56,407,83"/>
+</map>

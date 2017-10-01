@@ -1,0 +1,95 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_row_column_format_map_base}{}\section{Mdt\+:\+:Item\+Model\+:\+:Row\+Column\+Format\+Map\+Base Class Reference}
+\label{class_mdt_1_1_item_model_1_1_row_column_format_map_base}\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}}
+
+
+Base class for \hyperlink{class_mdt_1_1_item_model_1_1_row_format_map}{Row\+Format\+Map} and \hyperlink{class_mdt_1_1_item_model_1_1_column_format_map}{Column\+Format\+Map}.  
+
+
+
+
+{\ttfamily \#include $<$Row\+Column\+Format\+Map\+Base.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_row_column_format_map_base_ac142b0dd2a6a6caeca3ba8ffe990ebc8}{set\+Format\+Variant\+For\+Index} (int index, const Q\+Variant \&format)
+\begin{DoxyCompactList}\small\item\em Set a format for index. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_row_column_format_map_base_aa4854609aa7f1c973b3b5100f3443116}{clear\+Format\+For\+Index} (int index)
+\begin{DoxyCompactList}\small\item\em Clear format for given index. \end{DoxyCompactList}\item 
+Q\+Variant \hyperlink{class_mdt_1_1_item_model_1_1_row_column_format_map_base_a313174f780969d8d56d7b7633f68bb5a}{format\+For\+Index} (int index) const 
+\begin{DoxyCompactList}\small\item\em Get format for given index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{class_mdt_1_1_item_model_1_1_row_format_map}{Row\+Format\+Map} and \hyperlink{class_mdt_1_1_item_model_1_1_column_format_map}{Column\+Format\+Map}. 
+
+Definition at line 33 of file Row\+Column\+Format\+Map\+Base.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}!clear\+Format\+For\+Index@{clear\+Format\+For\+Index}}
+\index{clear\+Format\+For\+Index@{clear\+Format\+For\+Index}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}}
+\subsubsection[{\texorpdfstring{clear\+Format\+For\+Index(int index)}{clearFormatForIndex(int index)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base\+::clear\+Format\+For\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_format_map_base_aa4854609aa7f1c973b3b5100f3443116}{}\label{class_mdt_1_1_item_model_1_1_row_column_format_map_base_aa4854609aa7f1c973b3b5100f3443116}
+
+
+Clear format for given index. 
+
+Does nothing if no format was set for {\itshape index} .
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 40 of file Row\+Column\+Format\+Map\+Base.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}!format\+For\+Index@{format\+For\+Index}}
+\index{format\+For\+Index@{format\+For\+Index}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}}
+\subsubsection[{\texorpdfstring{format\+For\+Index(int index) const }{formatForIndex(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Variant Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base\+::format\+For\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_format_map_base_a313174f780969d8d56d7b7633f68bb5a}{}\label{class_mdt_1_1_item_model_1_1_row_column_format_map_base_a313174f780969d8d56d7b7633f68bb5a}
+
+
+Get format for given index. 
+
+Returns a Q\+Variant with value of type passed in \hyperlink{class_mdt_1_1_item_model_1_1_row_column_format_map_base_ac142b0dd2a6a6caeca3ba8ffe990ebc8}{set\+Format\+Variant\+For\+Index()} if a format was set for {\itshape index}, otherwise a null Q\+Variant.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 50 of file Row\+Column\+Format\+Map\+Base.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}!set\+Format\+Variant\+For\+Index@{set\+Format\+Variant\+For\+Index}}
+\index{set\+Format\+Variant\+For\+Index@{set\+Format\+Variant\+For\+Index}!Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base@{Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base}}
+\subsubsection[{\texorpdfstring{set\+Format\+Variant\+For\+Index(int index, const Q\+Variant \&format)}{setFormatVariantForIndex(int index, const QVariant &format)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Row\+Column\+Format\+Map\+Base\+::set\+Format\+Variant\+For\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{const Q\+Variant \&}]{format}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_row_column_format_map_base_ac142b0dd2a6a6caeca3ba8ffe990ebc8}{}\label{class_mdt_1_1_item_model_1_1_row_column_format_map_base_ac142b0dd2a6a6caeca3ba8ffe990ebc8}
+
+
+Set a format for index. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be $>$= 0 
+\end{DoxyPrecond}
+
+
+Definition at line 28 of file Row\+Column\+Format\+Map\+Base.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+Column\+Format\+Map\+Base.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Row\+Column\+Format\+Map\+Base.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container}{}\section{Mdt\+:\+:Item\+Model\+:\+:Expression\+:\+:Filter\+Expression\+Container$<$ Stored\+Expr $>$ Class Template Reference}
+\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container}\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container$<$ Stored\+Expr $>$@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container$<$ Stored\+Expr $>$}}
+
+
+Implementation of container for \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression}.  
+
+
+
+
+{\ttfamily \#include $<$Filter\+Expression\+Container.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Expression\+:\+:Filter\+Expression\+Container$<$ Stored\+Expr $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Item\+Model\+:\+:Expression\+:\+:Filter\+Expression\+Container$<$ Stored\+Expr $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Expr $>$ }\\\hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a1a65ca5d3d6cd5a66e14322458c3ef8c}{Filter\+Expression\+Container} (const Expr \&expr)
+\begin{DoxyCompactList}\small\item\em Construct a container which stores given expression. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5a9aef0b74b06dca38f681302d92a5e9}{eval} (const Q\+Abstract\+Item\+Model $\ast$const model, int row, Qt\+::\+Case\+Sensitivity cs) const override
+\begin{DoxyCompactList}\small\item\em Evaluate if row matches stored expression in model. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a918fdd7c8ae52da3e2bf78bde697d1d9}{eval} (const Q\+Abstract\+Item\+Model $\ast$const model, int row, const \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_parent_model_eval_data}{Parent\+Model\+Eval\+Data} \&parent\+Model\+Data, Qt\+::\+Case\+Sensitivity cs) const override
+\begin{DoxyCompactList}\small\item\em Evaluate if row matches stored expression in model. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a88f7ec4e3c1b173bf343b1757f4e6748}{get\+Relation\+Key\+For\+Equality} () const override\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a88f7ec4e3c1b173bf343b1757f4e6748}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a88f7ec4e3c1b173bf343b1757f4e6748}
+
+\begin{DoxyCompactList}\small\item\em Get a relation key that contains pais of equly compared columns of this expression. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5b3998b5c91984d681353efb7e09107e}{get\+Greatest\+Column} () const override\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5b3998b5c91984d681353efb7e09107e}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5b3998b5c91984d681353efb7e09107e}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest column in this expression. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_adb2cfc620dcd571919e1e9c516017013}{get\+Greatest\+Parent\+Model\+Column} () const override\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_adb2cfc620dcd571919e1e9c516017013}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_adb2cfc620dcd571919e1e9c516017013}
+
+\begin{DoxyCompactList}\small\item\em Get the greatest parent model column in this expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Stored\+Expr$>$\\*
+class Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container$<$ Stored\+Expr $>$}
+
+Implementation of container for \hyperlink{class_mdt_1_1_item_model_1_1_filter_expression}{Filter\+Expression}. 
+
+Definition at line 39 of file Filter\+Expression\+Container.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}!Filter\+Expression\+Container@{Filter\+Expression\+Container}}
+\index{Filter\+Expression\+Container@{Filter\+Expression\+Container}!Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}}
+\subsubsection[{\texorpdfstring{Filter\+Expression\+Container(const Expr \&expr)}{FilterExpressionContainer(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Stored\+Expr $>$ template$<$typename Expr $>$ {\bf Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}$<$ Stored\+Expr $>$\+::{\bf Filter\+Expression\+Container} (
+\begin{DoxyParamCaption}
+\item[{const Expr \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a1a65ca5d3d6cd5a66e14322458c3ef8c}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a1a65ca5d3d6cd5a66e14322458c3ef8c}
+
+
+Construct a container which stores given expression. 
+
+Because expr will be copied (with boost\+::proto\+::deep\+\_\+copy()), the resuling expression is not the same as input expression. But, caller has not to care about this implementation detail.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Expr} & The expression to store \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 52 of file Filter\+Expression\+Container.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}!eval@{eval}}
+\index{eval@{eval}!Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}}
+\subsubsection[{\texorpdfstring{eval(const Q\+Abstract\+Item\+Model $\ast$const model, int row, Qt\+::\+Case\+Sensitivity cs) const override}{eval(const QAbstractItemModel *const model, int row, Qt::CaseSensitivity cs) const override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Stored\+Expr $>$ bool {\bf Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}$<$ Stored\+Expr $>$\+::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\+Abstract\+Item\+Model $\ast$const}]{model, }
+\item[{int}]{row, }
+\item[{Qt\+::\+Case\+Sensitivity}]{cs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5a9aef0b74b06dca38f681302d92a5e9}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a5a9aef0b74b06dca38f681302d92a5e9}
+
+
+Evaluate if row matches stored expression in model. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer (not null) 
+
+{\itshape must} be in valid range ( 0 $<$= row $<$ model-\/$>$row\+Count() ) 
+\end{DoxyPrecond}
+
+
+Implements \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_a2d24ef03a002562a9e395a6e4e5cce36}{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}.
+
+
+
+Definition at line 72 of file Filter\+Expression\+Container.\+h.
+
+\index{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}!eval@{eval}}
+\index{eval@{eval}!Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container@{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}}
+\subsubsection[{\texorpdfstring{eval(const Q\+Abstract\+Item\+Model $\ast$const model, int row, const Parent\+Model\+Eval\+Data \&parent\+Model\+Data, Qt\+::\+Case\+Sensitivity cs) const override}{eval(const QAbstractItemModel *const model, int row, const ParentModelEvalData &parentModelData, Qt::CaseSensitivity cs) const override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Stored\+Expr $>$ bool {\bf Mdt\+::\+Item\+Model\+::\+Expression\+::\+Filter\+Expression\+Container}$<$ Stored\+Expr $>$\+::eval (
+\begin{DoxyParamCaption}
+\item[{const Q\+Abstract\+Item\+Model $\ast$const}]{model, }
+\item[{int}]{row, }
+\item[{const {\bf Parent\+Model\+Eval\+Data} \&}]{parent\+Model\+Data, }
+\item[{Qt\+::\+Case\+Sensitivity}]{cs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a918fdd7c8ae52da3e2bf78bde697d1d9}{}\label{class_mdt_1_1_item_model_1_1_expression_1_1_filter_expression_container_a918fdd7c8ae52da3e2bf78bde697d1d9}
+
+
+Evaluate if row matches stored expression in model. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer (not null) 
+
+{\itshape row} must be in valid range ( 0 $<$= row $<$ model-\/$>$row\+Count() ) 
+
+{\itshape parent\+Model\+Data} must not be null 
+\end{DoxyPrecond}
+
+
+Implements \hyperlink{class_mdt_1_1_item_model_1_1_expression_1_1_container_interface_aa07af77ddc086a9d7bdc851ecc5e8b25}{Mdt\+::\+Item\+Model\+::\+Expression\+::\+Container\+Interface}.
+
+
+
+Definition at line 88 of file Filter\+Expression\+Container.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/\+Expression/Filter\+Expression\+Container.\+h\end{DoxyCompactItemize}

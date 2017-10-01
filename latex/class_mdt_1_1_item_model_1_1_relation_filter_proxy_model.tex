@@ -1,0 +1,234 @@
+\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model}{}\section{Mdt\+:\+:Item\+Model\+:\+:Relation\+Filter\+Proxy\+Model Class Reference}
+\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model}\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}}
+
+
+Provides support for filtering data between another model and a view.  
+
+
+
+
+{\ttfamily \#include $<$Relation\+Filter\+Proxy\+Model.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Item\+Model\+:\+:Relation\+Filter\+Proxy\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Item\+Model\+:\+:Relation\+Filter\+Proxy\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a579d6e207d62ebf98989eb191acfde72}{set\+Parent\+Model\+Match\+Row} (int row)
+\begin{DoxyCompactList}\small\item\em Set row of parent model for which filter must match. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ac7b4404a6b4a87c1b083d53716fb0d43}{Relation\+Filter\+Proxy\+Model} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ac7b4404a6b4a87c1b083d53716fb0d43}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ac7b4404a6b4a87c1b083d53716fb0d43}
+
+\begin{DoxyCompactList}\small\item\em Construct a model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a23646acc7038892e5c23e93fbc5d5e36}{set\+Parent\+Model} (Q\+Abstract\+Item\+Model $\ast$model)
+\begin{DoxyCompactList}\small\item\em Set parent model. \end{DoxyCompactList}\item 
+Q\+Abstract\+Item\+Model $\ast$ \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_aec1db6e280a89568cb0b4e405277f745}{parent\+Model} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_aec1db6e280a89568cb0b4e405277f745}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_aec1db6e280a89568cb0b4e405277f745}
+
+\begin{DoxyCompactList}\small\item\em Get parent model. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a55c2fc2383af03d01ef92e7eb4ddc426}{set\+Filter} (const \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_expression}{Relation\+Filter\+Expression} \&expression)
+\begin{DoxyCompactList}\small\item\em Set relation filter. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_acafb87324b21aadda724dbdf837b2aee}{set\+Filter} (const \hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \&relation\+Key)
+\begin{DoxyCompactList}\small\item\em Set relation filter. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a7b540895b780173c73eeb344a65b6684}{set\+Filter} (const \hyperlink{class_mdt_1_1_item_model_1_1_primary_key}{Primary\+Key} \&parent\+Model\+Pk, const \hyperlink{class_mdt_1_1_item_model_1_1_foreign_key}{Foreign\+Key} \&child\+Model\+Fk)
+\begin{DoxyCompactList}\small\item\em Set relation filter. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_key}{Relation\+Key} \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a1d98dffc2809657b92796b67bb8a8d57}{relation\+Key\+For\+Equality} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a1d98dffc2809657b92796b67bb8a8d57}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a1d98dffc2809657b92796b67bb8a8d57}
+
+\begin{DoxyCompactList}\small\item\em Get relation key for equality. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a1694b272495c06184786801e89aa5b32}{parent\+Model\+Match\+Row} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a1694b272495c06184786801e89aa5b32}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a1694b272495c06184786801e89aa5b32}
+
+\begin{DoxyCompactList}\small\item\em Get row of parent model for which filter must match. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a456161ed9ab45cf02d6c2ff944e94a5d}{set\+Dynamic\+Sort\+Filter} (bool enable)\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a456161ed9ab45cf02d6c2ff944e94a5d}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a456161ed9ab45cf02d6c2ff944e94a5d}
+
+\begin{DoxyCompactList}\small\item\em Re-\/implemented from \hyperlink{class_mdt_1_1_item_model_1_1_sort_filter_proxy_model}{Sort\+Filter\+Proxy\+Model}. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_item_model_1_1_row_list}{Row\+List} \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ab197a1d62da5b2fc1a6a6ba167a4aae5}{get\+Current\+Source\+Model\+Row\+List} () const \hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ab197a1d62da5b2fc1a6a6ba167a4aae5}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ab197a1d62da5b2fc1a6a6ba167a4aae5}
+
+\begin{DoxyCompactList}\small\item\em Get a list of rows in source model that are currently avaiable in this proxy model. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ab3ca677bfc3a9ef2fc1ac7342b81f499}{insert\+Rows} (int row, int count, const Q\+Model\+Index \&parent=Q\+Model\+Index()) override\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ab3ca677bfc3a9ef2fc1ac7342b81f499}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ab3ca677bfc3a9ef2fc1ac7342b81f499}
+
+\begin{DoxyCompactList}\small\item\em Reimplemented from \hyperlink{class_mdt_1_1_item_model_1_1_sort_filter_proxy_model}{Sort\+Filter\+Proxy\+Model}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides support for filtering data between another model and a view. 
+
+Example of usage\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <Mdt/ItemModel/RelationFilterProxyModel.h>}
+\textcolor{preprocessor}{#include <QTableView>}
+\textcolor{preprocessor}{#include "ClientTableModel.h"}
+\textcolor{preprocessor}{#include "AddressTableModel.h"}
+
+\textcolor{keyword}{using} namepsace Mdt::ItemModel;
+
+\textcolor{keyword}{auto} *view = \textcolor{keyword}{new} QTableView;
+\textcolor{keyword}{auto} *clientModel = \textcolor{keyword}{new} ClientTableModel;
+\textcolor{keyword}{auto} *addressModel = \textcolor{keyword}{new} AddressTableModel(view);
+\textcolor{keyword}{auto} *proxyModel = \textcolor{keyword}{new} \hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ac7b4404a6b4a87c1b083d53716fb0d43}{RelationFilterProxyModel}(view);
+
+\textcolor{comment}{// Setup view acting on addressModel}
+proxyModel->setParentModel(clientModel);
+proxyModel->setSourceModel(addressModel);
+view->setModel(proxyModel);
+
+\textcolor{comment}{// Setup a filter and apply it}
+\hyperlink{namespace_mdt_1_1_item_model_a60ac754611ae43e31bbe5244b2d24297}{ChildModelColumn} addressClientId(1);
+\hyperlink{namespace_mdt_1_1_item_model_a65a3c4f6cfb3d80d7f69e58cd17d8be7}{ParentModelColumn} clientId(0);
+proxyModel->setFilter( addressClientId == cliendId );
+proxyModel->setParentModelMatchRow(0);
+\end{DoxyCode}
+ 
+
+Definition at line 70 of file Relation\+Filter\+Proxy\+Model.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}!set\+Filter@{set\+Filter}}
+\index{set\+Filter@{set\+Filter}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Filter(const Relation\+Filter\+Expression \&expression)}{setFilter(const RelationFilterExpression &expression)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model\+::set\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation\+Filter\+Expression} \&}]{expression}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a55c2fc2383af03d01ef92e7eb4ddc426}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a55c2fc2383af03d01ef92e7eb4ddc426}
+
+
+Set relation filter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expression} & Expression to apply as filter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+{\itshape expression} must not be null
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a579d6e207d62ebf98989eb191acfde72}{set\+Parent\+Model\+Match\+Row()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 60 of file Relation\+Filter\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}!set\+Filter@{set\+Filter}}
+\index{set\+Filter@{set\+Filter}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Filter(const Relation\+Key \&relation\+Key)}{setFilter(const RelationKey &relationKey)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model\+::set\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relation\+Key} \&}]{relation\+Key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_acafb87324b21aadda724dbdf837b2aee}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_acafb87324b21aadda724dbdf837b2aee}
+
+
+Set relation filter. 
+
+For each pairs of parent/child model column in {\itshape relation\+Key}, a equality criteria will be created. Each pairs are also chained with a A\+ND constraint.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape relation\+Key} must not be null 
+
+{\itshape relation\+Key} must contain max 4 columns pairs 
+\end{DoxyPrecond}
+
+
+Definition at line 69 of file Relation\+Filter\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}!set\+Filter@{set\+Filter}}
+\index{set\+Filter@{set\+Filter}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Filter(const Primary\+Key \&parent\+Model\+Pk, const Foreign\+Key \&child\+Model\+Fk)}{setFilter(const PrimaryKey &parentModelPk, const ForeignKey &childModelFk)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model\+::set\+Filter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Primary\+Key} \&}]{parent\+Model\+Pk, }
+\item[{const {\bf Foreign\+Key} \&}]{child\+Model\+Fk}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a7b540895b780173c73eeb344a65b6684}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a7b540895b780173c73eeb344a65b6684}
+
+
+Set relation filter. 
+
+This is the same as\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_ac7b4404a6b4a87c1b083d53716fb0d43}{RelationFilterProxyModel} proxyModel;
+RelationKey key;
+PrimaryKey pk(\{1,2\});
+ForeignKey fk(\{2,3\});
+key.setKey(pk, fk);
+proxyModel.setFilter(key);
+\end{DoxyCode}
+
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape parent\+Model\+Pk} must not be null 
+
+{\itshape child\+Model\+Fk} must not be null 
+
+Both {\itshape parent\+Model\+Pk} and {\itshape child\+Model\+Fk} must have the same count of columns and max 4 columns 
+\end{DoxyPrecond}
+
+
+Definition at line 79 of file Relation\+Filter\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}!set\+Parent\+Model@{set\+Parent\+Model}}
+\index{set\+Parent\+Model@{set\+Parent\+Model}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Parent\+Model(\+Q\+Abstract\+Item\+Model $\ast$model)}{setParentModel(QAbstractItemModel *model)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model\+::set\+Parent\+Model (
+\begin{DoxyParamCaption}
+\item[{Q\+Abstract\+Item\+Model $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a23646acc7038892e5c23e93fbc5d5e36}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a23646acc7038892e5c23e93fbc5d5e36}
+
+
+Set parent model. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape model} must be a valid pointer 
+\end{DoxyPrecond}
+
+
+Definition at line 45 of file Relation\+Filter\+Proxy\+Model.\+cpp.
+
+\index{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}!set\+Parent\+Model\+Match\+Row@{set\+Parent\+Model\+Match\+Row}}
+\index{set\+Parent\+Model\+Match\+Row@{set\+Parent\+Model\+Match\+Row}!Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model@{Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model}}
+\subsubsection[{\texorpdfstring{set\+Parent\+Model\+Match\+Row}{setParentModelMatchRow}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Item\+Model\+::\+Relation\+Filter\+Proxy\+Model\+::set\+Parent\+Model\+Match\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{row}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\hypertarget{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a579d6e207d62ebf98989eb191acfde72}{}\label{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a579d6e207d62ebf98989eb191acfde72}
+
+
+Set row of parent model for which filter must match. 
+
+If row is out of bound, filter will allways evaluate false, and this proxy model will present no data.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape row} must be $>$= -\/1 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_item_model_1_1_relation_filter_proxy_model_a55c2fc2383af03d01ef92e7eb4ddc426}{set\+Filter()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 126 of file Relation\+Filter\+Proxy\+Model.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Filter\+Proxy\+Model.\+h\item 
+libs/\+Item\+Model/src/\+Mdt/\+Item\+Model/Relation\+Filter\+Proxy\+Model.\+cpp\end{DoxyCompactItemize}
