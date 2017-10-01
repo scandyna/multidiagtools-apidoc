@@ -15,6 +15,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -84,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_mdt.html">Mdt</a></li><li class="navelem"><b>DeployUtils</b></li><li class="navelem"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_mdt.html">Mdt</a></li><li class="navelem"><a class="el" href="namespace_mdt_1_1_deploy_utils.html">DeployUtils</a></li><li class="navelem"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -103,8 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad9df7f4a011f6053ae40ae0d5f139c23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#ad9df7f4a011f6053ae40ae0d5f139c23">LibraryVersion</a> ()=default</td></tr>
-<tr class="memdesc:ad9df7f4a011f6053ae40ae0d5f139c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a null version.  <a href="#ad9df7f4a011f6053ae40ae0d5f139c23">More...</a><br /></td></tr>
+<tr class="memitem:ad9df7f4a011f6053ae40ae0d5f139c23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9df7f4a011f6053ae40ae0d5f139c23"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#ad9df7f4a011f6053ae40ae0d5f139c23">LibraryVersion</a> ()=default</td></tr>
+<tr class="memdesc:ad9df7f4a011f6053ae40ae0d5f139c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a null version. <br /></td></tr>
 <tr class="separator:ad9df7f4a011f6053ae40ae0d5f139c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94dd31adbe68dba547d67c0956669989"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a94dd31adbe68dba547d67c0956669989">LibraryVersion</a> (qint8 <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a12ad69de5e906500584d7c6f84c1f4b3">versionMajor</a>, qint8 <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a5974023e15b6810679f88ed1c0f8cd89">versionMinor</a>=-1, qint8 <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a28dd254e9f168d136f8938d6f8860e08">versionPatch</a>=-1)</td></tr>
 <tr class="memdesc:a94dd31adbe68dba547d67c0956669989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a library version.  <a href="#a94dd31adbe68dba547d67c0956669989">More...</a><br /></td></tr>
@@ -115,32 +117,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaac2f9f67caca950957270512ddff372"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#aaac2f9f67caca950957270512ddff372">LibraryVersion</a> (const QStringRef &amp;version)</td></tr>
 <tr class="memdesc:aaac2f9f67caca950957270512ddff372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a library version from a version string.  <a href="#aaac2f9f67caca950957270512ddff372">More...</a><br /></td></tr>
 <tr class="separator:aaac2f9f67caca950957270512ddff372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bb3b5c62f995a638b2470523954cfd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a1bb3b5c62f995a638b2470523954cfd3">LibraryVersion</a> (const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;)=default</td></tr>
-<tr class="memdesc:a1bb3b5c62f995a638b2470523954cfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy construct a version from a other.  <a href="#a1bb3b5c62f995a638b2470523954cfd3">More...</a><br /></td></tr>
+<tr class="memitem:a1bb3b5c62f995a638b2470523954cfd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bb3b5c62f995a638b2470523954cfd3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a1bb3b5c62f995a638b2470523954cfd3">LibraryVersion</a> (const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;)=default</td></tr>
+<tr class="memdesc:a1bb3b5c62f995a638b2470523954cfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy construct a version from a other. <br /></td></tr>
 <tr class="separator:a1bb3b5c62f995a638b2470523954cfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b675ac2b9536b17b6589cf022fb7d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a94b675ac2b9536b17b6589cf022fb7d1">operator=</a> (const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;)=default</td></tr>
-<tr class="memdesc:a94b675ac2b9536b17b6589cf022fb7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assign to this version from a other.  <a href="#a94b675ac2b9536b17b6589cf022fb7d1">More...</a><br /></td></tr>
+<tr class="memitem:a94b675ac2b9536b17b6589cf022fb7d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94b675ac2b9536b17b6589cf022fb7d1"></a>
+<a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a94b675ac2b9536b17b6589cf022fb7d1">operator=</a> (const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;)=default</td></tr>
+<tr class="memdesc:a94b675ac2b9536b17b6589cf022fb7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assign to this version from a other. <br /></td></tr>
 <tr class="separator:a94b675ac2b9536b17b6589cf022fb7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a782eb42a7da0506c7d1a37f659b46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#ac7a782eb42a7da0506c7d1a37f659b46">LibraryVersion</a> (<a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&amp;)=default</td></tr>
-<tr class="memdesc:ac7a782eb42a7da0506c7d1a37f659b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move construct a version from a other.  <a href="#ac7a782eb42a7da0506c7d1a37f659b46">More...</a><br /></td></tr>
+<tr class="memitem:ac7a782eb42a7da0506c7d1a37f659b46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7a782eb42a7da0506c7d1a37f659b46"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#ac7a782eb42a7da0506c7d1a37f659b46">LibraryVersion</a> (<a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:ac7a782eb42a7da0506c7d1a37f659b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move construct a version from a other. <br /></td></tr>
 <tr class="separator:ac7a782eb42a7da0506c7d1a37f659b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a225f6ffcbb1069fbc2d9d29327903568"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a225f6ffcbb1069fbc2d9d29327903568">operator=</a> (<a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&amp;)=default</td></tr>
-<tr class="memdesc:a225f6ffcbb1069fbc2d9d29327903568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign to this version from a other.  <a href="#a225f6ffcbb1069fbc2d9d29327903568">More...</a><br /></td></tr>
+<tr class="memitem:a225f6ffcbb1069fbc2d9d29327903568"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a225f6ffcbb1069fbc2d9d29327903568"></a>
+<a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a225f6ffcbb1069fbc2d9d29327903568">operator=</a> (<a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&amp;)=default</td></tr>
+<tr class="memdesc:a225f6ffcbb1069fbc2d9d29327903568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assign to this version from a other. <br /></td></tr>
 <tr class="separator:a225f6ffcbb1069fbc2d9d29327903568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4ee196a0e36a20e968f169aeeb0a3f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a7e4ee196a0e36a20e968f169aeeb0a3f">isNull</a> () const </td></tr>
-<tr class="memdesc:a7e4ee196a0e36a20e968f169aeeb0a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check is this library version is null.  <a href="#a7e4ee196a0e36a20e968f169aeeb0a3f">More...</a><br /></td></tr>
+<tr class="memitem:a7e4ee196a0e36a20e968f169aeeb0a3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e4ee196a0e36a20e968f169aeeb0a3f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a7e4ee196a0e36a20e968f169aeeb0a3f">isNull</a> () const </td></tr>
+<tr class="memdesc:a7e4ee196a0e36a20e968f169aeeb0a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check is this library version is null. <br /></td></tr>
 <tr class="separator:a7e4ee196a0e36a20e968f169aeeb0a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ad69de5e906500584d7c6f84c1f4b3"><td class="memItemLeft" align="right" valign="top">qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a12ad69de5e906500584d7c6f84c1f4b3">versionMajor</a> () const </td></tr>
-<tr class="memdesc:a12ad69de5e906500584d7c6f84c1f4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get version major.  <a href="#a12ad69de5e906500584d7c6f84c1f4b3">More...</a><br /></td></tr>
+<tr class="memitem:a12ad69de5e906500584d7c6f84c1f4b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12ad69de5e906500584d7c6f84c1f4b3"></a>
+qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a12ad69de5e906500584d7c6f84c1f4b3">versionMajor</a> () const </td></tr>
+<tr class="memdesc:a12ad69de5e906500584d7c6f84c1f4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get version major. <br /></td></tr>
 <tr class="separator:a12ad69de5e906500584d7c6f84c1f4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5974023e15b6810679f88ed1c0f8cd89"><td class="memItemLeft" align="right" valign="top">qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a5974023e15b6810679f88ed1c0f8cd89">versionMinor</a> () const </td></tr>
-<tr class="memdesc:a5974023e15b6810679f88ed1c0f8cd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get version minor.  <a href="#a5974023e15b6810679f88ed1c0f8cd89">More...</a><br /></td></tr>
+<tr class="memitem:a5974023e15b6810679f88ed1c0f8cd89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5974023e15b6810679f88ed1c0f8cd89"></a>
+qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a5974023e15b6810679f88ed1c0f8cd89">versionMinor</a> () const </td></tr>
+<tr class="memdesc:a5974023e15b6810679f88ed1c0f8cd89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get version minor. <br /></td></tr>
 <tr class="separator:a5974023e15b6810679f88ed1c0f8cd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28dd254e9f168d136f8938d6f8860e08"><td class="memItemLeft" align="right" valign="top">qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a28dd254e9f168d136f8938d6f8860e08">versionPatch</a> () const </td></tr>
-<tr class="memdesc:a28dd254e9f168d136f8938d6f8860e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get version patch.  <a href="#a28dd254e9f168d136f8938d6f8860e08">More...</a><br /></td></tr>
+<tr class="memitem:a28dd254e9f168d136f8938d6f8860e08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28dd254e9f168d136f8938d6f8860e08"></a>
+qint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a28dd254e9f168d136f8938d6f8860e08">versionPatch</a> () const </td></tr>
+<tr class="memdesc:a28dd254e9f168d136f8938d6f8860e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get version patch. <br /></td></tr>
 <tr class="separator:a28dd254e9f168d136f8938d6f8860e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb89e24a243d660084fdd618d7c3054"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a3fb89e24a243d660084fdd618d7c3054">toString</a> () const </td></tr>
-<tr class="memdesc:a3fb89e24a243d660084fdd618d7c3054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of this library version.  <a href="#a3fb89e24a243d660084fdd618d7c3054">More...</a><br /></td></tr>
+<tr class="memitem:a3fb89e24a243d660084fdd618d7c3054"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fb89e24a243d660084fdd618d7c3054"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html#a3fb89e24a243d660084fdd618d7c3054">toString</a> () const </td></tr>
+<tr class="memdesc:a3fb89e24a243d660084fdd618d7c3054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of this library version. <br /></td></tr>
 <tr class="separator:a3fb89e24a243d660084fdd618d7c3054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -148,31 +159,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_library_version_8h_source.html#l00032">32</a> of file <a class="el" href="_library_version_8h_source.html">LibraryVersion.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad9df7f4a011f6053ae40ae0d5f139c23"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mdt::DeployUtils::LibraryVersion::LibraryVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a null version. </p>
-
-</div>
-</div>
 <a class="anchor" id="a94dd31adbe68dba547d67c0956669989"></a>
 <div class="memitem">
 <div class="memproto">
@@ -263,238 +249,6 @@ if versionPatch is &gt;=0 , versionMinor must also be &gt;= 0 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a1bb3b5c62f995a638b2470523954cfd3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mdt::DeployUtils::LibraryVersion::LibraryVersion </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copy construct a version from a other. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac7a782eb42a7da0506c7d1a37f659b46"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mdt::DeployUtils::LibraryVersion::LibraryVersion </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Move construct a version from a other. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7e4ee196a0e36a20e968f169aeeb0a3f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Mdt::DeployUtils::LibraryVersion::isNull </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check is this library version is null. </p>
-
-<p>Definition at line <a class="el" href="_library_version_8h_source.html#l00083">83</a> of file <a class="el" href="_library_version_8h_source.html">LibraryVersion.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a94b675ac2b9536b17b6589cf022fb7d1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a>&amp; Mdt::DeployUtils::LibraryVersion::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copy assign to this version from a other. </p>
-
-</div>
-</div>
-<a class="anchor" id="a225f6ffcbb1069fbc2d9d29327903568"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a>&amp; Mdt::DeployUtils::LibraryVersion::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_version.html">LibraryVersion</a> &amp;&amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Move assign to this version from a other. </p>
-
-</div>
-</div>
-<a class="anchor" id="a3fb89e24a243d660084fdd618d7c3054"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString Mdt::DeployUtils::LibraryVersion::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a string representation of this library version. </p>
-
-<p>Definition at line <a class="el" href="_library_version_8cpp_source.html#l00070">70</a> of file <a class="el" href="_library_version_8cpp_source.html">LibraryVersion.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a12ad69de5e906500584d7c6f84c1f4b3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">qint8 Mdt::DeployUtils::LibraryVersion::versionMajor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get version major. </p>
-
-<p>Definition at line <a class="el" href="_library_version_8h_source.html#l00090">90</a> of file <a class="el" href="_library_version_8h_source.html">LibraryVersion.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5974023e15b6810679f88ed1c0f8cd89"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">qint8 Mdt::DeployUtils::LibraryVersion::versionMinor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get version minor. </p>
-
-<p>Definition at line <a class="el" href="_library_version_8h_source.html#l00097">97</a> of file <a class="el" href="_library_version_8h_source.html">LibraryVersion.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a28dd254e9f168d136f8938d6f8860e08"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">qint8 Mdt::DeployUtils::LibraryVersion::versionPatch </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get version patch. </p>
-
-<p>Definition at line <a class="el" href="_library_version_8h_source.html#l00104">104</a> of file <a class="el" href="_library_version_8h_source.html">LibraryVersion.h</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>libs/DeployUtils_Core/src/Mdt/DeployUtils/<a class="el" href="_library_version_8h_source.html">LibraryVersion.h</a></li>
 <li>libs/DeployUtils_Core/src/Mdt/DeployUtils/<a class="el" href="_library_version_8cpp_source.html">LibraryVersion.cpp</a></li>
@@ -502,7 +256,7 @@ if versionPatch is &gt;=0 , versionMinor must also be &gt;= 0 </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2017 13:08:16 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 1 2017 10:14:56 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

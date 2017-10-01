@@ -3,6 +3,7 @@ var searchData=
   ['searchinsystempaths',['SearchInSystemPaths',['../class_mdt_1_1_deploy_utils_1_1_library.html#ab9f58dba8290dd1882a21d73cc7c10d0',1,'Mdt::DeployUtils::Library']]],
   ['searchpathlist',['SearchPathList',['../class_mdt_1_1_deploy_utils_1_1_search_path_list.html',1,'Mdt::DeployUtils']]],
   ['sendmessage',['sendMessage',['../class_qt_single_core_application.html#a07493d0807b216ca870adc6d40f856b0',1,'QtSingleCoreApplication::sendMessage()'],['../class_qt_single_application.html#a0e2f3900f0290913c738ec6b4b959922',1,'QtSingleApplication::sendMessage()']]],
+  ['sensors',['Sensors',['../namespace_mdt_1_1_deploy_utils.html#af64a196dd2a56ed4930253e7fb4ed591aaf29aa178ae43211319e28f627e96590',1,'Mdt::DeployUtils']]],
   ['setabsolutefilepath',['setAbsoluteFilePath',['../class_mdt_1_1_deploy_utils_1_1_library_info.html#a0b7af709bcbd3c3b7f22e954d11ff812',1,'Mdt::DeployUtils::LibraryInfo']]],
   ['setactivationwindow',['setActivationWindow',['../class_qt_single_application.html#acb5347f6dc6822dbe4d6a78804043528',1,'QtSingleApplication']]],
   ['setautocommiterror',['setAutoCommitError',['../class_mdt_1_1_plain_text_1_1_file_reader.html#a3183d1d629a19353d3d0e1c2a238cc2f',1,'Mdt::PlainText::FileReader']]],
@@ -26,14 +27,16 @@ var searchData=
   ['setrootbinary',['setRootBinary',['../class_mdt_1_1_deploy_utils_1_1_library_tree.html#ab11aef58e0492638f23169073820ffac',1,'Mdt::DeployUtils::LibraryTree']]],
   ['setsource',['setSource',['../class_mdt_1_1_error.html#a785bdfbb360e3a29a465a9baeb1ac58b',1,'Mdt::Error::setSource(const QString &amp;fileName, int fileLine, const QString &amp;className, const QString &amp;functionName)'],['../class_mdt_1_1_error.html#a38d1fb6f1d17a4a3d483ea367bdcb416',1,'Mdt::Error::setSource(const QString &amp;fileName, int fileLine, const QObject *const obj, const QString &amp;functionName)'],['../class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a671b38b46afd066a71677b7cdebdc154',1,'Mdt::PlainText::CsvStringParser::setSource()'],['../struct_mdt_1_1_plain_text_1_1_file_input_iterator.html#a5c8774871108780cc0c746a2b37163c5',1,'Mdt::PlainText::FileInputIterator::setSource()'],['../class_mdt_1_1_plain_text_1_1_file_input_iterator_shared_data.html#afdd5aec3bbdda3e55e11bf8a09c2fbff',1,'Mdt::PlainText::FileInputIteratorSharedData::setSource()']]],
   ['setupparser',['setupParser',['../class_mdt_1_1_plain_text_1_1_csv_parser_template.html#a95c35ee9721efec0aedcf8b18b310001',1,'Mdt::PlainText::CsvParserTemplate']]],
-  ['singleapplication',['SingleApplication',['../class_mdt_1_1_single_application.html#a481cd7bad65a75dd891ca33cb80c82c5',1,'Mdt::SingleApplication']]],
   ['singleapplication',['SingleApplication',['../class_mdt_1_1_single_application.html',1,'Mdt']]],
+  ['singleapplication',['SingleApplication',['../class_mdt_1_1_single_application.html#a481cd7bad65a75dd891ca33cb80c82c5',1,'Mdt::SingleApplication']]],
   ['singlecoreapplication',['SingleCoreApplication',['../class_mdt_1_1_single_core_application.html#a18493beac6e321df7852571ed4a55205',1,'Mdt::SingleCoreApplication']]],
   ['singlecoreapplication',['SingleCoreApplication',['../class_mdt_1_1_single_core_application.html',1,'Mdt']]],
   ['size_5ftype',['size_type',['../class_mdt_1_1_plain_text_1_1_record_list_template.html#ac5b714fe2e3a5361f343ee1b9a49546b',1,'Mdt::PlainText::RecordListTemplate::size_type()'],['../class_mdt_1_1_plain_text_1_1_record_template.html#ad2fed94c3d0dc5b0c3e28db212441a27',1,'Mdt::PlainText::RecordTemplate::size_type()']]],
+  ['sql',['Sql',['../namespace_mdt_1_1_deploy_utils.html#af64a196dd2a56ed4930253e7fb4ed591a139c4883eb01e5d23c9ff0e44ff29dda',1,'Mdt::DeployUtils']]],
   ['stackerror',['stackError',['../class_mdt_1_1_error.html#a4133276f217c5a6dac890a18059607cd',1,'Mdt::Error']]],
   ['standardpaths',['StandardPaths',['../class_mdt_1_1_standard_paths.html',1,'Mdt']]],
   ['stringconstiterator',['StringConstIterator',['../struct_mdt_1_1_plain_text_1_1_string_const_iterator.html#aebc75afef8accb5faf0dc33d065f898f',1,'Mdt::PlainText::StringConstIterator::StringConstIterator()'],['../struct_mdt_1_1_plain_text_1_1_string_const_iterator.html#ae2cad12d2b7751eaf0a00a69678275ec',1,'Mdt::PlainText::StringConstIterator::StringConstIterator(QString::const_iterator it)']]],
   ['stringconstiterator',['StringConstIterator',['../struct_mdt_1_1_plain_text_1_1_string_const_iterator.html',1,'Mdt::PlainText']]],
-  ['stringdata',['stringData',['../class_mdt_1_1_plain_text_1_1_file_reader.html#a9453c731da657581d58188106461e32b',1,'Mdt::PlainText::FileReader']]]
+  ['stringdata',['stringData',['../class_mdt_1_1_plain_text_1_1_file_reader.html#a9453c731da657581d58188106461e32b',1,'Mdt::PlainText::FileReader']]],
+  ['svg',['Svg',['../namespace_mdt_1_1_deploy_utils.html#af64a196dd2a56ed4930253e7fb4ed591a1a9a612a14f347adfbf122cc7c0e985b',1,'Mdt::DeployUtils']]]
 ];

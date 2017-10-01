@@ -1,0 +1,22 @@
+In the main() function of a Mdt/\+Qt based application, a application class should be instanciated.
+
+To reduce dependencies, several application classes exists\+: \tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*3{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Class }&{\bf Description }&{\bf Main dependencies  }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}{\bf Class }&{\bf Description }&{\bf Main dependencies  }\\\cline{1-3}
+\endhead
+Q\+Core\+Application &Can be used for non G\+UI applications that needs a event loop. &Qt\+Core \\\cline{1-3}
+Q\+Gui\+Application &Can be used for G\+UI application (like Qt\+Quick). &Qt\+Gui \\\cline{1-3}
+Q\+Application &Can be used for Widgets based G\+UI applications. &Qt\+Widgets \\\cline{1-3}
+\hyperlink{class_qt_single_core_application}{Qt\+Single\+Core\+Application} &Like Q\+Core\+Application, also provides support for single instance of a application. &Qt\+Core, Qt\+Network \\\cline{1-3}
+\hyperlink{class_qt_single_application}{Qt\+Single\+Application} &Like Q\+Application, also provides support for single instance of a application. &Qt\+Widgets, Qt\+Network \\\cline{1-3}
+\hyperlink{class_mdt_1_1_core_application}{Mdt\+::\+Core\+Application} &Like Q\+Core\+Application, also provide some additions, like file logging initialization. &Qt\+Core \\\cline{1-3}
+\hyperlink{class_mdt_1_1_single_core_application}{Mdt\+::\+Single\+Core\+Application} &Like \hyperlink{class_qt_single_core_application}{Qt\+Single\+Core\+Application}, also provide some additions, like file logging initialization. &Qt\+Core, Qt\+Network \\\cline{1-3}
+\hyperlink{class_mdt_1_1_application}{Mdt\+::\+Application} &Like Q\+Application, also provide some additions, like file logging initialization. &Qt\+Widgets \\\cline{1-3}
+\hyperlink{class_mdt_1_1_single_application}{Mdt\+::\+Single\+Application} &Like \hyperlink{class_qt_single_application}{Qt\+Single\+Application}, also provide some additions, like file logging initialization. &Qt\+Widgets, Qt\+Network \\\cline{1-3}
+\end{longtabu}

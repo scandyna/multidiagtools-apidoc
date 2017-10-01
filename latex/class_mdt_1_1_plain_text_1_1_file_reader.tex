@@ -13,11 +13,14 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_ae382363945e70dd800d5a9a41442795f}{read\+File} (const Q\+String \&file\+Path, const Q\+Byte\+Array \&encoding, qint64 max\+Size, \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_ad9b4b7e046f899c9d13e19434d68ef10}{Eol\+Mode} eol\+Mode=\hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_ad9b4b7e046f899c9d13e19434d68ef10a80c0cede59c86d5daac618c3efd559cd}{Text\+Mode})
+bool \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_ae382363945e70dd800d5a9a41442795f}{read\+File} (const Q\+String \&file\+Path, const Q\+Byte\+Array \&encoding, qint64 max\+Size, \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_ad9b4b7e046f899c9d13e19434d68ef10}{Eol\+Mode} eol\+Mode=\hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_ad9b4b7e046f899c9d13e19434d68ef10a80c0cede59c86d5daac618c3efd559cd}{Text\+Mode})\hypertarget{class_mdt_1_1_plain_text_1_1_file_reader_ae382363945e70dd800d5a9a41442795f}{}\label{class_mdt_1_1_plain_text_1_1_file_reader_ae382363945e70dd800d5a9a41442795f}
+
 \begin{DoxyCompactList}\small\item\em Read a entire file. \end{DoxyCompactList}\item 
-Q\+String \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_a9453c731da657581d58188106461e32b}{string\+Data} () const 
+Q\+String \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_a9453c731da657581d58188106461e32b}{string\+Data} () const \hypertarget{class_mdt_1_1_plain_text_1_1_file_reader_a9453c731da657581d58188106461e32b}{}\label{class_mdt_1_1_plain_text_1_1_file_reader_a9453c731da657581d58188106461e32b}
+
 \begin{DoxyCompactList}\small\item\em Get string data. \end{DoxyCompactList}\item 
-\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_aa74ba00e8fad5c4834dc63a354416192}{last\+Error} () const 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_aa74ba00e8fad5c4834dc63a354416192}{last\+Error} () const \hypertarget{class_mdt_1_1_plain_text_1_1_file_reader_aa74ba00e8fad5c4834dc63a354416192}{}\label{class_mdt_1_1_plain_text_1_1_file_reader_aa74ba00e8fad5c4834dc63a354416192}
+
 \begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\item 
 void \hyperlink{class_mdt_1_1_plain_text_1_1_file_reader_a3183d1d629a19353d3d0e1c2a238cc2f}{set\+Auto\+Commit\+Error} (bool auto\+Commit)
 \begin{DoxyCompactList}\small\item\em Set auto commit of errors. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -77,39 +80,6 @@ Definition at line 62 of file File\+Reader.\+h.
 
 
 \subsection{Member Function Documentation}
-\index{Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}!last\+Error@{last\+Error}}
-\index{last\+Error@{last\+Error}!Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}}
-\subsubsection[{\texorpdfstring{last\+Error() const }{lastError() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Error} Mdt\+::\+Plain\+Text\+::\+File\+Reader\+::last\+Error (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_reader_aa74ba00e8fad5c4834dc63a354416192}{}\label{class_mdt_1_1_plain_text_1_1_file_reader_aa74ba00e8fad5c4834dc63a354416192}
-
-
-Get last error. 
-
-
-
-Definition at line 81 of file File\+Reader.\+h.
-
-\index{Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}!read\+File@{read\+File}}
-\index{read\+File@{read\+File}!Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}}
-\subsubsection[{\texorpdfstring{read\+File(const Q\+String \&file\+Path, const Q\+Byte\+Array \&encoding, qint64 max\+Size, Eol\+Mode eol\+Mode=\+Text\+Mode)}{readFile(const QString &filePath, const QByteArray &encoding, qint64 maxSize, EolMode eolMode=TextMode)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Plain\+Text\+::\+File\+Reader\+::read\+File (
-\begin{DoxyParamCaption}
-\item[{const Q\+String \&}]{file\+Path, }
-\item[{const Q\+Byte\+Array \&}]{encoding, }
-\item[{qint64}]{max\+Size, }
-\item[{{\bf File\+Reader\+::\+Eol\+Mode}}]{eol\+Mode = {\ttfamily {\bf Text\+Mode}}}
-\end{DoxyParamCaption}
-)}\hypertarget{class_mdt_1_1_plain_text_1_1_file_reader_ae382363945e70dd800d5a9a41442795f}{}\label{class_mdt_1_1_plain_text_1_1_file_reader_ae382363945e70dd800d5a9a41442795f}
-
-
-Read a entire file. 
-
-
-
-Definition at line 33 of file File\+Reader.\+cpp.
-
 \index{Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}!set\+Auto\+Commit\+Error@{set\+Auto\+Commit\+Error}}
 \index{set\+Auto\+Commit\+Error@{set\+Auto\+Commit\+Error}!Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}}
 \subsubsection[{\texorpdfstring{set\+Auto\+Commit\+Error(bool auto\+Commit)}{setAutoCommitError(bool autoCommit)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Plain\+Text\+::\+File\+Reader\+::set\+Auto\+Commit\+Error (
@@ -129,21 +99,6 @@ If {\itshape auto\+Commit} is true, a error that occurs will be committed, else 
 
 
 Definition at line 108 of file File\+Reader.\+cpp.
-
-\index{Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}!string\+Data@{string\+Data}}
-\index{string\+Data@{string\+Data}!Mdt\+::\+Plain\+Text\+::\+File\+Reader@{Mdt\+::\+Plain\+Text\+::\+File\+Reader}}
-\subsubsection[{\texorpdfstring{string\+Data() const }{stringData() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Plain\+Text\+::\+File\+Reader\+::string\+Data (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_plain_text_1_1_file_reader_a9453c731da657581d58188106461e32b}{}\label{class_mdt_1_1_plain_text_1_1_file_reader_a9453c731da657581d58188106461e32b}
-
-
-Get string data. 
-
-
-
-Definition at line 74 of file File\+Reader.\+h.
 
 
 

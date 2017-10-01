@@ -15,6 +15,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -103,8 +104,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a6afeedd8f074afe78fd5f161a06140"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a5a6afeedd8f074afe78fd5f161a06140">CsvStringParser</a> ()</td></tr>
-<tr class="memdesc:a5a6afeedd8f074afe78fd5f161a06140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a5a6afeedd8f074afe78fd5f161a06140">More...</a><br /></td></tr>
+<tr class="memitem:a5a6afeedd8f074afe78fd5f161a06140"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a6afeedd8f074afe78fd5f161a06140"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a5a6afeedd8f074afe78fd5f161a06140">CsvStringParser</a> ()</td></tr>
+<tr class="memdesc:a5a6afeedd8f074afe78fd5f161a06140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:a5a6afeedd8f074afe78fd5f161a06140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30af818bc2d40ac11e29562e2dd19108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a30af818bc2d40ac11e29562e2dd19108">setCsvSettings</a> (const <a class="el" href="class_mdt_1_1_plain_text_1_1_csv_parser_settings.html">CsvParserSettings</a> &amp;settings)</td></tr>
 <tr class="memdesc:a30af818bc2d40ac11e29562e2dd19108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CSV settings.  <a href="#a30af818bc2d40ac11e29562e2dd19108">More...</a><br /></td></tr>
@@ -112,8 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a671b38b46afd066a71677b7cdebdc154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a671b38b46afd066a71677b7cdebdc154">setSource</a> (const QString &amp;source)</td></tr>
 <tr class="memdesc:a671b38b46afd066a71677b7cdebdc154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CSV source string.  <a href="#a671b38b46afd066a71677b7cdebdc154">More...</a><br /></td></tr>
 <tr class="separator:a671b38b46afd066a71677b7cdebdc154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81d09c21ee3fdbc499e584d799e3a3ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a81d09c21ee3fdbc499e584d799e3a3ab">atEnd</a> () const </td></tr>
-<tr class="memdesc:a81d09c21ee3fdbc499e584d799e3a3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if parser is at end of the source.  <a href="#a81d09c21ee3fdbc499e584d799e3a3ab">More...</a><br /></td></tr>
+<tr class="memitem:a81d09c21ee3fdbc499e584d799e3a3ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81d09c21ee3fdbc499e584d799e3a3ab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a81d09c21ee3fdbc499e584d799e3a3ab">atEnd</a> () const </td></tr>
+<tr class="memdesc:a81d09c21ee3fdbc499e584d799e3a3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if parser is at end of the source. <br /></td></tr>
 <tr class="separator:a81d09c21ee3fdbc499e584d799e3a3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4089cbf5a42d66903247c4bd5633e3fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mdt_1_1_expected.html">Mdt::Expected</a>&lt; StringRecord &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_plain_text_1_1_csv_string_parser.html#a4089cbf5a42d66903247c4bd5633e3fb">readLine</a> ()</td></tr>
 <tr class="memdesc:a4089cbf5a42d66903247c4bd5633e3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one line.  <a href="#a4089cbf5a42d66903247c4bd5633e3fb">More...</a><br /></td></tr>
@@ -132,46 +135,7 @@ Public Member Functions</h2></td></tr>
 </dd></dl>
 
 <p>Definition at line <a class="el" href="_csv_string_parser_8h_source.html#l00046">46</a> of file <a class="el" href="_csv_string_parser_8h_source.html">CsvStringParser.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5a6afeedd8f074afe78fd5f161a06140"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mdt::PlainText::CsvStringParser::CsvStringParser </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-
-<p>Definition at line <a class="el" href="_csv_string_parser_8cpp_source.html#l00026">26</a> of file <a class="el" href="_csv_string_parser_8cpp_source.html">CsvStringParser.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a81d09c21ee3fdbc499e584d799e3a3ab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Mdt::PlainText::CsvStringParser::atEnd </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if parser is at end of the source. </p>
-
-<p>Definition at line <a class="el" href="_csv_string_parser_8cpp_source.html#l00048">48</a> of file <a class="el" href="_csv_string_parser_8cpp_source.html">CsvStringParser.cpp</a>.</p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9bed7245aaadf05eccc231df11a7a9e1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +229,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2017 13:08:16 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 1 2017 10:14:56 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

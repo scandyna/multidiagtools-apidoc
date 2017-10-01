@@ -23,13 +23,16 @@ Inherits Q\+Object.
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_a0c576f08e6aa61164cd9d5c8faad475c}{get\+Qt\+Libraries} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries)
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_a0c576f08e6aa61164cd9d5c8faad475c}{get\+Qt\+Libraries} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries)\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_a0c576f08e6aa61164cd9d5c8faad475c}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_a0c576f08e6aa61164cd9d5c8faad475c}
+
 \begin{DoxyCompactList}\small\item\em Get Qt libraries out of {\itshape libraries}. \end{DoxyCompactList}\item 
-static Qt\+Module \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}{module} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} \&qt\+Library)
+static \hyperlink{namespace_mdt_1_1_deploy_utils_af64a196dd2a56ed4930253e7fb4ed591}{Qt\+Module} \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}{module} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} \&qt\+Library)\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}
+
 \begin{DoxyCompactList}\small\item\em Get the module to which {\itshape qt\+Library} is part of. \end{DoxyCompactList}\item 
-static \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_module_list}{Qt\+Module\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_ac7fd0c6a555df4f4ca7361e36f1a4ae4}{get\+Modules} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&qt\+Libraries)
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_module_list}{Qt\+Module\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_ac7fd0c6a555df4f4ca7361e36f1a4ae4}{get\+Modules} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&qt\+Libraries)\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_ac7fd0c6a555df4f4ca7361e36f1a4ae4}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_ac7fd0c6a555df4f4ca7361e36f1a4ae4}
+
 \begin{DoxyCompactList}\small\item\em Get a list that contains modules for {\itshape qt\+Libraries}. \end{DoxyCompactList}\item 
-static Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_a50c96c2d0b892da7c41d50ca627191bd}{get\+Plugins\+Directories} (Qt\+Module \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}{module})
+static Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_a50c96c2d0b892da7c41d50ca627191bd}{get\+Plugins\+Directories} (\hyperlink{namespace_mdt_1_1_deploy_utils_af64a196dd2a56ed4930253e7fb4ed591}{Qt\+Module} \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}{module})
 \begin{DoxyCompactList}\small\item\em Get plugins directories for {\itshape module}. \end{DoxyCompactList}\item 
 static Q\+String\+List \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library_ab555321caadc47fcb9458ba466287702}{get\+Plugins\+Directories} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_module_list}{Qt\+Module\+List} \&modules)
 \begin{DoxyCompactList}\small\item\em Get plugins directories for {\itshape modules}. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -80,26 +83,11 @@ Will first deduce Qt plugins directories attached to {\itshape qt\+Library} usin
 
 Definition at line 36 of file Qt\+Library.\+cpp.
 
-\index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}!get\+Modules@{get\+Modules}}
-\index{get\+Modules@{get\+Modules}!Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}}
-\subsubsection[{\texorpdfstring{get\+Modules(const Library\+Info\+List \&qt\+Libraries)}{getModules(const LibraryInfoList &qtLibraries)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Qt\+Module\+List} Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library\+::get\+Modules (
-\begin{DoxyParamCaption}
-\item[{const {\bf Library\+Info\+List} \&}]{qt\+Libraries}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_ac7fd0c6a555df4f4ca7361e36f1a4ae4}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_ac7fd0c6a555df4f4ca7361e36f1a4ae4}
-
-
-Get a list that contains modules for {\itshape qt\+Libraries}. 
-
-
-
-Definition at line 122 of file Qt\+Library.\+cpp.
-
 \index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}!get\+Plugins\+Directories@{get\+Plugins\+Directories}}
 \index{get\+Plugins\+Directories@{get\+Plugins\+Directories}!Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}}
 \subsubsection[{\texorpdfstring{get\+Plugins\+Directories(\+Qt\+Module module)}{getPluginsDirectories(QtModule module)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String\+List Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library\+::get\+Plugins\+Directories (
 \begin{DoxyParamCaption}
-\item[{Qt\+Module}]{module}
+\item[{{\bf Qt\+Module}}]{module}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_a50c96c2d0b892da7c41d50ca627191bd}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_a50c96c2d0b892da7c41d50ca627191bd}
 
@@ -124,36 +112,6 @@ Get plugins directories for {\itshape modules}.
 Will return a list of directory names for {\itshape modules} , without any path. 
 
 Definition at line 192 of file Qt\+Library.\+cpp.
-
-\index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}!get\+Qt\+Libraries@{get\+Qt\+Libraries}}
-\index{get\+Qt\+Libraries@{get\+Qt\+Libraries}!Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}}
-\subsubsection[{\texorpdfstring{get\+Qt\+Libraries(const Library\+Info\+List \&libraries)}{getQtLibraries(const LibraryInfoList &libraries)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Library\+Info\+List} Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library\+::get\+Qt\+Libraries (
-\begin{DoxyParamCaption}
-\item[{const {\bf Library\+Info\+List} \&}]{libraries}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_a0c576f08e6aa61164cd9d5c8faad475c}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_a0c576f08e6aa61164cd9d5c8faad475c}
-
-
-Get Qt libraries out of {\itshape libraries}. 
-
-
-
-Definition at line 75 of file Qt\+Library.\+cpp.
-
-\index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}!module@{module}}
-\index{module@{module}!Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library}}
-\subsubsection[{\texorpdfstring{module(const Library\+Info \&qt\+Library)}{module(const LibraryInfo &qtLibrary)}}]{\setlength{\rightskip}{0pt plus 5cm}Qt\+Module Mdt\+::\+Deploy\+Utils\+::\+Qt\+Library\+::module (
-\begin{DoxyParamCaption}
-\item[{const {\bf Library\+Info} \&}]{qt\+Library}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_library_aa54f542e548bcab6da5e8a9696169a94}
-
-
-Get the module to which {\itshape qt\+Library} is part of. 
-
-
-
-Definition at line 84 of file Qt\+Library.\+cpp.
 
 
 

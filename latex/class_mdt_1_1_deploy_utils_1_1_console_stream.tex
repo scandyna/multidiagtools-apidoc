@@ -12,13 +12,17 @@ Used to implement \hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console}.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}{Console\+Stream} (Qt\+Msg\+Type msg\+Type, int min\+Level, int level)
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}{Console\+Stream} (Qt\+Msg\+Type msg\+Type, int min\+Level, int level)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}
+
 \begin{DoxyCompactList}\small\item\em Construct a stream. \end{DoxyCompactList}\item 
-\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}{operator$<$$<$} (const char $\ast$str)
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}{operator$<$$<$} (const char $\ast$str)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}
+
 \begin{DoxyCompactList}\small\item\em Writes {\itshape str} to the stream and returns a reference to the stream. \end{DoxyCompactList}\item 
-\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_aebf5221a69df6dfb11c0a0c666e00653}{operator$<$$<$} (const Q\+String \&str)
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_aebf5221a69df6dfb11c0a0c666e00653}{operator$<$$<$} (const Q\+String \&str)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_aebf5221a69df6dfb11c0a0c666e00653}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_aebf5221a69df6dfb11c0a0c666e00653}
+
 \begin{DoxyCompactList}\small\item\em Writes {\itshape str} to the stream and returns a reference to the stream. \end{DoxyCompactList}\item 
-\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_ae8b85dd69639169c3e60002a42f38236}{operator$<$$<$} (const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \&error)
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_ae8b85dd69639169c3e60002a42f38236}{operator$<$$<$} (const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \&error)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_ae8b85dd69639169c3e60002a42f38236}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_ae8b85dd69639169c3e60002a42f38236}
+
 \begin{DoxyCompactList}\small\item\em Writes {\itshape error} to the stream and returns a reference to the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -28,74 +32,6 @@ Used to implement \hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console}.
 This class uses Q\+Debug internally, but was designed to expose it in the public headers. This permits to use Q\+Debug for debuging, and, when finished, remove the Q\+Debug include, which permits the compiler to throw a error if we forgot a q\+Debug() somewhere. 
 
 Definition at line 46 of file Console\+Stream.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\index{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}!Console\+Stream@{Console\+Stream}}
-\index{Console\+Stream@{Console\+Stream}!Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}}
-\subsubsection[{\texorpdfstring{Console\+Stream(\+Qt\+Msg\+Type msg\+Type, int min\+Level, int level)}{ConsoleStream(QtMsgType msgType, int minLevel, int level)}}]{\setlength{\rightskip}{0pt plus 5cm}Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream\+::\+Console\+Stream (
-\begin{DoxyParamCaption}
-\item[{Qt\+Msg\+Type}]{msg\+Type, }
-\item[{int}]{min\+Level, }
-\item[{int}]{level}
-\end{DoxyParamCaption}
-)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}
-
-
-Construct a stream. 
-
-
-
-Definition at line 27 of file Console\+Stream.\+cpp.
-
-
-
-\subsection{Member Function Documentation}
-\index{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}}
-\subsubsection[{\texorpdfstring{operator$<$$<$(const char $\ast$str)}{operator<<(const char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Stream} \& Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream\+::operator$<$$<$ (
-\begin{DoxyParamCaption}
-\item[{const char $\ast$}]{str}
-\end{DoxyParamCaption}
-)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}
-
-
-Writes {\itshape str} to the stream and returns a reference to the stream. 
-
-
-
-Definition at line 36 of file Console\+Stream.\+cpp.
-
-\index{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}}
-\subsubsection[{\texorpdfstring{operator$<$$<$(const Q\+String \&str)}{operator<<(const QString &str)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Stream} \& Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream\+::operator$<$$<$ (
-\begin{DoxyParamCaption}
-\item[{const Q\+String \&}]{str}
-\end{DoxyParamCaption}
-)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_aebf5221a69df6dfb11c0a0c666e00653}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_aebf5221a69df6dfb11c0a0c666e00653}
-
-
-Writes {\itshape str} to the stream and returns a reference to the stream. 
-
-
-
-Definition at line 44 of file Console\+Stream.\+cpp.
-
-\index{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}!operator$<$$<$@{operator$<$$<$}}
-\index{operator$<$$<$@{operator$<$$<$}!Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream@{Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream}}
-\subsubsection[{\texorpdfstring{operator$<$$<$(const Mdt\+::\+Error \&error)}{operator<<(const Mdt::Error &error)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Console\+Stream} \& Mdt\+::\+Deploy\+Utils\+::\+Console\+Stream\+::operator$<$$<$ (
-\begin{DoxyParamCaption}
-\item[{const {\bf Mdt\+::\+Error} \&}]{error}
-\end{DoxyParamCaption}
-)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_ae8b85dd69639169c3e60002a42f38236}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_ae8b85dd69639169c3e60002a42f38236}
-
-
-Writes {\itshape error} to the stream and returns a reference to the stream. 
-
-
-
-Definition at line 53 of file Console\+Stream.\+cpp.
 
 
 

@@ -19,8 +19,9 @@ var searchData=
   ['executeinmainthread',['ExecuteInMainThread',['../class_mdt_1_1_error_logger_1_1_logger.html#ab6d6198b43b2bb94cede114ec67b781caac54433e68e1f766627c9fcc87f7b818',1,'Mdt::ErrorLogger::Logger']]],
   ['executeinseparatethread',['ExecuteInSeparateThread',['../class_mdt_1_1_error_logger_1_1_logger.html#ab6d6198b43b2bb94cede114ec67b781caf7dfdc36418cac0a65cea2cde2a11fd7',1,'Mdt::ErrorLogger::Logger']]],
   ['executionthread',['ExecutionThread',['../class_mdt_1_1_error_logger_1_1_logger.html#ab6d6198b43b2bb94cede114ec67b781c',1,'Mdt::ErrorLogger::Logger']]],
-  ['expected',['Expected',['../class_mdt_1_1_expected.html',1,'Mdt']]],
   ['expected',['Expected',['../class_mdt_1_1_expected.html#ab271cafc564b8dba7c5737a8e6f78a8d',1,'Mdt::Expected::Expected()'],['../class_mdt_1_1_expected.html#a5046d26152b32d7184d756f00325cd60',1,'Mdt::Expected::Expected(const T &amp;v)'],['../class_mdt_1_1_expected.html#abf1fd00a7d5508ab2030f729105de12f',1,'Mdt::Expected::Expected(T &amp;&amp;v)'],['../class_mdt_1_1_expected.html#a98be29378d9ee4d855b041c5a347d967',1,'Mdt::Expected::Expected(const Mdt::Error &amp;e)'],['../class_mdt_1_1_expected.html#a63cf8d36dfb4657d39fcfb614f575ab4',1,'Mdt::Expected::Expected(Mdt::Error &amp;&amp;e)'],['../class_mdt_1_1_expected.html#a74ad44cec43f7cae5cd73388283818e3',1,'Mdt::Expected::Expected(const Expected &amp;other)'],['../class_mdt_1_1_expected.html#a8d14f0fbfb0c4e1acbfbae539f797aa8',1,'Mdt::Expected::Expected(Expected &amp;&amp;other)']]],
+  ['expected',['Expected',['../class_mdt_1_1_expected.html',1,'Mdt']]],
   ['expression',['expression',['../struct_mdt_1_1_filter_expression_1_1_like_expression_terminal.html#a412c52c77b9901dc8fc1e59a42df568b',1,'Mdt::FilterExpression::LikeExpressionTerminal']]],
-  ['extension',['extension',['../class_mdt_1_1_deploy_utils_1_1_library_name.html#a34442b11c8cd11ceb8f6903d473dcd2d',1,'Mdt::DeployUtils::LibraryName']]]
+  ['extension',['extension',['../class_mdt_1_1_deploy_utils_1_1_library_name.html#a34442b11c8cd11ceb8f6903d473dcd2d',1,'Mdt::DeployUtils::LibraryName']]],
+  ['error_20passing_20and_20logging',['Error passing and logging',['../libs_Error.html',1,'']]]
 ];

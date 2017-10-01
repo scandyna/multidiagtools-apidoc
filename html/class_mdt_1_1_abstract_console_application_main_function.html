@@ -15,6 +15,7 @@
   $(document).ready(function() { init_search(); });
 </script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra_styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -113,11 +114,13 @@ Public Slots</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec80aaecedd4a2d6696878b96cfc9b40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_abstract_console_application_main_function.html#aec80aaecedd4a2d6696878b96cfc9b40">AbstractConsoleApplicationMainFunction</a> (QObject *parent=nullptr)</td></tr>
-<tr class="memdesc:aec80aaecedd4a2d6696878b96cfc9b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aec80aaecedd4a2d6696878b96cfc9b40">More...</a><br /></td></tr>
+<tr class="memitem:aec80aaecedd4a2d6696878b96cfc9b40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec80aaecedd4a2d6696878b96cfc9b40"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_abstract_console_application_main_function.html#aec80aaecedd4a2d6696878b96cfc9b40">AbstractConsoleApplicationMainFunction</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:aec80aaecedd4a2d6696878b96cfc9b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:aec80aaecedd4a2d6696878b96cfc9b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34213b6ac2188b3620f5c2f5ce4ee287"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_abstract_console_application_main_function.html#a34213b6ac2188b3620f5c2f5ce4ee287">runMain</a> ()=0</td></tr>
-<tr class="memdesc:a34213b6ac2188b3620f5c2f5ce4ee287"><td class="mdescLeft">&#160;</td><td class="mdescRight">main function implementation  <a href="#a34213b6ac2188b3620f5c2f5ce4ee287">More...</a><br /></td></tr>
+<tr class="memitem:a34213b6ac2188b3620f5c2f5ce4ee287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34213b6ac2188b3620f5c2f5ce4ee287"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_abstract_console_application_main_function.html#a34213b6ac2188b3620f5c2f5ce4ee287">runMain</a> ()=0</td></tr>
+<tr class="memdesc:a34213b6ac2188b3620f5c2f5ce4ee287"><td class="mdescLeft">&#160;</td><td class="mdescRight">main function implementation <br /></td></tr>
 <tr class="separator:a34213b6ac2188b3620f5c2f5ce4ee287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -130,36 +133,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Abstract base of a main function in Qt console application with a event loop. </p>
 <p>The class declaration MyMainFunction.h could look like: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MyMainFunction : <span class="keyword">public</span> <a class="code" href="class_mdt_1_1_abstract_console_application_main_function.html">Mdt::AbstractConsoleApplicationMainFunction</a></div><div class="line">{</div><div class="line"> Q_OBJECT</div><div class="line"></div><div class="line"> <span class="keyword">public</span>:</div><div class="line"></div><div class="line">  <span class="keyword">explicit</span> MyMainFunction(QObject* parent = <span class="keyword">nullptr</span>);</div><div class="line">  <span class="keywordtype">int</span> <a class="code" href="class_mdt_1_1_abstract_console_application_main_function.html#a34213b6ac2188b3620f5c2f5ce4ee287">runMain</a>() <span class="keyword">override</span>;</div><div class="line">};</div></div><!-- fragment --><p>Example of the implementation in MyMainFunction.cpp: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> MyMainFunction::runMain()</div><div class="line">{</div><div class="line">  qDebug() &lt;&lt; <span class="stringliteral">&quot;My main ...&quot;</span>;</div><div class="line">}</div></div><!-- fragment --><p>Finaly, in main.cpp: </p><div class="fragment"><div class="line">QCoreApplication app(argc, argv);</div><div class="line"></div><div class="line"><span class="comment">// This will call runMain() once the event loop started</span></div><div class="line">MyMainFunction mainImpl;</div><div class="line"></div><div class="line"><span class="keywordflow">return</span> app.exec();</div></div><!-- fragment --> 
 <p>Definition at line <a class="el" href="_abstract_console_application_main_function_8h_source.html#l00062">62</a> of file <a class="el" href="_abstract_console_application_main_function_8h_source.html">AbstractConsoleApplicationMainFunction.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aec80aaecedd4a2d6696878b96cfc9b40"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mdt::AbstractConsoleApplicationMainFunction::AbstractConsoleApplicationMainFunction </td>
-          <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-
-<p>Definition at line <a class="el" href="_abstract_console_application_main_function_8cpp_source.html#l00027">27</a> of file <a class="el" href="_abstract_console_application_main_function_8cpp_source.html">AbstractConsoleApplicationMainFunction.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7f00b12d06e341d037cd1a69632b2ac2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,31 +192,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a34213b6ac2188b3620f5c2f5ce4ee287"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int Mdt::AbstractConsoleApplicationMainFunction::runMain </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>main function implementation </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>libs/Application_Core/src/Mdt/<a class="el" href="_abstract_console_application_main_function_8h_source.html">AbstractConsoleApplicationMainFunction.h</a></li>
 <li>libs/Application_Core/src/Mdt/<a class="el" href="_abstract_console_application_main_function_8cpp_source.html">AbstractConsoleApplicationMainFunction.cpp</a></li>
@@ -250,7 +199,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Sep 30 2017 13:08:16 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 1 2017 10:14:56 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
