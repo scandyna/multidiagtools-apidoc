@@ -1,0 +1,105 @@
+\hypertarget{class_mdt_1_1_translation_1_1_translation_info}{}\section{Mdt\+:\+:Translation\+:\+:Translation\+Info Class Reference}
+\label{class_mdt_1_1_translation_1_1_translation_info}\index{Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}}
+
+
+Value class that stores informations about a translation.  
+
+
+
+
+{\ttfamily \#include $<$Translation\+Info.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_mdt_1_1_translation_1_1_translation_info_a38695fb8434cd7c149811399d669bf23}{absolute\+File\+Path} () const \hypertarget{class_mdt_1_1_translation_1_1_translation_info_a38695fb8434cd7c149811399d669bf23}{}\label{class_mdt_1_1_translation_1_1_translation_info_a38695fb8434cd7c149811399d669bf23}
+
+\begin{DoxyCompactList}\small\item\em Get absolute file path. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_translation_1_1_translation_info_a5405c3ee8a0a8466bcc472da526022dc}{full\+File\+Name} () const \hypertarget{class_mdt_1_1_translation_1_1_translation_info_a5405c3ee8a0a8466bcc472da526022dc}{}\label{class_mdt_1_1_translation_1_1_translation_info_a5405c3ee8a0a8466bcc472da526022dc}
+
+\begin{DoxyCompactList}\small\item\em Get complete file name, without its path. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_translation_1_1_language_code}{Language\+Code} \hyperlink{class_mdt_1_1_translation_1_1_translation_info_a1a3ec9b9edc3438c6120d365785cbb05}{language\+Code} () const 
+\begin{DoxyCompactList}\small\item\em Get language code. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_translation_1_1_translation_info_a08e38cca61e807944db66457413e731b}{file\+Suffix} () const 
+\begin{DoxyCompactList}\small\item\em Get file suffix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_translation_1_1_translation_info}{Translation\+Info} \hyperlink{class_mdt_1_1_translation_1_1_translation_info_a2b7742d918f9b1c67f27c2a4dbe61528}{from\+Qm\+File\+Path} (const Q\+String \&qm\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Create a translation info from a QM file path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_mdt_1_1_translation_1_1_translation_info_add361867983af82858b69ac555f26d2c}{operator==} (const \hyperlink{class_mdt_1_1_translation_1_1_translation_info}{Translation\+Info} \&a, const \hyperlink{class_mdt_1_1_translation_1_1_translation_info}{Translation\+Info} \&b)\hypertarget{class_mdt_1_1_translation_1_1_translation_info_add361867983af82858b69ac555f26d2c}{}\label{class_mdt_1_1_translation_1_1_translation_info_add361867983af82858b69ac555f26d2c}
+
+\begin{DoxyCompactList}\small\item\em Check if translation plugin info a and b are equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Value class that stores informations about a translation. 
+
+Definition at line 32 of file Translation\+Info.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}!file\+Suffix@{file\+Suffix}}
+\index{file\+Suffix@{file\+Suffix}!Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}}
+\subsubsection[{\texorpdfstring{file\+Suffix() const }{fileSuffix() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Translation\+::\+Translation\+Info\+::file\+Suffix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_translation_1_1_translation_info_a08e38cca61e807944db66457413e731b}{}\label{class_mdt_1_1_translation_1_1_translation_info_a08e38cca61e807944db66457413e731b}
+
+
+Get file suffix. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_translation_1_1_qm_file_name_ae7a002b2ad54c71e6d72e001705f9a7f}{Qm\+File\+Name\+::suffix()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 63 of file Translation\+Info.\+h.
+
+\index{Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}!from\+Qm\+File\+Path@{from\+Qm\+File\+Path}}
+\index{from\+Qm\+File\+Path@{from\+Qm\+File\+Path}!Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}}
+\subsubsection[{\texorpdfstring{from\+Qm\+File\+Path(const Q\+String \&qm\+File\+Path)}{fromQmFilePath(const QString &qmFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Translation\+Info} Mdt\+::\+Translation\+::\+Translation\+Info\+::from\+Qm\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{qm\+File\+Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_translation_1_1_translation_info_a2b7742d918f9b1c67f27c2a4dbe61528}{}\label{class_mdt_1_1_translation_1_1_translation_info_a2b7742d918f9b1c67f27c2a4dbe61528}
+
+
+Create a translation info from a QM file path. 
+
+\begin{DoxyPrecond}{Precondition}
+File designed by {\itshape qm\+File\+Path} must have .qm extension. (it is not checked if the file exists). 
+\end{DoxyPrecond}
+
+
+Definition at line 27 of file Translation\+Info.\+cpp.
+
+\index{Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}!language\+Code@{language\+Code}}
+\index{language\+Code@{language\+Code}!Mdt\+::\+Translation\+::\+Translation\+Info@{Mdt\+::\+Translation\+::\+Translation\+Info}}
+\subsubsection[{\texorpdfstring{language\+Code() const }{languageCode() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Language\+Code} Mdt\+::\+Translation\+::\+Translation\+Info\+::language\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_translation_1_1_translation_info_a1a3ec9b9edc3438c6120d365785cbb05}{}\label{class_mdt_1_1_translation_1_1_translation_info_a1a3ec9b9edc3438c6120d365785cbb05}
+
+
+Get language code. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_translation_1_1_qm_file_name_a4a30158ca25d82fc5108e9ee68116a20}{Qm\+File\+Name\+::language\+Code()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 54 of file Translation\+Info.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Translation\+\_\+\+Core/src/\+Mdt/\+Translation/Translation\+Info.\+h\item 
+libs/\+Translation\+\_\+\+Core/src/\+Mdt/\+Translation/Translation\+Info.\+cpp\end{DoxyCompactItemize}

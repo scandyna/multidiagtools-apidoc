@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['key',['key',['../class_mdt_1_1_item_model_1_1_relation_key_copier.html#a136fdae81418f2a0ef99da0d4df5a775',1,'Mdt::ItemModel::RelationKeyCopier']]],
-  ['keydata',['KeyData',['../class_mdt_1_1_item_model_1_1_key_data.html#ab552f179780251feb2f0a20294d8efb4',1,'Mdt::ItemModel::KeyData']]]
+  ['jointranslations',['joinTranslations',['../class_mdt_1_1_deploy_utils_1_1_translation.html#ac3498d3c5862cfdc84ef9090618ac2c3',1,'Mdt::DeployUtils::Translation']]]
 ];

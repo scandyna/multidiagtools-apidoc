@@ -43,4 +43,17 @@ For a class that is not a subclass of Q\+Object, Qt recommends using Q\+Core\+Ap
 \end{DoxyCode}
 
 
-Note that Qt Linguist trows error messages when a class uses tr() and it does not provide the Q\+\_\+\+O\+B\+J\+E\+CT macro, despite the fact that translation file are generated and works. 
+Note that Qt Linguist trows error messages when a class uses tr() and it does not provide the Q\+\_\+\+O\+B\+J\+E\+CT macro, despite the fact that translation file are generated and works.\hypertarget{guideline_page_library_exports}{}\section{Library exports}\label{guideline_page_library_exports}
+For some platforms, classes and functions that are used outside a shared library must be exported explicitly in the header.
+
+\hyperlink{namespace_mdt}{Mdt} uses C\+Make to generate the M\+D\+T\+\_\+\+L\+I\+B\+N\+A\+M\+E\+\_\+\+E\+X\+P\+O\+RT macro. This macro is defined in Mdt\+Libname\+Export.\+h, which is not available in the source tree, but generated during compilation. When using mdt\+\_\+add\+\_\+library() to create a \hyperlink{namespace_mdt}{Mdt} library, the path to the directory where Export.\+h is located will be added.
+
+Example of a class that must be accessible outside the Item\+Model shared library\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "MdtItemModelExport.h"}
+
+\textcolor{keyword}{class }MDT\_ITEMMODEL\_EXPORT MyClass
+\{
+\};
+\end{DoxyCode}
+ 

@@ -20,7 +20,7 @@ Inherits Q\+Object.
 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ae3d859ad862e026b00d12e50702ae4df}{Library} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_ae3d859ad862e026b00d12e50702ae4df}{}\label{class_mdt_1_1_deploy_utils_1_1_library_ae3d859ad862e026b00d12e50702ae4df}
 
 \begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
-bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_afeac04ff3404387fc542347849bffeb4}{find\+Library} (const Q\+String \&name, const \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} path\+List=\hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List}(), \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ab9f58dba8290dd1882a21d73cc7c10d0}{Search\+In\+System\+Paths} search\+In\+System\+Paths=\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ab9f58dba8290dd1882a21d73cc7c10d0adabc8cd036aa884536c359cc3a2783ca}{Include\+System\+Paths})
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ae15e39005f8445dbcc6790d377b9907d}{find\+Library} (const Q\+String \&name, const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} path\+List=\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List}(), \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ab9f58dba8290dd1882a21d73cc7c10d0}{Search\+In\+System\+Paths} search\+In\+System\+Paths=\hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ab9f58dba8290dd1882a21d73cc7c10d0adabc8cd036aa884536c359cc3a2783ca}{Include\+System\+Paths})
 \begin{DoxyCompactList}\small\item\em Find a library. \end{DoxyCompactList}\item 
 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info}{Library\+Info} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_a8b272e0c638aa2949b5f19b3c75ed9ae}{library\+Info} () const 
 \begin{DoxyCompactList}\small\item\em Get library info. \end{DoxyCompactList}\item 
@@ -32,7 +32,7 @@ bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_afeac04ff3404387fc5423478
 \subsection{Detailed Description}
 Provides some helper methods for libraries. 
 
-Definition at line 34 of file Library.\+h.
+Definition at line 35 of file Library.\+h.
 
 
 
@@ -55,20 +55,20 @@ Exclude\+System\+Paths\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_ab9f58
 \end{Desc}
 
 
-Definition at line 42 of file Library.\+h.
+Definition at line 43 of file Library.\+h.
 
 
 
 \subsection{Member Function Documentation}
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Library}!find\+Library@{find\+Library}}
 \index{find\+Library@{find\+Library}!Mdt\+::\+Deploy\+Utils\+::\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Library}}
-\subsubsection[{\texorpdfstring{find\+Library(const Q\+String \&name, const Path\+List path\+List=\+Path\+List(), Search\+In\+System\+Paths search\+In\+System\+Paths=\+Include\+System\+Paths)}{findLibrary(const QString &name, const PathList pathList=PathList(), SearchInSystemPaths searchInSystemPaths=IncludeSystemPaths)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+::find\+Library (
+\subsubsection[{\texorpdfstring{find\+Library(const Q\+String \&name, const Mdt\+::\+File\+System\+::\+Path\+List path\+List=\+Mdt\+::\+File\+System\+::\+Path\+List(), Search\+In\+System\+Paths search\+In\+System\+Paths=\+Include\+System\+Paths)}{findLibrary(const QString &name, const Mdt::FileSystem::PathList pathList=Mdt::FileSystem::PathList(), SearchInSystemPaths searchInSystemPaths=IncludeSystemPaths)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+::find\+Library (
 \begin{DoxyParamCaption}
 \item[{const Q\+String \&}]{name, }
-\item[{const {\bf Path\+List}}]{path\+List = {\ttfamily {\bf Path\+List}()}, }
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List}}]{path\+List = {\ttfamily {\bf Mdt\+::\+File\+System\+::\+Path\+List}()}, }
 \item[{{\bf Library\+::\+Search\+In\+System\+Paths}}]{search\+In\+System\+Paths = {\ttfamily {\bf Include\+System\+Paths}}}
 \end{DoxyParamCaption}
-)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_afeac04ff3404387fc542347849bffeb4}{}\label{class_mdt_1_1_deploy_utils_1_1_library_afeac04ff3404387fc542347849bffeb4}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_ae15e39005f8445dbcc6790d377b9907d}{}\label{class_mdt_1_1_deploy_utils_1_1_library_ae15e39005f8445dbcc6790d377b9907d}
 
 
 Find a library. 
@@ -92,7 +92,7 @@ If {\itshape search\+In\+System\+Paths} is Exclude\+System\+Paths, path\+List mu
 \end{DoxyPrecond}
 
 
-Definition at line 37 of file Library.\+cpp.
+Definition at line 39 of file Library.\+cpp.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Library}!library\+Info@{library\+Info}}
 \index{library\+Info@{library\+Info}!Mdt\+::\+Deploy\+Utils\+::\+Library@{Mdt\+::\+Deploy\+Utils\+::\+Library}}
@@ -105,9 +105,9 @@ Definition at line 37 of file Library.\+cpp.
 
 Get library info. 
 
-Returns the information of the library after a success call of \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_afeac04ff3404387fc542347849bffeb4}{find\+Library()} 
+Returns the information of the library after a success call of \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_ae15e39005f8445dbcc6790d377b9907d}{find\+Library()} 
 
-Definition at line 79 of file Library.\+h.
+Definition at line 80 of file Library.\+h.
 
 
 

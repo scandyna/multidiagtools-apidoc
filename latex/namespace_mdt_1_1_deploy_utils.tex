@@ -22,6 +22,8 @@ class \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream}
 \begin{DoxyCompactList}\small\item\em Used to implement \hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console}. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier}{File\+Copier}
 \begin{DoxyCompactList}\small\item\em Provides utilities for files and directories manipulation. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper}{Lconvert\+Wrapper}
+\begin{DoxyCompactList}\small\item\em Wraps a lconvert command line tool. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_ldd_dependencies_parser}{Ldd\+Dependencies\+Parser}
 \begin{DoxyCompactList}\small\item\em Ldd dependencies parser. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_ldd_wrapper}{Ldd\+Wrapper}
@@ -40,25 +42,65 @@ class \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree_node}{Library\+Tree
 \begin{DoxyCompactList}\small\item\em Node identifier used in \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_tree}{Library\+Tree}. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version}
 \begin{DoxyCompactList}\small\item\em Representation of a version of a library. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_mdt_library}{Mdt\+Library}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_deploy_utils_1_1_mdt_library}{Mdt\+Library} offers some utilities specific to \hyperlink{namespace_mdt}{Mdt} libraries. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_binary_format_parser}{Objdump\+Binary\+Format\+Parser}
 \begin{DoxyCompactList}\small\item\em Objdump binary format parser. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_dependencies_parser}{Objdump\+Dependencies\+Parser}
 \begin{DoxyCompactList}\small\item\em Objdump dependencies parser. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_objdump_wrapper}{Objdump\+Wrapper}
 \begin{DoxyCompactList}\small\item\em Wrapps a objdump executable. \end{DoxyCompactList}\item 
-class \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List}
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List} contains a list of paths. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper}{Patchelf\+Wrapper}
+\begin{DoxyCompactList}\small\item\em Wraps a patchelf executable. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_platform}{Platform}
 \begin{DoxyCompactList}\small\item\em Definition of a platform. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library}{Qt\+Library}
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_library}{Qt\+Library} offers some utilities specific to Qt libraries. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_module_list}{Qt\+Module\+List}
 \begin{DoxyCompactList}\small\item\em List of Qt\+Module. \end{DoxyCompactList}\item 
-class \hyperlink{class_mdt_1_1_deploy_utils_1_1_search_path_list}{Search\+Path\+List}
-\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_deploy_utils_1_1_search_path_list}{Search\+Path\+List} provides additional tools to \hyperlink{class_mdt_1_1_deploy_utils_1_1_path_list}{Path\+List}. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_plugin_info}{Qt\+Plugin\+Info}
+\begin{DoxyCompactList}\small\item\em Data value class that stores informations about a Qt plugin. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_plugin_info_list}{Qt\+Plugin\+Info\+List}
+\begin{DoxyCompactList}\small\item\em Container that holds a list of \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_plugin_info}{Qt\+Plugin\+Info}. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper}{Qt\+Tool\+Executable\+Wrapper}
+\begin{DoxyCompactList}\small\item\em Common base class for command line tools provided by Qt (lconvert, ..) \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path}{R\+Path}
+\begin{DoxyCompactList}\small\item\em Utility class to get and set R\+P\+A\+TH of executables and shared libraries that support it. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info}{R\+Path\+Info}
+\begin{DoxyCompactList}\small\item\em Holds informations about a R\+P\+A\+TH. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list}{R\+Path\+Info\+List}
+\begin{DoxyCompactList}\small\item\em Hold a list of \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info}{R\+Path\+Info}. \end{DoxyCompactList}\item 
 class \hyperlink{class_mdt_1_1_deploy_utils_1_1_tool_executable_wrapper}{Tool\+Executable\+Wrapper}
-\begin{DoxyCompactList}\small\item\em Common base class for command line tools (ldd, objdump, ...) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Common base class for command line tools (ldd, objdump, ...) \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_deploy_utils_1_1_translation}{Translation}
+\begin{DoxyCompactList}\small\item\em Utilities to handle translations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected}$<$ \hyperlink{class_mdt_1_1_translation_1_1_translation_info_list}{Translation\+Info\+List} $>$ \hyperlink{namespace_mdt_1_1_deploy_utils_ace6bee354884bc9c507a753488cd1666}{find\+Qt\+Translations} (\hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_module_list}{Qt\+Module\+List} qt\+Modules, const Q\+String\+List \&language\+Suffixes, const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find translations for a Qt library. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{namespace_mdt_1_1_deploy_utils_a3570efbd3224a9dd0453d07ef1c98654}{get\+Qm\+File\+Base\+Name\+List\+For\+Qt\+Module} (\hyperlink{namespace_mdt_1_1_deploy_utils_af64a196dd2a56ed4930253e7fb4ed591}{Qt\+Module} qt\+Module)\hypertarget{namespace_mdt_1_1_deploy_utils_a3570efbd3224a9dd0453d07ef1c98654}{}\label{namespace_mdt_1_1_deploy_utils_a3570efbd3224a9dd0453d07ef1c98654}
+
+\begin{DoxyCompactList}\small\item\em Get a list of QM file base names for a Qt module. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{namespace_mdt_1_1_deploy_utils_a38a2b48c2b9fc1c63a84f441eef17842}{get\+Qm\+File\+Base\+Name\+List\+For\+Qt\+Modules} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_module_list}{Qt\+Module\+List} \&qt\+Modules)\hypertarget{namespace_mdt_1_1_deploy_utils_a38a2b48c2b9fc1c63a84f441eef17842}{}\label{namespace_mdt_1_1_deploy_utils_a38a2b48c2b9fc1c63a84f441eef17842}
+
+\begin{DoxyCompactList}\small\item\em Get a list of QM file base names for a list of Qt modules. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_deploy_utils_af941377def14830db03d002eb318dcbd}{find\+Qt\+Translations\+Root} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find the root directory of Qt translations. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_expected}{Expected}$<$ \hyperlink{class_mdt_1_1_translation_1_1_translation_info_list}{Translation\+Info\+List} $>$ \hyperlink{namespace_mdt_1_1_deploy_utils_ad057d0129cbedf6a9d27c1ccf238640c}{find\+Mdt\+Translations} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&mdt\+Libraries, const Q\+String\+List \&language\+Suffixes, const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find translations for a \hyperlink{namespace_mdt}{Mdt} library. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_deploy_utils_ab2b5152d5460198443db2fd25dda0249}{find\+Mdt\+Translations\+Root} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find the root directory of \hyperlink{namespace_mdt}{Mdt} translations. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{namespace_mdt_1_1_deploy_utils_aeb3d48d3f2a95947a20b0b24a52abff2}{get\+Qm\+File\+Name\+List} (const Q\+String \&qm\+File\+Base\+Name, const Q\+String\+List \&language\+Suffixes)\hypertarget{namespace_mdt_1_1_deploy_utils_aeb3d48d3f2a95947a20b0b24a52abff2}{}\label{namespace_mdt_1_1_deploy_utils_aeb3d48d3f2a95947a20b0b24a52abff2}
+
+\begin{DoxyCompactList}\small\item\em Generate a list of QM file names. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{namespace_mdt_1_1_deploy_utils_a00fb23ac8ff45594576975c15a2b5b76}{get\+Qm\+File\+Name\+List} (const Q\+String\+List \&qm\+File\+Base\+Names, const Q\+String\+List \&language\+Suffixes)\hypertarget{namespace_mdt_1_1_deploy_utils_a00fb23ac8ff45594576975c15a2b5b76}{}\label{namespace_mdt_1_1_deploy_utils_a00fb23ac8ff45594576975c15a2b5b76}
+
+\begin{DoxyCompactList}\small\item\em Generate a list of QM file names. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected}$<$ \hyperlink{class_mdt_1_1_translation_1_1_translation_info_list}{Translation\+Info\+List} $>$ \hyperlink{namespace_mdt_1_1_deploy_utils_aa37710e4950b619e66fb9148f90aa040}{find\+Translations\+In\+Directory} (const Q\+String\+List \&qm\+File\+Names, const Q\+String \&directory\+Path)\hypertarget{namespace_mdt_1_1_deploy_utils_aa37710e4950b619e66fb9148f90aa040}{}\label{namespace_mdt_1_1_deploy_utils_aa37710e4950b619e66fb9148f90aa040}
+
+\begin{DoxyCompactList}\small\item\em Find translations in a directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -172,4 +214,83 @@ D\+Bus\hypertarget{namespace_mdt_1_1_deploy_utils_af64a196dd2a56ed4930253e7fb4ed
 
 
 Definition at line 30 of file Qt\+Module.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}!find\+Mdt\+Translations@{find\+Mdt\+Translations}}
+\index{find\+Mdt\+Translations@{find\+Mdt\+Translations}!Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}}
+\subsubsection[{\texorpdfstring{find\+Mdt\+Translations(const Library\+Info\+List \&mdt\+Libraries, const Q\+String\+List \&language\+Suffixes, const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findMdtTranslations(const LibraryInfoList &mdtLibraries, const QStringList &languageSuffixes, const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Expected}$<$ {\bf Mdt\+::\+Translation\+::\+Translation\+Info\+List} $>$ M\+D\+T\+\_\+\+D\+E\+P\+L\+O\+Y\+U\+T\+I\+L\+S\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Deploy\+Utils\+::find\+Mdt\+Translations (
+\begin{DoxyParamCaption}
+\item[{const {\bf Library\+Info\+List} \&}]{mdt\+Libraries, }
+\item[{const Q\+String\+List \&}]{language\+Suffixes, }
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_deploy_utils_ad057d0129cbedf6a9d27c1ccf238640c}{}\label{namespace_mdt_1_1_deploy_utils_ad057d0129cbedf6a9d27c1ccf238640c}
+
+
+Find translations for a \hyperlink{namespace_mdt}{Mdt} library. 
+
+Translations are searched in directories defined using \hyperlink{namespace_mdt_1_1_deploy_utils_ab2b5152d5460198443db2fd25dda0249}{find\+Mdt\+Translations\+Root()}.
+
+Find translations for a list of \hyperlink{namespace_mdt}{Mdt} libraries
+
+Translations are searched in directories defined using \hyperlink{namespace_mdt_1_1_deploy_utils_ab2b5152d5460198443db2fd25dda0249}{find\+Mdt\+Translations\+Root()}. 
+
+Definition at line 151 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}!find\+Mdt\+Translations\+Root@{find\+Mdt\+Translations\+Root}}
+\index{find\+Mdt\+Translations\+Root@{find\+Mdt\+Translations\+Root}!Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}}
+\subsubsection[{\texorpdfstring{find\+Mdt\+Translations\+Root(const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findMdtTranslationsRoot(const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String M\+D\+T\+\_\+\+D\+E\+P\+L\+O\+Y\+U\+T\+I\+L\+S\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Deploy\+Utils\+::find\+Mdt\+Translations\+Root (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_deploy_utils_ab2b5152d5460198443db2fd25dda0249}{}\label{namespace_mdt_1_1_deploy_utils_ab2b5152d5460198443db2fd25dda0249}
+
+
+Find the root directory of \hyperlink{namespace_mdt}{Mdt} translations. 
+
+For a given path prefix, a subdirectory, named translations, will be located in known subdirectories, like translations .
+
+If {\itshape path\+Prefix\+List} contains at least 1 non empty path, translations directory will only be located starting from prefixes in it. Else, system path prefixes will be used. 
+
+Definition at line 166 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}!find\+Qt\+Translations@{find\+Qt\+Translations}}
+\index{find\+Qt\+Translations@{find\+Qt\+Translations}!Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}}
+\subsubsection[{\texorpdfstring{find\+Qt\+Translations(\+Qt\+Module\+List qt\+Modules, const Q\+String\+List \&language\+Suffixes, const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findQtTranslations(QtModuleList qtModules, const QStringList &languageSuffixes, const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Expected}$<$ {\bf Mdt\+::\+Translation\+::\+Translation\+Info\+List} $>$ M\+D\+T\+\_\+\+D\+E\+P\+L\+O\+Y\+U\+T\+I\+L\+S\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Deploy\+Utils\+::find\+Qt\+Translations (
+\begin{DoxyParamCaption}
+\item[{{\bf Qt\+Module\+List}}]{qt\+Modules, }
+\item[{const Q\+String\+List \&}]{language\+Suffixes, }
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_deploy_utils_ace6bee354884bc9c507a753488cd1666}{}\label{namespace_mdt_1_1_deploy_utils_ace6bee354884bc9c507a753488cd1666}
+
+
+Find translations for a Qt library. 
+
+Translations are searched in directories defined using \hyperlink{namespace_mdt_1_1_deploy_utils_af941377def14830db03d002eb318dcbd}{find\+Qt\+Translations\+Root()}.
+
+Find translations for a list of Qt libraries
+
+Translations are searched in directories defined using \hyperlink{namespace_mdt_1_1_deploy_utils_af941377def14830db03d002eb318dcbd}{find\+Qt\+Translations\+Root()}. 
+
+Definition at line 59 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}!find\+Qt\+Translations\+Root@{find\+Qt\+Translations\+Root}}
+\index{find\+Qt\+Translations\+Root@{find\+Qt\+Translations\+Root}!Mdt\+::\+Deploy\+Utils@{Mdt\+::\+Deploy\+Utils}}
+\subsubsection[{\texorpdfstring{find\+Qt\+Translations\+Root(const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findQtTranslationsRoot(const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String M\+D\+T\+\_\+\+D\+E\+P\+L\+O\+Y\+U\+T\+I\+L\+S\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Deploy\+Utils\+::find\+Qt\+Translations\+Root (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_deploy_utils_af941377def14830db03d002eb318dcbd}{}\label{namespace_mdt_1_1_deploy_utils_af941377def14830db03d002eb318dcbd}
+
+
+Find the root directory of Qt translations. 
+
+For a given path prefix, a subdirectory, named translations, will be located in known subdirectories, like translations or qt5/translations .
+
+If {\itshape path\+Prefix\+List} contains at least 1 non empty path, translations directory will only be located starting from prefixes in it. Else, system path prefixes will be used. 
+
+Definition at line 131 of file Find\+Translation.\+cpp.
 

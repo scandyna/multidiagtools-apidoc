@@ -210,7 +210,7 @@ Static Public Member Functions</h2></td></tr>
 <p>In above scenario, the application can build appropriate message because it knows what DiskQuotaExhausted means. For some other errors (that the application currently not handles), it could also simply display the error returned from saveDocument(). To implement such error stack, simply, at each level, stack a error that a function returns to current error. For example, in writeToFile(), if write() fails, we create a new <a class="el" href="class_mdt_1_1_error.html" title="Value class that contains a error. ">Error</a>, and return it. Then, saveDocument() will fail, create its own <a class="el" href="class_mdt_1_1_error.html" title="Value class that contains a error. ">Error</a> object, and stack the one returned by writeToFile(). To stack a error, use <a class="el" href="class_mdt_1_1_error.html#a4133276f217c5a6dac890a18059607cd" title="Stack given error. ">stackError()</a> , and use <a class="el" href="class_mdt_1_1_error.html#a6acc6143b706449ba1ff083286d5ccf6" title="Get error stack. ">getErrorStack()</a> to get stacked errors back.</p>
 <p>If you need to send <a class="el" href="class_mdt_1_1_error.html" title="Value class that contains a error. ">Error</a> object across threads with Qt signal/slot (queued), <a class="el" href="class_mdt_1_1_error.html" title="Value class that contains a error. ">Error</a> must be registered with qRegisterMetaType(). This is allready done in Mdt::Application::init(). If you don't use <a class="el" href="class_mdt_1_1_application.html" title="Application adds some helper for application initialization. ">Mdt::Application</a>, don't forget to call qRegisterMetaType&lt;Mdt::Error&gt;() in, f.ex., your main() function. </p>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00259">259</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00260">260</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="ab533dc690f68a8635232db594194a068"></a>
 <div class="memitem">
@@ -238,7 +238,7 @@ Static Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00265">265</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00266">266</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -310,7 +310,7 @@ template&lt;typename T &gt; </div>
 <p>Construct a error with error and source set. </p>
 <p>Calling this constructor directly is a bit long. Consider using mdtErrorNew() or mdtErrorNewT() macro. </p>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00283">283</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00284">284</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ template&lt;typename T &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -381,7 +381,7 @@ template&lt;typename T &gt; </div>
 <p>Construct a error with error and source set. </p>
 <p>Calling this constructor directly is a bit long. Consider using mdtErrorNewQ() or mdtErrorNewTQ() macro. </p>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00299">299</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00300">300</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 
 </div>
 </div>
@@ -453,7 +453,7 @@ template&lt;typename T &gt; </div>
 <p>If no error was set, a default constructed error of type T is returned.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>Requested type T must match the one that was stored with <a class="el" href="class_mdt_1_1_error.html#a895930ac30664f54a7f22ae593db53a0" title="Set error. ">setError()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00369">369</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00370">370</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 
 </div>
 </div>
@@ -681,7 +681,7 @@ template&lt;typename T &gt; </div>
 <p>Check if error is null. </p>
 <p>Returns true as long as no error was set, or after clear was called. </p>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00320">320</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00321">321</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +762,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>error type T must be default and copy constructible. </dd></dl>
 
-<p>Definition at line <a class="el" href="_error_8h_source.html#l00351">351</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
+<p>Definition at line <a class="el" href="_error_8h_source.html#l00352">352</a> of file <a class="el" href="_error_8h_source.html">Error.h</a>.</p>
 
 </div>
 </div>
@@ -949,7 +949,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:23 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

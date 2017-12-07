@@ -157,7 +157,7 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Filter expression used in <a class="el" href="class_mdt_1_1_item_model_1_1_relation_filter_proxy_model.html" title="Provides support for filtering data between another model and a view. ">RelationFilterProxyModel</a>. </p>
 <p>Example of usage: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Mdt/ItemModel/RelationFilterExpression.h&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using namespace </span><a class="code" href="class_mdt_1_1_item_model_1_1_relation_filter_expression.html">Mdt::ItemModel::RelationFilterExpression</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_mdt_1_1_item_model.html#a60ac754611ae43e31bbe5244b2d24297">Mdt::ItemModel::ChildModelColumn</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_mdt_1_1_item_model.html#a65a3c4f6cfb3d80d7f69e58cd17d8be7">Mdt::ItemModel::ParentModelColumn</a>;</div><div class="line"><span class="keyword">using</span> Like = <a class="code" href="namespace_mdt_1_1_item_model.html#a8c8326d469af353aa345651a135251b0">Mdt::ItemModel::LikeExpression</a>;</div><div class="line"></div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#a65a3c4f6cfb3d80d7f69e58cd17d8be7">ParentModelColumn</a> clientId(0);</div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#a60ac754611ae43e31bbe5244b2d24297">ChildModelColumn</a> addressClientId(1);</div><div class="line"></div><div class="line"><a class="code" href="class_mdt_1_1_item_model_1_1_relation_filter_expression.html#a7f0fa4a5e3bef21405f94f241a9ae88c">RelationFilterExpression</a> filter( addressClientId == clientId );</div></div><!-- fragment --> 
-<p>Definition at line <a class="el" href="_relation_filter_expression_8h_source.html#l00058">58</a> of file <a class="el" href="_relation_filter_expression_8h_source.html">RelationFilterExpression.h</a>.</p>
+<p>Definition at line <a class="el" href="_relation_filter_expression_8h_source.html#l00059">59</a> of file <a class="el" href="_relation_filter_expression_8h_source.html">RelationFilterExpression.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2cca7170a17aed9cbf525b166e25bd6b"></a>
 <div class="memitem">
@@ -198,7 +198,7 @@ template&lt;typename Expr &gt; </div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Expr must be a relation filter expression type. A relation filter expression is based on ChildModelColumn, ParentModelColumn, comparison operators, logical AND, logical OR. For example (see code above for details): <div class="fragment"><div class="line"><span class="comment">// Example of valid relation filter expression</span></div><div class="line">addressClientId == cliendId</div><div class="line">(addressClientId == cliendId) &amp;&amp; (addressClientId &gt; 25)</div><div class="line"></div><div class="line"><span class="comment">// Example of invalid relation filter expression</span></div><div class="line">cliendId + 5</div></div><!-- fragment --> </dd></dl>
 
-<p>Definition at line <a class="el" href="_relation_filter_expression_8h_source.html#l00084">84</a> of file <a class="el" href="_relation_filter_expression_8h_source.html">RelationFilterExpression.h</a>.</p>
+<p>Definition at line <a class="el" href="_relation_filter_expression_8h_source.html#l00085">85</a> of file <a class="el" href="_relation_filter_expression_8h_source.html">RelationFilterExpression.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ template&lt;typename Expr &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

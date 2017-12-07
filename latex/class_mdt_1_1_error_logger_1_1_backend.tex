@@ -28,7 +28,19 @@ virtual void \hyperlink{class_mdt_1_1_error_logger_1_1_backend_acf37cfc576269934
 \item 
 \hyperlink{class_mdt_1_1_error_logger_1_1_backend_ad0e3d73ad0c0248f2d62e00f5180ca1e}{Backend} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_error_logger_1_1_backend_ad0e3d73ad0c0248f2d62e00f5180ca1e}{}\label{class_mdt_1_1_error_logger_1_1_backend_ad0e3d73ad0c0248f2d62e00f5180ca1e}
 
-\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_backend_ae7a4ba51888ecb73202f48666e0fe11e}{$\sim$\+Backend} ()\hypertarget{class_mdt_1_1_error_logger_1_1_backend_ae7a4ba51888ecb73202f48666e0fe11e}{}\label{class_mdt_1_1_error_logger_1_1_backend_ae7a4ba51888ecb73202f48666e0fe11e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_mdt_1_1_error_logger_1_1_backend_a5e29be8b58d1658b71aef7b69f5aff81}{set\+Format\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Set the format engine. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_mdt_1_1_error_logger_1_1_backend_a3bedd2eae53d0f4ed9234ef086bd2cac}{cleanup} ()
+\begin{DoxyCompactList}\small\item\em Called during end cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_mdt_1_1_error_logger_1_1_backend_adf97b152bfaa2f5015fd6ef769db7b58}{format\+Error} (const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \&error) const 
+\begin{DoxyCompactList}\small\item\em Format {\itshape error} to its string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -38,11 +50,54 @@ This class is a interface to create a error logger backend that will be used by 
 
 Notice that \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} can be executed from a non main thread, also take care that some functions must at least be reentrant. 
 
-Definition at line 41 of file Backend.\+h.
+Definition at line 45 of file Backend.\+h.
 
 
 
 \subsection{Member Function Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{cleanup()}{cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mdt\+::\+Error\+Logger\+::\+Backend\+::cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_a3bedd2eae53d0f4ed9234ef086bd2cac}{}\label{class_mdt_1_1_error_logger_1_1_backend_a3bedd2eae53d0f4ed9234ef086bd2cac}
+
+
+Called during end cleanup. 
+
+This method is called from \hyperlink{class_mdt_1_1_error_logger_1_1_logger_a3bb1951ee52da826fde82dab52d54c4b}{Logger\+::cleanup()}.
+
+\hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} can implement this method if requierd.
+
+This default implementation does nothing. 
+
+Reimplemented in \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a768a90af2b4e7084cbedee844a53bfc2}{Mdt\+::\+Error\+Logger\+::\+File\+Backend}.
+
+
+
+Definition at line 90 of file Backend.\+h.
+
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!format\+Error@{format\+Error}}
+\index{format\+Error@{format\+Error}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{format\+Error(const Mdt\+::\+Error \&error) const }{formatError(const Mdt::Error &error) const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Error\+Logger\+::\+Backend\+::format\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+Error} \&}]{error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_adf97b152bfaa2f5015fd6ef769db7b58}{}\label{class_mdt_1_1_error_logger_1_1_backend_adf97b152bfaa2f5015fd6ef769db7b58}
+
+
+Format {\itshape error} to its string representation. 
+
+Will use the format engine set using \hyperlink{class_mdt_1_1_error_logger_1_1_backend_a5e29be8b58d1658b71aef7b69f5aff81}{set\+Format\+Engine()}.
+
+\begin{DoxyPrecond}{Precondition}
+A format engine must have been set before calling this method. 
+\end{DoxyPrecond}
+
+
+Definition at line 35 of file Backend.\+cpp.
+
 \index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!log\+Error@{log\+Error}}
 \index{log\+Error@{log\+Error}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
 \subsubsection[{\texorpdfstring{log\+Error}{logError}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mdt\+::\+Error\+Logger\+::\+Backend\+::log\+Error (
@@ -54,9 +109,32 @@ Definition at line 41 of file Backend.\+h.
 
 Log given error. 
 
-This function must be reentrant, because it can be called from \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} thread (witch is not the main thread). 
+This method must be reentrant, because it can be called from \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} thread (which is not the main thread). 
 
-Implemented in \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a31b8314d523a491b5441276122daed87}{Mdt\+::\+Error\+Logger\+::\+File\+Backend}, and \hyperlink{class_mdt_1_1_error_logger_1_1_console_backend_a2d30700dd6a91c244d68bd3670fdbc33}{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}.
+Implemented in \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_ac38a14b8d4cd8cedb51bf224b091229c}{Mdt\+::\+Error\+Logger\+::\+File\+Backend}, and \hyperlink{class_mdt_1_1_error_logger_1_1_console_backend_a2d30700dd6a91c244d68bd3670fdbc33}{Mdt\+::\+Error\+Logger\+::\+Console\+Backend}.
+
+\index{Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}!set\+Format\+Engine@{set\+Format\+Engine}}
+\index{set\+Format\+Engine@{set\+Format\+Engine}!Mdt\+::\+Error\+Logger\+::\+Backend@{Mdt\+::\+Error\+Logger\+::\+Backend}}
+\subsubsection[{\texorpdfstring{set\+Format\+Engine()}{setFormatEngine()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Mdt\+::\+Error\+Logger\+::\+Backend\+::set\+Format\+Engine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_error_logger_1_1_backend_a5e29be8b58d1658b71aef7b69f5aff81}{}\label{class_mdt_1_1_error_logger_1_1_backend_a5e29be8b58d1658b71aef7b69f5aff81}
+
+
+Set the format engine. 
+
+A format engine is a subclass of \hyperlink{class_mdt_1_1_error_logger_1_1_format_engine}{Format\+Engine} that outputs a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} to its string representation.
+
+\begin{DoxyNote}{Note}
+Concrete subclass of \hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} should set its format engine
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Setting the format engine is not thread safe. It should be done before any error is committed to a backend. 
+\end{DoxyWarning}
+
+
+Definition at line 77 of file Backend.\+h.
 
 
 

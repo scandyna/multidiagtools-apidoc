@@ -1,0 +1,92 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Lconvert\+Wrapper Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper}\index{Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper}}
+
+
+Wraps a lconvert command line tool.  
+
+
+
+
+{\ttfamily \#include $<$Lconvert\+Wrapper.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Lconvert\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Lconvert\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a7480fdd01a013b4661f40b980d1340af}{Lconvert\+Wrapper} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a7480fdd01a013b4661f40b980d1340af}{}\label{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a7480fdd01a013b4661f40b980d1340af}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a8616e05f113ea741e96baf2388fe0ffd}{exec\+Lconvert} (const Q\+String\+List \&arguments)\hypertarget{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a8616e05f113ea741e96baf2388fe0ffd}{}\label{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a8616e05f113ea741e96baf2388fe0ffd}
+
+\begin{DoxyCompactList}\small\item\em Execute lconvert. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a367b7bd6264b9c2e62b1c1359938f9fc}{execute\+Join\+Qm\+Files} (const Q\+String\+List \&in\+File\+Path\+List, const Q\+String \&out\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Execute joining QM files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Wraps a lconvert command line tool. 
+
+Example of usage\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a7480fdd01a013b4661f40b980d1340af}{LconvertWrapper} lconvert;
+
+\textcolor{comment}{// Maybe specify where expected Qt installation is located}
+PathList pathPrefixList\{\textcolor{stringliteral}{"/opt/Qt5/5.9.1/gcc\_64"}\};
+lconvert.findQtBinPath(pathPrefixList);
+\textcolor{comment}{// Find and run lconvert}
+lconvert.execLconvert(\{\textcolor{stringliteral}{"-h"}\});
+\end{DoxyCode}
+ 
+
+Definition at line 44 of file Lconvert\+Wrapper.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper}!execute\+Join\+Qm\+Files@{execute\+Join\+Qm\+Files}}
+\index{execute\+Join\+Qm\+Files@{execute\+Join\+Qm\+Files}!Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper}}
+\subsubsection[{\texorpdfstring{execute\+Join\+Qm\+Files(const Q\+String\+List \&in\+File\+Path\+List, const Q\+String \&out\+File\+Path)}{executeJoinQmFiles(const QStringList &inFilePathList, const QString &outFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Lconvert\+Wrapper\+::execute\+Join\+Qm\+Files (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+List \&}]{in\+File\+Path\+List, }
+\item[{const Q\+String \&}]{out\+File\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a367b7bd6264b9c2e62b1c1359938f9fc}{}\label{class_mdt_1_1_deploy_utils_1_1_lconvert_wrapper_a367b7bd6264b9c2e62b1c1359938f9fc}
+
+
+Execute joining QM files. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape in\+File\+Path\+List} must not be empty 
+
+No file path in {\itshape in\+File\+Path\+List} must be empty 
+
+{\itshape out\+File\+Path} must not be empty 
+\end{DoxyPrecond}
+
+
+Definition at line 50 of file Lconvert\+Wrapper.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Lconvert\+Wrapper.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Lconvert\+Wrapper.\+cpp\end{DoxyCompactItemize}

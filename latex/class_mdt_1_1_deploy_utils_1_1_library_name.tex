@@ -36,6 +36,8 @@ Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_name_a97bcd2eb9df2f8
 \begin{DoxyCompactList}\small\item\em Get library name prefix. \end{DoxyCompactList}\item 
 Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_name_a4b379ec428e7819d9f164f25a472b6b1}{name} () const 
 \begin{DoxyCompactList}\small\item\em Get library name. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_name_aa25817d91f88d5863046948b81440163}{has\+Name\+Debug\+Suffix} () const 
+\begin{DoxyCompactList}\small\item\em Check a debug suffix is present in the name. \end{DoxyCompactList}\item 
 Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_name_a34442b11c8cd11ceb8f6903d473dcd2d}{extension} () const 
 \begin{DoxyCompactList}\small\item\em Get library name extension. \end{DoxyCompactList}\item 
 \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_version}{Library\+Version} \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_name_a59e3df9a9af9a081a9b09eec7292bb80}{version} () const \hypertarget{class_mdt_1_1_deploy_utils_1_1_library_name_a59e3df9a9af9a081a9b09eec7292bb80}{}\label{class_mdt_1_1_deploy_utils_1_1_library_name_a59e3df9a9af9a081a9b09eec7292bb80}
@@ -55,7 +57,7 @@ static \hyperlink{namespace_mdt_1_1_deploy_utils_a998c3ae583084b7cac9e9a71b9e1ac
 \subsection{Detailed Description}
 Representation of a shared library name. 
 
-Definition at line 35 of file Library\+Name.\+h.
+Definition at line 36 of file Library\+Name.\+h.
 
 
 
@@ -73,7 +75,7 @@ Construct a library name from a name.
 
 {\itshape full\+Name} can be passed without any prefix, extension, version. Example\+: Qt5\+Core A more platform specific name can also be passed, for example lib\+Qt5\+Core.\+so A versionned version can also be passed, for example lib\+Qt5\+Core.\+so.\+5 , lib\+Qt5\+Core.\+so.\+5.\+5 , lib\+Qt5\+Core.\+so.\+5.\+5.\+1 
 
-Definition at line 31 of file Library\+Name.\+cpp.
+Definition at line 32 of file Library\+Name.\+cpp.
 
 
 
@@ -91,7 +93,7 @@ Get library name extension.
 
 Returns the extension if it was set. For versionned so names, only \textquotesingle{}so\textquotesingle{} is returned. 
 
-Definition at line 102 of file Library\+Name.\+h.
+Definition at line 115 of file Library\+Name.\+h.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}!full\+Name@{full\+Name}}
 \index{full\+Name@{full\+Name}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}}
@@ -106,7 +108,28 @@ Get library full name.
 
 Returns the library name as it was set. 
 
-Definition at line 118 of file Library\+Name.\+h.
+Definition at line 131 of file Library\+Name.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}!has\+Name\+Debug\+Suffix@{has\+Name\+Debug\+Suffix}}
+\index{has\+Name\+Debug\+Suffix@{has\+Name\+Debug\+Suffix}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}}
+\subsubsection[{\texorpdfstring{has\+Name\+Debug\+Suffix() const }{hasNameDebugSuffix() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Library\+Name\+::has\+Name\+Debug\+Suffix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_library_name_aa25817d91f88d5863046948b81440163}{}\label{class_mdt_1_1_deploy_utils_1_1_library_name_aa25817d91f88d5863046948b81440163}
+
+
+Check a debug suffix is present in the name. 
+
+This has only sense for dll (Windows), when the convention of suffixing \textquotesingle{}d\textquotesingle{} or \textquotesingle{}D\textquotesingle{} to the name is used.
+
+For example\+:
+\begin{DoxyItemize}
+\item Qt5\+Core.\+dll \+: not debug, this method returns false
+\item Qt5\+Cored.\+dll\+: debug, this method returns true 
+\end{DoxyItemize}
+
+Definition at line 57 of file Library\+Name.\+cpp.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}!name@{name}}
 \index{name@{name}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}}
@@ -121,7 +144,7 @@ Get library name.
 
 Returns the library name without any prefix or extension or version. For example, if this library name was constructed with lib\+Qt5\+Core.\+so.\+5.\+5.\+1 this method returns Qt5\+Core 
 
-Definition at line 92 of file Library\+Name.\+h.
+Definition at line 93 of file Library\+Name.\+h.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}!operating\+System@{operating\+System}}
 \index{operating\+System@{operating\+System}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}}
@@ -136,7 +159,7 @@ Deduce the operating system of a library from its file name.
 
 Will use the file extension of {\itshape full\+Name} to deduce the library operating system. 
 
-Definition at line 67 of file Library\+Name.\+cpp.
+Definition at line 78 of file Library\+Name.\+cpp.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}!prefix@{prefix}}
 \index{prefix@{prefix}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}}
@@ -151,7 +174,7 @@ Get library name prefix.
 
 Returns the library name prefix if it was set. 
 
-Definition at line 81 of file Library\+Name.\+h.
+Definition at line 82 of file Library\+Name.\+h.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}!to\+Full\+Name\+Linux@{to\+Full\+Name\+Linux}}
 \index{to\+Full\+Name\+Linux@{to\+Full\+Name\+Linux}!Mdt\+::\+Deploy\+Utils\+::\+Library\+Name@{Mdt\+::\+Deploy\+Utils\+::\+Library\+Name}}
@@ -166,7 +189,7 @@ Get the full library name for Linux platform.
 
 Returns the lib prefix, name, .so extension, and the version if available 
 
-Definition at line 56 of file Library\+Name.\+cpp.
+Definition at line 67 of file Library\+Name.\+cpp.
 
 
 

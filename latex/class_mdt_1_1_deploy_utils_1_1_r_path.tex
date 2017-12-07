@@ -1,0 +1,89 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:R\+Path Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_r_path}\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path}}
+
+
+Utility class to get and set R\+P\+A\+TH of executables and shared libraries that support it.  
+
+
+
+
+{\ttfamily \#include $<$R\+Path.\+h$>$}
+
+
+
+Inherits Q\+Object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_ae72424a11cda9203d7aa41505a95c1f2}{R\+Path} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_ae72424a11cda9203d7aa41505a95c1f2}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_ae72424a11cda9203d7aa41505a95c1f2}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a470a53bb79b5204d95a3705c1dfe2464}{read\+R\+Path} (const Q\+String \&binary\+File\+Path)\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_a470a53bb79b5204d95a3705c1dfe2464}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_a470a53bb79b5204d95a3705c1dfe2464}
+
+\begin{DoxyCompactList}\small\item\em Read R\+P\+A\+TH from binary file. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list}{R\+Path\+Info\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a82905968d20fb6c6ebcae43fca22fa32}{rpath} () const 
+\begin{DoxyCompactList}\small\item\em Get R\+P\+A\+TH. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a3d35bcd84545accfab61fa94b5cb261a}{set\+R\+Path\+To\+Origin} (const Q\+String \&binary\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Set R\+P\+A\+TH to origin. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a2e728628e29bd1e15ea5e4bcff644459}{set\+R\+Path} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list}{R\+Path\+Info\+List} \&\hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a82905968d20fb6c6ebcae43fca22fa32}{rpath}, const Q\+String \&binary\+File\+Path)\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_a2e728628e29bd1e15ea5e4bcff644459}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_a2e728628e29bd1e15ea5e4bcff644459}
+
+\begin{DoxyCompactList}\small\item\em Set R\+P\+A\+TH to binary file. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a382810e569023b6c28382dbaaf40daf2}{prepend\+Path} (const Q\+String \&path, const Q\+String \&binary\+File\+Path)\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_a382810e569023b6c28382dbaaf40daf2}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_a382810e569023b6c28382dbaaf40daf2}
+
+\begin{DoxyCompactList}\small\item\em Prepend {\itshape path} to the R\+P\+A\+TH for a executable file or a shared library. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_ad40130b8aac917408c0bdb6e6e47b4e6}{prepend\+Path\+For\+Binaries} (const Q\+String \&path, const Q\+String \&directory\+Path)\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_ad40130b8aac917408c0bdb6e6e47b4e6}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_ad40130b8aac917408c0bdb6e6e47b4e6}
+
+\begin{DoxyCompactList}\small\item\em Prepend {\itshape path} to the R\+P\+A\+TH for binaries in a directory. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a649c064bd1468bfa8f4c2f29d05e9ec0}{last\+Error} () const \hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_a649c064bd1468bfa8f4c2f29d05e9ec0}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_a649c064bd1468bfa8f4c2f29d05e9ec0}
+
+\begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class to get and set R\+P\+A\+TH of executables and shared libraries that support it. 
+
+Definition at line 37 of file R\+Path.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path}!rpath@{rpath}}
+\index{rpath@{rpath}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path}}
+\subsubsection[{\texorpdfstring{rpath() const }{rpath() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+Path\+Info\+List} Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+::rpath (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_a82905968d20fb6c6ebcae43fca22fa32}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_a82905968d20fb6c6ebcae43fca22fa32}
+
+
+Get R\+P\+A\+TH. 
+
+\begin{DoxyNote}{Note}
+returns a valid R\+P\+A\+TH only after a successful call of \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_a470a53bb79b5204d95a3705c1dfe2464}{read\+R\+Path()} . 
+\end{DoxyNote}
+
+
+Definition at line 56 of file R\+Path.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path}!set\+R\+Path\+To\+Origin@{set\+R\+Path\+To\+Origin}}
+\index{set\+R\+Path\+To\+Origin@{set\+R\+Path\+To\+Origin}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path}}
+\subsubsection[{\texorpdfstring{set\+R\+Path\+To\+Origin(const Q\+String \&binary\+File\+Path)}{setRPathToOrigin(const QString &binaryFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+::set\+R\+Path\+To\+Origin (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_a3d35bcd84545accfab61fa94b5cb261a}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_a3d35bcd84545accfab61fa94b5cb261a}
+
+
+Set R\+P\+A\+TH to origin. 
+
+Origin means that R\+P\+A\+TH is set to the current directory where the executable or the shared library lives. On Linux, it is called \$\+O\+R\+I\+G\+IN . 
+
+Definition at line 51 of file R\+Path.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/R\+Path.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/R\+Path.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,163 @@
+\hypertarget{namespace_mdt_1_1_translation}{}\section{Mdt\+:\+:Translation Namespace Reference}
+\label{namespace_mdt_1_1_translation}\index{Mdt\+::\+Translation@{Mdt\+::\+Translation}}
+
+
+Some utilities for application translations.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_language_code}{Language\+Code}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_translation_1_1_language_code}{Language\+Code} is a 2 letter I\+SO 639-\/1 laguage representation. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_language_code_list}{Language\+Code\+List}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_translation_1_1_language_code_list}{Language\+Code\+List} holds a list of \hyperlink{class_mdt_1_1_translation_1_1_language_code}{Language\+Code}. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_language_selection}{Language\+Selection}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_mdt_1_1_translation_1_1_language_selection}{Language\+Selection} facilitates the creation of multi-\/language applications. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_language_selection_action_list}{Language\+Selection\+Action\+List}
+\begin{DoxyCompactList}\small\item\em Helper class to create actions for language selection. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu}{Language\+Selection\+Menu}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu}{Language\+Selection\+Menu} class provides a language selection menu. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_qm_file_name}{Qm\+File\+Name}
+\begin{DoxyCompactList}\small\item\em Representation of a .qm translation file name. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_translation_info}{Translation\+Info}
+\begin{DoxyCompactList}\small\item\em Value class that stores informations about a translation. \end{DoxyCompactList}\item 
+class \hyperlink{class_mdt_1_1_translation_1_1_translation_info_list}{Translation\+Info\+List}
+\begin{DoxyCompactList}\small\item\em Container that contains a list of \hyperlink{class_mdt_1_1_translation_1_1_translation_info}{Translation\+Info}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected}$<$ \hyperlink{class_mdt_1_1_translation_1_1_translation_info_list}{Mdt\+::\+Translation\+::\+Translation\+Info\+List} $>$ \hyperlink{namespace_mdt_1_1_translation_a4267ecfaee1a925cd57515ed7fece047}{find\+Translations} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find translations in a set of directories. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_translation_a6ddba2861cf4fcca7d47837baf4e17ba}{find\+Translations\+Root} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find the root directory of translations. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_translation_abc9c4156875731e7a0d4c0f312f334c0}{find\+Directory\+Root} (const Q\+String \&directory, const Q\+String\+List \&possible\+Subdirectories, const Q\+String \&expected\+Qm\+File\+Base\+Name, const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find the root directory of translations. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{namespace_mdt_1_1_translation_a493b74f7d450997a4bf0674753533a0f}{find\+Directory\+Root} (const Q\+String \&directory, const Q\+String\+List \&possible\+Subdirectories, const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find the root directory of translations. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_mdt_1_1_translation_a641c0ee60dbd128ecc2b050f17f863fc}{is\+Translation\+Directory} (const Q\+String \&directory\+Path, const Q\+String \&expected\+Qm\+File\+Base\+Name=Q\+String())
+\begin{DoxyCompactList}\small\item\em Check if a directory is a translation directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some utilities for application translations. 
+
+\subsection{Function Documentation}
+\index{Mdt\+::\+Translation@{Mdt\+::\+Translation}!find\+Directory\+Root@{find\+Directory\+Root}}
+\index{find\+Directory\+Root@{find\+Directory\+Root}!Mdt\+::\+Translation@{Mdt\+::\+Translation}}
+\subsubsection[{\texorpdfstring{find\+Directory\+Root(const Q\+String \&directory, const Q\+String\+List \&possible\+Subdirectories, const Q\+String \&expected\+Qm\+File\+Base\+Name, const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findDirectoryRoot(const QString &directory, const QStringList &possibleSubdirectories, const QString &expectedQmFileBaseName, const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String M\+D\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Translation\+::find\+Directory\+Root (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{directory, }
+\item[{const Q\+String\+List \&}]{possible\+Subdirectories, }
+\item[{const Q\+String \&}]{expected\+Qm\+File\+Base\+Name, }
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_translation_abc9c4156875731e7a0d4c0f312f334c0}{}\label{namespace_mdt_1_1_translation_abc9c4156875731e7a0d4c0f312f334c0}
+
+
+Find the root directory of translations. 
+
+For a given path prefix, a subdirectory, named {\itshape directory}, will be located in {\itshape possible\+Subdirectories} .
+
+A path is considered as the expected translation only if a QM file, for which the base name is {\itshape expected\+Qm\+File\+Base\+Name} , exists.
+
+If {\itshape path\+Prefix\+List} contains at least 1 non empty path, {\itshape directory} will only be located starting from prefixes in it. Else, system path prefixes will be used.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespace_mdt_1_1_translation_a493b74f7d450997a4bf0674753533a0f}{find\+Directory\+Root(const Q\+String \&, const Q\+String\+List \&, const Mdt\+::\+File\+System\+::\+Path\+List \&)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 73 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Translation@{Mdt\+::\+Translation}!find\+Directory\+Root@{find\+Directory\+Root}}
+\index{find\+Directory\+Root@{find\+Directory\+Root}!Mdt\+::\+Translation@{Mdt\+::\+Translation}}
+\subsubsection[{\texorpdfstring{find\+Directory\+Root(const Q\+String \&directory, const Q\+String\+List \&possible\+Subdirectories, const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findDirectoryRoot(const QString &directory, const QStringList &possibleSubdirectories, const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String M\+D\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Translation\+::find\+Directory\+Root (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{directory, }
+\item[{const Q\+String\+List \&}]{possible\+Subdirectories, }
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_translation_a493b74f7d450997a4bf0674753533a0f}{}\label{namespace_mdt_1_1_translation_a493b74f7d450997a4bf0674753533a0f}
+
+
+Find the root directory of translations. 
+
+For a given path prefix, a subdirectory, named {\itshape directory}, will be located in {\itshape possible\+Subdirectories} .
+
+A path is considered as the expected translation only if it contains at least one a QM file.
+
+If {\itshape path\+Prefix\+List} contains at least 1 non empty path, {\itshape directory} will only be located starting from prefixes in it. Else, system path prefixes will be used.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespace_mdt_1_1_translation_abc9c4156875731e7a0d4c0f312f334c0}{find\+Directory\+Root(const Q\+String \&, const Q\+String\+List \&, const Q\+String \&, const Mdt\+::\+File\+System\+::\+Path\+List \&)} 
+\end{DoxySeeAlso}
+
+
+Definition at line 99 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Translation@{Mdt\+::\+Translation}!find\+Translations@{find\+Translations}}
+\index{find\+Translations@{find\+Translations}!Mdt\+::\+Translation@{Mdt\+::\+Translation}}
+\subsubsection[{\texorpdfstring{find\+Translations(const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findTranslations(const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mdt\+::\+Expected}$<$ {\bf Mdt\+::\+Translation\+::\+Translation\+Info\+List} $>$ M\+D\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Translation\+::find\+Translations (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_translation_a4267ecfaee1a925cd57515ed7fece047}{}\label{namespace_mdt_1_1_translation_a4267ecfaee1a925cd57515ed7fece047}
+
+
+Find translations in a set of directories. 
+
+Translations are searched in directories defined using \hyperlink{namespace_mdt_1_1_translation_a6ddba2861cf4fcca7d47837baf4e17ba}{find\+Translations\+Root()}.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path\+Prefix\+List} must contain at least one path. 
+\end{DoxyPrecond}
+
+
+Definition at line 40 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Translation@{Mdt\+::\+Translation}!find\+Translations\+Root@{find\+Translations\+Root}}
+\index{find\+Translations\+Root@{find\+Translations\+Root}!Mdt\+::\+Translation@{Mdt\+::\+Translation}}
+\subsubsection[{\texorpdfstring{find\+Translations\+Root(const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findTranslationsRoot(const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String M\+D\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Translation\+::find\+Translations\+Root (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_translation_a6ddba2861cf4fcca7d47837baf4e17ba}{}\label{namespace_mdt_1_1_translation_a6ddba2861cf4fcca7d47837baf4e17ba}
+
+
+Find the root directory of translations. 
+
+For a given path prefix, a subdirectory, named translations, will be located. It is considered as a translation directory if it contains at least 1 $\ast$.qm file.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path\+Prefix\+List} must contain at least one path. 
+\end{DoxyPrecond}
+
+
+Definition at line 66 of file Find\+Translation.\+cpp.
+
+\index{Mdt\+::\+Translation@{Mdt\+::\+Translation}!is\+Translation\+Directory@{is\+Translation\+Directory}}
+\index{is\+Translation\+Directory@{is\+Translation\+Directory}!Mdt\+::\+Translation@{Mdt\+::\+Translation}}
+\subsubsection[{\texorpdfstring{is\+Translation\+Directory(const Q\+String \&directory\+Path, const Q\+String \&expected\+Qm\+File\+Base\+Name=\+Q\+String())}{isTranslationDirectory(const QString &directoryPath, const QString &expectedQmFileBaseName=QString())}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+D\+T\+\_\+\+T\+R\+A\+N\+S\+L\+A\+T\+I\+O\+N\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Translation\+::is\+Translation\+Directory (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{directory\+Path, }
+\item[{const Q\+String \&}]{expected\+Qm\+File\+Base\+Name = {\ttfamily QString()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_translation_a641c0ee60dbd128ecc2b050f17f863fc}{}\label{namespace_mdt_1_1_translation_a641c0ee60dbd128ecc2b050f17f863fc}
+
+
+Check if a directory is a translation directory. 
+
+Will check if the directory {\itshape directory\+Path} contains at least 1 QM file.
+
+If {\itshape expected\+Qm\+File\+Base\+Name} is set, the directory is considered a translation directory only if it contains at least 1 QM file named $<${\itshape expected\+Qm\+File\+Base\+Name$>$\+\_\+$<$xy$>$.\+qm} .
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{bool} matches = \hyperlink{namespace_mdt_1_1_translation_a641c0ee60dbd128ecc2b050f17f863fc}{isTranslationDirectory}(\textcolor{stringliteral}{"/opt/Qt5/translations"}, \textcolor{stringliteral}{"qtbase"});
+\textcolor{comment}{// matches will be true only if /opt/Qt5/translations/ contains qtbase\_en.qm or qtbase\_fr.qm, etc..}
+\end{DoxyCode}
+ 
+
+Definition at line 104 of file Find\+Translation.\+cpp.
+

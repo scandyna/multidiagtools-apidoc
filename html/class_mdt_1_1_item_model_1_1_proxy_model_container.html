@@ -179,7 +179,7 @@ template&lt;typename T &gt; </td></tr>
 <p>Above example could look like: </p><div class="fragment"><div class="line"><a class="code" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#acef8f95b42382752a454b607bcf6d9b0">ProxyModelContainer</a> container;</div><div class="line"><span class="keyword">auto</span> *view = <span class="keyword">new</span> QTableView;</div><div class="line"></div><div class="line">container.setSourceModel( <span class="keyword">new</span> MyItemModel(<span class="keyword">this</span>) );</div><div class="line">container.appendProxyModel( <span class="keyword">new</span> FilterProxyModel(<span class="keyword">this</span>) );</div><div class="line">container.appendProxyModel( <span class="keyword">new</span> FormatProxyModel(<span class="keyword">this</span>) );</div><div class="line">view-&gt;setModel( container.modelForView() );</div></div><!-- fragment --><p>If we have to access proxy models frquently, for example to change some setup, it can be helpful to create a custom container.</p>
 <p>Here is a example how this could be done: </p><div class="fragment"><div class="line"><span class="keyword">class </span>MyModelContainer</div><div class="line">{</div><div class="line"> <span class="keyword">public</span>:</div><div class="line"></div><div class="line">  <span class="comment">// Here, parent is used for lifetime management of the proxy models</span></div><div class="line">  MyModelContainer(QObject *parent = <span class="keyword">nullptr</span>)</div><div class="line">  {</div><div class="line">    mContainer.appendProxyModel( <span class="keyword">new</span> FilterProxyModel(parent) );</div><div class="line">    mContainer.appendProxyModel( <span class="keyword">new</span> FormatProxyModel(parent) );</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Set source model</span></div><div class="line">  <span class="keywordtype">void</span> <a class="code" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#a74f1afaa5c2002a6c0f7d31caed4fb2e">setSourceModel</a>(QAbstractItemModel *model)</div><div class="line">  {</div><div class="line">    mContainer.setSourceModel(model);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Get the model for the view</span></div><div class="line">  QAbstractItemModel *<a class="code" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#ad7f8e95b0603b354a80bf4514db5a6e1">modelForView</a>()<span class="keyword"> const</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> mContainer.modelForView();</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Access the filter proxy model</span></div><div class="line">  FilterProxyModel *filterModel()<span class="keyword"> const</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>FilterProxyModel*<span class="keyword">&gt;</span>( mContainer.proxyModelAt(0) );</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Access the format proxy model</span></div><div class="line">  FormatProxyModel *formatModel()<span class="keyword"> const</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>FormatProxyModel*<span class="keyword">&gt;</span>( mContainer.proxyModelAt(1) );</div><div class="line">  }</div><div class="line"></div><div class="line"> <span class="keyword">private</span>:</div><div class="line"></div><div class="line">  <a class="code" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#acef8f95b42382752a454b607bcf6d9b0">ProxyModelContainer</a> mContainer;</div><div class="line">};</div></div><!-- fragment --><p><a class="el" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html" title="Container for a chain of proxy models based on QAbstractProxyModel. ">ProxyModelContainer</a> does not own any model, source model and all proxy models will not be deleted when the container is destroyed. It is recommanded to use the QObject mechanism to handle lifetime of models (passing a parent to each one). </p>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00121">121</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00122">122</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a94a828852d4160371fc24ed05375e4b9"></a>
 <div class="memitem">
@@ -229,7 +229,7 @@ template&lt;typename T &gt; </div>
 <p>Will remove and delete the proxy model.</p>
 <p>Will do nothing if not proxy model of type T exists in this container. </p>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00329">329</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00330">330</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ template&lt;typename T &gt; </div>
 <p>The first proxy model is the nearest of the source model.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>Cannot be called unless at least 1 proxy model was added the this container. </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00185">185</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00186">186</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ template&lt;typename T &gt; </div>
 <p>Get the first proxy model that is of type T. </p>
 <dl class="section return"><dt>Returns</dt><dd>The proxy model if found, else a nullptr </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00265">265</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00266">266</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +361,7 @@ template&lt;typename T &gt; </div>
 <p>Get the index of the first proxy model that is of type T. </p>
 <dl class="section return"><dt>Returns</dt><dd>The index of the proxy model if found, else -1 </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00247">247</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00248">248</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +390,7 @@ template&lt;typename T &gt; </div>
 <p>Get the index of the proxy model. </p>
 <dl class="section return"><dt>Returns</dt><dd>The index of the proxy model that is referenced by <em>model</em>, or -1 if not found. </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00225">225</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00226">226</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ template&lt;typename T &gt; </div>
 <p>The last proxy model is the nearest of the view.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>Cannot be called unless at least 1 proxy model was added the this container. </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00197">197</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00198">198</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -447,7 +447,7 @@ template&lt;typename T &gt; </div>
 <p>Get model for the view. </p>
 <p>If at least 1 proxy model exists int this container, this method returns <a class="el" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#a36918ea3afc68b988252a48f56923299" title="Get last proxy model. ">lastProxyModel()</a>, else it returns <a class="el" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#ab77e422bbc3f5e2357a00e09909e75cc" title="Get source model. ">sourceModel()</a>. </p>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00159">159</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00160">160</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +497,7 @@ template&lt;typename T &gt; </div>
 <p>Get proxy model at index. </p>
 <dl class="section pre"><dt>Precondition</dt><dd><em>index</em> must be in valid range ( 0 &lt;= index &lt; <a class="el" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#ae0764cece09670828ea2e6510e674181" title="Get count of proxy models. ">proxyModelCount()</a> ) </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00214">214</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00215">215</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +528,7 @@ template&lt;typename T &gt; </div>
 <p>Note that the model is only removed from this container, but not deleted.</p>
 <p>Will do nothing if not proxy model of type T exists in this container. </p>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00314">314</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00315">315</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ template&lt;typename T &gt; </div>
 <p>Returns a nullptr until a model was set.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_mdt_1_1_item_model_1_1_proxy_model_container.html#a74f1afaa5c2002a6c0f7d31caed4fb2e" title="Set source model. ">setSourceModel()</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00148">148</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
+<p>Definition at line <a class="el" href="_proxy_model_container_8h_source.html#l00149">149</a> of file <a class="el" href="_proxy_model_container_8h_source.html">ProxyModelContainer.h</a>.</p>
 
 </div>
 </div>
@@ -632,7 +632,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -72,12 +72,16 @@ const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \& \hyperlink{class_mdt_1_
 bool \hyperlink{class_mdt_1_1_expected_a8e75fd1c7205ad0fedac14223312c09e}{has\+Value} () const \hypertarget{class_mdt_1_1_expected_a8e75fd1c7205ad0fedac14223312c09e}{}\label{class_mdt_1_1_expected_a8e75fd1c7205ad0fedac14223312c09e}
 
 \begin{DoxyCompactList}\small\item\em Return true if a value was set. \end{DoxyCompactList}\item 
-\hyperlink{class_mdt_1_1_expected_aa88e1919edb8b192abab69bffadf660e}{operator bool} () const \hypertarget{class_mdt_1_1_expected_aa88e1919edb8b192abab69bffadf660e}{}\label{class_mdt_1_1_expected_aa88e1919edb8b192abab69bffadf660e}
-
-\begin{DoxyCompactList}\small\item\em Return true if a value was set. \end{DoxyCompactList}\item 
 T \& \hyperlink{class_mdt_1_1_expected_a744546093eb011f8d3964d749a3cbea3}{value} ()
 \begin{DoxyCompactList}\small\item\em Access value. \end{DoxyCompactList}\item 
 const T \& \hyperlink{class_mdt_1_1_expected_a290f2b4456b100e7066a453ffe7e94e8}{value} () const 
+\begin{DoxyCompactList}\small\item\em Access value (read only) \end{DoxyCompactList}\item 
+constexpr \hyperlink{class_mdt_1_1_expected_a4dadb05074ef02446bbbead8fd663b3f}{operator bool} () const noexcept\hypertarget{class_mdt_1_1_expected_a4dadb05074ef02446bbbead8fd663b3f}{}\label{class_mdt_1_1_expected_a4dadb05074ef02446bbbead8fd663b3f}
+
+\begin{DoxyCompactList}\small\item\em Return true if a value was set. \end{DoxyCompactList}\item 
+T \& \hyperlink{class_mdt_1_1_expected_a6aab8021eae1bd2e24bf42aad0fab67e}{operator$\ast$} ()\&
+\begin{DoxyCompactList}\small\item\em Access value. \end{DoxyCompactList}\item 
+const T \& \hyperlink{class_mdt_1_1_expected_aaf11786a3d1fdb6ae8deb71639d83c29}{operator$\ast$} () const \&
 \begin{DoxyCompactList}\small\item\em Access value (read only) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -91,6 +95,29 @@ Contains a value or a error.
 
 \hyperlink{class_mdt_1_1_expected}{Mdt\+::\+Expected} is a very limited version of the concept. For more advanced and performant version, you should take a look at the official proposal\+: \href{https://github.com/viboes/std-make/tree/master/doc/proposal/expected}{\tt https\+://github.\+com/viboes/std-\/make/tree/master/doc/proposal/expected}
 
+A function, that reads a value from a storage, could look like\+: 
+\begin{DoxyCode}
+\hyperlink{class_mdt_1_1_expected}{Mdt::Expected<int>} readValue(\textcolor{keyword}{const} QString & filePath);
+\end{DoxyCode}
+
+
+Later, a computation has to be done on the readen value\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} compute(\textcolor{keywordtype}{int} \hyperlink{class_mdt_1_1_expected_a744546093eb011f8d3964d749a3cbea3}{value});
+\end{DoxyCode}
+
+
+Using all together could be\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{const} \textcolor{keyword}{auto} x = readValue(\textcolor{stringliteral}{"/path/to/x.csv"});
+\textcolor{keywordflow}{if}(!x)\{
+  \textcolor{comment}{// Error handling}
+  \textcolor{keywordflow}{return} -1;
+\}
+\textcolor{keyword}{const} \textcolor{keyword}{auto} y = compute(*x);
+\end{DoxyCode}
+
+
 
 \begin{DoxyTemplParams}{Template Parameters}
 {\em T} & Type of value \\
@@ -98,7 +125,7 @@ Contains a value or a error.
 \end{DoxyTemplParams}
 
 
-Definition at line 44 of file Expected.\+h.
+Definition at line 64 of file Expected.\+h.
 
 
 
@@ -116,7 +143,7 @@ Construct a empty expected.
 
 A empty expected contains a null error (see \hyperlink{class_mdt_1_1_error_a2b6a7708216d0de056c7d9e7dc571e70}{Mdt\+::\+Error\+::is\+Null()}). 
 
-Definition at line 53 of file Expected.\+h.
+Definition at line 73 of file Expected.\+h.
 
 
 
@@ -137,7 +164,7 @@ this must contain a error
 \end{DoxyPrecond}
 
 
-Definition at line 226 of file Expected.\+h.
+Definition at line 246 of file Expected.\+h.
 
 \index{Mdt\+::\+Expected@{Mdt\+::\+Expected}!error@{error}}
 \index{error@{error}!Mdt\+::\+Expected@{Mdt\+::\+Expected}}
@@ -155,7 +182,43 @@ this must contain a error
 \end{DoxyPrecond}
 
 
-Definition at line 236 of file Expected.\+h.
+Definition at line 256 of file Expected.\+h.
+
+\index{Mdt\+::\+Expected@{Mdt\+::\+Expected}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Mdt\+::\+Expected@{Mdt\+::\+Expected}}
+\subsubsection[{\texorpdfstring{operator$\ast$()\&}{operator*()&}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T\& {\bf Mdt\+::\+Expected}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_expected_a6aab8021eae1bd2e24bf42aad0fab67e}{}\label{class_mdt_1_1_expected_a6aab8021eae1bd2e24bf42aad0fab67e}
+
+
+Access value. 
+
+\begin{DoxyPrecond}{Precondition}
+this must contain a value 
+\end{DoxyPrecond}
+
+
+Definition at line 300 of file Expected.\+h.
+
+\index{Mdt\+::\+Expected@{Mdt\+::\+Expected}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Mdt\+::\+Expected@{Mdt\+::\+Expected}}
+\subsubsection[{\texorpdfstring{operator$\ast$() const \&}{operator*() const &}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ const T\& {\bf Mdt\+::\+Expected}$<$ T $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_expected_aaf11786a3d1fdb6ae8deb71639d83c29}{}\label{class_mdt_1_1_expected_aaf11786a3d1fdb6ae8deb71639d83c29}
+
+
+Access value (read only) 
+
+\begin{DoxyPrecond}{Precondition}
+this must contain a value 
+\end{DoxyPrecond}
+
+
+Definition at line 310 of file Expected.\+h.
 
 \index{Mdt\+::\+Expected@{Mdt\+::\+Expected}!value@{value}}
 \index{value@{value}!Mdt\+::\+Expected@{Mdt\+::\+Expected}}
@@ -173,7 +236,7 @@ this must contain a value
 \end{DoxyPrecond}
 
 
-Definition at line 260 of file Expected.\+h.
+Definition at line 273 of file Expected.\+h.
 
 \index{Mdt\+::\+Expected@{Mdt\+::\+Expected}!value@{value}}
 \index{value@{value}!Mdt\+::\+Expected@{Mdt\+::\+Expected}}
@@ -191,7 +254,7 @@ this must contain a value
 \end{DoxyPrecond}
 
 
-Definition at line 270 of file Expected.\+h.
+Definition at line 283 of file Expected.\+h.
 
 
 

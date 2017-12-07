@@ -47,16 +47,19 @@ Q\+String \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a7c79c940be2f03
 qint64 \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a8c5943cdd59ed5941c72490d7b414359}{max\+File\+Size} () const \hypertarget{class_mdt_1_1_error_logger_1_1_file_backend_a8c5943cdd59ed5941c72490d7b414359}{}\label{class_mdt_1_1_error_logger_1_1_file_backend_a8c5943cdd59ed5941c72490d7b414359}
 
 \begin{DoxyCompactList}\small\item\em Get maximum log file size. \end{DoxyCompactList}\item 
-void \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a31b8314d523a491b5441276122daed87}{log\+Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&error)\hypertarget{class_mdt_1_1_error_logger_1_1_file_backend_a31b8314d523a491b5441276122daed87}{}\label{class_mdt_1_1_error_logger_1_1_file_backend_a31b8314d523a491b5441276122daed87}
+void \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_ac38a14b8d4cd8cedb51bf224b091229c}{log\+Error} (const \hyperlink{class_mdt_1_1_error}{Error} \&error) override\hypertarget{class_mdt_1_1_error_logger_1_1_file_backend_ac38a14b8d4cd8cedb51bf224b091229c}{}\label{class_mdt_1_1_error_logger_1_1_file_backend_ac38a14b8d4cd8cedb51bf224b091229c}
 
-\begin{DoxyCompactList}\small\item\em Log given error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Log given error. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a768a90af2b4e7084cbedee844a53bfc2}{cleanup} () override\hypertarget{class_mdt_1_1_error_logger_1_1_file_backend_a768a90af2b4e7084cbedee844a53bfc2}{}\label{class_mdt_1_1_error_logger_1_1_file_backend_a768a90af2b4e7084cbedee844a53bfc2}
+
+\begin{DoxyCompactList}\small\item\em Cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 File backend for error \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger}. 
 
-Definition at line 34 of file File\+Backend.\+h.
+Definition at line 35 of file File\+Backend.\+h.
 
 
 
@@ -81,7 +84,7 @@ Set path to log file.
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-This function should only be called before this Logger\+File\+Backend is passed to the \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} (changing file path while \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} is calling \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_a31b8314d523a491b5441276122daed87}{log\+Error()} is undefined behaviour). 
+This function should only be called before this Logger\+File\+Backend is passed to the \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} (changing file path while \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} is calling \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_ac38a14b8d4cd8cedb51bf224b091229c}{log\+Error()} is undefined behaviour). 
 \end{DoxyNote}
 
 

@@ -147,24 +147,40 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#a8c5943cdd59ed5941c72490d7b414359">maxFileSize</a> () const </td></tr>
 <tr class="memdesc:a8c5943cdd59ed5941c72490d7b414359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum log file size. <br /></td></tr>
 <tr class="separator:a8c5943cdd59ed5941c72490d7b414359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31b8314d523a491b5441276122daed87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31b8314d523a491b5441276122daed87"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#a31b8314d523a491b5441276122daed87">logError</a> (const <a class="el" href="class_mdt_1_1_error.html">Error</a> &amp;error)</td></tr>
-<tr class="memdesc:a31b8314d523a491b5441276122daed87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log given error. <br /></td></tr>
-<tr class="separator:a31b8314d523a491b5441276122daed87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38a14b8d4cd8cedb51bf224b091229c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac38a14b8d4cd8cedb51bf224b091229c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#ac38a14b8d4cd8cedb51bf224b091229c">logError</a> (const <a class="el" href="class_mdt_1_1_error.html">Error</a> &amp;error) override</td></tr>
+<tr class="memdesc:ac38a14b8d4cd8cedb51bf224b091229c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log given error. <br /></td></tr>
+<tr class="separator:ac38a14b8d4cd8cedb51bf224b091229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a768a90af2b4e7084cbedee844a53bfc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a768a90af2b4e7084cbedee844a53bfc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#a768a90af2b4e7084cbedee844a53bfc2">cleanup</a> () override</td></tr>
+<tr class="memdesc:a768a90af2b4e7084cbedee844a53bfc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup. <br /></td></tr>
+<tr class="separator:a768a90af2b4e7084cbedee844a53bfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_mdt_1_1_error_logger_1_1_backend')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html">Mdt::ErrorLogger::Backend</a></td></tr>
 <tr class="memitem:ad0e3d73ad0c0248f2d62e00f5180ca1e inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0e3d73ad0c0248f2d62e00f5180ca1e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#ad0e3d73ad0c0248f2d62e00f5180ca1e">Backend</a> (QObject *parent=nullptr)</td></tr>
 <tr class="memdesc:ad0e3d73ad0c0248f2d62e00f5180ca1e inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:ad0e3d73ad0c0248f2d62e00f5180ca1e inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a4ba51888ecb73202f48666e0fe11e inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7a4ba51888ecb73202f48666e0fe11e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#ae7a4ba51888ecb73202f48666e0fe11e">~Backend</a> ()</td></tr>
+<tr class="memdesc:ae7a4ba51888ecb73202f48666e0fe11e inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:ae7a4ba51888ecb73202f48666e0fe11e inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e29be8b58d1658b71aef7b69f5aff81 inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5e29be8b58d1658b71aef7b69f5aff81 inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#a5e29be8b58d1658b71aef7b69f5aff81">setFormatEngine</a> ()</td></tr>
+<tr class="memdesc:a5e29be8b58d1658b71aef7b69f5aff81 inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the format engine.  <a href="#a5e29be8b58d1658b71aef7b69f5aff81">More...</a><br /></td></tr>
+<tr class="separator:a5e29be8b58d1658b71aef7b69f5aff81 inherit pub_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_slots_class_mdt_1_1_error_logger_1_1_backend"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_class_mdt_1_1_error_logger_1_1_backend')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html">Mdt::ErrorLogger::Backend</a></td></tr>
+<tr class="inherit_header pro_methods_class_mdt_1_1_error_logger_1_1_backend"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mdt_1_1_error_logger_1_1_backend')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html">Mdt::ErrorLogger::Backend</a></td></tr>
+<tr class="memitem:adf97b152bfaa2f5015fd6ef769db7b58 inherit pro_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#adf97b152bfaa2f5015fd6ef769db7b58">formatError</a> (const <a class="el" href="class_mdt_1_1_error.html">Mdt::Error</a> &amp;error) const </td></tr>
+<tr class="memdesc:adf97b152bfaa2f5015fd6ef769db7b58 inherit pro_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format <em>error</em> to its string representation.  <a href="#adf97b152bfaa2f5015fd6ef769db7b58">More...</a><br /></td></tr>
+<tr class="separator:adf97b152bfaa2f5015fd6ef769db7b58 inherit pro_methods_class_mdt_1_1_error_logger_1_1_backend"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File backend for error <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a>. </p>
 
-<p>Definition at line <a class="el" href="_file_backend_8h_source.html#l00034">34</a> of file <a class="el" href="_file_backend_8h_source.html">FileBackend.h</a>.</p>
+<p>Definition at line <a class="el" href="_file_backend_8h_source.html#l00035">35</a> of file <a class="el" href="_file_backend_8h_source.html">FileBackend.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a844fc6f89a147b0713700028808e364a"></a>
 <div class="memitem">
@@ -198,7 +214,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function should only be called before this LoggerFileBackend is passed to the <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> (changing file path while <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> is calling <a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#a31b8314d523a491b5441276122daed87" title="Log given error. ">logError()</a> is undefined behaviour). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function should only be called before this LoggerFileBackend is passed to the <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> (changing file path while <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> is calling <a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#ac38a14b8d4cd8cedb51bf224b091229c" title="Log given error. ">logError()</a> is undefined behaviour). </dd></dl>
 
 <p>Definition at line <a class="el" href="_file_backend_8cpp_source.html#l00042">42</a> of file <a class="el" href="_file_backend_8cpp_source.html">FileBackend.cpp</a>.</p>
 
@@ -211,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

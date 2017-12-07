@@ -1,0 +1,61 @@
+\hypertarget{class_mdt_1_1_error_logger_1_1_format_engine}{}\section{Mdt\+:\+:Error\+Logger\+:\+:Format\+Engine Class Reference}
+\label{class_mdt_1_1_error_logger_1_1_format_engine}\index{Mdt\+::\+Error\+Logger\+::\+Format\+Engine@{Mdt\+::\+Error\+Logger\+::\+Format\+Engine}}
+
+
+\hyperlink{class_mdt_1_1_error_logger_1_1_format_engine}{Format\+Engine} is used by a \hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} to output a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error}.  
+
+
+
+
+{\ttfamily \#include $<$Format\+Engine.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Error\+Logger\+:\+:Format\+Engine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_mdt_1_1_error_logger_1_1_format_engine__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_error_logger_1_1_format_engine_a8a2fb5de4c00859bb221020706d3f471}{Format\+Engine} ()=default\hypertarget{class_mdt_1_1_error_logger_1_1_format_engine_a8a2fb5de4c00859bb221020706d3f471}{}\label{class_mdt_1_1_error_logger_1_1_format_engine_a8a2fb5de4c00859bb221020706d3f471}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_mdt_1_1_error_logger_1_1_format_engine_aedea7a2d86d0e80595f5aa72ea34cfc1}{$\sim$\+Format\+Engine} ()=default\hypertarget{class_mdt_1_1_error_logger_1_1_format_engine_aedea7a2d86d0e80595f5aa72ea34cfc1}{}\label{class_mdt_1_1_error_logger_1_1_format_engine_aedea7a2d86d0e80595f5aa72ea34cfc1}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual Q\+String \hyperlink{class_mdt_1_1_error_logger_1_1_format_engine_a7fba83de818d69bf7b6e9cf74cf0200e}{format\+Error} (const \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \&error) const =0
+\begin{DoxyCompactList}\small\item\em Format {\itshape error} to its string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_error_logger_1_1_format_engine}{Format\+Engine} is used by a \hyperlink{class_mdt_1_1_error_logger_1_1_backend}{Backend} to output a \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error}. 
+
+Definition at line 35 of file Format\+Engine.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Error\+Logger\+::\+Format\+Engine@{Mdt\+::\+Error\+Logger\+::\+Format\+Engine}!format\+Error@{format\+Error}}
+\index{format\+Error@{format\+Error}!Mdt\+::\+Error\+Logger\+::\+Format\+Engine@{Mdt\+::\+Error\+Logger\+::\+Format\+Engine}}
+\subsubsection[{\texorpdfstring{format\+Error(const Mdt\+::\+Error \&error) const =0}{formatError(const Mdt::Error &error) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\+String Mdt\+::\+Error\+Logger\+::\+Format\+Engine\+::format\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+Error} \&}]{error}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_mdt_1_1_error_logger_1_1_format_engine_a7fba83de818d69bf7b6e9cf74cf0200e}{}\label{class_mdt_1_1_error_logger_1_1_format_engine_a7fba83de818d69bf7b6e9cf74cf0200e}
+
+
+Format {\itshape error} to its string representation. 
+
+This method must be reentrant, because it can be called from \hyperlink{class_mdt_1_1_error_logger_1_1_logger}{Logger} thread (which is not the main thread). 
+
+Implemented in \hyperlink{class_mdt_1_1_error_logger_1_1_file_backend_format_engine_a08cb1b3eb6e1fe8d83f208ae04a7219d}{Mdt\+::\+Error\+Logger\+::\+File\+Backend\+Format\+Engine}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Error\+\_\+\+Core/src/\+Mdt/\+Error\+Logger/Format\+Engine.\+h\end{DoxyCompactItemize}

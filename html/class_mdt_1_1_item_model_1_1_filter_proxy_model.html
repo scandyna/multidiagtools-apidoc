@@ -118,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides support for filtering data between another model and a view. </p>
 <p>Example to use compile time dfined filter: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Mdt/ItemModel/FilterProxyModel.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;QTableView&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;ClientTableModel.h&quot;</span></div><div class="line"></div><div class="line">namepsace ItemModel = <a class="code" href="namespace_mdt_1_1_item_model.html">Mdt::ItemModel</a>;</div><div class="line"><span class="keyword">using</span> ItemModel::FilterProxyModel;</div><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_mdt_1_1_item_model.html#ab26db9f7af785f84cb82892583f7609c">ItemModel::FilterColumn</a>;</div><div class="line"><span class="keyword">using</span> Like = <a class="code" href="namespace_mdt_1_1_item_model.html#a8c8326d469af353aa345651a135251b0">ItemModel::LikeExpression</a>;</div><div class="line"></div><div class="line"><span class="keyword">auto</span> *view = <span class="keyword">new</span> QTableView;</div><div class="line"><span class="keyword">auto</span> *model = <span class="keyword">new</span> ClientTableModel(view);</div><div class="line"><span class="keyword">auto</span> *proxyModel = <span class="keyword">new</span> <a class="code" href="class_mdt_1_1_item_model_1_1_filter_proxy_model.html#ae4b63b2126cab9f54e260117fb265f7f">FilterProxyModel</a>(view);</div><div class="line"></div><div class="line">proxyModel-&gt;setSourceModel(model);</div><div class="line">view-&gt;setModel(proxyModel);</div><div class="line"></div><div class="line"><span class="comment">// Setup a filter and apply it</span></div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#ab26db9f7af785f84cb82892583f7609c">FilterColumn</a> clientFirstName(1);</div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#ab26db9f7af785f84cb82892583f7609c">FilterColumn</a> clientLastName(2);</div><div class="line">proxyModel-&gt;setFilter( (clientFirstName == <span class="stringliteral">&quot;A&quot;</span>) &amp;&amp; (clientLastName == Like(<span class="stringliteral">&quot;A?B*\\?*&quot;</span>)) );</div></div><!-- fragment --> 
-<p>Definition at line <a class="el" href="_filter_proxy_model_8h_source.html#l00059">59</a> of file <a class="el" href="_filter_proxy_model_8h_source.html">FilterProxyModel.h</a>.</p>
+<p>Definition at line <a class="el" href="_filter_proxy_model_8h_source.html#l00060">60</a> of file <a class="el" href="_filter_proxy_model_8h_source.html">FilterProxyModel.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aaa024269494ef8cce449b87f759d431a"></a>
 <div class="memitem">
@@ -153,7 +153,7 @@ template&lt;typename Expr &gt; </div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd><em>expression</em> must be a filter expression type. A filter expression is based on FilterColumn, comparison operators, logical AND, logical OR. For example (see example code above for details): <div class="fragment"><div class="line"><span class="comment">// Example of valid filter expression</span></div><div class="line">cliendId == 25</div><div class="line">(cliendId == 25) &amp;&amp; (clientName != <span class="stringliteral">&quot;A&quot;</span>)</div><div class="line"></div><div class="line"><span class="comment">// Example of invalid filter expression</span></div><div class="line">cliendId + 5</div></div><!-- fragment --> </dd></dl>
 
-<p>Definition at line <a class="el" href="_filter_proxy_model_8h_source.html#l00093">93</a> of file <a class="el" href="_filter_proxy_model_8h_source.html">FilterProxyModel.h</a>.</p>
+<p>Definition at line <a class="el" href="_filter_proxy_model_8h_source.html#l00094">94</a> of file <a class="el" href="_filter_proxy_model_8h_source.html">FilterProxyModel.h</a>.</p>
 
 </div>
 </div>
@@ -164,7 +164,7 @@ template&lt;typename Expr &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

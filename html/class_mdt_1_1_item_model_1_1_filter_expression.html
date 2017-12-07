@@ -143,7 +143,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Filter expression used in <a class="el" href="class_mdt_1_1_item_model_1_1_filter_proxy_model.html" title="Provides support for filtering data between another model and a view. ">FilterProxyModel</a>. </p>
 <p>Example of usage: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;Mdt/ItemModel/FilterExpression.h&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <a class="code" href="class_mdt_1_1_item_model_1_1_filter_expression.html">Mdt::ItemModel::FilterExpression</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="namespace_mdt_1_1_item_model.html#ab26db9f7af785f84cb82892583f7609c">Mdt::ItemModel::FilterColumn</a>;</div><div class="line"><span class="keyword">using</span> Like = <a class="code" href="namespace_mdt_1_1_item_model.html#a8c8326d469af353aa345651a135251b0">Mdt::ItemModel::LikeExpression</a>;</div><div class="line"></div><div class="line"><a class="code" href="class_mdt_1_1_item_model_1_1_filter_expression.html#a991926d42a916bdd2b118d112773e4d6">FilterExpression</a> filter;</div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#ab26db9f7af785f84cb82892583f7609c">FilterColumn</a> clientId(0);</div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#ab26db9f7af785f84cb82892583f7609c">FilterColumn</a> clientName(2);</div><div class="line"></div><div class="line">filter.setExpression( clientId &gt; 12 &amp;&amp; clientName == Like(<span class="stringliteral">&quot;M?t&quot;</span>) );</div></div><!-- fragment --> 
-<p>Definition at line <a class="el" href="_filter_expression_8h_source.html#l00055">55</a> of file <a class="el" href="_filter_expression_8h_source.html">FilterExpression.h</a>.</p>
+<p>Definition at line <a class="el" href="_filter_expression_8h_source.html#l00056">56</a> of file <a class="el" href="_filter_expression_8h_source.html">FilterExpression.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a88e6a9af1e0e340cec3faa2c9c52ffb3"></a>
 <div class="memitem">
@@ -225,7 +225,7 @@ template&lt;typename Expr &gt; </div>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Expr must be a filter expression type. A filter expression is based on FilterColumn, comparison operators, logical AND, logical OR. For example (see example code above for details): <div class="fragment"><div class="line"><span class="comment">// Example of valid filter expression</span></div><div class="line">cliendId == 25</div><div class="line">(cliendId == 25) &amp;&amp; (clientName != <span class="stringliteral">&quot;A&quot;</span>)</div><div class="line"></div><div class="line"><span class="comment">// Example of invalid filter expression</span></div><div class="line">cliendId + 5</div></div><!-- fragment --> </dd></dl>
 
-<p>Definition at line <a class="el" href="_filter_expression_8h_source.html#l00100">100</a> of file <a class="el" href="_filter_expression_8h_source.html">FilterExpression.h</a>.</p>
+<p>Definition at line <a class="el" href="_filter_expression_8h_source.html#l00101">101</a> of file <a class="el" href="_filter_expression_8h_source.html">FilterExpression.h</a>.</p>
 
 </div>
 </div>
@@ -236,7 +236,7 @@ template&lt;typename Expr &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

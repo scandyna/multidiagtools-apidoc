@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_mdt_1_1_filter_expression_1_1_like_expression_terminal.html" title="Expression using wildcards in a FilterExpression. " alt="" coords="5,5,175,61"/>
+<area shape="rect" id="node1" href="$class_mdt_1_1_error_logger_1_1_format_engine.html" title="FormatEngine is used by a Backend to output a Mdt::Error. " alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$class_mdt_1_1_error_logger_1_1_file_backend_format_engine.html" title="FileBackendFormatEngine is used by FileBackend to output a Mdt::Error. " alt="" coords="221,5,420,47"/>
 </map>

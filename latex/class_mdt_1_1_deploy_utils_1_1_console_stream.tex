@@ -15,6 +15,9 @@ Used to implement \hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console}.
 \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}{Console\+Stream} (Qt\+Msg\+Type msg\+Type, int min\+Level, int level)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_aa2df420c51b0524d143b4e877293f248}
 
 \begin{DoxyCompactList}\small\item\em Construct a stream. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_ab45818f441936c4e3ede6164850a2c86}{operator$<$$<$} (int v)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_ab45818f441936c4e3ede6164850a2c86}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_ab45818f441936c4e3ede6164850a2c86}
+
+\begin{DoxyCompactList}\small\item\em Writes {\itshape v} to the stream and returns a reference to the stream. \end{DoxyCompactList}\item 
 \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream}{Console\+Stream} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}{operator$<$$<$} (const char $\ast$str)\hypertarget{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}{}\label{class_mdt_1_1_deploy_utils_1_1_console_stream_a9fd2ecfe4311b0cdd3b9536f24314af7}
 
 \begin{DoxyCompactList}\small\item\em Writes {\itshape str} to the stream and returns a reference to the stream. \end{DoxyCompactList}\item 
@@ -31,7 +34,7 @@ Used to implement \hyperlink{class_mdt_1_1_deploy_utils_1_1_console}{Console}.
 
 This class uses Q\+Debug internally, but was designed to expose it in the public headers. This permits to use Q\+Debug for debuging, and, when finished, remove the Q\+Debug include, which permits the compiler to throw a error if we forgot a q\+Debug() somewhere. 
 
-Definition at line 46 of file Console\+Stream.\+h.
+Definition at line 47 of file Console\+Stream.\+h.
 
 
 

@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab81974d2e6e5b2260a8147c3400dcb3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_file_copier.html#ab81974d2e6e5b2260a8147c3400dcb3a">copyLibraries</a> (const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_library_info_list.html">LibraryInfoList</a> &amp;libraries, const QString &amp;destinationDirectoryPath)</td></tr>
 <tr class="memdesc:ab81974d2e6e5b2260a8147c3400dcb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a list of libraries to a directory.  <a href="#ab81974d2e6e5b2260a8147c3400dcb3a">More...</a><br /></td></tr>
 <tr class="separator:ab81974d2e6e5b2260a8147c3400dcb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94de86a0ecb039e8c01deb715d09722e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_file_copier.html#a94de86a0ecb039e8c01deb715d09722e">copyPlugins</a> (const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_qt_plugin_info_list.html">QtPluginInfoList</a> &amp;plugins, const QString &amp;destinationPluginRootPath)</td></tr>
+<tr class="memdesc:a94de86a0ecb039e8c01deb715d09722e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a list of Qt plugins to a directory.  <a href="#a94de86a0ecb039e8c01deb715d09722e">More...</a><br /></td></tr>
+<tr class="separator:a94de86a0ecb039e8c01deb715d09722e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e82df0b666b0cdb45edd878af31893f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e82df0b666b0cdb45edd878af31893f"></a>
 <a class="el" href="class_mdt_1_1_error.html">Mdt::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_file_copier.html#a8e82df0b666b0cdb45edd878af31893f">lastError</a> () const </td></tr>
 <tr class="memdesc:a8e82df0b666b0cdb45edd878af31893f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get last error. <br /></td></tr>
@@ -124,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides utilities for files and directories manipulation. </p>
 
-<p>Definition at line <a class="el" href="_file_copier_8h_source.html#l00034">34</a> of file <a class="el" href="_file_copier_8h_source.html">FileCopier.h</a>.</p>
+<p>Definition at line <a class="el" href="_file_copier_8h_source.html#l00037">37</a> of file <a class="el" href="_file_copier_8h_source.html">FileCopier.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab81974d2e6e5b2260a8147c3400dcb3a"></a>
 <div class="memitem">
@@ -151,9 +154,42 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Copy a list of libraries to a directory. </p>
-<p>If directory designed by <em>destinationDirectoryPath</em> does not exist, it will first be created using <a class="el" href="class_mdt_1_1_deploy_utils_1_1_file_copier.html#ab1040ccbe34149841a42191e7ced3ba4" title="Create a directory. ">createDirectory()</a>. </p>
+<p>If directory designed by <em>destinationDirectoryPath</em> does not exist, it will first be created using <a class="el" href="class_mdt_1_1_deploy_utils_1_1_file_copier.html#ab1040ccbe34149841a42191e7ced3ba4" title="Create a directory. ">createDirectory()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Each library in <em>libraries</em> must have its absolute file path set. </dd></dl>
 
 <p>Definition at line <a class="el" href="_file_copier_8cpp_source.html#l00063">63</a> of file <a class="el" href="_file_copier_8cpp_source.html">FileCopier.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94de86a0ecb039e8c01deb715d09722e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Mdt::DeployUtils::FileCopier::copyPlugins </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mdt_1_1_deploy_utils_1_1_qt_plugin_info_list.html">QtPluginInfoList</a> &amp;&#160;</td>
+          <td class="paramname"><em>plugins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>destinationPluginRootPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy a list of Qt plugins to a directory. </p>
+<p>If directory designed by <em>destinationPluginRootPath</em> does not exist, it will first be created using <a class="el" href="class_mdt_1_1_deploy_utils_1_1_file_copier.html#ab1040ccbe34149841a42191e7ced3ba4" title="Create a directory. ">createDirectory()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>Each Qt plugin in <em>plugins</em> must have its absolute file path and directory name set. </dd></dl>
+
+<p>Definition at line <a class="el" href="_file_copier_8cpp_source.html#l00077">77</a> of file <a class="el" href="_file_copier_8cpp_source.html">FileCopier.cpp</a>.</p>
 
 </div>
 </div>
@@ -185,7 +221,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

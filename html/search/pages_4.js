@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libraries',['Libraries',['../libraries_page.html',1,'']]]
+  ['item_20model_20library',['Item model library',['../libs_ItemModel.html',1,'']]]
 ];

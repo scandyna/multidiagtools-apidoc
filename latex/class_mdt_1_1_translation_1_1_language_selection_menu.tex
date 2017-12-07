@@ -1,0 +1,52 @@
+\hypertarget{class_mdt_1_1_translation_1_1_language_selection_menu}{}\section{Mdt\+:\+:Translation\+:\+:Language\+Selection\+Menu Class Reference}
+\label{class_mdt_1_1_translation_1_1_language_selection_menu}\index{Mdt\+::\+Translation\+::\+Language\+Selection\+Menu@{Mdt\+::\+Translation\+::\+Language\+Selection\+Menu}}
+
+
+The \hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu}{Language\+Selection\+Menu} class provides a language selection menu.  
+
+
+
+
+{\ttfamily \#include $<$Language\+Selection\+Menu.\+h$>$}
+
+
+
+Inherits Q\+Menu.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu_abdddd4c8b340d177883383de114ff63f}{Language\+Selection\+Menu} (Q\+Widget $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_translation_1_1_language_selection_menu_abdddd4c8b340d177883383de114ff63f}{}\label{class_mdt_1_1_translation_1_1_language_selection_menu_abdddd4c8b340d177883383de114ff63f}
+
+\begin{DoxyCompactList}\small\item\em Construct a language selection menu. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu_a46f4e984342db34ffbd089f58a79f758}{Language\+Selection\+Menu} (const Q\+String \&title, Q\+Widget $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_translation_1_1_language_selection_menu_a46f4e984342db34ffbd089f58a79f758}{}\label{class_mdt_1_1_translation_1_1_language_selection_menu_a46f4e984342db34ffbd089f58a79f758}
+
+\begin{DoxyCompactList}\small\item\em Construct a language selection menu. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu_a9264c6e07964df23fcdb6a1157d52df4}{set\+Available\+Languages} (const \hyperlink{class_mdt_1_1_translation_1_1_language_selection_action_list}{Language\+Selection\+Action\+List} \&action\+List)\hypertarget{class_mdt_1_1_translation_1_1_language_selection_menu_a9264c6e07964df23fcdb6a1157d52df4}{}\label{class_mdt_1_1_translation_1_1_language_selection_menu_a9264c6e07964df23fcdb6a1157d52df4}
+
+\begin{DoxyCompactList}\small\item\em Set the available langugages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu}{Language\+Selection\+Menu} class provides a language selection menu. 
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{using namespace }\hyperlink{namespace_mdt_1_1_translation}{Mdt::Translation};
+
+QMainWindow window;
+\textcolor{keyword}{auto} *languageSelectionMenu = \textcolor{keyword}{new} \hyperlink{class_mdt_1_1_translation_1_1_language_selection_menu_abdddd4c8b340d177883383de114ff63f}{LanguageSelectionMenu}(&window);
+languageSelectionMenu->
+window.menuBar()->addMenu(languageSelectionMenu);
+window.show();
+\end{DoxyCode}
+ 
+
+Definition at line 43 of file Language\+Selection\+Menu.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Translation\+\_\+\+Widgets/src/\+Mdt/\+Translation/Language\+Selection\+Menu.\+h\item 
+libs/\+Translation\+\_\+\+Widgets/src/\+Mdt/\+Translation/Language\+Selection\+Menu.\+cpp\end{DoxyCompactItemize}

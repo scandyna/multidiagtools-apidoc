@@ -1,0 +1,242 @@
+\hypertarget{class_mdt_1_1_file_system_1_1_path_list}{}\section{Mdt\+:\+:File\+System\+:\+:Path\+List Class Reference}
+\label{class_mdt_1_1_file_system_1_1_path_list}\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+
+
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} contains a list of paths.  
+
+
+
+
+{\ttfamily \#include $<$Path\+List.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}{const\+\_\+iterator} = Q\+String\+List\+::const\+\_\+iterator\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}{}\label{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}
+
+\begin{DoxyCompactList}\small\item\em S\+T\+L-\/style const iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_a3f7c284afc4e0601dda93ac28b06d3b4}{Path\+List} ()=default\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a3f7c284afc4e0601dda93ac28b06d3b4}{}\label{class_mdt_1_1_file_system_1_1_path_list_a3f7c284afc4e0601dda93ac28b06d3b4}
+
+\begin{DoxyCompactList}\small\item\em Construct a empty path list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_aac3c664f86accf87320488af282a7d1b}{Path\+List} (std\+::initializer\+\_\+list$<$ Q\+String $>$ list)\hypertarget{class_mdt_1_1_file_system_1_1_path_list_aac3c664f86accf87320488af282a7d1b}{}\label{class_mdt_1_1_file_system_1_1_path_list_aac3c664f86accf87320488af282a7d1b}
+
+\begin{DoxyCompactList}\small\item\em Construct a path list from {\itshape list}. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_abb76035e3b9f14ed857038cf1f8a491f}{Path\+List} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&)=default\hypertarget{class_mdt_1_1_file_system_1_1_path_list_abb76035e3b9f14ed857038cf1f8a491f}{}\label{class_mdt_1_1_file_system_1_1_path_list_abb76035e3b9f14ed857038cf1f8a491f}
+
+\begin{DoxyCompactList}\small\item\em Copy construct a path list from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \& \hyperlink{class_mdt_1_1_file_system_1_1_path_list_ab22d92660aa04be6e69d0da9d9dbd04b}{operator=} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&)=default\hypertarget{class_mdt_1_1_file_system_1_1_path_list_ab22d92660aa04be6e69d0da9d9dbd04b}{}\label{class_mdt_1_1_file_system_1_1_path_list_ab22d92660aa04be6e69d0da9d9dbd04b}
+
+\begin{DoxyCompactList}\small\item\em Assign a path list to this one by copy. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_ad613da6856ae053f9a80ca359389f3bb}{Path\+List} (\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&\&)=default\hypertarget{class_mdt_1_1_file_system_1_1_path_list_ad613da6856ae053f9a80ca359389f3bb}{}\label{class_mdt_1_1_file_system_1_1_path_list_ad613da6856ae053f9a80ca359389f3bb}
+
+\begin{DoxyCompactList}\small\item\em Move construct a path list from a other. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \& \hyperlink{class_mdt_1_1_file_system_1_1_path_list_ab97e53f1e9d6fe8058f3653b9afbf1ce}{operator=} (\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&\&)=default\hypertarget{class_mdt_1_1_file_system_1_1_path_list_ab97e53f1e9d6fe8058f3653b9afbf1ce}{}\label{class_mdt_1_1_file_system_1_1_path_list_ab97e53f1e9d6fe8058f3653b9afbf1ce}
+
+\begin{DoxyCompactList}\small\item\em Assign a path list to this one by move. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a2704cbf307bfac604570450a11806583}{append\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a path to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a0ef6961000725fd653554a7dfb748d44}{append\+Path\+List} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&path\+List)
+\begin{DoxyCompactList}\small\item\em Add a path list to the end of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a80a76af1b0023f32cbe76f4e81d94b12}{prepend\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a path to the beginning of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_path_list_afdef5a8406f91dddd827e606eaee459f}{prepend\+Path\+List} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&path\+List)
+\begin{DoxyCompactList}\small\item\em Add a path list to the beginning of this list. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a01bc018ffa58ce1260da6f6c440cc5b1}{clear} ()\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a01bc018ffa58ce1260da6f6c440cc5b1}{}\label{class_mdt_1_1_file_system_1_1_path_list_a01bc018ffa58ce1260da6f6c440cc5b1}
+
+\begin{DoxyCompactList}\small\item\em Clear this path list. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_file_system_1_1_path_list_ad91dd94e9045df759d202d0ad22254a5}{to\+String\+List} () const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_ad91dd94e9045df759d202d0ad22254a5}{}\label{class_mdt_1_1_file_system_1_1_path_list_ad91dd94e9045df759d202d0ad22254a5}
+
+\begin{DoxyCompactList}\small\item\em Get a list of strings for this list. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a4ef93ea25b92cc300e3bf371c676ca2e}{is\+Empty} () const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_a4ef93ea25b92cc300e3bf371c676ca2e}{}\label{class_mdt_1_1_file_system_1_1_path_list_a4ef93ea25b92cc300e3bf371c676ca2e}
+
+\begin{DoxyCompactList}\small\item\em Check if this path list is empty. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a303d691bfaa3a4d8e066aba909b840f2}{contains\+Path} (const Q\+String \&path) const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_a303d691bfaa3a4d8e066aba909b840f2}{}\label{class_mdt_1_1_file_system_1_1_path_list_a303d691bfaa3a4d8e066aba909b840f2}
+
+\begin{DoxyCompactList}\small\item\em Check if this list contains {\itshape path}. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_ada312296ffa497fa021064b56aee4dac}{begin} () const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_ada312296ffa497fa021064b56aee4dac}{}\label{class_mdt_1_1_file_system_1_1_path_list_ada312296ffa497fa021064b56aee4dac}
+
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the first item in the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a6ece3e61c6f1abc341cf6df8791535dc}{cbegin} () const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_a6ece3e61c6f1abc341cf6df8791535dc}{}\label{class_mdt_1_1_file_system_1_1_path_list_a6ece3e61c6f1abc341cf6df8791535dc}
+
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the first item in the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a869fc0ec8a4c0c74037e611f55a1a408}{end} () const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_a869fc0ec8a4c0c74037e611f55a1a408}{}\label{class_mdt_1_1_file_system_1_1_path_list_a869fc0ec8a4c0c74037e611f55a1a408}
+
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the last item in the list. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list_a16481fc90e2859c52398bd361fb69cec}{const\+\_\+iterator} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a307fae83a735e0a91d3cc0f935ee77c1}{cend} () const \hypertarget{class_mdt_1_1_file_system_1_1_path_list_a307fae83a735e0a91d3cc0f935ee77c1}{}\label{class_mdt_1_1_file_system_1_1_path_list_a307fae83a735e0a91d3cc0f935ee77c1}
+
+\begin{DoxyCompactList}\small\item\em Returns a const S\+T\+L-\/style iterator pointing to the last item in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a54766a2b9d8f5e4debcb6a25591a9b01}{from\+String\+List} (const Q\+String\+List \&paths)\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a54766a2b9d8f5e4debcb6a25591a9b01}{}\label{class_mdt_1_1_file_system_1_1_path_list_a54766a2b9d8f5e4debcb6a25591a9b01}
+
+\begin{DoxyCompactList}\small\item\em Get a path list from a string list. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a6b23b8166c776ce1d23bf45004c83508}{get\+System\+Executable\+Path\+List} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system executable paths. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_aa04f2e0bd96cf3df5872f09422900929}{get\+System\+Library\+Path\+List} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system library paths. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_ab7f805a075249ad9914d0ee9252e741c}{get\+System\+Library\+Known\+Path\+List\+Linux} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system library paths for Linux. \end{DoxyCompactList}\item 
+static \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_file_system_1_1_path_list_a155decd8e4880ccca07a5abbdd0a5b4c}{get\+System\+Library\+Known\+Path\+List\+Windows} ()
+\begin{DoxyCompactList}\small\item\em Get a list of system library paths for Windows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} contains a list of paths. 
+
+Definition at line 34 of file Path\+List.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!append\+Path@{append\+Path}}
+\index{append\+Path@{append\+Path}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{append\+Path(const Q\+String \&path)}{appendPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Path\+List\+::append\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a2704cbf307bfac604570450a11806583}{}\label{class_mdt_1_1_file_system_1_1_path_list_a2704cbf307bfac604570450a11806583}
+
+
+Add a path to the end of this list. 
+
+If {\itshape path} allready exists in this list, it will be moved to the end.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not be a empty string 
+\end{DoxyPrecond}
+
+
+Definition at line 33 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!append\+Path\+List@{append\+Path\+List}}
+\index{append\+Path\+List@{append\+Path\+List}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{append\+Path\+List(const Path\+List \&path\+List)}{appendPathList(const PathList &pathList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Path\+List\+::append\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{path\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a0ef6961000725fd653554a7dfb748d44}{}\label{class_mdt_1_1_file_system_1_1_path_list_a0ef6961000725fd653554a7dfb748d44}
+
+
+Add a path list to the end of this list. 
+
+If a path in {\itshape path\+List} allready exists in this list, it will be moved to the end.
+
+If {\itshape path\+List} contains a empty path, it will not be added to this list. 
+
+Definition at line 41 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!get\+System\+Executable\+Path\+List@{get\+System\+Executable\+Path\+List}}
+\index{get\+System\+Executable\+Path\+List@{get\+System\+Executable\+Path\+List}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Executable\+Path\+List()}{getSystemExecutablePathList()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+File\+System\+::\+Path\+List\+::get\+System\+Executable\+Path\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a6b23b8166c776ce1d23bf45004c83508}{}\label{class_mdt_1_1_file_system_1_1_path_list_a6b23b8166c776ce1d23bf45004c83508}
+
+
+Get a list of system executable paths. 
+
+Will get paths from the P\+A\+TH environment variable, which should be set on most operating systems.
+
+\begin{DoxyNote}{Note}
+The list of paths is built at each call of this method 
+\end{DoxyNote}
+
+
+Definition at line 80 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!get\+System\+Library\+Known\+Path\+List\+Linux@{get\+System\+Library\+Known\+Path\+List\+Linux}}
+\index{get\+System\+Library\+Known\+Path\+List\+Linux@{get\+System\+Library\+Known\+Path\+List\+Linux}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Library\+Known\+Path\+List\+Linux()}{getSystemLibraryKnownPathListLinux()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+File\+System\+::\+Path\+List\+::get\+System\+Library\+Known\+Path\+List\+Linux (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_ab7f805a075249ad9914d0ee9252e741c}{}\label{class_mdt_1_1_file_system_1_1_path_list_ab7f805a075249ad9914d0ee9252e741c}
+
+
+Get a list of system library paths for Linux. 
+
+Returns a hard-\/coded list of system library paths that are known to exist on certains Linux distributions 
+
+Definition at line 117 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!get\+System\+Library\+Known\+Path\+List\+Windows@{get\+System\+Library\+Known\+Path\+List\+Windows}}
+\index{get\+System\+Library\+Known\+Path\+List\+Windows@{get\+System\+Library\+Known\+Path\+List\+Windows}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Library\+Known\+Path\+List\+Windows()}{getSystemLibraryKnownPathListWindows()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+File\+System\+::\+Path\+List\+::get\+System\+Library\+Known\+Path\+List\+Windows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a155decd8e4880ccca07a5abbdd0a5b4c}{}\label{class_mdt_1_1_file_system_1_1_path_list_a155decd8e4880ccca07a5abbdd0a5b4c}
+
+
+Get a list of system library paths for Windows. 
+
+Returns a hard-\/coded list of system library paths that are known to exist on Windows 
+
+Definition at line 131 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!get\+System\+Library\+Path\+List@{get\+System\+Library\+Path\+List}}
+\index{get\+System\+Library\+Path\+List@{get\+System\+Library\+Path\+List}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{get\+System\+Library\+Path\+List()}{getSystemLibraryPathList()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Path\+List} Mdt\+::\+File\+System\+::\+Path\+List\+::get\+System\+Library\+Path\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_aa04f2e0bd96cf3df5872f09422900929}{}\label{class_mdt_1_1_file_system_1_1_path_list_aa04f2e0bd96cf3df5872f09422900929}
+
+
+Get a list of system library paths. 
+
+\begin{DoxyNote}{Note}
+The list of paths is built at each call of this method 
+\end{DoxyNote}
+
+
+Definition at line 98 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!prepend\+Path@{prepend\+Path}}
+\index{prepend\+Path@{prepend\+Path}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{prepend\+Path(const Q\+String \&path)}{prependPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Path\+List\+::prepend\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_a80a76af1b0023f32cbe76f4e81d94b12}{}\label{class_mdt_1_1_file_system_1_1_path_list_a80a76af1b0023f32cbe76f4e81d94b12}
+
+
+Add a path to the beginning of this list. 
+
+If {\itshape path} allready exists in this list, it will be moved to the beginning.
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not be a empty string 
+\end{DoxyPrecond}
+
+
+Definition at line 50 of file Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}!prepend\+Path\+List@{prepend\+Path\+List}}
+\index{prepend\+Path\+List@{prepend\+Path\+List}!Mdt\+::\+File\+System\+::\+Path\+List@{Mdt\+::\+File\+System\+::\+Path\+List}}
+\subsubsection[{\texorpdfstring{prepend\+Path\+List(const Path\+List \&path\+List)}{prependPathList(const PathList &pathList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Path\+List\+::prepend\+Path\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{path\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_path_list_afdef5a8406f91dddd827e606eaee459f}{}\label{class_mdt_1_1_file_system_1_1_path_list_afdef5a8406f91dddd827e606eaee459f}
+
+
+Add a path list to the beginning of this list. 
+
+If a path in {\itshape path\+List} allready exists in this list, it will be moved to the beginning.
+
+If {\itshape path\+List} contains a empty path, it will not be added to this list. 
+
+Definition at line 58 of file Path\+List.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+File\+System\+\_\+\+Core/src/\+Mdt/\+File\+System/Path\+List.\+h\item 
+libs/\+File\+System\+\_\+\+Core/src/\+Mdt/\+File\+System/Path\+List.\+cpp\end{DoxyCompactItemize}

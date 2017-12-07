@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_mdt_1_1_error_logger_1_1_backend-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Mdt::ErrorLogger::Backend Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -126,14 +127,93 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#ad0e3d73ad0c0248f2d62e00f5180ca1e">Backend</a> (QObject *parent=nullptr)</td></tr>
 <tr class="memdesc:ad0e3d73ad0c0248f2d62e00f5180ca1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:ad0e3d73ad0c0248f2d62e00f5180ca1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a4ba51888ecb73202f48666e0fe11e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7a4ba51888ecb73202f48666e0fe11e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#ae7a4ba51888ecb73202f48666e0fe11e">~Backend</a> ()</td></tr>
+<tr class="memdesc:ae7a4ba51888ecb73202f48666e0fe11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:ae7a4ba51888ecb73202f48666e0fe11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e29be8b58d1658b71aef7b69f5aff81"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5e29be8b58d1658b71aef7b69f5aff81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#a5e29be8b58d1658b71aef7b69f5aff81">setFormatEngine</a> ()</td></tr>
+<tr class="memdesc:a5e29be8b58d1658b71aef7b69f5aff81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the format engine.  <a href="#a5e29be8b58d1658b71aef7b69f5aff81">More...</a><br /></td></tr>
+<tr class="separator:a5e29be8b58d1658b71aef7b69f5aff81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bedd2eae53d0f4ed9234ef086bd2cac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#a3bedd2eae53d0f4ed9234ef086bd2cac">cleanup</a> ()</td></tr>
+<tr class="memdesc:a3bedd2eae53d0f4ed9234ef086bd2cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during end cleanup.  <a href="#a3bedd2eae53d0f4ed9234ef086bd2cac">More...</a><br /></td></tr>
+<tr class="separator:a3bedd2eae53d0f4ed9234ef086bd2cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adf97b152bfaa2f5015fd6ef769db7b58"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#adf97b152bfaa2f5015fd6ef769db7b58">formatError</a> (const <a class="el" href="class_mdt_1_1_error.html">Mdt::Error</a> &amp;error) const </td></tr>
+<tr class="memdesc:adf97b152bfaa2f5015fd6ef769db7b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format <em>error</em> to its string representation.  <a href="#adf97b152bfaa2f5015fd6ef769db7b58">More...</a><br /></td></tr>
+<tr class="separator:adf97b152bfaa2f5015fd6ef769db7b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_mdt_1_1_error.html" title="Value class that contains a error. ">Error</a> <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> backend. </p>
 <p>This class is a interface to create a error logger backend that will be used by error <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> to output errors.</p>
 <p>Notice that <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> can be executed from a non main thread, also take care that some functions must at least be reentrant. </p>
 
-<p>Definition at line <a class="el" href="_backend_8h_source.html#l00041">41</a> of file <a class="el" href="_backend_8h_source.html">Backend.h</a>.</p>
+<p>Definition at line <a class="el" href="_backend_8h_source.html#l00045">45</a> of file <a class="el" href="_backend_8h_source.html">Backend.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3bedd2eae53d0f4ed9234ef086bd2cac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Mdt::ErrorLogger::Backend::cleanup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called during end cleanup. </p>
+<p>This method is called from <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html#a3bb1951ee52da826fde82dab52d54c4b" title="Cleanup. ">Logger::cleanup()</a>.</p>
+<p><a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html" title="Error Logger backend. ">Backend</a> can implement this method if requierd.</p>
+<p>This default implementation does nothing. </p>
+
+<p>Reimplemented in <a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#a768a90af2b4e7084cbedee844a53bfc2">Mdt::ErrorLogger::FileBackend</a>.</p>
+
+<p>Definition at line <a class="el" href="_backend_8h_source.html#l00090">90</a> of file <a class="el" href="_backend_8h_source.html">Backend.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf97b152bfaa2f5015fd6ef769db7b58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Mdt::ErrorLogger::Backend::formatError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_mdt_1_1_error.html">Mdt::Error</a> &amp;&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Format <em>error</em> to its string representation. </p>
+<p>Will use the format engine set using <a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html#a5e29be8b58d1658b71aef7b69f5aff81" title="Set the format engine. ">setFormatEngine()</a>.</p>
+<dl class="section pre"><dt>Precondition</dt><dd>A format engine must have been set before calling this method. </dd></dl>
+
+<p>Definition at line <a class="el" href="_backend_8cpp_source.html#l00035">35</a> of file <a class="el" href="_backend_8cpp_source.html">Backend.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="acf37cfc576269934ca8ce04e3601058d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -157,9 +237,41 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Log given error. </p>
-<p>This function must be reentrant, because it can be called from <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> thread (witch is not the main thread). </p>
+<p>This method must be reentrant, because it can be called from <a class="el" href="class_mdt_1_1_error_logger_1_1_logger.html" title="Helper class to log Error objects. ">Logger</a> thread (which is not the main thread). </p>
 
-<p>Implemented in <a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#a31b8314d523a491b5441276122daed87">Mdt::ErrorLogger::FileBackend</a>, and <a class="el" href="class_mdt_1_1_error_logger_1_1_console_backend.html#a2d30700dd6a91c244d68bd3670fdbc33">Mdt::ErrorLogger::ConsoleBackend</a>.</p>
+<p>Implemented in <a class="el" href="class_mdt_1_1_error_logger_1_1_file_backend.html#ac38a14b8d4cd8cedb51bf224b091229c">Mdt::ErrorLogger::FileBackend</a>, and <a class="el" href="class_mdt_1_1_error_logger_1_1_console_backend.html#a2d30700dd6a91c244d68bd3670fdbc33">Mdt::ErrorLogger::ConsoleBackend</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e29be8b58d1658b71aef7b69f5aff81"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Mdt::ErrorLogger::Backend::setFormatEngine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the format engine. </p>
+<p>A format engine is a subclass of <a class="el" href="class_mdt_1_1_error_logger_1_1_format_engine.html" title="FormatEngine is used by a Backend to output a Mdt::Error. ">FormatEngine</a> that outputs a <a class="el" href="class_mdt_1_1_error.html" title="Value class that contains a error. ">Mdt::Error</a> to its string representation.</p>
+<dl class="section note"><dt>Note</dt><dd>Concrete subclass of <a class="el" href="class_mdt_1_1_error_logger_1_1_backend.html" title="Error Logger backend. ">Backend</a> should set its format engine</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Setting the format engine is not thread safe. It should be done before any error is committed to a backend. </dd></dl>
+
+<p>Definition at line <a class="el" href="_backend_8h_source.html#l00077">77</a> of file <a class="el" href="_backend_8h_source.html">Backend.h</a>.</p>
 
 </div>
 </div>
@@ -170,7 +282,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

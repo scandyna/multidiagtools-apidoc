@@ -1,0 +1,64 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_translation}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Translation Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_translation}\index{Mdt\+::\+Deploy\+Utils\+::\+Translation@{Mdt\+::\+Deploy\+Utils\+::\+Translation}}
+
+
+Utilities to handle translations.  
+
+
+
+
+{\ttfamily \#include $<$Translation.\+h$>$}
+
+
+
+Inherits Q\+Object.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_translation_a91d20d19af298679124c199a84e60ece}{Translation} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_deploy_utils_1_1_translation_a91d20d19af298679124c199a84e60ece}{}\label{class_mdt_1_1_deploy_utils_1_1_translation_a91d20d19af298679124c199a84e60ece}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_translation_ac3498d3c5862cfdc84ef9090618ac2c3}{join\+Translations} (const \hyperlink{class_mdt_1_1_translation_1_1_translation_info_list}{Mdt\+::\+Translation\+::\+Translation\+Info\+List} \&in\+Translations, const Q\+String\+List \&binary\+Files, const Q\+String \&destination\+Directory\+Path, const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Joint QM files. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_deploy_utils_1_1_translation_a092129c906151e4b9e2fd435509ecee2}{last\+Error} () const \hypertarget{class_mdt_1_1_deploy_utils_1_1_translation_a092129c906151e4b9e2fd435509ecee2}{}\label{class_mdt_1_1_deploy_utils_1_1_translation_a092129c906151e4b9e2fd435509ecee2}
+
+\begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilities to handle translations. 
+
+Definition at line 39 of file Translation.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Translation@{Mdt\+::\+Deploy\+Utils\+::\+Translation}!join\+Translations@{join\+Translations}}
+\index{join\+Translations@{join\+Translations}!Mdt\+::\+Deploy\+Utils\+::\+Translation@{Mdt\+::\+Deploy\+Utils\+::\+Translation}}
+\subsubsection[{\texorpdfstring{join\+Translations(const Mdt\+::\+Translation\+::\+Translation\+Info\+List \&in\+Translations, const Q\+String\+List \&binary\+Files, const Q\+String \&destination\+Directory\+Path, const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{joinTranslations(const Mdt::Translation::TranslationInfoList &inTranslations, const QStringList &binaryFiles, const QString &destinationDirectoryPath, const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Translation\+::join\+Translations (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+Translation\+::\+Translation\+Info\+List} \&}]{in\+Translations, }
+\item[{const Q\+String\+List \&}]{binary\+Files, }
+\item[{const Q\+String \&}]{destination\+Directory\+Path, }
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_translation_ac3498d3c5862cfdc84ef9090618ac2c3}{}\label{class_mdt_1_1_deploy_utils_1_1_translation_ac3498d3c5862cfdc84ef9090618ac2c3}
+
+
+Joint QM files. 
+
+Will join {\itshape in\+Translations} to a single QM file for each binary file in {\itshape binary\+Files} , as well as existing suffixes (langugaes) existing in {\itshape in\+Translations} . Each produced QM file will be named $<$binary\+File\+Name$>$\+\_\+$<$suffix$>$.qm . {\itshape binary\+Files} can contain paths to executables or libraries . The $<$binary\+File\+Name$>$ is extracted for each file in {\itshape binary\+Files} .
+
+The resulting QM file will be generated to the directory specified by {\itshape destination\+Directory\+Path} . If this directory does not exist, it will be created first .
+
+The {\itshape path\+Prefix\+List} is used to locate the lconvert tool. It should be set if a non system wide installed Qt version is used. 
+
+Definition at line 43 of file Translation.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Translation.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Translation.\+cpp\end{DoxyCompactItemize}

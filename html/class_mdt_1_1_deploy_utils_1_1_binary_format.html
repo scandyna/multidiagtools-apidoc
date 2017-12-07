@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_mdt_1_1_deploy_utils_1_1_binary_format-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Mdt::DeployUtils::BinaryFormat Class Reference</div>  </div>
@@ -114,9 +115,9 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#a9a0d738562a41af21b81d12199b62ea4">readFormat</a> (const QString &amp;binaryFilePath)</td></tr>
 <tr class="memdesc:a9a0d738562a41af21b81d12199b62ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the format of a executable or a library. <br /></td></tr>
 <tr class="separator:a9a0d738562a41af21b81d12199b62ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2dacfb9fcbca3950f42db853d38ed28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_mdt_1_1_deploy_utils.html#a998c3ae583084b7cac9e9a71b9e1ac32">OperatingSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#ae2dacfb9fcbca3950f42db853d38ed28">operatindSystem</a> () const </td></tr>
-<tr class="memdesc:ae2dacfb9fcbca3950f42db853d38ed28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operating system.  <a href="#ae2dacfb9fcbca3950f42db853d38ed28">More...</a><br /></td></tr>
-<tr class="separator:ae2dacfb9fcbca3950f42db853d38ed28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a1fd32ffe0e3b0ec79192090345139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_mdt_1_1_deploy_utils.html#a998c3ae583084b7cac9e9a71b9e1ac32">OperatingSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#af0a1fd32ffe0e3b0ec79192090345139">operatingSystem</a> () const </td></tr>
+<tr class="memdesc:af0a1fd32ffe0e3b0ec79192090345139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get operating system.  <a href="#af0a1fd32ffe0e3b0ec79192090345139">More...</a><br /></td></tr>
+<tr class="separator:af0a1fd32ffe0e3b0ec79192090345139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef69355fc5185e203e2952ebeafc62e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_mdt_1_1_deploy_utils.html#aa3c03f55a06150c118902133f9a74b6f">Processor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#a6ef69355fc5185e203e2952ebeafc62e">processor</a> () const </td></tr>
 <tr class="memdesc:a6ef69355fc5185e203e2952ebeafc62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get processor.  <a href="#a6ef69355fc5185e203e2952ebeafc62e">More...</a><br /></td></tr>
 <tr class="separator:a6ef69355fc5185e203e2952ebeafc62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,13 +125,20 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_mdt_1_1_error.html">Mdt::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#a66bc1c286aa55a5634fcb89669d53496">lastError</a> () const </td></tr>
 <tr class="memdesc:a66bc1c286aa55a5634fcb89669d53496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get last error. <br /></td></tr>
 <tr class="separator:a66bc1c286aa55a5634fcb89669d53496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa84541297e8b7747fffddb3cb63da05c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84541297e8b7747fffddb3cb63da05c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#aa84541297e8b7747fffddb3cb63da05c">isFileAnExecutableByExtension</a> (const QFileInfo &amp;fileInfo)</td></tr>
+<tr class="memdesc:aa84541297e8b7747fffddb3cb63da05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a file is a executable. <br /></td></tr>
+<tr class="separator:aa84541297e8b7747fffddb3cb63da05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Read the format of a executable or a library. </p>
 
-<p>Definition at line <a class="el" href="_binary_format_8h_source.html#l00034">34</a> of file <a class="el" href="_binary_format_8h_source.html">BinaryFormat.h</a>.</p>
+<p>Definition at line <a class="el" href="_binary_format_8h_source.html#l00037">37</a> of file <a class="el" href="_binary_format_8h_source.html">BinaryFormat.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae2dacfb9fcbca3950f42db853d38ed28"></a>
+<a class="anchor" id="af0a1fd32ffe0e3b0ec79192090345139"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -138,7 +146,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_mdt_1_1_deploy_utils.html#a998c3ae583084b7cac9e9a71b9e1ac32">OperatingSystem</a> Mdt::DeployUtils::BinaryFormat::operatindSystem </td>
+          <td class="memname"><a class="el" href="namespace_mdt_1_1_deploy_utils.html#a998c3ae583084b7cac9e9a71b9e1ac32">OperatingSystem</a> Mdt::DeployUtils::BinaryFormat::operatingSystem </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -154,7 +162,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Get operating system. </p>
 <p>Return only a valid value after <a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#a9a0d738562a41af21b81d12199b62ea4" title="Read the format of a executable or a library. ">readFormat()</a> succeded </p>
 
-<p>Definition at line <a class="el" href="_binary_format_8h_source.html#l00052">52</a> of file <a class="el" href="_binary_format_8h_source.html">BinaryFormat.h</a>.</p>
+<p>Definition at line <a class="el" href="_binary_format_8h_source.html#l00055">55</a> of file <a class="el" href="_binary_format_8h_source.html">BinaryFormat.h</a>.</p>
 
 </div>
 </div>
@@ -182,7 +190,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Get processor. </p>
 <p>Return only a valid value after <a class="el" href="class_mdt_1_1_deploy_utils_1_1_binary_format.html#a9a0d738562a41af21b81d12199b62ea4" title="Read the format of a executable or a library. ">readFormat()</a> succeded </p>
 
-<p>Definition at line <a class="el" href="_binary_format_8h_source.html#l00061">61</a> of file <a class="el" href="_binary_format_8h_source.html">BinaryFormat.h</a>.</p>
+<p>Definition at line <a class="el" href="_binary_format_8h_source.html#l00064">64</a> of file <a class="el" href="_binary_format_8h_source.html">BinaryFormat.h</a>.</p>
 
 </div>
 </div>
@@ -193,7 +201,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

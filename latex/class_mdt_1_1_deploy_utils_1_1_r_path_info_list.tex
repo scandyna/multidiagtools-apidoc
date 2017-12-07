@@ -1,0 +1,183 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:R\+Path\+Info\+List Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list}\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+
+
+Hold a list of \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info}{R\+Path\+Info}.  
+
+
+
+
+{\ttfamily \#include $<$R\+Path\+Info\+List.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5217a1f39d2e85f398a84973a137534d}{set\+Relative\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Set a relative path. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a4838fd8b2d20c9bb08e8a9b851eb3c99}{append\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a path to the end. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_adc72ade2e8a37998fdbba4cc56b160cc}{prpend\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a path to the beginning. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ad947d47a73cb7996e9fb3acbca6fa5ac}{prepend\+Relative\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Add a relative path to the beginning. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a79581201672fa7832cf4239d5fe86160}{clear} ()\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a79581201672fa7832cf4239d5fe86160}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a79581201672fa7832cf4239d5fe86160}
+
+\begin{DoxyCompactList}\small\item\em Clear. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a6aaab42f9bbae791596b2844ecef988f}{is\+Empty} () const \hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a6aaab42f9bbae791596b2844ecef988f}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a6aaab42f9bbae791596b2844ecef988f}
+
+\begin{DoxyCompactList}\small\item\em Check if this R\+P\+A\+TH is empty. \end{DoxyCompactList}\item 
+int \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_af844846f9b835d26c60d1e9f8f71a2d4}{count} () const \hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_af844846f9b835d26c60d1e9f8f71a2d4}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_af844846f9b835d26c60d1e9f8f71a2d4}
+
+\begin{DoxyCompactList}\small\item\em Get count of path in this \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path}{R\+Path}. \end{DoxyCompactList}\item 
+const \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info}{R\+Path\+Info} \& \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5070c90e807768597a8458f7ca151810}{at} (int index) const 
+\begin{DoxyCompactList}\small\item\em Get path at {\itshape index}. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5683c4968af1b378ab337110f8316242}{to\+String\+Linux} () const 
+\begin{DoxyCompactList}\small\item\em Get a string representing this R\+P\+A\+TH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list}{R\+Path\+Info\+List} \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ac3cd8b396c9682f320f4e52561798591}{from\+Raw\+R\+Path} (const Q\+String \&rpath\+String)\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ac3cd8b396c9682f320f4e52561798591}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ac3cd8b396c9682f320f4e52561798591}
+
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path}{R\+Path} info from a raw R\+P\+A\+TH string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hold a list of \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info}{R\+Path\+Info}. 
+
+Definition at line 34 of file R\+Path\+Info\+List.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}!append\+Path@{append\+Path}}
+\index{append\+Path@{append\+Path}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+\subsubsection[{\texorpdfstring{append\+Path(const Q\+String \&path)}{appendPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List\+::append\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a4838fd8b2d20c9bb08e8a9b851eb3c99}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a4838fd8b2d20c9bb08e8a9b851eb3c99}
+
+
+Add a path to the end. 
+
+If {\itshape path} starts with \textquotesingle{}/\textquotesingle{} , it is considered absolute, else relative.
+
+If {\itshape path} allready exists, it will not be added again
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not contains keywords, like \$\+O\+R\+I\+G\+IN or the R\+P\+A\+TH separator \textquotesingle{}\+:\textquotesingle{} . Expressing current directory with \textquotesingle{}.\textquotesingle{} or parent directory with \textquotesingle{}..\textquotesingle{} is still allowed. 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ac3cd8b396c9682f320f4e52561798591}{from\+Raw\+R\+Path()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 38 of file R\+Path\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}!at@{at}}
+\index{at@{at}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+\subsubsection[{\texorpdfstring{at(int index) const }{at(int index) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf R\+Path\+Info}\& Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List\+::at (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5070c90e807768597a8458f7ca151810}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5070c90e807768597a8458f7ca151810}
+
+
+Get path at {\itshape index}. 
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape index} must be in valid range ( 0 $<$= {\itshape index} $<$ \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_af844846f9b835d26c60d1e9f8f71a2d4}{count()} ). 
+\end{DoxyPrecond}
+
+
+Definition at line 112 of file R\+Path\+Info\+List.\+h.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}!prepend\+Relative\+Path@{prepend\+Relative\+Path}}
+\index{prepend\+Relative\+Path@{prepend\+Relative\+Path}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+\subsubsection[{\texorpdfstring{prepend\+Relative\+Path(const Q\+String \&path)}{prependRelativePath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List\+::prepend\+Relative\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ad947d47a73cb7996e9fb3acbca6fa5ac}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_ad947d47a73cb7996e9fb3acbca6fa5ac}
+
+
+Add a relative path to the beginning. 
+
+If {\itshape path} allready exists, it will not be added again
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not contains keywords, like \$\+O\+R\+I\+G\+IN or the R\+P\+A\+TH separator \textquotesingle{}\+:\textquotesingle{} . Expressing current directory with \textquotesingle{}.\textquotesingle{} or parent directory with \textquotesingle{}..\textquotesingle{} is still allowed. 
+
+{\itshape path} must be relative 
+\end{DoxyPrecond}
+
+
+Definition at line 62 of file R\+Path\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}!prpend\+Path@{prpend\+Path}}
+\index{prpend\+Path@{prpend\+Path}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+\subsubsection[{\texorpdfstring{prpend\+Path(const Q\+String \&path)}{prpendPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List\+::prpend\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_adc72ade2e8a37998fdbba4cc56b160cc}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_adc72ade2e8a37998fdbba4cc56b160cc}
+
+
+Add a path to the beginning. 
+
+If {\itshape path} starts with / , it is considered absolute, else relative.
+
+If {\itshape path} allready exists, it will not be added again
+
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not contains keywords, like \$\+O\+R\+I\+G\+IN or the R\+P\+A\+TH separator \textquotesingle{}\+:\textquotesingle{} . Expressing current directory with \textquotesingle{}.\textquotesingle{} or parent directory with \textquotesingle{}..\textquotesingle{} is still allowed. 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{See also}
+from\+Raw\+R\+Path(4) 
+\end{DoxySeeAlso}
+
+
+Definition at line 50 of file R\+Path\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}!set\+Relative\+Path@{set\+Relative\+Path}}
+\index{set\+Relative\+Path@{set\+Relative\+Path}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+\subsubsection[{\texorpdfstring{set\+Relative\+Path(const Q\+String \&path)}{setRelativePath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List\+::set\+Relative\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5217a1f39d2e85f398a84973a137534d}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5217a1f39d2e85f398a84973a137534d}
+
+
+Set a relative path. 
+
+\begin{DoxyNote}{Note}
+Will replace existing paths with {\itshape path} 
+\end{DoxyNote}
+\begin{DoxyPrecond}{Precondition}
+{\itshape path} must not contains keywords, like \$\+O\+R\+I\+G\+IN or the R\+P\+A\+TH separator \textquotesingle{}\+:\textquotesingle{} . Expressing current directory with \textquotesingle{}.\textquotesingle{} or parent directory with \textquotesingle{}..\textquotesingle{} is still allowed. 
+\end{DoxyPrecond}
+
+
+Definition at line 29 of file R\+Path\+Info\+List.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}!to\+String\+Linux@{to\+String\+Linux}}
+\index{to\+String\+Linux@{to\+String\+Linux}!Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List@{Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List}}
+\subsubsection[{\texorpdfstring{to\+String\+Linux() const }{toStringLinux() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+R\+Path\+Info\+List\+::to\+String\+Linux (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5683c4968af1b378ab337110f8316242}{}\label{class_mdt_1_1_deploy_utils_1_1_r_path_info_list_a5683c4968af1b378ab337110f8316242}
+
+
+Get a string representing this R\+P\+A\+TH. 
+
+For each path that is relative, the string will contains \$\+O\+R\+I\+G\+IN followed by the path. 
+
+Definition at line 80 of file R\+Path\+Info\+List.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/R\+Path\+Info\+List.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/R\+Path\+Info\+List.\+cpp\end{DoxyCompactItemize}

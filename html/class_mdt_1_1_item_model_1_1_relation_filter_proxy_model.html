@@ -184,7 +184,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides support for filtering data between another model and a view. </p>
 <p>Example of usage: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Mdt/ItemModel/RelationFilterProxyModel.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;QTableView&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;ClientTableModel.h&quot;</span></div><div class="line"><span class="preprocessor">#include &quot;AddressTableModel.h&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> namepsace <a class="code" href="namespace_mdt_1_1_item_model.html">Mdt::ItemModel</a>;</div><div class="line"></div><div class="line"><span class="keyword">auto</span> *view = <span class="keyword">new</span> QTableView;</div><div class="line"><span class="keyword">auto</span> *clientModel = <span class="keyword">new</span> ClientTableModel;</div><div class="line"><span class="keyword">auto</span> *addressModel = <span class="keyword">new</span> AddressTableModel(view);</div><div class="line"><span class="keyword">auto</span> *proxyModel = <span class="keyword">new</span> <a class="code" href="class_mdt_1_1_item_model_1_1_relation_filter_proxy_model.html#ac7b4404a6b4a87c1b083d53716fb0d43">RelationFilterProxyModel</a>(view);</div><div class="line"></div><div class="line"><span class="comment">// Setup view acting on addressModel</span></div><div class="line">proxyModel-&gt;setParentModel(clientModel);</div><div class="line">proxyModel-&gt;setSourceModel(addressModel);</div><div class="line">view-&gt;setModel(proxyModel);</div><div class="line"></div><div class="line"><span class="comment">// Setup a filter and apply it</span></div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#a60ac754611ae43e31bbe5244b2d24297">ChildModelColumn</a> addressClientId(1);</div><div class="line"><a class="code" href="namespace_mdt_1_1_item_model.html#a65a3c4f6cfb3d80d7f69e58cd17d8be7">ParentModelColumn</a> clientId(0);</div><div class="line">proxyModel-&gt;setFilter( addressClientId == cliendId );</div><div class="line">proxyModel-&gt;setParentModelMatchRow(0);</div></div><!-- fragment --> 
-<p>Definition at line <a class="el" href="_relation_filter_proxy_model_8h_source.html#l00070">70</a> of file <a class="el" href="_relation_filter_proxy_model_8h_source.html">RelationFilterProxyModel.h</a>.</p>
+<p>Definition at line <a class="el" href="_relation_filter_proxy_model_8h_source.html#l00071">71</a> of file <a class="el" href="_relation_filter_proxy_model_8h_source.html">RelationFilterProxyModel.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a55c2fc2383af03d01ef92e7eb4ddc426"></a>
 <div class="memitem">
@@ -332,7 +332,7 @@ Both <em>parentModelPk</em> and <em>childModelFk</em> must have the same count o
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2017 12:57:35 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 06:49:24 for Multi diag tools by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,0 +1,131 @@
+\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list}{}\section{Mdt\+:\+:File\+System\+:\+:Search\+Path\+List Class Reference}
+\label{class_mdt_1_1_file_system_1_1_search_path_list}\index{Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}}
+
+
+\hyperlink{class_mdt_1_1_file_system_1_1_search_path_list}{Search\+Path\+List} provides additional tools to \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List}.  
+
+
+
+
+{\ttfamily \#include $<$Search\+Path\+List.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_ada890c31acde466a0adb741158c00046}{set\+Include\+Path\+Prefixes} (bool include)
+\begin{DoxyCompactList}\small\item\em Specify if path prefixes must be part of the search paths. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_aa8980672ad2de4ec510276ae517b99c7}{set\+Path\+Prefix\+List} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \&\hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_a1ddaede41e8bd88bfd0580fe41250c53}{path\+List})
+\begin{DoxyCompactList}\small\item\em Set a list of path prefix. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_a2d7bb5c00adcc75cbb9cc0d64402ddac}{set\+Path\+Suffix\+List} (const Q\+String\+List \&suffix\+List)
+\begin{DoxyCompactList}\small\item\em Specify subdirectories to check. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_ab6fff8c60216e0227a62436d205dbf00}{append\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Append a path. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_a712058878ce5b37dcafe1cdf4db1a5ec}{prepend\+Path} (const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Prepend a path. \end{DoxyCompactList}\item 
+\hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List} \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_a1ddaede41e8bd88bfd0580fe41250c53}{path\+List} () const \hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_a1ddaede41e8bd88bfd0580fe41250c53}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_a1ddaede41e8bd88bfd0580fe41250c53}
+
+\begin{DoxyCompactList}\small\item\em Get a list with all paths. \end{DoxyCompactList}\item 
+Q\+String\+List \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_a906b38babe2200dfe97844b8e140c202}{to\+String\+List} () const \hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_a906b38babe2200dfe97844b8e140c202}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_a906b38babe2200dfe97844b8e140c202}
+
+\begin{DoxyCompactList}\small\item\em Get a string list with all paths. \end{DoxyCompactList}\item 
+void \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_a6054903e456da418a196f701c2dd00b1}{clear} ()\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_a6054903e456da418a196f701c2dd00b1}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_a6054903e456da418a196f701c2dd00b1}
+
+\begin{DoxyCompactList}\small\item\em Clear this list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_mdt_1_1_file_system_1_1_search_path_list}{Search\+Path\+List} provides additional tools to \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Path\+List}. 
+
+Definition at line 33 of file Search\+Path\+List.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}!append\+Path@{append\+Path}}
+\index{append\+Path@{append\+Path}!Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}}
+\subsubsection[{\texorpdfstring{append\+Path(const Q\+String \&path)}{appendPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Search\+Path\+List\+::append\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_ab6fff8c60216e0227a62436d205dbf00}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_ab6fff8c60216e0227a62436d205dbf00}
+
+
+Append a path. 
+
+Add {\itshape path} to the end of this list. Later, {\itshape path} will be returned as is, without any suffix. 
+
+Definition at line 53 of file Search\+Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}!prepend\+Path@{prepend\+Path}}
+\index{prepend\+Path@{prepend\+Path}!Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}}
+\subsubsection[{\texorpdfstring{prepend\+Path(const Q\+String \&path)}{prependPath(const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Search\+Path\+List\+::prepend\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_a712058878ce5b37dcafe1cdf4db1a5ec}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_a712058878ce5b37dcafe1cdf4db1a5ec}
+
+
+Prepend a path. 
+
+Add {\itshape path} to the beginnig of this list. Later, {\itshape path} will be returned as is, without any suffix. 
+
+Definition at line 47 of file Search\+Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}!set\+Include\+Path\+Prefixes@{set\+Include\+Path\+Prefixes}}
+\index{set\+Include\+Path\+Prefixes@{set\+Include\+Path\+Prefixes}!Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}}
+\subsubsection[{\texorpdfstring{set\+Include\+Path\+Prefixes(bool include)}{setIncludePathPrefixes(bool include)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Search\+Path\+List\+::set\+Include\+Path\+Prefixes (
+\begin{DoxyParamCaption}
+\item[{bool}]{include}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_ada890c31acde466a0adb741158c00046}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_ada890c31acde466a0adb741158c00046}
+
+
+Specify if path prefixes must be part of the search paths. 
+
+By default, path prefixes are not part of the search path. 
+
+Definition at line 29 of file Search\+Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}!set\+Path\+Prefix\+List@{set\+Path\+Prefix\+List}}
+\index{set\+Path\+Prefix\+List@{set\+Path\+Prefix\+List}!Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}}
+\subsubsection[{\texorpdfstring{set\+Path\+Prefix\+List(const Path\+List \&path\+List)}{setPathPrefixList(const PathList &pathList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Search\+Path\+List\+::set\+Path\+Prefix\+List (
+\begin{DoxyParamCaption}
+\item[{const {\bf Path\+List} \&}]{path\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_aa8980672ad2de4ec510276ae517b99c7}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_aa8980672ad2de4ec510276ae517b99c7}
+
+
+Set a list of path prefix. 
+
+A path prefix is typically the root of a library distribution, which then contains subdirectories like bin, lib, ... 
+
+Definition at line 35 of file Search\+Path\+List.\+cpp.
+
+\index{Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}!set\+Path\+Suffix\+List@{set\+Path\+Suffix\+List}}
+\index{set\+Path\+Suffix\+List@{set\+Path\+Suffix\+List}!Mdt\+::\+File\+System\+::\+Search\+Path\+List@{Mdt\+::\+File\+System\+::\+Search\+Path\+List}}
+\subsubsection[{\texorpdfstring{set\+Path\+Suffix\+List(const Q\+String\+List \&suffix\+List)}{setPathSuffixList(const QStringList &suffixList)}}]{\setlength{\rightskip}{0pt plus 5cm}void Mdt\+::\+File\+System\+::\+Search\+Path\+List\+::set\+Path\+Suffix\+List (
+\begin{DoxyParamCaption}
+\item[{const Q\+String\+List \&}]{suffix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_file_system_1_1_search_path_list_a2d7bb5c00adcc75cbb9cc0d64402ddac}{}\label{class_mdt_1_1_file_system_1_1_search_path_list_a2d7bb5c00adcc75cbb9cc0d64402ddac}
+
+
+Specify subdirectories to check. 
+
+Specify subdirectories to check below each directory in those specified with \hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_aa8980672ad2de4ec510276ae517b99c7}{set\+Path\+Prefix\+List()}. For example, if /opt/liba and /opt/libb have been set as path prefixes, and {\itshape suffix\+List} contains bin qt5/bin, path list will contain /opt/liba/bin, /opt/liba/qt5/bin, /opt/libb/bin, /opt/libb/qt5/bin . If include\+Path\+Prefixes is set, path list will contain /opt/liba, /opt/liba/bin, /opt/liba/qt5/bin, /opt/libb, /opt/libb/bin, /opt/libb/qt5/bin .
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_aa8980672ad2de4ec510276ae517b99c7}{set\+Path\+Prefix\+List()} 
+
+\hyperlink{class_mdt_1_1_file_system_1_1_search_path_list_ada890c31acde466a0adb741158c00046}{set\+Include\+Path\+Prefixes()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 41 of file Search\+Path\+List.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+File\+System\+\_\+\+Core/src/\+Mdt/\+File\+System/Search\+Path\+List.\+h\item 
+libs/\+File\+System\+\_\+\+Core/src/\+Mdt/\+File\+System/Search\+Path\+List.\+cpp\end{DoxyCompactItemize}

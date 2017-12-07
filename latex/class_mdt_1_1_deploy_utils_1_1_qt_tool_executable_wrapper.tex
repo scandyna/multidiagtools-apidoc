@@ -1,0 +1,102 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Qt\+Tool\+Executable\+Wrapper Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper}\index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper}}
+
+
+Common base class for command line tools provided by Qt (lconvert, ..)  
+
+
+
+
+{\ttfamily \#include $<$Qt\+Tool\+Executable\+Wrapper.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Qt\+Tool\+Executable\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Qt\+Tool\+Executable\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_a498a2a4deb8f1e59c020f523b9f65f6a}{Qt\+Tool\+Executable\+Wrapper} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_a498a2a4deb8f1e59c020f523b9f65f6a}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_a498a2a4deb8f1e59c020f523b9f65f6a}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_affa733c47d5633c5eca8b365f464eb18}{find\+Qt\+Bin\+Path} (const \hyperlink{class_mdt_1_1_file_system_1_1_path_list}{Mdt\+::\+File\+System\+::\+Path\+List} \&path\+Prefix\+List)
+\begin{DoxyCompactList}\small\item\em Find the root directory of Qt bin. \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_adbe9fe3f7f68552479aada57772967af}{qt\+Bin\+Path} () const 
+\begin{DoxyCompactList}\small\item\em Get Qt bin path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Common base class for command line tools provided by Qt (lconvert, ..) 
+
+Definition at line 33 of file Qt\+Tool\+Executable\+Wrapper.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper}!find\+Qt\+Bin\+Path@{find\+Qt\+Bin\+Path}}
+\index{find\+Qt\+Bin\+Path@{find\+Qt\+Bin\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{find\+Qt\+Bin\+Path(const Mdt\+::\+File\+System\+::\+Path\+List \&path\+Prefix\+List)}{findQtBinPath(const Mdt::FileSystem::PathList &pathPrefixList)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper\+::find\+Qt\+Bin\+Path (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mdt\+::\+File\+System\+::\+Path\+List} \&}]{path\+Prefix\+List}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_affa733c47d5633c5eca8b365f464eb18}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_affa733c47d5633c5eca8b365f464eb18}
+
+
+Find the root directory of Qt bin. 
+
+For a given path prefix, a subdirectory, named bin, will be located in known subdirectories, like bin or qt5/bin .
+
+Searching will be done in prefixes defined in {\itshape path\+Prefix\+List} . If Qt bin could not be found in {\itshape path\+Prefix\+List} , or {\itshape path\+Prefix\+List} is empty, false returned, and \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_adbe9fe3f7f68552479aada57772967af}{qt\+Bin\+Path()} returns a empty string.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_adbe9fe3f7f68552479aada57772967af}{qt\+Bin\+Path()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 37 of file Qt\+Tool\+Executable\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper}!qt\+Bin\+Path@{qt\+Bin\+Path}}
+\index{qt\+Bin\+Path@{qt\+Bin\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper}}
+\subsubsection[{\texorpdfstring{qt\+Bin\+Path() const }{qtBinPath() const }}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Mdt\+::\+Deploy\+Utils\+::\+Qt\+Tool\+Executable\+Wrapper\+::qt\+Bin\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_adbe9fe3f7f68552479aada57772967af}{}\label{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_adbe9fe3f7f68552479aada57772967af}
+
+
+Get Qt bin path. 
+
+Returns the path found by \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_affa733c47d5633c5eca8b365f464eb18}{find\+Qt\+Bin\+Path()} . Can also return a empty string, which means\+:
+\begin{DoxyItemize}
+\item Maybe Qt bin existing in system P\+A\+TH could be used
+\item Qt bin does not exist
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_tool_executable_wrapper_affa733c47d5633c5eca8b365f464eb18}{find\+Qt\+Bin\+Path()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 67 of file Qt\+Tool\+Executable\+Wrapper.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Qt\+Tool\+Executable\+Wrapper.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Qt\+Tool\+Executable\+Wrapper.\+cpp\end{DoxyCompactItemize}

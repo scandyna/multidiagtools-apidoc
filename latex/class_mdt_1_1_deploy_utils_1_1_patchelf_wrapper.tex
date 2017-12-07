@@ -1,0 +1,101 @@
+\hypertarget{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper}{}\section{Mdt\+:\+:Deploy\+Utils\+:\+:Patchelf\+Wrapper Class Reference}
+\label{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper}\index{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper}}
+
+
+Wraps a patchelf executable.  
+
+
+
+
+{\ttfamily \#include $<$Patchelf\+Wrapper.\+h$>$}
+
+
+
+Inheritance diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Patchelf\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mdt\+:\+:Deploy\+Utils\+:\+:Patchelf\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a39b4e6120c0932f455a07a5eafcecc5f}{Patchelf\+Wrapper} (Q\+Object $\ast$parent=nullptr)\hypertarget{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a39b4e6120c0932f455a07a5eafcecc5f}{}\label{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a39b4e6120c0932f455a07a5eafcecc5f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a4f3fa64a95618c6bc87afd3760aded0a}{exec\+Read\+R\+Path} (const Q\+String \&binary\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Execute the command to read R\+P\+A\+TH. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a3d637e3a04030f32987e1895be18c482}{exec\+Write\+R\+Path} (const Q\+String \&rpath, const Q\+String \&binary\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Execute the command to write R\+P\+A\+TH. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Wraps a patchelf executable. 
+
+This is a low level wrapper around patchelf tool. Applications should use \hyperlink{class_mdt_1_1_deploy_utils_1_1_r_path}{R\+Path} . 
+
+Definition at line 36 of file Patchelf\+Wrapper.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper}!exec\+Read\+R\+Path@{exec\+Read\+R\+Path}}
+\index{exec\+Read\+R\+Path@{exec\+Read\+R\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper}}
+\subsubsection[{\texorpdfstring{exec\+Read\+R\+Path(const Q\+String \&binary\+File\+Path)}{execReadRPath(const QString &binaryFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper\+::exec\+Read\+R\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a4f3fa64a95618c6bc87afd3760aded0a}{}\label{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a4f3fa64a95618c6bc87afd3760aded0a}
+
+
+Execute the command to read R\+P\+A\+TH. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em binary\+File\+Path} & Path to a executable or a library \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file Patchelf\+Wrapper.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper}!exec\+Write\+R\+Path@{exec\+Write\+R\+Path}}
+\index{exec\+Write\+R\+Path@{exec\+Write\+R\+Path}!Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper@{Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper}}
+\subsubsection[{\texorpdfstring{exec\+Write\+R\+Path(const Q\+String \&rpath, const Q\+String \&binary\+File\+Path)}{execWriteRPath(const QString &rpath, const QString &binaryFilePath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+Patchelf\+Wrapper\+::exec\+Write\+R\+Path (
+\begin{DoxyParamCaption}
+\item[{const Q\+String \&}]{rpath, }
+\item[{const Q\+String \&}]{binary\+File\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a3d637e3a04030f32987e1895be18c482}{}\label{class_mdt_1_1_deploy_utils_1_1_patchelf_wrapper_a3d637e3a04030f32987e1895be18c482}
+
+
+Execute the command to write R\+P\+A\+TH. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rpath} & R\+P\+A\+TH string to pass to patchelf \\
+\hline
+{\em binary\+File\+Path} & Path to a executable or a library \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 35 of file Patchelf\+Wrapper.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Patchelf\+Wrapper.\+h\item 
+libs/\+Deploy\+Utils\+\_\+\+Core/src/\+Mdt/\+Deploy\+Utils/Patchelf\+Wrapper.\+cpp\end{DoxyCompactItemize}

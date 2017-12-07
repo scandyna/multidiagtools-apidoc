@@ -1,0 +1,87 @@
+\hypertarget{namespace_mdt_1_1_test_lib}{}\section{Mdt\+:\+:Test\+Lib Namespace Reference}
+\label{namespace_mdt_1_1_test_lib}\index{Mdt\+::\+Test\+Lib@{Mdt\+::\+Test\+Lib}}
+
+
+\hyperlink{_fake_root_8h_source}{Fake\+Root.\+h} provides some helpers to make tests in a fake file system.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{namespace_mdt_1_1_test_lib_a5d165ffbf0595a09fd01a820d684f44b}{path\+With\+Fake\+Root} (const Q\+Temporary\+Dir \&root, const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em Get full path to root + path. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_mdt_1_1_test_lib_a78b4dd3df02000c3eb29e94495c78246}{prepend\+Fake\+Root\+To\+Path} (const Q\+Temporary\+Dir \&root, Q\+String \&path)\hypertarget{namespace_mdt_1_1_test_lib_a78b4dd3df02000c3eb29e94495c78246}{}\label{namespace_mdt_1_1_test_lib_a78b4dd3df02000c3eb29e94495c78246}
+
+\begin{DoxyCompactList}\small\item\em Prepend path of {\itshape root} to {\itshape path}. \end{DoxyCompactList}\item 
+void \hyperlink{namespace_mdt_1_1_test_lib_ad65fc937f35c685a13dc5b42fc405d0a}{prepend\+Fake\+Root\+To\+Path\+List} (const Q\+Temporary\+Dir \&root, Q\+String\+List \&path\+List)\hypertarget{namespace_mdt_1_1_test_lib_ad65fc937f35c685a13dc5b42fc405d0a}{}\label{namespace_mdt_1_1_test_lib_ad65fc937f35c685a13dc5b42fc405d0a}
+
+\begin{DoxyCompactList}\small\item\em Apply \hyperlink{namespace_mdt_1_1_test_lib_a78b4dd3df02000c3eb29e94495c78246}{prepend\+Fake\+Root\+To\+Path()} to all elements in {\itshape path\+List}. \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_mdt_1_1_test_lib_aee62fea88e830186eee0fcede5eea4a8}{create\+Path\+In\+Fake\+Root} (const Q\+Temporary\+Dir \&root, const Q\+String \&path)
+\begin{DoxyCompactList}\small\item\em void M\+D\+T\+\_\+\+T\+E\+S\+T\+L\+I\+B\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT prepend\+Fake\+Root\+To\+Path\+List(const Q\+Temporary\+Dir \& root, Mdt\+::\+File\+System\+::\+Path\+List \& path\+List); \end{DoxyCompactList}\item 
+bool \hyperlink{namespace_mdt_1_1_test_lib_a5b382e44c3fb6ef9e00098460da07c50}{create\+Path\+List\+In\+Fake\+Root} (const Q\+Temporary\+Dir \&root, const Q\+String\+List \&path\+List)\hypertarget{namespace_mdt_1_1_test_lib_a5b382e44c3fb6ef9e00098460da07c50}{}\label{namespace_mdt_1_1_test_lib_a5b382e44c3fb6ef9e00098460da07c50}
+
+\begin{DoxyCompactList}\small\item\em Create a list of path in a fake root. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{_fake_root_8h_source}{Fake\+Root.\+h} provides some helpers to make tests in a fake file system. 
+
+Some additions to Q\+Test\+Lib.
+
+Example of usage\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} SomeTest::findPluginsRootTest()
+\{
+ QFETCH(QStringList, pathPrefixList);
+ QFETCH(QStringList, existingPaths);
+ QFETCH(QString, expectedPluginsRoot);
+ \textcolor{comment}{// Setup a fake root}
+ QTemporaryDir root;
+ QVERIFY(root.isValid());
+ QVERIFY( \hyperlink{namespace_mdt_1_1_test_lib_a5b382e44c3fb6ef9e00098460da07c50}{createPathListInFakeRoot}(root, existingPaths) );
+ \hyperlink{namespace_mdt_1_1_test_lib_ad65fc937f35c685a13dc5b42fc405d0a}{prependFakeRootToPathList}(root, pathPrefixList);
+ \hyperlink{namespace_mdt_1_1_test_lib_a78b4dd3df02000c3eb29e94495c78246}{prependFakeRootToPath}(root, expectedPluginsRoot);
+ \textcolor{comment}{// Check}
+ QCOMPARE( findPluginsRoot(pathPrefixList), expectedPluginsRoot );
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Function Documentation}
+\index{Mdt\+::\+Test\+Lib@{Mdt\+::\+Test\+Lib}!create\+Path\+In\+Fake\+Root@{create\+Path\+In\+Fake\+Root}}
+\index{create\+Path\+In\+Fake\+Root@{create\+Path\+In\+Fake\+Root}!Mdt\+::\+Test\+Lib@{Mdt\+::\+Test\+Lib}}
+\subsubsection[{\texorpdfstring{create\+Path\+In\+Fake\+Root(const Q\+Temporary\+Dir \&root, const Q\+String \&path)}{createPathInFakeRoot(const QTemporaryDir &root, const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}bool M\+D\+T\+\_\+\+T\+E\+S\+T\+L\+I\+B\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Test\+Lib\+::create\+Path\+In\+Fake\+Root (
+\begin{DoxyParamCaption}
+\item[{const Q\+Temporary\+Dir \&}]{root, }
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_test_lib_aee62fea88e830186eee0fcede5eea4a8}{}\label{namespace_mdt_1_1_test_lib_aee62fea88e830186eee0fcede5eea4a8}
+
+
+void M\+D\+T\+\_\+\+T\+E\+S\+T\+L\+I\+B\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT prepend\+Fake\+Root\+To\+Path\+List(const Q\+Temporary\+Dir \& root, Mdt\+::\+File\+System\+::\+Path\+List \& path\+List); 
+
+Create a path in a fake root 
+
+Definition at line 46 of file Fake\+Root.\+cpp.
+
+\index{Mdt\+::\+Test\+Lib@{Mdt\+::\+Test\+Lib}!path\+With\+Fake\+Root@{path\+With\+Fake\+Root}}
+\index{path\+With\+Fake\+Root@{path\+With\+Fake\+Root}!Mdt\+::\+Test\+Lib@{Mdt\+::\+Test\+Lib}}
+\subsubsection[{\texorpdfstring{path\+With\+Fake\+Root(const Q\+Temporary\+Dir \&root, const Q\+String \&path)}{pathWithFakeRoot(const QTemporaryDir &root, const QString &path)}}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String M\+D\+T\+\_\+\+T\+E\+S\+T\+L\+I\+B\+\_\+\+C\+O\+R\+E\+\_\+\+E\+X\+P\+O\+RT Mdt\+::\+Test\+Lib\+::path\+With\+Fake\+Root (
+\begin{DoxyParamCaption}
+\item[{const Q\+Temporary\+Dir \&}]{root, }
+\item[{const Q\+String \&}]{path}
+\end{DoxyParamCaption}
+)}\hypertarget{namespace_mdt_1_1_test_lib_a5d165ffbf0595a09fd01a820d684f44b}{}\label{namespace_mdt_1_1_test_lib_a5d165ffbf0595a09fd01a820d684f44b}
+
+
+Get full path to root + path. 
+
+For example, if root is /tmp/some\+Dir \+: 
+\begin{DoxyCode}
+\textcolor{keyword}{const} \textcolor{keyword}{auto} fullPath = \hyperlink{namespace_mdt_1_1_test_lib_a5d165ffbf0595a09fd01a820d684f44b}{pathWithFakeRoot}(root, \textcolor{stringliteral}{"/usr/lib"});
+\textcolor{comment}{// fullPath is: /tmp/someDir/usr/lib}
+\end{DoxyCode}
+ 
+
+Definition at line 29 of file Fake\+Root.\+cpp.
+

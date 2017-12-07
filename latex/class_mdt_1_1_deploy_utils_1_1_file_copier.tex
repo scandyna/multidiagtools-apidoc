@@ -23,6 +23,8 @@ bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_ab1040ccbe34149841a42
 \begin{DoxyCompactList}\small\item\em Create a directory. \end{DoxyCompactList}\item 
 bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_ab81974d2e6e5b2260a8147c3400dcb3a}{copy\+Libraries} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_library_info_list}{Library\+Info\+List} \&libraries, const Q\+String \&destination\+Directory\+Path)
 \begin{DoxyCompactList}\small\item\em Copy a list of libraries to a directory. \end{DoxyCompactList}\item 
+bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_a94de86a0ecb039e8c01deb715d09722e}{copy\+Plugins} (const \hyperlink{class_mdt_1_1_deploy_utils_1_1_qt_plugin_info_list}{Qt\+Plugin\+Info\+List} \&plugins, const Q\+String \&destination\+Plugin\+Root\+Path)
+\begin{DoxyCompactList}\small\item\em Copy a list of Qt plugins to a directory. \end{DoxyCompactList}\item 
 \hyperlink{class_mdt_1_1_error}{Mdt\+::\+Error} \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_a8e82df0b666b0cdb45edd878af31893f}{last\+Error} () const \hypertarget{class_mdt_1_1_deploy_utils_1_1_file_copier_a8e82df0b666b0cdb45edd878af31893f}{}\label{class_mdt_1_1_deploy_utils_1_1_file_copier_a8e82df0b666b0cdb45edd878af31893f}
 
 \begin{DoxyCompactList}\small\item\em Get last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -31,7 +33,7 @@ bool \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_ab81974d2e6e5b2260a81
 \subsection{Detailed Description}
 Provides utilities for files and directories manipulation. 
 
-Definition at line 34 of file File\+Copier.\+h.
+Definition at line 37 of file File\+Copier.\+h.
 
 
 
@@ -48,9 +50,35 @@ Definition at line 34 of file File\+Copier.\+h.
 
 Copy a list of libraries to a directory. 
 
-If directory designed by {\itshape destination\+Directory\+Path} does not exist, it will first be created using \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_ab1040ccbe34149841a42191e7ced3ba4}{create\+Directory()}. 
+If directory designed by {\itshape destination\+Directory\+Path} does not exist, it will first be created using \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_ab1040ccbe34149841a42191e7ced3ba4}{create\+Directory()}.
+
+\begin{DoxyPrecond}{Precondition}
+Each library in {\itshape libraries} must have its absolute file path set. 
+\end{DoxyPrecond}
+
 
 Definition at line 63 of file File\+Copier.\+cpp.
+
+\index{Mdt\+::\+Deploy\+Utils\+::\+File\+Copier@{Mdt\+::\+Deploy\+Utils\+::\+File\+Copier}!copy\+Plugins@{copy\+Plugins}}
+\index{copy\+Plugins@{copy\+Plugins}!Mdt\+::\+Deploy\+Utils\+::\+File\+Copier@{Mdt\+::\+Deploy\+Utils\+::\+File\+Copier}}
+\subsubsection[{\texorpdfstring{copy\+Plugins(const Qt\+Plugin\+Info\+List \&plugins, const Q\+String \&destination\+Plugin\+Root\+Path)}{copyPlugins(const QtPluginInfoList &plugins, const QString &destinationPluginRootPath)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Mdt\+::\+Deploy\+Utils\+::\+File\+Copier\+::copy\+Plugins (
+\begin{DoxyParamCaption}
+\item[{const {\bf Qt\+Plugin\+Info\+List} \&}]{plugins, }
+\item[{const Q\+String \&}]{destination\+Plugin\+Root\+Path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_mdt_1_1_deploy_utils_1_1_file_copier_a94de86a0ecb039e8c01deb715d09722e}{}\label{class_mdt_1_1_deploy_utils_1_1_file_copier_a94de86a0ecb039e8c01deb715d09722e}
+
+
+Copy a list of Qt plugins to a directory. 
+
+If directory designed by {\itshape destination\+Plugin\+Root\+Path} does not exist, it will first be created using \hyperlink{class_mdt_1_1_deploy_utils_1_1_file_copier_ab1040ccbe34149841a42191e7ced3ba4}{create\+Directory()}.
+
+\begin{DoxyPrecond}{Precondition}
+Each Qt plugin in {\itshape plugins} must have its absolute file path and directory name set. 
+\end{DoxyPrecond}
+
+
+Definition at line 77 of file File\+Copier.\+cpp.
 
 \index{Mdt\+::\+Deploy\+Utils\+::\+File\+Copier@{Mdt\+::\+Deploy\+Utils\+::\+File\+Copier}!create\+Directory@{create\+Directory}}
 \index{create\+Directory@{create\+Directory}!Mdt\+::\+Deploy\+Utils\+::\+File\+Copier@{Mdt\+::\+Deploy\+Utils\+::\+File\+Copier}}
